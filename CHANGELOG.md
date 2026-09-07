@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.14 — 2026-09-07
+
+- Make Royal checklist rows and Palace/Mementos panels keyboard accessible with checked/expanded semantics and visible focus.
+- Label month navigation and search controls; report school-search result counts.
+- Use whole-date and multi-term matching in Royal school and Persona searches.
+- Remove unused Royal code and resolve its remaining targeted lint errors.
+
+
 ## 2.6.13 — 2026-09-07
 
 - Add a searchable Royal Strength guide with all ten requests, normal/alarm skill-card sources and four fixed group recipes.

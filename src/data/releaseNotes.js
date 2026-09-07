@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.14",
+    date: "2026-09-07",
+    title: "Keyboard-friendly Royal checklists",
+    description: "Use Tab, Space and Enter to manage your progress.",
+    sections: [{ title: "Controls and search", items: [
+      "Crosswords, calendar tasks, Persona registration, Will Seeds and Mementos requests expose their checked state and work with a keyboard.",
+      "Palace and Mementos panels announce whether they are expanded. Month buttons have accessible names.",
+      "School search matches whole dates, including leading zeroes, and reports the result count. Persona search accepts combined name and Arcana terms."
+    ] }]
+  },
+  {
     version: "2.6.13",
     date: "2026-09-07",
     title: "Strength request lookup",
