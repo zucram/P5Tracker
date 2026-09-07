@@ -57,3 +57,8 @@ Validation covers shared answer integration, stable task IDs, Royal July content
 Version 2.4.2 makes published guides accessible above the app content. Briefing links to monthly planning, school answers and the Maruki deadline checker. Calendar links to school answers and monthly planning; Confidants links to the deadline checker and confidant tracking guide. More and the Reference Hub show all four guides and the game directory with descriptions. Footer links remain available in every view.
 
 `src/components/GuideLinks.jsx` owns these contextual links. They use the configured Vite base path and ordinary same-tab anchors. When adding a published guide, update this list and verify navigation under `/P5Tracker/` at mobile and desktop widths.
+
+
+## Usage events
+
+Version 2.4.3 adds contextual guide-link events, manual progress and first-use events, save-transfer outcomes, and support-card impressions. Existing page views and event names remain intact. See [event definitions and reporting limits](analytics.md) before comparing counts. No new payload includes saves, ranks or text input. Analytics exceptions and rejected promises must not interrupt the app.

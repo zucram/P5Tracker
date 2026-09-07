@@ -1,5 +1,15 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.4.3",
+    date: "2026-09-07",
+    title: "Better usage measurement",
+    description: "Anonymous feature events help us see which guides and tracker tools are useful.",
+    sections: [{ title: "Privacy", items: [
+      "Guide links, manual progress changes and save transfers now report feature use to Umami.",
+      "These events do not send save contents, character ranks, stat levels, filenames or typed text."
+    ] }]
+  },
+  {
     version: "2.4.2",
     date: "2026-09-07",
     title: "Guides within reach",

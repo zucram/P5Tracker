@@ -1,3 +1,5 @@
+import { useSupportImpression } from './hooks/useSupportImpression';
+import { trackEvent } from './lib/analytics';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { GuideLinks } from './components/GuideLinks';
 import { NextGameVote } from './components/NextGameVote';
@@ -80,19 +82,11 @@ const FORMAT_ICONS = {
   community: MessageSquare
 };
 
-// Analytics Helper
-const trackEvent = (eventName, eventData = {}) => {
-  try {
-    const result = window.umami?.track(eventName, eventData);
-    result?.catch?.(() => {});
-  } catch {
-    // Analytics must not interrupt tracking or save actions.
-  }
-};
 
 function SupportCard({ location }) {
+  const impressionRef = useSupportImpression(location);
   return (
-    <div className="bg-neutral-900 border border-neutral-800 rounded-3xl p-4 md:p-6 shadow-xl">
+    <div ref={impressionRef} className="bg-neutral-900 border border-neutral-800 rounded-3xl p-4 md:p-6 shadow-xl">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="flex items-start gap-3">
           <div className="p-2.5 rounded-xl bg-red-600/10 border border-red-900/30">
@@ -352,12 +346,27 @@ export default function App() {
   };
 
 
+  const usedTracker = useRef(false);
+  const recordProgress = (kind) => {
+    trackEvent('tracker_progress_changed', { kind });
+    if (!usedTracker.current) {
+      usedTracker.current = true;
+      trackEvent('tracker_used');
+    }
+  };
+
   const updateRank = (arcana, val) => {
-    setConfidantRanks(prev => ({ ...prev, [arcana]: Math.min(10, Math.max(0, parseInt(val) || 0)) }));
+    const next = Math.min(10, Math.max(0, parseInt(val) || 0));
+    if (next === (confidantRanks[arcana] || 0)) return;
+    setConfidantRanks(prev => ({ ...prev, [arcana]: next }));
+    recordProgress('confidant');
   };
 
   const updateStat = (stat, val) => {
-    setSocialStats(prev => ({ ...prev, [stat]: Math.min(5, Math.max(1, parseInt(val) || 1)) }));
+    const next = Math.min(5, Math.max(1, parseInt(val) || 1));
+    if (next === (socialStats[stat] || 1)) return;
+    setSocialStats(prev => ({ ...prev, [stat]: next }));
+    recordProgress('social-stat');
   };
 
   const isGateBlocked = (arcana, currentRank) => {
@@ -372,6 +381,7 @@ export default function App() {
   };
 
   const toggleItem = (id) => {
+    recordProgress('checklist');
     if (!checkedItems[id]) trackEvent('task_checked');
     // Crossword Opportunity Logic (Calendar)
     if (id.startsWith('cw_opp_')) {
@@ -410,6 +420,7 @@ export default function App() {
         hiddenInputRef.current.select();
         if (!document.execCommand('copy')) throw new Error('Copy failed');
       } else throw new Error('Copy unavailable');
+      trackEvent('save_copied');
       setCopied(true);
       setSaveStatus('Save copied. Paste it into the Sync Terminal on your other device.');
       setTimeout(() => setCopied(false), 2000);
@@ -426,10 +437,11 @@ export default function App() {
     a.download = `p5r_tactician_save.txt`;
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
+    trackEvent('save_download_started');
     setSaveStatus('Save download started. Keep this file to transfer or recover your progress.');
   };
 
-  const applySave = (text, restoring = false) => {
+  const applySave = (text, restoring = false, method = 'paste') => {
     try {
       const parsed = parseSave(text);
       const next = { ...currentSave(), ...parsed, checkedItems: migrateCrosswords(parsed.checkedItems) };
@@ -441,8 +453,10 @@ export default function App() {
       setCurrentMonth(next.anchoredMonth);
       setHasPreviousSave(true);
       setImportText('');
+      trackEvent(restoring ? 'save_restored' : 'save_imported', { method: restoring ? 'backup' : method });
       setSaveStatus(restoring ? 'Previous save restored. You can restore again to undo this change.' : 'Save imported. Your previous progress is backed up on this device.');
     } catch (error) {
+      trackEvent('save_import_failed', { method: restoring ? 'backup' : method });
       setSaveStatus(error.message);
     }
   };
@@ -452,11 +466,12 @@ export default function App() {
     event.target.value = '';
     if (!file) return;
     if (!/\.(txt|json)$/i.test(file.name) || file.size > MAX_SAVE_BYTES) {
+      trackEvent('save_import_failed', { method: 'file' });
       setSaveStatus('Choose a .txt or .json save file smaller than 1 MB.');
       return;
     }
-    try { applySave(await file.text()); }
-    catch { setSaveStatus('The file could not be read. Your progress has not changed.'); }
+    try { applySave(await file.text(), false, 'file'); }
+    catch { trackEvent('save_import_failed', { method: 'file' }); setSaveStatus('The file could not be read. Your progress has not changed.'); }
   };
 
   const restorePreviousSave = () => {
@@ -1965,15 +1980,15 @@ export default function App() {
         <section className="mt-12 text-center space-y-4" aria-label="About P5 Tracker">
           <ShareTracker />
           <p className="text-sm text-neutral-400">
-            <a className="underline" href={`${import.meta.env.BASE_URL}games/`}>Game companions</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}games/`} onClick={() => trackEvent('guide_opened', { guide: 'games', location: 'footer' })}>Game companions</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}guides/school-answers/`}>School and exam answers</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/school-answers/`} onClick={() => trackEvent('guide_opened', { guide: 'school-answers', location: 'footer' })}>School and exam answers</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}guides/third-semester/`}>Maruki deadline check</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/third-semester/`} onClick={() => trackEvent('guide_opened', { guide: 'third-semester', location: 'footer' })}>Maruki deadline check</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`}>Monthly planning guide</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`} onClick={() => trackEvent('guide_opened', { guide: 'monthly-checklist', location: 'footer' })}>Monthly planning guide</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}guides/confidant-tracker/`}>Confidant tracking guide</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/confidant-tracker/`} onClick={() => trackEvent('guide_opened', { guide: 'confidant-tracker', location: 'footer' })}>Confidant tracking guide</a>
           </p>
           <p className="text-xs text-neutral-500">Unofficial fan tool. Not affiliated with ATLUS or SEGA. Progress is saved in this browser. Umami measures visits and feature use.</p>
         </section>
