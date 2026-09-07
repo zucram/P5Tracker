@@ -1,5 +1,15 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.1",
+    date: "2026-09-07",
+    title: "Reload dialogue layout fix",
+    description: "Opening a Social Link dialogue guide keeps its card in place.",
+    sections: [{ title: "Social Links", items: [
+      "Expanded cards retain their desktop column and keep nearby cards at their normal height.",
+      "Phone layouts use one column so dialogue stays readable without shifting cards on expansion."
+    ] }]
+  },
+  {
     version: "2.6.0",
     date: "2026-09-07",
     title: "Reload covers the whole playthrough",
