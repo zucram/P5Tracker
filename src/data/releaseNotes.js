@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.17",
+    date: "2026-09-07",
+    title: "Clearer Will Seed directions",
+    description: "Seed colors are visible beside the location hints.",
+    sections: [{ title: "Palace checklists", items: [
+      "All 24 seeds have reviewed location hints and visible names.",
+      "Each Palace links to its illustrated Will Seed walkthrough for the full route.",
+      "Your existing seed checkmarks are retained."
+    ] }]
+  },
+  {
     version: "2.6.16",
     date: "2026-09-07",
     title: "Correct Royal request guidance",

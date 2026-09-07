@@ -93,3 +93,10 @@ Corrections preserve all thirteen existing real-request IDs. Rewards corrected i
 The two references disagree on the tutorial's numbered area, so that entry states only Qimranut and the tutorial. Date reports for some message-triggered requests depend on Palace completion; the tips avoid claiming one universal message date for those cases. Four reviewed Da'at requests replace the unverified Ending the Nightmare placeholder. New requests have new IDs. The retired `r7` key remains valid in old saves and exports but is not assigned to any replacement. New Sheriruth entries cover its own requests after the old entries moved to their correct paths.
 
 The [Mementos Requests reference](https://megamitensei.fandom.com/wiki/Mementos_Requests) describes third-semester relocation of some unfinished targets. The app labels its grouping as original paths and points players to their current in-game map. Earlier paths remain visible for later confidant requests. Unreviewed target-level badges have been replaced with completion counts.
+
+
+## Will Seed directions in 2.6.17
+
+Reviewed all 24 checklist hints against [Samurai Gamers’ Royal location guide](https://samurai-gamers.com/persona-5/how-to-get-all-ishi/) for the first four Palaces, [NightlyGamingBinge’s Kaneshiro walkthrough](https://nightlygamingbinge.com/persona-5-royal-kaneshiros-palace-gluttony-will-seeds/) for the bank route, and [Push Square’s illustrated guide](https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds) for the remaining Palaces. Each card provides a short location cue; the linked walkthrough supplies the complete route. Source accessory-effect tables and their inconsistent names were not imported. No in-game replay was performed.
+
+The 24 existing seed IDs remain unchanged. Names are now visible, rather than present only in accessible labels. Each Palace’s `seedGuide` points to the corresponding verified heading on Push Square; Maruki uses `ninth-palace` because that article counts Mementos Depths separately.

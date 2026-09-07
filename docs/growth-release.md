@@ -195,3 +195,10 @@ Legacy Mementos entries assigned several requests to the wrong paths or confidan
 Calendar corrections identify Akechi's automatic introduction, September 10's Hawaii hangout and October 26's festival hangout. July library and Kawakami reminders no longer assert false last-day/critical conditions. Sojiro's rank-gated request reminder moves from July to September. The source review and limits are in [Royal content review](royal-content-review.md).
 
 All 114 automated tests passed. Browser checks at 320, 390 and 1280px verified the moved requests, preserved checkmarks, new January requests remaining unchecked when an old `r7` save exists, keyboard focus, completion counts, earlier-path visibility in January and the corrected calendar entries. Seeded Reload state was unchanged. The changed modules pass lint and the build still validates all 17 public pages.
+
+
+## Will Seed checklist review in 2.6.17
+
+The Palace checklist now displays each seed’s color and name above its location hint. All 24 hints were reviewed, and each Palace links directly to its section in an illustrated walkthrough. This gives players a short cue in the tracker and a full route when needed. The source review is recorded in [Royal content review](royal-content-review.md).
+
+All 114 automated tests and the 17-page build checks passed. Isolated browser checks at 320, 390 and 1280px verified all 24 visible names, the eight source anchors, retained early/final-Palace checkmarks, keyboard toggles, focus and save reload. Reload’s stored state was unchanged. No new progress fields were introduced.

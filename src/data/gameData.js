@@ -339,13 +339,14 @@ const BASE_APP_DATA = {
   palaces: [
     {
       id: 'pal_kamo',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#first-palace',
       name: 'Castle of Lust (Kamoshida)',
       lvl: '10-12',
       threat: 'Shadow Kamoshida (Physical attacks)',
       seeds: [
-        { id: 'pks1', name: 'Red Lust Seed', text: 'East Building Annex. Mona will guide you.' },
-        { id: 'pks2', name: 'Green Lust Seed', text: 'Castle Roof tower. Grapple through first window.' },
-        { id: 'pks3', name: 'Blue Lust Seed', text: 'Secret room elevator. Pull lever behind painting.' }
+        { id: 'pks1', name: 'Red Lust Seed', text: 'East Building Annex: grapple from the side hallway when Morgana notices the seed.' },
+        { id: 'pks2', name: 'Green Lust Seed', text: 'Central Tower roof: enter a window, cross the vent, then grapple farther up.' },
+        { id: 'pks3', name: 'Blue Lust Seed', text: 'Hidden sewer: activate the gear switch beyond the painting, then return to the elevator.' }
       ],
       personas: [
         { id: 'p_Berith', name: 'Berith', text: 'Nullifies Gun and resists Fire; it does not resist Physical.' },
@@ -356,13 +357,14 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal_mada',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#second-palace',
       name: 'Museum of Vanity (Madarame)',
       lvl: '18-20',
       threat: 'Elemental Clones',
       seeds: [
-        { id: 'pms1', name: 'Red Vanity Seed', text: 'Museum 2F. Grapple to central rafter walkway.' },
-        { id: 'pms2', name: 'Green Vanity Seed', text: 'Treasure Hall Gallery. Grapple up to press button.' },
-        { id: 'pms3', name: 'Blue Vanity Seed', text: 'Museum Main Hall. Enter vent in right hallway to reach balcony.' }
+        { id: 'pms1', name: 'Red Vanity Seed', text: 'Second Exhibition Room: disable the electric barriers, climb upstairs, then grapple across the rafters.' },
+        { id: 'pms2', name: 'Green Vanity Seed', text: 'Treasure Hall Gallery: grapple above the blocked seed room and activate the switch.' },
+        { id: 'pms3', name: 'Blue Vanity Seed', text: 'Main Treasure Hall: enter the vent along the right passage, then cross the upper platforms.' }
       ],
       personas: [
         { id: 'p_Jack Frost', name: 'Jack Frost', text: 'Mabufu for clones.' },
@@ -373,14 +375,15 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal_kane',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#third-palace',
       name: 'Bank of Gluttony (Kaneshiro)',
       lvl: '25-28',
       threat: 'Piggytron (Phys/Gimmick)',
       deadlineMonth: 'july',
       seeds: [
-        { id: 'pks1_k', name: 'Red Gluttony Seed', text: 'Bankers Passageway. Grapple point near vault.' },
-        { id: 'pks2_k', name: 'Green Gluttony Seed', text: 'Laundering Office. Crawl space near money room.' },
-        { id: 'pks3_k', name: 'Blue Gluttony Seed', text: 'Lock room puzzle. Mini-boss weak to Ice.' }
+        { id: 'pks1_k', name: 'Red Gluttony Seed', text: 'Banker Passageway: beside the two-key vault, follow the side hallway and grapple upward.' },
+        { id: 'pks2_k', name: 'Green Gluttony Seed', text: 'Laundering Office: pass the cameras, enter the right-hand vent, then cross the platforms to a grapple point.' },
+        { id: 'pks3_k', name: 'Blue Gluttony Seed', text: 'Underground Vault: use the two control panels to rotate the inner rings and open the seed route.' }
       ],
       personas: [
         { id: 'p_White Rider', name: 'White Rider', text: 'Triple Down is extremely powerful.' },
@@ -391,14 +394,15 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal1',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#fourth-palace',
       name: 'Pyramid (Futaba)',
       lvl: '34-36',
       threat: 'Anubis (Bless/Curse)',
       deadlineMonth: 'august',
       seeds: [
-        { id: 'p1s1', name: 'Red Will Seed', text: 'Chamber of Rejection. Jump on sarcophagi near chest to find hidden path.' },
-        { id: 'p1s2', name: 'Green Will Seed', text: 'Chamber of Guilt. After solving the hologram puzzle, go through the red door.' },
-        { id: 'p1s3', name: 'Blue Will Seed', text: 'Chamber of Sanctuary. On floating platforms, grapple up to a statue.' }
+        { id: 'p1s1', name: 'Red Will Seed', text: 'Chamber of Rejection: after breaking the wall, climb the sarcophagi near the chest.' },
+        { id: 'p1s2', name: 'Green Will Seed', text: 'Chamber of Guilt: solve the hologram puzzle to open the red doorway.' },
+        { id: 'p1s3', name: 'Blue Will Seed', text: 'Chamber of Sanctuary: cross the platforms and grapple above the statue.' }
       ],
       personas: [
         { id: 'p_Isis', name: 'Isis', text: 'Nullifies Bless, but Curse damage is neutral. Watch for Curse instant-kill attacks.' },
@@ -409,14 +413,15 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal2',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#fifth-palace',
       name: 'Spaceport (Okumura)',
       lvl: '43-45',
       threat: 'Green Robots (DPS Race)',
       deadlineMonth: 'october',
       seeds: [
-        { id: 'p2s1', name: 'Red Will Seed', text: 'Facility Area. Vent in circular hall near start.' },
-        { id: 'p2s2', name: 'Green Will Seed', text: 'Export Line. Grapple to moving cargo tops.' },
-        { id: 'p2s3', name: 'Blue Will Seed', text: 'Transfer Line. Guarded by mini-boss in airlock maze.' }
+        { id: 'p2s1', name: 'Red Will Seed', text: 'Facility Passageway: grapple above the circular room reached through the first vent.' },
+        { id: 'p2s2', name: 'Green Will Seed', text: 'Export Line: follow the pipes; disable the lasers at the console before returning.' },
+        { id: 'p2s3', name: 'Blue Will Seed', text: 'Transfer Line: the airlock maze leads to the guarded room.' }
       ],
       personas: [
         { id: 'p_Girimehkala', name: 'Girimehkala', text: 'REPEL PHYSICAL. Makes the boss mobs much easier.' }
@@ -426,14 +431,15 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal3',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#sixth-palace',
       name: 'Casino (Sae)',
       lvl: '52-54',
       threat: 'Shadow Sae (Gimmicks)',
       deadlineMonth: 'november',
       seeds: [
-        { id: 'p3s1', name: 'Red Will Seed', text: 'Staff Area. Near first security room behind crates.' },
-        { id: 'p3s2', name: 'Green Will Seed', text: 'Slot Room. High grapple above giant slot machine.' },
-        { id: 'p3s3', name: 'Blue Will Seed', text: 'High Limit Area. Behind column on far right of entrance stairs.' }
+        { id: 'p3s1', name: 'Red Will Seed', text: 'Staff Area: use the first keycard to unlock the southern corridor.' },
+        { id: 'p3s2', name: 'Green Will Seed', text: 'Slot Room: climb the crates in the western room and grapple across.' },
+        { id: 'p3s3', name: 'Blue Will Seed', text: 'High Limit Lobby: climb, grapple to the hanging platform, then follow the walkway and vent.' }
       ],
       personas: [
         { id: 'p_Rangda', name: 'Rangda', text: 'Repel Phys/Gun. Makes the arena matches trivial.' }
@@ -443,14 +449,15 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal4',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#seventh-palace',
       name: 'Cruiser (Shido)',
       lvl: '63-65',
       threat: 'Gauntlet of Bosses',
       deadlineMonth: 'december',
       seeds: [
-        { id: 'p4s1', name: 'Red Will Seed', text: 'Mid-Starboard Hallway. Grapple from chandelier to a vent.' },
-        { id: 'p4s2', name: 'Green Will Seed', text: 'Lower Port Hallway. In the mouse puzzle room, use a small vent.' },
-        { id: 'p4s3', name: 'Blue Will Seed', text: 'Side Deck. Climb up the side of the ship and grapple backward.' }
+        { id: 'p4s1', name: 'Red Will Seed', text: 'Mid-Starboard Hallway: disable the mouse switch, take the stairs outside, then grapple to the vent.' },
+        { id: 'p4s2', name: 'Green Will Seed', text: 'Lower Port Hallway: open the route, then use mouse form to enter the vent.' },
+        { id: 'p4s3', name: 'Blue Will Seed', text: 'Side Deck: on the later return, climb right and grapple across.' }
       ],
       personas: [
         { id: 'p_Trumpeter', name: 'Trumpeter', text: 'Learns Debilitate at level 65; a useful option for reducing boss stats.' }
@@ -460,13 +467,14 @@ const BASE_APP_DATA = {
     },
     {
       id: 'pal5',
+      seedGuide: 'https://www.pushsquare.com/guides/persona-5-royal-will-seed-locations-where-to-find-all-will-seeds#ninth-palace',
       name: 'Laboratory (Maruki)',
       lvl: '90+',
       threat: 'Final Boss',
       seeds: [
-        { id: 'p5s1', name: 'Red Will Seed', text: 'Monitoring. Stairs to bottom floor, then vent near chest.' },
-        { id: 'p5s2', name: 'Green Will Seed', text: 'Research Lab. Spiral staircase -> Rafter grapple -> Break cracked window.' },
-        { id: 'p5s3', name: 'Blue Will Seed', text: 'Twilight Corridor. Complex floating platform puzzle at end.' }
+        { id: 'p5s1', name: 'Red Will Seed', text: 'Monitoring: clear the Mementos roadblock first; take the left stairs and vent.' },
+        { id: 'p5s2', name: 'Green Will Seed', text: 'Research Lab: climb the spiral stairs, grapple, cross the vent, then break the balcony window.' },
+        { id: 'p5s3', name: 'Blue Will Seed', text: 'Twilight Corridor: solve the final colored-switch route. Use the illustrated walkthrough below.' }
       ],
       personas: [
         { id: 'p_Yoshitsune', name: 'Yoshitsune', text: 'Hassou Tobi is the strongest physical move.' },

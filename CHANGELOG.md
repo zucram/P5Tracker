@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.17 — 2026-09-07
+
+- Show each Will Seed’s color and name beside its checklist hint.
+- Review the 24 location hints and link each Palace to an illustrated walkthrough.
+- Preserve every existing seed checkmark.
+
 ## 2.6.16 — 2026-09-07
 
 - Correct reviewed Royal Mementos request names, rewards, paths and confidant requirements.

@@ -4,7 +4,7 @@
 
 Free browser companions for planning a Persona playthrough. Follow monthly objectives, record progress, and look up answers while choosing your own daily schedule. Neither tracker guarantees a perfect 100% route.
 
-The current release is **2.6.16**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
+The current release is **2.6.17**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
 
 ## Trackers and guides
 

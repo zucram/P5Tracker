@@ -1440,15 +1440,19 @@ export default function App() {
                          {expandedPalace === idx && (
                            <div className="p-4 md:p-8 pt-0 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 bg-black/40 border-t border-neutral-800 animate-in zoom-in-95 duration-300">
                              <div className="mt-4 md:mt-8 space-y-4 md:space-y-6">
-                                <h4 className="text-xs font-black text-red-600 uppercase tracking-[0.4em] flex items-center gap-2"><MapPin className="w-4 h-4 md:w-5 md:h-5" /> Will Seed Coords</h4>
+                                <h4 className="text-xs font-black text-red-600 uppercase tracking-[0.4em] flex items-center gap-2"><MapPin className="w-4 h-4 md:w-5 md:h-5" /> Will Seeds</h4>
                                 <div className="space-y-2 md:space-y-3">
                                   {p.seeds.map((s, si) => (
                                     <CheckableCard key={si} label={`${p.name}: ${s.name}. ${s.text}`} checked={checkedItems[s.id]} onChange={() => toggleItem(s.id)} className={`p-3 md:p-4 rounded-xl border flex items-center gap-3 md:gap-4 cursor-pointer transition-all ${checkedItems[s.id] ? 'opacity-30 border-neutral-800 bg-black/20' : 'bg-neutral-900/80 border-l-4 border-l-red-600 border-neutral-800 hover:bg-neutral-800'}`}>
                                        {checkedItems[s.id] ? <CheckSquare className="w-4 h-4 text-green-500 flex-shrink-0" /> : <Square className="w-4 h-4 text-neutral-600 flex-shrink-0" />}
-                                       <div className="text-sm text-neutral-300 leading-tight">{s.text}</div>
+                                       <div className="text-sm leading-snug">
+                                         <div className="font-bold text-white mb-1">{s.name}</div>
+                                         <div className="text-neutral-300">{s.text}</div>
+                                       </div>
                                     </CheckableCard>
                                   ))}
                                 </div>
+                                <a href={p.seedGuide} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center text-sm text-neutral-300 underline underline-offset-4 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-4">Illustrated Will Seed walkthrough · Push Square</a>
                              </div>
                              <div className="mt-4 md:mt-8 space-y-4 md:space-y-6">
                                 <h4 className="text-xs font-black text-red-600 uppercase tracking-[0.4em] flex items-center gap-2"><Target className="w-4 h-4 md:w-5 md:h-5" /> Palace Personas</h4>
