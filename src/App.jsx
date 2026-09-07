@@ -1965,6 +1965,8 @@ export default function App() {
           <p className="text-sm text-neutral-400">
             <a className="underline" href={`${import.meta.env.BASE_URL}games/`}>Game companions</a>
             {' · '}
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/third-semester/`}>Third-semester check</a>
+            {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`}>Monthly planning guide</a>
             {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/confidant-tracker/`}>Confidant tracking guide</a>

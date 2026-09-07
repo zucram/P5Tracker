@@ -4,7 +4,7 @@ P5 Tracker remains a free Persona 5 Royal browser companion. The game directory 
 
 ## Search pages
 
-Vite copies `public/guides/` and `public/games/` into the production build. Each page has its own title, description, canonical URL and links to the app. `public/sitemap.xml` lists the four public entry pages. Keep that list aligned when adding or removing pages. The root HTML includes a brief description before React loads, plus metadata and WebApplication structured data without ratings or paid offers.
+Vite copies `public/guides/` and `public/games/` into the production build. Each page has its own title, description, canonical URL and links to the app. `public/sitemap.xml` lists the five public entry pages. Keep that list aligned when adding or removing pages. The root HTML includes a brief description before React loads, plus metadata and WebApplication structured data without ratings or paid offers.
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
@@ -15,6 +15,7 @@ The existing Umami property measures production traffic. The script allows only 
 | Event | Meaning | Properties |
 | --- | --- | --- |
 | `task_checked` | A user checks an item in the tracker | None |
+| `guide_check_used` | The third-semester checker is submitted | `guide` |
 | `guide_open_tracker` | A guide's app link is clicked | `guide` |
 | `guide_support_click` | A guide's Ko-fi link is clicked | `guide` |
 | `game_open_tracker` | The game directory's Royal link is clicked | `game` |
@@ -28,8 +29,14 @@ The next-game prompt remembers a submitted suggestion in the browser when storag
 
 ## Release checks
 
-Build with `npm run build`. Verify the app, both guide URLs and the game directory under the GitHub Pages base path. Check that the guides' app links select the intended tab. Test sharing with native sharing, clipboard-only support, and unavailable browser APIs. Keep production analytics stubbed during browser tests.
+Build with `npm run build`. Verify the app, all three guide URLs and the game directory under the GitHub Pages base path. Check that the guides' app links select the intended tab. Test sharing with native sharing, clipboard-only support, and unavailable browser APIs. Keep production analytics stubbed during browser tests.
 
 Validate save round trips and rejected imports with the save-data tests. A successful import must preserve a recoverable previous save. Verify downloaded backups separately from browser-local recovery.
 
 The existing full-repository lint baseline contains errors in legacy components and hooks. New components must pass targeted ESLint without adding to that baseline.
+
+## Third-semester search page
+
+`public/guides/third-semester/` answers the Maruki rank and deadline question and checks a visitor's chosen rank and date range. The answer is available as HTML without JavaScript. The interactive form is revealed only when its module loads. Inputs stay in memory and never update tracker saves or enter analytics. Its test cases run with `npm test`.
+
+The page distinguishes the confidant requirement from later ending choices. It never estimates how many available afternoons remain. It cites GameSpot's Royal guide and RPG Site's Councillor and endings guides. November 17 is the last date used by the checker, with November 18 treated as after the deadline. The September rank cap uses September 20 as the boundary, consistent with the existing app calendar and RPG Site's statement that the cap ends after September 19. Guide verification is editorial source review, not a new full playthrough.

@@ -18,6 +18,8 @@ Feedback, bug reports, and strategy corrections are welcome via [GitHub Issues](
 
 ## Planning and save transfer
 
+Use the [third-semester requirement checker](https://zucram.github.io/P5Tracker/guides/third-semester/) to check Maruki's rank and deadline without changing your save.
+
 Read the [monthly planning guide](https://zucram.github.io/P5Tracker/guides/monthly-checklist/) or [confidant tracking guide](https://zucram.github.io/P5Tracker/guides/confidant-tracker/).
 
 Use **Sync Terminal** to download a backup or import a `.txt` or `.json` save file. Imports validate the data before applying it and keep one previous save in this browser for recovery. Browser-local recovery is lost if you clear site data, so keep a downloaded backup too. Saves do not synchronize automatically between devices.
