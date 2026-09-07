@@ -2,7 +2,7 @@ import { Planner, Deadlines } from './Planner';
 import { TartarusProgress } from './TartarusProgress';
 import { MonthCalendar } from './MonthCalendar';
 import StudyReference from './StudyReference';
-import SocialLinkDialogue from './SocialLinkDialogue';
+import SocialLinksTable from './SocialLinksTable';
 import CampaignReference from './CampaignReference';
 import { CombatReference } from './CombatReference';
 import { PersonaReference } from './PersonaReference';
@@ -12,10 +12,9 @@ import { EquipmentReference } from './EquipmentReference';
 import { COLLECTION_SECTIONS } from './campaignData';
 import campaign from '../../knowledge/p3-reload/campaign.json' with { type: 'json' };
 import dailyLife from '../../knowledge/p3-reload/daily-life.json';
-import { getMonthGuide } from './monthGuide';
-import { dateLabel, FACT_BY_ID, dateNumber, monthForDate, shiftDate } from './planner';
+import { dateNumber, monthForDate, shiftDate } from './planner';
 import { createElement, useState, useEffect, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Bookmark, Check, Download, Heart, Upload, Users, CalendarDays, ShieldCheck, BookOpen, Sword, Menu } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Download, Heart, Upload, Users, CalendarDays, ShieldCheck, BookOpen, Sword, Menu } from 'lucide-react';
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS, SOURCES } from './data';
 import { loadState, persistState, importState, BACKUP_KEY, STORAGE_KEY, MAX_BYTES } from './save';
 import './styles.css';
@@ -24,7 +23,6 @@ const BASE = import.meta.env.BASE_URL;
 const VALID_TABS = ['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more', 'requests', 'combat', 'personas', 'party', 'campaign', 'equipment', 'collections', 'daily-life'];
 const TARTARUS_TABS = [['deadlines', 'Progress & rescues'], ['requests', 'Elizabeth requests'], ['combat', 'Enemies & bosses']];
 const REFERENCE_TABS = [['campaign', 'Campaign guide'], ['party', 'Dorm activities'], ['personas', 'Personas & fusion'], ['equipment', 'Equipment & shops'], ['daily-life', 'Daily life'], ['collections', 'Collections & outings']];
-const LINK_OPENINGS = Object.fromEntries(MONTHS.flatMap(month => getMonthGuide(month.id).targets).map(task => [task.opensLinkId, task]));
 
 function track(event, data = {}) {
   try { window.umami?.track(event, { game: 'persona-3-reload', ...data })?.catch?.(() => {}); } catch { /* Keep the tracker usable when analytics is blocked. */ }
@@ -199,33 +197,14 @@ export default function ReloadTracker() {
         {tab === 'deadlines' && <><div className="section-heading"><div><h2>Tartarus & requests</h2><p>Rescue floors, Elizabeth's requests and Linked Episode reminders.</p></div></div><TartarusProgress state={state} commit={commit} /><Deadlines state={state} commit={commit} /></>}
 
         {tab === 'links' && <section aria-labelledby="links-title">
-          <div className="section-heading"><div><h2 id="links-title">Social Links</h2><p>Update ranks from your game. Priorities help you choose what to focus on next.</p></div>
+          <div className="section-heading"><div><h2 id="links-title">Social Links</h2><p>Track your ranks. Open a link for next-rank answers, planning and gifts.</p></div>
             <label className="name-toggle"><input type="checkbox" checked={state.showNames} onChange={event => commit({ ...state, showNames: event.target.checked })} /> Show character names and notes</label>
           </div>
           <div className="filters"><input aria-label="Search Social Links" placeholder={state.showNames ? 'Search arcana or character…' : 'Search arcana…'} value={query} onChange={event => setQuery(event.target.value)} />
             <select aria-label="Filter Social Links" value={filter} onChange={event => setFilter(event.target.value)}>{[['all', 'All links'], ['priority', 'My priorities'], ['progress', 'In progress'], ['new', 'Not started'], ['max', 'Maxed']].map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select>
           </div>
-          <p className="small-note">Stat requirements are only part of unlocking a link. Dates, introductions and other conditions can also apply. Story links do not need ordinary hangouts.</p>
-          <div className="link-grid">{shownLinks.map(link => {
-            const rank = state.ranks[link.id];
-            const priority = state.favorites.includes(link.id);
-            const gate = link.statGate;
-            const schedule = FACT_BY_ID[`sl-${link.id}`]?.value;
-            const opening = LINK_OPENINGS[link.id];
-            const statReady = gate && state.stats[gate.stat] >= gate.rank;
-            return <article className={`link-card ${rank === 10 ? 'is-maxed' : ''}`} key={link.id}>
-              <div className="card-top"><span className="arcana-type">{link.kind === 'story' ? 'STORY PROGRESSION' : link.kind.toUpperCase()}</span><button className={`favorite ${priority ? 'selected' : ''}`} aria-label={`${priority ? 'Remove' : 'Add'} ${link.arcana} ${priority ? 'from' : 'to'} priorities`} aria-pressed={priority} onClick={() => commit({ ...state, favorites: priority ? state.favorites.filter(id => id !== link.id) : [...state.favorites, link.id] })}><Bookmark size={19} fill={priority ? 'currentColor' : 'none'} /></button></div>
-              <h3>{link.arcana}</h3>
-              {state.showNames && <p className="character-name">{link.name}</p>}
-              <div className="rank-control"><button aria-label={`Decrease ${link.arcana} rank`} disabled={rank === 0} onClick={() => setRank(link.id, rank - 1)}>−</button><label htmlFor={`rank-${link.id}`}>Rank <select id={`rank-${link.id}`} value={rank} onChange={event => setRank(link.id, event.target.value)}>{Array.from({ length: 11 }, (_, index) => <option key={index} value={index}>{index === 10 ? '10 · MAX' : index}</option>)}</select></label><button aria-label={`Increase ${link.arcana} rank`} disabled={rank === 10} onClick={() => setRank(link.id, rank + 1)}>+</button></div>
-              {gate && <p className={`gate ${statReady ? 'ready' : ''}`}>{statReady && <Check size={14} />}{gate.stat} rank {gate.rank} {statReady ? 'met' : 'needed'}</p>}
-              {schedule?.days?.length > 0 && <p className="link-note">Usually {schedule.days.map(day => day[0].toUpperCase() + day.slice(1)).join(', ')} · {schedule.timeSlot.replaceAll('-', ' ')}{link.id === 'hermit' ? ', plus some holidays' : ''}{schedule.start && <><br />First opening: {dateLabel(schedule.start)}</>}</p>}
-              {opening && <details><summary>Introduction & requirements{!state.showNames ? ' · includes names' : ''}</summary><p>{opening.detail}</p><a href={opening.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide</a></details>}
-              {link.kind === 'story' && <p className="link-note">{link.note}</p>}
-              {link.kind !== 'story' && <SocialLinkDialogue link={link} state={state} commit={commit} />}
-              {link.kind !== 'story' && rank === 0 && <label className="introduction-check"><input type="checkbox" checked={state.unlockedLinks.includes(link.id)} onChange={() => commit({ ...state, unlockedLinks: state.unlockedLinks.includes(link.id) ? state.unlockedLinks.filter(id => id !== link.id) : [...state.unlockedLinks, link.id] }, 'introduction_confirmed')} /> I completed this introduction in-game</label>}
-            </article>;
-          })}</div>
+          <p className="small-note">Stat requirements are only part of unlocking a link. Dates, introductions and other conditions can also apply. Story links do not need ordinary hangouts. Opening a guide can reveal character names.</p>
+          <SocialLinksTable links={shownLinks} state={state} commit={commit} setRank={setRank} selectTab={selectTab} />
           {!shownLinks.length && <p className="empty">No links match this view. Bookmark a link to add a priority, or change the filter.</p>}
         </section>}
 

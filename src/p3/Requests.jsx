@@ -61,7 +61,7 @@ export default function Requests({ state, commit, selectTab }) {
           {entry.persona && selectTab && <button className="request-persona-help" onClick={() => selectTab('personas')}>Persona and fusion help · {entry.persona}</button>}
           {entry.equipment && selectTab && <button className="request-persona-help" onClick={() => selectTab('equipment')}>Crafting and material sources · {entry.equipment}</button>}
           {entry.rewards?.length > 0 && <><h4>Rewards</h4><ul>{entry.rewards.map((text, index) => <li key={index}>{text}</li>)}</ul></>}
-          <details className="request-sources"><summary>Sources</summary>{entry.sources.map((source, index) => <p key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label || source.url}</a></p>)}{opening && <p>Tartarus opening: {opening.sources.map((source, index) => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{index > 0 && ' · '}Floor reference {index + 1}</a>)}</p>}</details>
+          <div className="request-sources"><p className="source-label">Sources</p>{entry.sources.map((source, index) => <p key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label || source.url}</a></p>)}{opening && <p>Tartarus opening: {opening.sources.map((source, index) => <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{index > 0 && ' · '}Floor reference {index + 1}</a>)}</p>}</div>
           <label className="request-reported"><input type="checkbox" checked={completed.has(entry.id)} onChange={() => toggleReported(entry)} disabled={!commit} />I reported request #{entry.number} to Elizabeth</label>
         </details>
       </article>;

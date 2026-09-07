@@ -8,7 +8,7 @@ The shared start page is `/P5Tracker/`. Royal lives at `/P5Tracker/p5/` and Relo
 
 Reload follows Royal's layout with Briefing, Calendar, Social Links, Tartarus and More. Calendar opens by default. Its April through January checklists include school answers, openings, missables, Tartarus access, personal goals, relevant boss and story guidance, and optional outings and shopping. The campaign reference also explains the March conclusion and New Game Plus.
 
-Social Links contains all 22 links. Each of the 19 manual links has guidance for ranks 1 through 10, next-rank selection, friendship and romance alternatives where applicable, and an explicit rank-completion action. Browsing a rank never changes progress. Expanding dialogue keeps the card in its existing desktop column. Narrow screens use one column for readable dialogue, and neighboring cards keep their natural height. The saved relationship choice describes the player's game; previewing another dialogue branch leaves that choice unchanged. Automatic links remain identified as story-driven.
+Social Links contains all 22 links. Each of the 19 manual links has guidance for ranks 1 through 10, next-rank selection, friendship and romance alternatives where applicable, and an explicit rank-completion action. Browsing a rank never changes progress. Version 2.6.2 replaces the card grid with Royal-style rows. Desktop expansion adds a full-width detail row with planning and gifts on the left and answers on the right. Mobile uses compact accordion rows with answers first. Native buttons expose expansion state and rank controls operate independently. Inside a guide, Answers, Relationship & affinity, and Sources buttons replace nested disclosures. The saved relationship choice describes the player's game; previewing another dialogue branch leaves that choice unchanged. Automatic links remain identified as story-driven.
 
 Tartarus has three sections: progress and rescues, all 101 Elizabeth requests, and enemies and bosses. Requests include numbered solutions, prerequisites, rewards, timed item opportunities and links to fusion or equipment help. Collecting an item and reporting its request are separate actions.
 
@@ -22,6 +22,8 @@ More provides campaign guidance, dorm activities, Personas and fusion, equipment
 - Antique crafting recipes, shop stock, equipment effects and material acquisition. Alternative exchanges remain separate recipes.
 - Stat thresholds and activities, affinity recovery, computer software, gardening and gifts.
 - All 17 fixed town Twilight Fragments, 48 main-campaign Steam achievements, TV offers, film invitations, walks and social outings. PlayStation's additional platinum is explained separately.
+
+Calendar instructions and source citations in requests, dorm activities and study references are visible without a second expansion. Equipment material lookups use a source-type selector instead of nested location groups. Spoiler reveals and long catalog entries retain their meaningful expansion controls. Royal confidants use labelled Guide and Close buttons. Their compact headers allow long names to truncate, and footer links wrap on narrow phones.
 
 Names and story details are hidden by default where marked. Players can reveal individual entries or enable reference names. Source links and explicitly opened entries can reveal spoilers. This is a flexible companion, without a guaranteed optimal daily route or an exact affinity simulator.
 

@@ -4,7 +4,7 @@ import activities from '../../knowledge/p3-reload/activities.json';
 const dayNames = ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 function Evidence({ sources }) {
-  return <details className="reference-evidence"><summary>Sources</summary>{sources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{new URL(source.url).hostname}</a> · {source.locator}</p>)}</details>;
+  return <div className="reference-evidence"><p className="source-label">Sources</p>{sources.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{new URL(source.url).hostname}</a> · {source.locator}</p>)}</div>;
 }
 
 export default function StudyReference({ month, section = 'all' }) {

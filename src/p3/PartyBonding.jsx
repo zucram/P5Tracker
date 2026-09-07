@@ -28,7 +28,7 @@ export default function PartyBonding({ state, commit }) {
           <h4>{activity.title}</h4><p>Usual day: {activity.schedule} · Evening</p><p>{activity.reward}</p>
           <div className="bonding-counter"><button aria-label={`Decrease ${member.name} ${activity.title} sessions`} disabled={!commit || countFor(activity) === 0} onClick={() => update(activity, countFor(activity) - 1)}>−</button><label htmlFor={`${id}-${activity.id}`}>Sessions<select id={`${id}-${activity.id}`} value={countFor(activity)} disabled={!commit} onChange={event => update(activity, event.target.value)}>{[0, 1, 2, 3].map(count => <option key={count} value={count}>{count} / 3</option>)}</select></label><button aria-label={`Increase ${member.name} ${activity.title} sessions`} disabled={!commit || countFor(activity) === 3} onClick={() => update(activity, countFor(activity) + 1)}>+</button></div>
         </div>)}
-        <details className="bonding-sources"><summary>Sources</summary>{member.sources.map((source, index) => <p key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label || source.url}</a></p>)}</details>
+        <div className="bonding-sources"><p className="source-label">Sources</p>{member.sources.map((source, index) => <p key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label || source.url}</a></p>)}</div>
       </details></article>;
     })}</div>
   </section>;

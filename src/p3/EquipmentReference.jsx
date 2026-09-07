@@ -11,19 +11,22 @@ const cash = amount => Number.isFinite(amount) && amount > 0 ? `¥${amount.toLoc
 
 function MaterialSources({ material, showSpoilers, onRecipe }) {
   const locations = equipment.materials[material.name] || [];
+  const availableKinds = Object.entries(locationKinds).filter(([kind]) => locations.some(location => location.kind === kind));
+  const [selectedKind, setSelectedKind] = useState(availableKinds[0]?.[0] || '');
   return <details className="material-sources"><summary><strong>{material.name} ×{material.quantity}</strong> · Where to get it</summary>
     {!locations.length && <p>No acquisition location is recorded for this material.</p>}
-    {Object.entries(locationKinds).map(([kind, title]) => {
+    {availableKinds.length > 1 && <label className="material-kind">Source type for {material.name}<select value={selectedKind} onChange={event => setSelectedKind(event.target.value)}>{availableKinds.map(([kind, title]) => <option key={kind} value={kind}>{title}</option>)}</select></label>}
+    {availableKinds.filter(([kind]) => kind === selectedKind).map(([kind, title]) => {
       const entries = locations.filter(location => location.kind === kind);
       if (!entries.length) return null;
       const sources = [...new Set(entries.flatMap(entry => entry.sourceIds))].map(id => equipment.sources[id]).filter(Boolean);
-      return <details key={kind} className="material-location-group"><summary>{title} · {entries.length} listed {entries.length === 1 ? 'location' : 'locations'}</summary><ul>{entries.map((location, index) => <li key={`${kind}-${index}`}>
+      return <section key={kind} className="material-location-group"><h5>{title} · {entries.length} listed {entries.length === 1 ? 'location' : 'locations'}</h5><ul>{entries.map((location, index) => <li key={`${kind}-${index}`}>
         <strong>{kind === 'heart' && !showSpoilers ? 'Persona name hidden' : kind === 'fixed' && location.spoiler && !showSpoilers ? 'Event or character reward hidden' : location.location}</strong>
         {location.name && <span> · {showSpoilers ? location.name : 'Enemy name hidden'}</span>}
         <p>{location.detail}{location.date ? ` · From ${dateLabel(location.date)}` : ''}</p>
         {location.recipeId && <button type="button" onClick={() => onRecipe(location.recipeId)}>Show this exchange</button>}
         {location.requestNumber && <a href="#requests">Open Elizabeth requests</a>}
-      </li>)}</ul>{sources.length > 0 && <p className="equipment-source-links">{sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label}</a>)}</p>}</details>;
+      </li>)}</ul>{sources.length > 0 && <p className="equipment-source-links">{sources.map(source => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label}</a>)}</p>}</section>;
     })}
     <p className="small-note">Drops and random chest appearances are not guaranteed. A listed area does not establish when your party can reach it.</p>
   </details>;
@@ -42,10 +45,10 @@ function EntryDetails({ entry, showSpoilers, onRecipe }) {
     {entry.effects.length > 0 && <div className="equipment-effects"><h4>Effect</h4>{entry.effects.map(effect => <p key={effect}>{effect}</p>)}{entry.effectDetails && <p>{entry.effectDetails}</p>}</div>}
     {entry.effectUnknown && <p>The effect is not decoded in this reference.</p>}
     {entry.materials?.length > 0 && <section aria-label="Crafting materials"><h4>Materials</h4>{entry.materials.map(material => <MaterialSources key={material.itemId} material={material} showSpoilers={showSpoilers} onRecipe={onRecipe} />)}</section>}
-    {entry.fixedLocations?.length > 0 && <details className="equipment-buy-locations"><summary>Fixed locations & rewards</summary><ul>{entry.fixedLocations.map((location, index) => <li key={index}>{location.spoiler && !showSpoilers ? 'Event or character reward hidden. Turn on reference spoilers for the location.' : location.location} · {location.detail}</li>)}</ul></details>}
-    {lowest !== null && <details className="equipment-buy-locations"><summary>Lowest listed shop price: {cash(lowest)}</summary><ul>{cheapest.map(shop => <li key={shop.id}>{shop.summary} · {dateLabel(shop.date)}{shop.conditional ? ' · Additional condition applies' : ''}</li>)}</ul><p>Compares the catalog's cash prices before discounts. Later stock and shop access still apply.</p></details>}
+    {entry.fixedLocations?.length > 0 && <section className="equipment-buy-locations"><h4>Fixed locations & rewards</h4><ul>{entry.fixedLocations.map((location, index) => <li key={index}>{location.spoiler && !showSpoilers ? 'Event or character reward hidden. Turn on reference spoilers for the location.' : location.location} · {location.detail}</li>)}</ul></section>}
+    {lowest !== null && <section className="equipment-buy-locations"><h4>Lowest listed shop price: {cash(lowest)}</h4><ul>{cheapest.map(shop => <li key={shop.id}>{shop.summary} · {dateLabel(shop.date)}{shop.conditional ? ' · Additional condition applies' : ''}</li>)}</ul><p>Compares the catalog's cash prices before discounts. Later stock and shop access still apply.</p></section>}
     {entry.sectionId === 'antiques' && lowest === null && <p>No cash purchase location is listed in this shop catalog.</p>}
-    <details className="equipment-source-links"><summary>Sources</summary><ul>{entry.sources.map(source => <li key={`${source.url}-${source.label}`}><a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></details>
+    <section className="equipment-source-links"><h4>Sources</h4><ul>{entry.sources.map(source => <li key={`${source.url}-${source.label}`}><a href={source.url} target="_blank" rel="noreferrer">{source.label}</a></li>)}</ul></section>
   </div>;
 }
 

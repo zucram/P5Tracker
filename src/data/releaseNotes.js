@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.2",
+    date: "2026-09-07",
+    title: "Clearer Social Link guides",
+    description: "Reload now follows Royal's expandable row layout, with fewer nested controls.",
+    sections: [{ title: "Guide navigation", items: [
+      "Open a full-width Social Link guide on desktop or a compact accordion row on mobile.",
+      "Read next-rank answers beside planning notes and gifts. Relationship guidance and sources have their own tabs.",
+      "Read calendar instructions and reference sources directly, with fewer nested expanders.",
+      "Royal's confidant guides now use labelled Guide and Close buttons."
+    ] }]
+  },
+  {
     version: "2.6.1",
     date: "2026-09-07",
     title: "Reload dialogue layout fix",

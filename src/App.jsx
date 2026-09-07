@@ -1213,15 +1213,15 @@ export default function App() {
                     {/* Compact Header */}
                     <div 
                       onClick={() => toggleGuide(c.arcana)}
-                      className="p-3 flex items-center justify-between cursor-pointer active:bg-neutral-800"
+                      className="p-3 flex items-center justify-between gap-2 cursor-pointer active:bg-neutral-800"
                     >
-                      <div className="flex items-center gap-3">
+                      <div className="flex min-w-0 flex-1 items-center gap-2">
                         <div className={`w-8 h-8 rounded-full flex items-center justify-center font-black text-xs shrink-0 ${isMax ? 'bg-red-600 text-black' : 'bg-neutral-800 text-neutral-400'}`}>
                           {rank}
                         </div>
                         
                         {/* Rank Controls (Inline) */}
-                        <div className="flex items-center gap-1">
+                        <div className="flex shrink-0 items-center gap-1">
                            <button 
                              onClick={(e) => { e.stopPropagation(); updateRank(c.arcana, rank - 1); }} 
                              className="w-8 h-8 flex items-center justify-center bg-neutral-800 hover:bg-red-600 rounded text-neutral-400 hover:text-white font-bold text-lg active:scale-90 transition-transform"
@@ -1240,7 +1240,7 @@ export default function App() {
                       
                       <div className="flex items-center gap-2 shrink-0">
                         {gate && <AlertTriangle className="w-4 h-4 text-red-500 animate-pulse" />}
-                        <ChevronDown className={`w-4 h-4 text-neutral-600 transition-transform ${isExpanded ? 'rotate-180 text-red-500' : ''}`} />
+                        <button aria-label={`${isExpanded ? 'Close' : 'Open'} ${c.arcana} guide`} aria-expanded={!!isExpanded} onClick={event => { event.stopPropagation(); toggleGuide(c.arcana); }} className="text-xs font-bold text-neutral-300 px-2 py-2 rounded border border-neutral-700 hover:border-red-600">{isExpanded ? 'Close' : 'Guide'}</button>
                       </div>
                     </div>
 
@@ -1330,7 +1330,7 @@ export default function App() {
                                 return null;
                               })()}
                             </div>
-                            {CONFIDANT_INTERACTIONS[c.arcana] && <ChevronRight className={`w-4 h-4 text-neutral-700 transition-transform ${expandedGuides[c.arcana] ? 'rotate-90' : ''}`} />}
+                            {CONFIDANT_INTERACTIONS[c.arcana] && <button aria-label={`${expandedGuides[c.arcana] ? 'Close' : 'Open'} ${c.arcana} guide`} aria-expanded={!!expandedGuides[c.arcana]} onClick={event => { event.stopPropagation(); toggleGuide(c.arcana); }} className="text-xs font-bold text-neutral-300 px-3 py-2 rounded border border-neutral-700 hover:border-red-600">{expandedGuides[c.arcana] ? 'Close' : 'Guide'}</button>}
                           </div>
                         </td>
                         <td className="p-8 flex justify-center">
@@ -1998,7 +1998,7 @@ export default function App() {
         </section>
         {/* Footer */}
         <div className="mt-20 pt-10 border-t border-neutral-800 text-center opacity-60 hover:opacity-100 transition-opacity">
-          <p className="text-[10px] tracking-[0.2em] text-neutral-500 mb-4 flex items-center justify-center gap-2">
+          <p className="text-[10px] tracking-[0.2em] text-neutral-500 mb-4 flex flex-wrap items-center justify-center gap-2">
             <span>v{APP_VERSION}</span>
             <span>•</span>
             <button onClick={() => { setChangelogFullHistory(true); setShowChangelog(true); trackEvent('changelog-open'); }} className="hover:text-white underline decoration-red-600 underline-offset-4 transition-colors font-bold tracking-widest uppercase">What's New</button>

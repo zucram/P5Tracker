@@ -16,9 +16,8 @@ function TaskRow({ task, state, toggle }) {
   return <article className={`task-row ${done ? 'is-done' : ''}`}>
     <input id={`task-${task.id}`} type="checkbox" checked={done} onChange={() => toggle(task)} aria-label={`Complete: ${title}`} />
     <div className="task-body"><label htmlFor={`task-${task.id}`}><span className="task-date">{task.date && dateLabel(task.date)}{task.end && task.end !== task.date && ` to ${dateLabel(task.end)}`}</span>{title}</label>
-      {['request', 'rescue'].includes(task.category) && <p>{task.detail}</p>}
       {task.uncertain && <span className="task-meta">Timing or requirement needs checking</span>}
-      {task.detail && <details><summary>{hideName ? 'Reveal character and steps' : 'Details & source'}</summary>{hideName && <p><strong>{task.title}</strong></p>}<p>{task.detail}</p>{task.sourceUrl && <a href={task.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide{task.evidenceStatus === 'single-source' ? ' · one source' : ''}</a>}</details>}
+      {task.detail && (hideName ? <details><summary>Reveal character and steps</summary><p><strong>{task.title}</strong></p><p>{task.detail}</p>{task.sourceUrl && <a href={task.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide</a>}</details> : <>{!/^Class answer:|^Exam answer:/.test(task.title) && <p>{task.detail}</p>}{task.sourceUrl && <a href={task.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide</a>}</>)}
     </div>
   </article>;
 }

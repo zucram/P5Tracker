@@ -28,7 +28,7 @@ function EnemyDetail({ enemy }) {
     <p className="small-note">This matchup advice follows the listed affinities. Skills and battle conditions can change them. Base power is not the final damage number.</p>
     <h4>Skills to prepare for</h4><SkillList skills={enemy.skills} />
     {enemy.ailments && <p>Ailment responses: {['Charm', 'Poison', 'Distress', 'Confuse', 'Fear', 'Rage'].map((name, i) => `${name}: ${enemy.ailments[i] === 'n' ? 'null' : enemy.ailments[i] === 'v' ? 'susceptible' : 'not decoded'}`).join(' · ')}.</p>}
-    {!!enemy.dodds && <details><summary>Possible drops</summary><ul>{Object.entries(enemy.dodds).map(([name, chance]) => <li key={name}>{name} · {chance}% listed drop chance</li>)}</ul></details>}
+    {!!enemy.dodds && <section><h4>Possible drops</h4><ul>{Object.entries(enemy.dodds).map(([name, chance]) => <li key={name}>{name} · {chance}% listed drop chance</li>)}</ul></section>}
     <a href={`${SOURCE_URL}/enemy-data.json`} target="_blank" rel="noreferrer">Enemy data source</a>
   </div>;
 }
