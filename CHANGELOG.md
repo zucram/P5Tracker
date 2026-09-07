@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.12 — 2026-09-07
+
+- Correct reviewed Royal Persona affinities, combat notes, Jazz Jin reminders and Speed Reader guidance.
+- Open the Royal fusion calculator and current walkthrough URL.
+- Replace obsolete coming-soon entries with the available Reload tracker.
+- Preserve existing calendar task IDs and add January 29 Spell Master.
+
+
 ## 2.6.11 — 2026-09-07
 
 - Correct confidant warning logic and check both of Akechi's rank-3 stat requirements.

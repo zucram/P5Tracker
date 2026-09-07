@@ -209,9 +209,9 @@ const BASE_APP_DATA = {
         palaceDeadlineTask('jun_pal_dead'),
         { id: 'july_exams', text: '7/13-7/16: Finals; results also depend on Knowledge', isMissable: true },
         { id: 'july_kawakami_10', text: 'CRITICAL: Reach Kawakami Rank 10 before 7/24', isMissable: true },
-        { id: 'july_speed_reading', text: '7/25: Go to Jinbocho Bookstore for Speed Reading', isMissable: true },
+        { id: 'july_speed_reading', text: 'Strategy: Read Speed Reader from the Shujin library to read more chapters per session', isMissable: true },
         { id: 'pal4_start', text: 'Strategy: Begin Futaba Palace Infiltration', isMissable: true },
-        { id: 'j1', text: 'Borrow "Speed Reading" from Shujin Library (7/1)', isMissable: true },
+        { id: 'j1', text: '7/1: Borrow "Speed Reader" from Shujin Library', isMissable: true },
         { id: 'j2', text: '7/11: Trader Sakai: Trade Soothing Soba for Koedo Sword', isMissable: true },
         { id: 'j3', text: '7/24: Last day to borrow school books before summer', isMissable: true },
         { id: 'j4', text: '7/26: Trader Sakai: Trade MRE Ration for Factorization Study Method', isMissable: true },
@@ -229,8 +229,8 @@ const BASE_APP_DATA = {
       tasks: [
         palaceDeadlineTask('pal4_secure'),
         palaceDeadlineTask('pal4_card'),
-        { id: 'a1', text: '8/14 Jazz Jin: Matarukaja (Team Offense)', isMissable: true },
-        { id: 'a2', text: '8/28 Jazz Jin: Marakukaja (Team Defense)', isMissable: true },
+        { id: 'a1', text: '8/14 Jazz Jin: Marakunda (lower enemy Defense)', isMissable: true },
+        { id: 'a2', text: '8/28 Jazz Jin: Masukunda (lower enemy Accuracy/Evasion)', isMissable: true },
         { id: 'a3', text: 'Strategy: Clear Palace early (Early Aug) to maximize free time', isMissable: true },
         { id: 'aug_stats', text: 'Strategy: Max out Social Stats using Chihaya Luck Reading', isMissable: true },
         { id: 'aug_mementos', text: 'Mementos: Clear piled-up requests (Batch 3-5 at once)' },
@@ -249,7 +249,7 @@ const BASE_APP_DATA = {
       palace: 'Spaceport (Okumura)',
       tasks: [
         { id: 'pal5_strat', text: 'Strategy: Secure Route (Okumura) ASAP', isMissable: true },
-        { id: 'sep_okumura_fix', text: 'Boss Strategy: If struggling, switch to MERCILESS', isMissable: true },
+        { id: 'sep_okumura_fix', text: 'Boss Strategy: Build Baton Pass chains with weakness hits; changing difficulty is optional', isMissable: true },
         { id: 'sep_maruki_5', text: '9/20: Maruki\'s rank lock lifts. Priority 1.' },
         { id: 'sep_unlock_tower', text: '9/4: Winners Don\'t Use Cheats request becomes available; follow it to meet Shinya' },
         { id: 's1', text: '9/4 Jazz Jin: Charge (Essential for Phys)', isMissable: true },
@@ -324,8 +324,9 @@ const BASE_APP_DATA = {
         { id: 'jan_pal_strat', text: 'Strategy: Secure Route (Maruki) ASAP to focus on Tier 3 Awakenings', isMissable: true },
         { id: 'jan_awakenings', text: 'Focus: Dedicate afternoons to Tier 3 Personas', isMissable: true },
         { id: 'j1_jan', text: 'Talk to friends for 3rd Tier Personas' },
-        { id: 'j2_jan', text: '1/22 Jazz Jin: Ali Dance', isMissable: true },
-        { id: 'j3_jan', text: '1/29 Jazz Jin: Arms Master', isMissable: true },
+        { id: 'j2_jan', text: '1/15 Jazz Jin: Ali Dance', isMissable: true },
+        { id: 'j3_jan', text: '1/22 Jazz Jin: Arms Master', isMissable: true },
+        { id: 'jan_jazz_spell_master', text: '1/29 Jazz Jin: Spell Master', isMissable: true },
         { id: 'cw_opp_36', text: '1/14 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_37', text: '1/19 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_38', text: '1/23 Crossword puzzle at LeBlanc', isMissable: true },
@@ -410,14 +411,14 @@ const BASE_APP_DATA = {
       id: 'pal_kamo',
       name: 'Castle of Lust (Kamoshida)',
       lvl: '10-12',
-      threat: 'Captain Kidd (Phys/Elec)',
+      threat: 'Shadow Kamoshida (Physical attacks)',
       seeds: [
         { id: 'pks1', name: 'Red Lust Seed', text: 'East Building Annex. Mona will guide you.' },
         { id: 'pks2', name: 'Green Lust Seed', text: 'Castle Roof tower. Grapple through first window.' },
         { id: 'pks3', name: 'Blue Lust Seed', text: 'Secret room elevator. Pull lever behind painting.' }
       ],
       personas: [
-        { id: 'p_Berith', name: 'Berith', text: 'Resistance to Phys is vital.' },
+        { id: 'p_Berith', name: 'Berith', text: 'Nullifies Gun and resists Fire; it does not resist Physical.' },
         { id: 'p_Agathion', name: 'Agathion', text: 'Early source of Elec for weaknesses.' }
       ],
       tips: 'Abuse cover to ambush. Use physical skills to save SP.',
@@ -435,7 +436,7 @@ const BASE_APP_DATA = {
       ],
       personas: [
         { id: 'p_Jack Frost', name: 'Jack Frost', text: 'Mabufu for clones.' },
-        { id: 'p_Matador', name: 'Matador', text: 'Magaru for clones.' }
+        { id: 'p_Matador', name: 'Matador', text: 'Innate Psy attacks; use a different Persona or inheritance for Wind.' }
       ],
       tips: 'Bring all 4 basic elements. The boss is an elemental DPS check.',
       monthId: 'may'
@@ -453,7 +454,7 @@ const BASE_APP_DATA = {
       ],
       personas: [
         { id: 'p_White Rider', name: 'White Rider', text: 'Triple Down is extremely powerful.' },
-        { id: 'p_Take-Minakata', name: 'Take-Minakata', text: 'Resists Elec/Phys.' }
+        { id: 'p_Take-Minakata', name: 'Take-Minakata', text: 'Resists Elec and Curse; weak to Psy. Physical damage is neutral.' }
       ],
       tips: 'Throw expensive items at Piggytron to stall its ultimate attack.',
       monthId: 'june'
@@ -470,7 +471,7 @@ const BASE_APP_DATA = {
         { id: 'p1s3', name: 'Blue Will Seed', text: 'Chamber of Sanctuary. On floating platforms, grapple up to a statue.' }
       ],
       personas: [
-        { id: 'p_Isis', name: 'Isis', text: 'Nulls Bless/Curse from Anubis.' },
+        { id: 'p_Isis', name: 'Isis', text: 'Nullifies Bless, but Curse damage is neutral. Watch for Curse instant-kill attacks.' },
         { id: 'p_Thoth', name: 'Thoth', text: 'Early source of Nuclear damage.' }
       ],
       tips: 'Cure Despair immediately. If it lasts 3 turns, you die instantly.',
@@ -490,7 +491,7 @@ const BASE_APP_DATA = {
       personas: [
         { id: 'p_Girimehkala', name: 'Girimehkala', text: 'REPEL PHYSICAL. Makes the boss mobs much easier.' }
       ],
-      tips: 'SWITCH TO MERCILESS. Weakness damage becomes 3x. Use items for Baton Passes.',
+      tips: 'Use single-target weakness hits and items to build Baton Pass chains. Merciless is optional and increases weakness damage for both sides.',
       monthId: 'september'
     },
     {
@@ -522,9 +523,9 @@ const BASE_APP_DATA = {
         { id: 'p4s3', name: 'Blue Will Seed', text: 'Side Deck. Climb up the side of the ship and grapple backward.' }
       ],
       personas: [
-        { id: 'p_Trumpeter', name: 'Trumpeter', text: 'Must have Debilitate to reduce boss stats.' }
+        { id: 'p_Trumpeter', name: 'Trumpeter', text: 'Learns Debilitate at level 65; a useful option for reducing boss stats.' }
       ],
-      tips: 'Use the Ring of Pride for free Charge. Debilitate the boss every 3 turns.',
+      tips: 'Use attack debuffs and keep healing available. Trumpeter learns Debilitate at level 65; the Ring of Pride is an upgrade obtained after this Palace.',
       monthId: 'november'
     },
     {
@@ -541,20 +542,20 @@ const BASE_APP_DATA = {
         { id: 'p_Yoshitsune', name: 'Yoshitsune', text: 'Hassou Tobi is the strongest physical move.' },
         { id: 'p_Maria', name: 'Maria', text: 'Best healer for endurance fight.' }
       ],
-      tips: 'Max Baton Pass required. Break tentacles with elements to reach the boss.',
+      tips: 'Build Baton Pass chains through tentacle weaknesses. Higher Baton Pass ranks help but are not an unlock requirement.',
       monthId: 'january'
     }
   ],
   tips: {
     daily: [
       { text: 'Feed Plant (Room)', note: 'Free Kindness. Use Bio Nutrients from Shibuya/Shinjuku.', icon: 'leaf' },
-      { text: 'Crossword (Leblanc)', note: 'Evenings. Free +1 Knowledge. Check table near stairs.', icon: 'book' },
+      { text: 'Crossword (Leblanc)', note: 'Evenings. Raises Knowledge without advancing time. Check the table near the stairs.', icon: 'book' },
       { text: 'Vending Machines', note: 'Buy SP drinks (Arginade/Water of Rebirth). Restock weekly.', icon: 'zap' },
-      { text: 'Matching Persona', note: 'ALWAYS equip a Persona of the same Arcana before hanging out.', icon: 'users' },
+      { text: 'Matching Persona', note: 'Carry a matching-Arcana Persona for most confidant hangouts. It does not need to be equipped.', icon: 'users' },
       { text: 'Chihaya Affinity', note: 'Use "Affinity Reading" to boost Confidant points without spending time.', icon: 'star' }
     ],
     weekly: [
-      { text: 'Sunday Aojiru', note: 'Underground Walkway. Costs 5000 yen. +1 Random Stat (no time spent).', icon: 'coffee' },
+      { text: 'Sunday Aojiru', note: 'Underground Walkway. Costs 5,000 yen and raises the stat associated with the current drink without advancing time.', icon: 'coffee' },
       { text: 'Yoshida (Sun)', note: 'Sunday nights ONLY. Station Square. Easy Charm/Money.', icon: 'sun' },
       { text: 'Home Shopping', note: 'Sundays on TV in Leblanc. Unique items/gifts.', icon: 'shopping-bag' },
       { text: 'Jazz Jin (Sun)', note: 'Kichijoji. Sunday evening drinks give specific skills to party members.', icon: 'music' }
@@ -568,7 +569,7 @@ const BASE_APP_DATA = {
       { text: 'Mementos Farming', note: 'Wait for multiple requests. Use Ryuji Rank 7 Insta-kill on green enemies.', icon: 'car' },
       { text: 'Technical Rank', note: 'Play Billiards in Kichijoji. Rank 4 guarantees knockdown on technicals.', icon: 'target' },
       { text: 'Baton Pass', note: 'Play Darts in Kichijoji. Rank 3 restores SP and boosts damage massively.', icon: 'arrow-up-right' },
-      { text: 'SP Adhesives', note: 'Buy from Takemi (Death Rank 5). 7 SP/turn is infinite sustain.', icon: 'battery-charging' }
+      { text: 'SP Adhesives', note: 'SP Adhesive 3 restores 7 SP per turn in battle. Available at Death Rank 5, with a discount at Rank 7.', icon: 'battery-charging' }
     ]
   }
 };

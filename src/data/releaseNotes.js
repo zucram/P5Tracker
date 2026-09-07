@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.12",
+    date: "2026-09-07",
+    title: "Royal reference corrections",
+    description: "Correct Jazz Jin reminders, combat notes and resource links.",
+    sections: [{ title: "Reference", items: [
+      "August Jazz Jin skills and January dates are corrected; January 29 now includes Spell Master.",
+      "Palace notes correct Persona resistances, skill availability and the Ring of Pride's timing.",
+      "The fusion calculator opens its Royal version. Resources now link to the available Reload tracker.",
+      "Existing calendar checkmarks are preserved."
+    ] }]
+  },
+  {
     version: "2.6.11",
     date: "2026-09-07",
     title: "Correct confidant stat checks",

@@ -7,7 +7,8 @@ export const PERSONA_DATA = {
     { name: "Orlov", arcana: "Strength", lvl: 30, location: "Sae's Palace", weakness: "Curse", tips: "Use Maeiga." },
     { name: "Emperor's Amulet", arcana: "Hanged", lvl: 35, location: "Shido's Palace", weakness: "Elec", tips: "Use Mazionga." },
     { name: "Hope Diamond", arcana: "Death", lvl: 40, location: "Mementos (Depths)", weakness: "Ice", tips: "Rare spawn in Depths." },
-    { name: "Crystal Skull", arcana: "Fool", lvl: 50, location: "Mementos (Qliphoth)", weakness: "Wind", tips: "Rare spawn in Qliphoth." }
+    { name: "Crystal Skull", arcana: "Fool", lvl: 50, location: "Mementos (Qliphoth)", weakness: "Wind", tips: "Rare spawn in Qliphoth." },
+    { name: "Orichalcum", arcana: "Faith", lvl: 60, location: "Third-semester Palace", weakness: "Bless", tips: "Use Bless damage such as Kouga. Exclusive to Royal." }
   ],
   registry: [
   {

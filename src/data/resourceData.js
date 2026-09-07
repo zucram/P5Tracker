@@ -8,16 +8,16 @@ export const RESOURCE_DATA = [
     items: [
       {
         title: 'Chinhodado Fusion Calculator',
-        desc: 'The undisputed gold standard. Handles Royal DLC and Treasure Demon logic correctly.',
+        desc: 'Royal fusion recipes with settings for DLC Personas and Treasure Demon combinations.',
         format: 'tool',
-        url: 'https://chinhodado.github.io/persona5_calculator/',
+        url: 'https://chinhodado.github.io/persona5_calculator/indexRoyal.html',
         isGold: true
       },
       {
         title: 'aqiu384 Database',
-        desc: 'Superior for reverse-lookups on skills and item drops. Dense tabular data.',
+        desc: 'A detailed Royal walkthrough covering confidant events, activities and conditions.',
         format: 'tool',
-        url: 'https://aqiu384.github.io/p5r-walkthrough/walkthrough'
+        url: 'https://aqiu384.github.io/megaten-database/p5r/ace-walkthrough'
       },
       { 
         title: 'Technical Damage Mechanics', 
@@ -92,7 +92,7 @@ export const RESOURCE_DATA = [
       },
       {
         title: 'Technical Rank Progression',
-        desc: 'Video guide on how to unlock the hidden Rank 4/5 Technical damage tiers.',
+        desc: 'Guide to improving Technical damage through billiards and reaching Rank 4.',
         format: 'video',
         url: 'https://www.youtube.com/watch?v=kfYC0aAliw4'
       }
@@ -174,32 +174,17 @@ export const RESOURCE_DATA = [
     ]
   },
   {
-    id: 'future',
-    title: 'Future Operations',
+    id: 'games',
+    title: 'More trackers',
     icon: 'Zap',
     color: 'text-neutral-400',
-    description: 'Planned intelligence modules for other cognitive explorations.',
+    description: 'Free progress tracking for another Persona playthrough.',
     items: [
       {
         title: 'Persona 3 Reload Tracker',
-        desc: 'Strategic module for the SEES operation in Tatsumi Port Island. Coming soon.',
-        format: 'guide',
-        url: 'https://github.com/zucram/P5Tracker',
-        isLocked: true
-      },
-      {
-        title: 'Metaphor: ReFantazio Tracker',
-        desc: 'Tactical assistance for the United Kingdom of Euchronia. In development.',
-        format: 'guide',
-        url: 'https://github.com/zucram/P5Tracker',
-        isLocked: true
-      },
-      {
-        title: 'Persona 4 Remake Tracker',
-        desc: 'Targeting the Inaba investigation team protocols upon release.',
-        format: 'guide',
-        url: 'https://github.com/zucram/P5Tracker',
-        isLocked: true
+        desc: 'Track the main campaign, Social Links, Tartarus and requests. Available in beta.',
+        format: 'tool',
+        url: 'https://zucram.github.io/P5Tracker/p3/'
       }
     ]
   }

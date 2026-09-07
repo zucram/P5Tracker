@@ -150,3 +150,12 @@ The earlier note corrections exposed a separate outdated source in `socialStats.
 Mobile cards display missing stats without expansion. Desktop rank buttons have accessible names. A shared rank-guide component handles both dialogue arrays and string entries. This restores Strength requests and automatic story-rank descriptions that previously displayed as missing data. It also shows an explicit completed state at rank 10. Strength's rank-6/rank-7 requests and rank-9 skill spelling are corrected.
 
 All 106 automated tests passed. Isolated mobile and desktop Chromium checks verified the corrected warnings, live stat updates, Strength and automatic guides, rank persistence and unchanged Reload data. The changed modules pass targeted lint; Royal's remaining lint baseline is three legacy errors, with the prior memo dependency warning resolved.
+
+
+## Royal reference and navigation corrections in 2.6.12
+
+Reviewed combat notes now agree with the Royal Persona data source for the checked affinities and learned skills. Jazz Jin reminders correct two August skills and the January Sunday schedule; existing task IDs retain their checkmarks. Speed Reader and daily-activity notes remove original-game or overstated guidance. The source comparison and its limits are in [Royal content review](royal-content-review.md).
+
+Resources open the Royal fusion calculator and current walkthrough. The Reload resource card now opens the available beta tracker; speculative future-product cards were removed. The crossword guide's tracker link now opens Briefing, where Crossword Answers actually lives, and its instructions match that location.
+
+All 108 automated tests passed. The production build checks all 15 public pages. Isolated browser verification covers corrected reference destinations, the crossword-to-tracker path, visible combat notes and retained calendar progress. The separate Treasure Demon data list is complete but is not yet a displayed interface; no new page is claimed for it.
