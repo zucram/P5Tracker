@@ -4,7 +4,7 @@ P5 Tracker provides free Royal and Reload browser companions. The shared chooser
 
 ## Search pages
 
-Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, four Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
+Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, five Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
@@ -64,3 +64,16 @@ Version 2.4.2 makes published guides accessible above the app content. Briefing 
 ## Usage events
 
 Version 2.4.3 adds contextual guide-link events, manual progress and first-use events, save-transfer outcomes, and support-card impressions. Existing page views and event names remain intact. See [event definitions and reporting limits](analytics.md) before comparing counts. No new payload includes saves, ranks or text input. Analytics exceptions and rejected promises must not interrupt the app.
+
+
+## Searchable guides in 2.6.3
+
+`/guides/persona-5-royal-crossword-answers/` renders the existing Royal crossword dataset as 38 searchable entries. The generator preserves every `cw_ans_` save ID. Source review confirmed the answer order against RPG Site on September 7, 2026; it did not add calendar-date assignments or optional grid words. Regenerate it with `npm run build:guides`.
+
+Four Reload pages use the same progressive lookup controls for school dates, Social Links, requests and Personas. Number-only request and crossword searches use the entry number, so request 1 does not match request 2's title, Old Document 1. General searches still match title words. Request 101 keeps its spoiler title hidden in search metadata.
+
+Index and fragment links reveal their target and open answer disclosures. The controls never write saves or query parameters. Each page remains readable when JavaScript fails. `docs/analytics.md` defines the single lookup-use event.
+
+`npm run build` now runs `scripts/check-site.mjs` after Vite. It checks every sitemap entry for unique titles and descriptions, matching canonicals, one HTML H1, valid JSON-LD, internal resource paths, guide fragments and incoming links. It validates the production directory under `/P5Tracker/`; it does not establish search indexing or rankings.
+
+Browser review used isolated Chromium with Umami blocked and stubbed. All five lookup pages fit 320, 390 and 1280px widths. Tests covered exact numbers, clue search, zero results, reset, filtered index navigation, direct rank/request fragments and no-JavaScript crossword coverage. Shared authenticated browser access was unavailable, so post-launch analytics and receipts remain unverified.

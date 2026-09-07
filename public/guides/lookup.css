@@ -1,0 +1,10 @@
+.lookup{margin:24px 0;padding:20px;border:1px solid #59616e;border-radius:12px;background:#ffffff06}
+.lookup label{display:block;font-size:1rem;font-weight:650}
+.lookup input,.lookup select{display:block;box-sizing:border-box;width:100%;min-height:44px;margin:8px 0 16px;padding:10px 12px;background:#13171e;color:#fff;border:1px solid #87909c;border-radius:6px;font:inherit}
+.lookup button{min-height:44px;padding:8px 14px;background:#272e38;color:#fff;border:1px solid #87909c;border-radius:6px;font:inherit;cursor:pointer}
+.lookup :focus-visible{outline:3px solid #fff;outline-offset:3px}
+.lookup-note{font-size:.85rem;color:#bac0cb}
+[data-lookup-empty]{padding:16px;border:1px solid #87909c;border-radius:8px}
+[data-lookup-item]{scroll-margin-top:20px}
+[hidden]{display:none!important}
+@media(max-width:480px){.lookup{padding:16px}}

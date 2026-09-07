@@ -75,7 +75,7 @@ ${coverage}
 <noscript><p>All listed answers are available below. Use the month links or your browser's Find command to look up a date.</p></noscript>
 ${sections}
 <section aria-labelledby="sources"><h2 id="sources">Sources and coverage</h2><p>Entries list the answer choices, without question text or story walkthroughs. Multiple choices on the same date appear in selection order.</p>${sourceLinks ? `<ul>${sourceLinks}</ul>` : ''}${coverageDetails}${data.reviewedAt ? `<p>Last reviewed: ${escape(data.reviewedAt)}.</p>` : ''}</section>
-<nav class="related" aria-label="Related guides"><a href="../monthly-checklist/">Plan your month with the Royal checklist</a><a href="../third-semester/">Check the third-semester requirement</a></nav>
+<nav class="related" aria-label="Related guides"><a href="../persona-5-royal-crossword-answers/">Find a Leblanc crossword answer</a><a href="../monthly-checklist/">Plan your month with the Royal checklist</a><a href="../third-semester/">Check the third-semester requirement</a></nav>
 <footer><p>Unofficial fan tool for Persona 5 Royal. Not affiliated with ATLUS or SEGA.</p><p>We use Umami to measure page visits, filter use, and tracker link clicks. Search text stays on this page and is not sent to analytics.</p></footer>
 </main></body></html>\n`;
 if (process.argv.includes('--check')) {

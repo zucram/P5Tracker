@@ -3,6 +3,7 @@ import { trackEvent } from '../lib/analytics';
 const GUIDES = [
   { id: 'persona-3-reload', path: 'p3/', title: 'Persona 3 Reload tracker', description: 'Plan your month with Social Links and missable deadlines.' },
   { id: 'school-answers', path: 'guides/school-answers/', title: 'School and exam answers', description: 'Find Royal answers by date, month or exam.' },
+  { id: 'persona-5-royal-crossword-answers', path: 'guides/persona-5-royal-crossword-answers/', title: 'Crossword answers', description: 'Search all 38 Leblanc puzzles by clue or number.' },
   { id: 'third-semester', path: 'guides/third-semester/', title: 'Maruki deadline check', description: 'Check the rank and deadline needed for the third semester.' },
   { id: 'monthly-checklist', path: 'guides/monthly-checklist/', title: 'Monthly planning guide', description: 'Use monthly goals to plan your own playthrough.' },
   { id: 'confidant-tracker', path: 'guides/confidant-tracker/', title: 'Confidant tracking guide', description: 'Record ranks, check stat requirements and back up progress.' },
@@ -11,7 +12,7 @@ const GUIDES = [
 
 const CONTEXT_GUIDES = {
   cheatsheet: ['monthly-checklist', 'school-answers', 'third-semester'],
-  months: ['school-answers', 'monthly-checklist'],
+  months: ['school-answers', 'persona-5-royal-crossword-answers', 'monthly-checklist'],
   confidants: ['third-semester', 'confidant-tracker'],
 };
 

@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { lookupForm } from './guide-helpers.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const [school, activities] = await Promise.all(['school-answers', 'activities'].map(async name =>
@@ -32,9 +33,9 @@ const monthSections = months.map(([month, name]) => {
     const answer = entry.kind === 'exam-check'
       ? `Automatic answer. ${entry.requiredAcademics ? `Top marks require Academics ${esc(entry.requiredAcademics)} and all exam answers correct.` : 'No choice to make.'} ${esc(entry.note || '')}`
       : entry.answers.map(esc).join('<br>');
-    return `<tr id="${esc(entry.id)}"><th scope="row">${esc(name)} ${esc(Number(entry.date.slice(3)))}</th><td>${esc(answerKind[entry.kind] || entry.kind)}<br>${esc(entry.topic)}</td><td>${answer}</td><td>${sources(entry)}</td></tr>`;
+    return `<tr id="${esc(entry.id)}" data-lookup-item data-lookup-category="${entry.kind === 'classroom' ? 'classroom' : 'exam'}" data-lookup-text="${esc(`${name} ${Number(entry.date.slice(3))} ${entry.date} ${entry.topic} ${entry.answers?.join(' ') || 'Automatic exam day'}`)}"><th scope="row">${esc(name)} ${esc(Number(entry.date.slice(3)))}</th><td>${esc(answerKind[entry.kind] || entry.kind)}<br>${esc(entry.topic)}</td><td>${answer}</td><td>${sources(entry)}</td></tr>`;
   });
-  return `<section aria-labelledby="${name.toLowerCase()}"><h2 id="${name.toLowerCase()}">${name} answers</h2>${entries.length ? table(`${name} classroom and exam answers`, ['Date', 'Question topic', 'Answer', 'Sources'], rows) : '<p>August has no classroom questions.</p>'}</section>`;
+  return `<section aria-labelledby="${name.toLowerCase()}" data-lookup-group><h2 id="${name.toLowerCase()}">${name} answers</h2>${entries.length ? table(`${name} classroom and exam answers`, ['Date', 'Question topic', 'Answer', 'Sources'], rows) : '<p>August has no classroom questions.</p>'}</section>`;
 }).join('\n');
 const activityRows = activities.activities.map(entry => {
   const days = entry.days.length === 7 ? 'Every day' : entry.days.map(day => weekdayNames[day - 1]).join(', ');
@@ -47,7 +48,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: tit
 const tracker = `<a class="cta" href="../../p3/#calendar" data-umami-event="guide_open_tracker" data-umami-event-guide="${slug}">Open the Reload monthly calendar</a>`;
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(title)} | P5 Tracker</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" href="../../favicon.svg"><link rel="stylesheet" href="../guide.css"><link rel="stylesheet" href="../p3-guide.css">
+<title>${esc(title)} | P5 Tracker</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${canonical}"><link rel="icon" href="../../favicon.svg"><link rel="stylesheet" href="../guide.css"><link rel="stylesheet" href="../p3-guide.css"><link rel="stylesheet" href="../lookup.css"><script type="module" src="../lookup-ui.js"></script>
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="P5 Tracker"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script></head>
@@ -55,6 +56,7 @@ const html = `<!doctype html>
 <h1>${esc(title)}</h1><p>English classroom and exam answers for the Persona 3 Reload main campaign, arranged by date. Multiple answers in one row appear in the order they are asked. Episode Aigis is outside this guide's scope.</p>
 <p>${tracker}</p><nav aria-label="Jump to month">${months.map(([, name]) => `<a href="#${name.toLowerCase()}">${name}</a>`).join(' · ')} · <a href="#activities">Social-stat activities</a></nav>
 <p>Final exam days use an automatic answer. Their rows show the Academics rank needed for top marks alongside correct answers on the earlier exam days.</p>
+${lookupForm({ guide: slug, label: 'Find a school date, topic or answer', placeholder: 'For example, July 14 or spiral', noun: 'dates', options: [['classroom', 'Classroom'], ['exam', 'Exams, including automatic final days']], categoryLabel: 'Question type' })}
 ${monthSections}
 <section aria-labelledby="activities"><h2 id="activities">Academics, Charm and Courage activities</h2><p>These are repeatable activities with listed costs and usual schedules. Story events can override opening hours. Rewards are internal stat points, not the musical notes shown on screen.</p>${activityTable}</section>
 <section aria-labelledby="sources"><h2 id="sources">Sources and coverage</h2><p>Each row links to its reference. Question topics are short lookup labels; answers use the English choices. These tables list school answers and selected activities, not a complete daily route.</p><p>Social Link openings have separate rank, introduction and stat requirements. The <a href="../persona-3-reload-social-links/">Social Link guide</a> lists those requirements. The <a href="../persona-3-reload-deadlines/">deadline guide</a> covers rescues, Elizabeth requests and Linked Episodes.</p></section>

@@ -4,6 +4,12 @@ P5 Tracker uses Umami page views and feature events to measure discovery, use an
 
 Use the [post-launch agent guide](post-launch-agent-guide.md) for the review procedure. This document defines instrumentation. Actual account results and saved-report configuration stay in the private ledger.
 
+## Guide lookups in 2.6.3
+
+`guide_lookup_used` fires once per page load after a nonempty search or category filter returns results. Its only property is `guide`, the fixed page slug. It covers Royal crossword answers and Reload school answers, Social Link answers, Elizabeth requests and fusion reference pages. It sends no query, selected category, request number, date or save data. Clearing filters, opening a fragment and unsuccessful searches do not emit it. These are lookup interactions, not proof of tracker use or payment.
+
+The shared UI lives in `public/guides/lookup-ui.js`. All answers remain in the static HTML. Tests stub Umami and must not send production events.
+
 ## Reload events in 2.6.2
 
 Reload's `src/p3/App.jsx` helper adds `game: persona-3-reload` to these events:

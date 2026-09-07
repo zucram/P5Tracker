@@ -1,6 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## [2.6.3] - 2026-09-07
+
+- Add a searchable Royal crossword guide with all 38 existing clues and answers.
+- Add filters to Reload's school, Social Link, request and fusion guides. Numeric request searches select the request number.
+- Open linked answer disclosures and restore filtered destinations when following guide index links.
+- Validate sitemap pages, unique metadata, internal resources and guide fragments after every production build.
+
 
 ## [2.6.2] - 2026-09-07
 

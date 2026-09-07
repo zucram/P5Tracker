@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.3",
+    date: "2026-09-07",
+    title: "Find an answer faster",
+    description: "Searchable crossword answers for Royal and easier lookups in Reload's web guides.",
+    sections: [{ title: "Guides", items: [
+      "Find all 38 Royal crossword answers by clue or puzzle number in a guide that works without an account.",
+      "Filter Reload's school answers, Social Links, Elizabeth requests and Persona reference.",
+      "Open shared rank and request links directly, even after using a filter."
+    ] }]
+  },
+  {
     version: "2.6.2",
     date: "2026-09-07",
     title: "Clearer Social Link guides",
