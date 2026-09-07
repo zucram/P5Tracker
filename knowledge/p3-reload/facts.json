@@ -96,7 +96,7 @@
       "id": "le-junpei-3",
       "category": "linked-episode",
       "kind": "constraint",
-      "status": "corroborated",
+      "status": "disputed",
       "subject": "Junpei episode 3",
       "value": {
         "character": "junpei",
@@ -129,13 +129,24 @@
             "value.start",
             "value.end"
           ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "November13 Junpei3",
+          "supports": [
+            "notes"
+          ]
         }
       ],
       "spoiler": "character",
       "dependsOn": [
         "le-junpei-2"
       ],
-      "notes": "Prerequisites and specific available days still apply within this interval."
+      "notes": "Prerequisites and specific available days still apply within this interval. Use an early reminder only. Do not declare this episode or its successors permanently missed from the Nov11 boundary alone.",
+      "disputeIds": [
+        "junpei-three-end"
+      ]
     },
     {
       "id": "le-junpei-4",
@@ -364,7 +375,7 @@
       "id": "le-akihiko-4",
       "category": "linked-episode",
       "kind": "constraint",
-      "status": "corroborated",
+      "status": "disputed",
       "subject": "Akihiko episode 4",
       "value": {
         "character": "akihiko",
@@ -397,13 +408,24 @@
             "value.start",
             "value.end"
           ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "December26 Akihiko4",
+          "supports": [
+            "notes"
+          ]
         }
       ],
       "spoiler": "character",
       "dependsOn": [
         "le-akihiko-3"
       ],
-      "notes": "Prerequisites and specific available days still apply within this interval."
+      "notes": "Prerequisites and specific available days still apply within this interval. Do not show a definitive expired result on Dec23. Retain Dec22 as a cautious target with a discrepancy notice; inspect late December in game.",
+      "disputeIds": [
+        "akihiko-four-end"
+      ]
     },
     {
       "id": "le-akihiko-5",
@@ -936,8 +958,10 @@
         }
       ],
       "spoiler": "character",
-      "dependsOn": [],
-      "notes": "Prerequisites and specific available days still apply within this interval. Speak with Mitsuru to initiate this chain."
+      "dependsOn": [
+        "le-shinjiro-introduction"
+      ],
+      "notes": "Specific available days and the separate Mitsuru introduction still apply within this interval. An unchecked introduction is preparation to complete, not a ready episode meeting."
     },
     {
       "id": "le-shinjiro-2",
@@ -3096,7 +3120,7 @@
       "subject": "Priestess baseline availability",
       "value": {
         "link": "priestess",
-        "start": null,
+        "start": "06-19",
         "days": [
           "mon",
           "fri",
@@ -3112,14 +3136,21 @@
           "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
           "locator": "Availability table / priestess",
           "supports": [
-            "value.start",
             "value.days",
             "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "June19 Priestess opens",
+          "supports": [
+            "value.start"
           ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up. Opening still requires the introductions and gates in calendar-rules.json. It is not an automatic rank-up date.",
       "disputeIds": []
     },
     {
@@ -3308,7 +3339,7 @@
       "subject": "Justice baseline availability",
       "value": {
         "link": "justice",
-        "start": null,
+        "start": "05-07",
         "days": [
           "tue",
           "thu",
@@ -3324,14 +3355,21 @@
           "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
           "locator": "Availability table / justice",
           "supports": [
-            "value.start",
             "value.days",
             "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "May7 Justice opens after all introductory flags",
+          "supports": [
+            "value.start"
           ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up. Opening still requires the introductions and gates in calendar-rules.json. It is not an automatic rank-up date.",
       "disputeIds": []
     },
     {
@@ -3408,7 +3446,7 @@
       "subject": "Strength baseline availability",
       "value": {
         "link": "strength",
-        "start": null,
+        "start": "04-24",
         "days": [
           "wed",
           "sat"
@@ -3423,14 +3461,21 @@
           "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
           "locator": "Availability table / strength",
           "supports": [
-            "value.start",
             "value.days",
             "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "April23 Chariot1, April24 Chariot2 and Strength1",
+          "supports": [
+            "value.start"
           ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up. Opening still requires the introductions and gates in calendar-rules.json. It is not an automatic rank-up date.",
       "disputeIds": []
     },
     {
@@ -3475,7 +3520,7 @@
       "subject": "Temperance baseline availability",
       "value": {
         "link": "temperance",
-        "start": null,
+        "start": "05-06",
         "days": [
           "tue",
           "wed",
@@ -3491,21 +3536,28 @@
           "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
           "locator": "Availability table / temperance",
           "supports": [
-            "value.start",
             "value.days",
             "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "May6 Temperance opens",
+          "supports": [
+            "value.start"
           ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up. Opening still requires the introductions and gates in calendar-rules.json. It is not an automatic rank-up date.",
       "disputeIds": []
     },
     {
       "id": "sl-devil",
       "category": "social-link",
       "kind": "constraint",
-      "status": "disputed",
+      "status": "single-source",
       "subject": "Devil baseline availability",
       "value": {
         "link": "devil",
@@ -3516,7 +3568,8 @@
         ],
         "timeSlot": "evening",
         "dateMeaning": "baseline-pattern",
-        "exceptionsComplete": false
+        "exceptionsComplete": false,
+        "prerequisitesComplete": false
       },
       "evidence": [
         {
@@ -3531,10 +3584,8 @@
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
-      "disputeIds": [
-        "social-link-prerequisites"
-      ]
+      "notes": "Weekday pattern is separate from the unresolved introduction rank. Use this pattern for an established link or player-confirmed opening, subject to calendar exceptions. See intro-devil.",
+      "disputeIds": []
     },
     {
       "id": "sl-tower",
@@ -3609,7 +3660,7 @@
       "id": "sl-moon",
       "category": "social-link",
       "kind": "constraint",
-      "status": "disputed",
+      "status": "corroborated",
       "subject": "Moon baseline availability",
       "value": {
         "link": "moon",
@@ -3637,29 +3688,36 @@
             "value.days",
             "value.timeSlot"
           ]
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "May8 Moon introduction appears before Magician4 on the same afternoon",
+          "supports": [
+            "notes"
+          ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
-      "disputeIds": [
-        "social-link-prerequisites"
-      ]
+      "notes": "Magician3 introduction is supported by the GameFAQs requirement and Steam route order. Charm2, quiz and an Odd Morsel still apply. Rank1 cannot start during summer. Baseline weekdays are candidates, not complete availability.",
+      "disputeIds": []
     },
     {
       "id": "sl-sun",
       "category": "social-link",
       "kind": "constraint",
-      "status": "disputed",
+      "status": "single-source",
       "subject": "Sun baseline availability",
       "value": {
         "link": "sun",
-        "start": "08-23",
+        "start": null,
         "days": [
           "sun"
         ],
         "timeSlot": "daytime",
         "dateMeaning": "baseline-pattern",
-        "exceptionsComplete": false
+        "exceptionsComplete": false,
+        "prerequisitesComplete": false
       },
       "evidence": [
         {
@@ -3667,17 +3725,14 @@
           "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
           "locator": "Availability table / sun",
           "supports": [
-            "value.start",
             "value.days",
             "value.timeSlot"
           ]
         }
       ],
       "spoiler": "mechanic",
-      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
-      "disputeIds": [
-        "social-link-prerequisites"
-      ]
+      "notes": "Weekday pattern is separate from the unresolved introduction rank. Use this pattern for an established link or player-confirmed opening, subject to calendar exceptions. See intro-sun. Sources distinguish an August9 introduction from an August23 first rank. Confirmed players must not be blocked by an assumed earliest date.",
+      "disputeIds": []
     },
     {
       "id": "sl-aeon",
@@ -5389,6 +5444,166 @@
         "le-ryoji-2"
       ],
       "notes": "This is the invitation step. The linked event occurs on November 19."
+    },
+    {
+      "id": "gate-empress-exam",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Empress exam prerequisite",
+      "value": {
+        "link": "empress",
+        "requiresTopExamResult": true,
+        "start": "11-21",
+        "dateMeaning": "opening-with-prerequisites"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Empress Rank1 requirements",
+          "supports": [
+            "value.requiresTopExamResult"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Empress_Social_Link",
+          "locator": "Starting requirements",
+          "supports": [
+            "value.requiresTopExamResult",
+            "value.start"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "dependsOn": [
+        "gate-empress"
+      ],
+      "notes": "At least one top exam result and Academics6 are separate requirements. A rank already recorded by the player confirms this opening was completed."
+    },
+    {
+      "id": "intro-devil",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Devil introduction rank",
+      "value": {
+        "link": "devil",
+        "requiresLink": "hermit",
+        "requiredRank": null,
+        "candidateRanks": [
+          3,
+          4
+        ],
+        "prerequisitesComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Devil Rank1 and introduction",
+          "supports": [
+            "value.requiresLink",
+            "notes"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Devil_Social_Link",
+          "locator": "Starting requirements",
+          "supports": [
+            "value.requiresLink",
+            "notes"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "disputeIds": [
+        "social-link-prerequisites"
+      ],
+      "notes": "GameFAQs gives rank3; Neoseeker gives rank4. Player confirmation of the introduction or an existing link rank bypasses this unresolved numeric requirement."
+    },
+    {
+      "id": "intro-sun",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Sun introduction rank",
+      "value": {
+        "link": "sun",
+        "requiresLink": "hanged-man",
+        "requiredRank": null,
+        "candidateRanks": [
+          3,
+          4
+        ],
+        "prerequisitesComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Sun Rank1 and introduction",
+          "supports": [
+            "value.requiresLink",
+            "notes"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Sun_Social_Link",
+          "locator": "Starting requirements",
+          "supports": [
+            "value.requiresLink",
+            "notes"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "disputeIds": [
+        "social-link-prerequisites"
+      ],
+      "notes": "GameFAQs gives rank3; Neoseeker gives rank4. Player confirmation of the introduction or an existing link rank bypasses this unresolved numeric requirement."
+    },
+    {
+      "id": "le-shinjiro-introduction",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shinjiro first episode introduction",
+      "value": {
+        "character": "shinjiro",
+        "dateMeaning": "preparation",
+        "requiresConversation": "Mitsuru",
+        "conversationLocation": "Faculty hallway",
+        "meetingDaysKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 1: Faculty Hallway, Mitsuru, then Port Island Outskirts, Shinjiro",
+          "supports": [
+            "value.character",
+            "value.requiresConversation",
+            "value.conversationLocation"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "September 4: speak with Mitsuru before starting Shinjiro; she may be unavailable when he is available",
+          "supports": [
+            "value.character",
+            "value.requiresConversation",
+            "notes"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Speak with Mitsuru in the faculty hallway to introduce the first episode. Mark this preparation complete only after that conversation. Her availability can differ from the episode meeting days, so the episode outer window is not assigned to this conversation. The later form conversation after episode three is a separate prerequisite, le-shinjiro-setup."
     }
   ]
 }

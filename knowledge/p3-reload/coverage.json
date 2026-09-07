@@ -4,26 +4,26 @@
   "reviewedAt": "2026-09-07",
   "releaseReady": false,
   "sourceRecords": 21,
-  "factualAndPlanningRecords": 133,
+  "factualAndPlanningRecords": 137,
   "recordsByCategory": {
-    "linked-episode": 33,
+    "linked-episode": 34,
     "rescue": 20,
     "request": 17,
-    "social-link": 19,
+    "social-link": 22,
     "social-stat": 9,
     "calendar": 18,
     "tartarus": 9,
     "planning": 8
   },
   "recordsByStatus": {
-    "corroborated": 94,
-    "single-source": 30,
-    "disputed": 7,
+    "corroborated": 95,
+    "disputed": 8,
+    "single-source": 32,
     "editorial": 2
   },
   "disputesByStatus": {
     "resolved-for-planning": 9,
-    "open": 5
+    "open": 7
   },
   "months": [
     {

@@ -27,13 +27,13 @@ test('P3 state round trip and initial state isolation', () => {
 });
 
 test('P3 rejects malformed, oversized, and cross-game saves', () => {
-  for (const value of [null, [], {}, { checkedItems: {} }, { ...sample(), game: 'persona-5-royal' }, { ...sample(), schemaVersion: 2 }]) {
+  for (const value of [null, [], {}, { checkedItems: {} }, { ...sample(), game: 'persona-5-royal' }, { ...sample(), schemaVersion: 3 }]) {
     assert.throws(() => parseState(JSON.stringify(value)));
   }
   assert.throws(() => parseState('{broken'));
   assert.throws(() => parseState(' '.repeat(MAX_BYTES + 1)));
   assert.throws(() => parseState('é'.repeat(MAX_BYTES / 2 + 1)));
-  assert.throws(() => parseState(JSON.stringify(sample()).replace('"schemaVersion":1', '"__proto__":{},"schemaVersion":1')));
+  assert.throws(() => parseState(JSON.stringify(sample()).replace('"schemaVersion":2', '"__proto__":{},"schemaVersion":2')));
 });
 
 test('P3 rejects invalid ranges, IDs, and missing required state', () => {

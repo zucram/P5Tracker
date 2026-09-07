@@ -1,17 +1,17 @@
 # Persona 3 Reload knowledge review
 
-Reviewed 2026-09-07. This research supports the planned semi-day-by-day companion. The Reload prototype remains unpublished.
+Reviewed 2026-09-07. This research supports the Reload beta semi-daily companion. The complete knowledge base is not a verified perfect-run route; see p3-reload-release.md for the shipped subset and limits.
 
-The catalog contains 21 source records. The knowledge base contains 133 factual and planning records, with original briefs for all ten months from April through January. The catalog includes mirrors and partial guides; these are labelled and are not counted as independent confirmation.
+The catalog contains 21 source records. The knowledge base contains 137 factual and planning records, with original briefs for all ten months from April through January. The catalog includes mirrors and partial guides; these are labelled and are not counted as independent confirmation.
 
 ## What is collected
 
 | Category | Records |
 | --- | ---: |
-| linked-episode | 33 |
+| linked-episode | 34 |
 | rescue | 20 |
 | request | 17 |
-| social-link | 19 |
+| social-link | 22 |
 | social-stat | 9 |
 | calendar | 18 |
 | tartarus | 9 |
@@ -28,7 +28,7 @@ The source catalog covers GameFAQs, PowerPyx, PSNProfiles, Neoseeker, Steam, Gam
 | September rescue closing date | resolved-for-planning | Use 09-04. Two dedicated tables agree and full routes put a story operation on 09-05. No in-game save check performed. |
 | First November disappearance | resolved-for-planning | Use 11-28 for both records; both sources agree on 12-01 closing date. |
 | Club access versus Tower requirement | resolved-for-planning | Use Courage 4 for the link. Do not equate Club Escapade entry with starting Tower. |
-| Introductions and required link ranks | open | Do not encode these rank numbers as verified prerequisites until dedicated guides or in-game evidence resolve each case. |
+| Introductions and required link ranks | open | Moon introduction resolved at Magician3 by an explicit requirement plus Steam route order. Devil and Sun introductory rank numbers remain disputed; require player-confirmed introductions rather than infer eligibility from rank. |
 | Optional flower branch timing | open | Hold actionable timing; preserve the documented optional January21 time cost. Verify item purchase and handover dates separately. |
 | Later Max Safety Shoes purchase | open | Keep 7/12 as a useful opportunity, not a definitive miss deadline. Verify alternative stock and cost. |
 | Beach pickup month | resolved-for-planning | Use July20, consistent with the actual trip section and second source. |
@@ -39,6 +39,8 @@ The source catalog covers GameFAQs, PowerPyx, PSNProfiles, Neoseeker, Steam, Gam
 | May exam final day | resolved-for-planning | Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots. |
 | October exam final day | resolved-for-planning | Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots. |
 | December exam final day | resolved-for-planning | Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots. |
+| Akihiko fourth episode closing date | open | Do not show a definitive expired result on Dec23. Retain Dec22 as a cautious target with a discrepancy notice; inspect late December in game. |
+| Junpei third episode closing date | open | Use an early reminder only. Do not declare this episode or its successors permanently missed from the Nov11 boundary alone. |
 
 ## Monthly direction
 

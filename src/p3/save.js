@@ -1,3 +1,4 @@
+import knowledge from '../../knowledge/p3-reload/facts.json' with { type: 'json' };
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS } from './data.js';
 
 export const STORAGE_KEY = 'p3reload_state_v1';
@@ -6,14 +7,22 @@ export const MAX_BYTES = 1024 * 1024;
 const forbiddenKeys = new Set(['__proto__', 'prototype', 'constructor']);
 const hasControls = value => [...value].some(char => char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127);
 const linkIds = SOCIAL_LINKS.map(link => link.id);
+const manualLinkIds = SOCIAL_LINKS.filter(link => link.kind !== 'story').map(link => link.id);
+const eventIds = new Set(knowledge.facts.map(fact => fact.id));
+const monthNumbers = [4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
 const monthIds = MONTHS.map(month => month.id);
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 
 export function initialState() {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     game: 'persona-3-reload',
     month: 'april',
+    date: '04-22',
+    slot: 'daytime',
+    completedEvents: [],
+    unlockedLinks: [],
+    showEventNames: false,
     ranks: Object.fromEntries(linkIds.map(id => [id, 0])),
     stats: Object.fromEntries(SOCIAL_STATS.map(stat => [stat, 1])),
     goals: [],
@@ -31,13 +40,34 @@ function validateRanks(value, ids, min, max, label) {
   }
 }
 
+function validateIds(value, allowed, limit, label) {
+  if (!Array.isArray(value) || value.length > limit || new Set(value).size !== value.length || value.some(id => typeof id !== 'string' || !/^[A-Za-z0-9_-]{1,80}$/.test(id) || forbiddenKeys.has(id) || !allowed.has(id))) {
+    throw new Error(`${label} contain an invalid or repeated ID.`);
+  }
+}
+
 export function parseState(text) {
   if (typeof text !== 'string' || new TextEncoder().encode(text).length > MAX_BYTES) throw new Error('Choose a save smaller than 1 MB.');
   let state;
   try { state = JSON.parse(text); } catch { throw new Error('The save is not valid JSON.'); }
-  if (!record(state) || state.schemaVersion !== 1 || state.game !== 'persona-3-reload') throw new Error('Choose a Persona 3 Reload tracker save, version 1.');
+  if (!record(state) || ![1, 2].includes(state.schemaVersion) || state.game !== 'persona-3-reload') throw new Error('Choose a Persona 3 Reload tracker save, version 1 or 2.');
   if (Object.keys(state).some(key => forbiddenKeys.has(key))) throw new Error('The save contains an invalid field.');
   if (!monthIds.includes(state.month)) throw new Error('The selected month is invalid.');
+  const legacy = state.schemaVersion === 1;
+  const date = legacy ? `${String(monthNumbers[monthIds.indexOf(state.month)]).padStart(2, '0')}-01` : state.date;
+  if (typeof date !== 'string' || !/^\d{2}-\d{2}$/.test(date)) throw new Error('The selected date is invalid.');
+  const [month, day] = date.split('-').map(Number);
+  const calendarDate = new Date(Date.UTC(month === 1 ? 2010 : 2009, month - 1, day));
+  if (!monthNumbers.includes(month) || calendarDate.getUTCMonth() !== month - 1 || calendarDate.getUTCDate() !== day) throw new Error('The selected date is invalid.');
+  if (monthIds[monthNumbers.indexOf(month)] !== state.month) throw new Error('The selected month does not match the date.');
+  const slot = legacy ? 'daytime' : state.slot;
+  if (!['daytime', 'evening'].includes(slot)) throw new Error('The selected time slot is invalid.');
+  const completedEvents = legacy ? [] : state.completedEvents;
+  validateIds(completedEvents, eventIds, 300, 'Completed events');
+  const unlockedLinks = legacy ? [] : state.unlockedLinks;
+  validateIds(unlockedLinks, new Set(manualLinkIds), manualLinkIds.length, 'Confirmed introductions');
+  const showEventNames = legacy ? false : state.showEventNames;
+  if (typeof showEventNames !== 'boolean') throw new Error('The event name display setting is invalid.');
   validateRanks(state.ranks, linkIds, 0, 10, 'Social Link ranks');
   validateRanks(state.stats, SOCIAL_STATS, 1, 6, 'Social stats');
   if (typeof state.showNames !== 'boolean') throw new Error('The name display setting is invalid.');
@@ -53,9 +83,14 @@ export function parseState(text) {
   });
   // Keep only the defined schema fields; exports cannot introduce new settings.
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     game: 'persona-3-reload',
     month: state.month,
+    date,
+    slot,
+    completedEvents: [...completedEvents],
+    unlockedLinks: [...unlockedLinks],
+    showEventNames,
     ranks: { ...state.ranks },
     stats: { ...state.stats },
     goals,

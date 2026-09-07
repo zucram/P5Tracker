@@ -80,13 +80,16 @@
         {
           "sourceId": "gamefaqs-marendarade-81170",
           "claim": "Devil Hermit3; Moon Magician3; Sun Hanged3"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "claim": "May8 begins Moon introduction before Magician rank4 during that afternoon, supporting a rank3 prerequisite."
         }
       ],
-      "decision": "Do not encode these rank numbers as verified prerequisites until dedicated guides or in-game evidence resolve each case.",
+      "decision": "Moon introduction resolved at Magician3 by an explicit requirement plus Steam route order. Devil and Sun introductory rank numbers remain disputed; require player-confirmed introductions rather than infer eligibility from rank.",
       "affectedFactIds": [
-        "sl-devil",
-        "sl-moon",
-        "sl-sun"
+        "intro-devil",
+        "intro-sun"
       ]
     },
     {
@@ -303,6 +306,48 @@
       "affectedFactIds": [
         "cal-exam-december"
       ]
+    },
+    {
+      "id": "akihiko-four-end",
+      "subject": "Akihiko fourth episode closing date",
+      "status": "open",
+      "affectedFactIds": [
+        "le-akihiko-4"
+      ],
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Linked Episode table ends Dec22, but December walkthrough performs it Dec26."
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "claim": "Calendar explicitly lists Akihiko4 on Dec26."
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "claim": "Previously inspected table ends Dec22."
+        }
+      ],
+      "decision": "Do not show a definitive expired result on Dec23. Retain Dec22 as a cautious target with a discrepancy notice; inspect late December in game."
+    },
+    {
+      "id": "junpei-three-end",
+      "subject": "Junpei third episode closing date",
+      "status": "open",
+      "affectedFactIds": [
+        "le-junpei-3"
+      ],
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Reference table ends Nov11."
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "claim": "Availability calendar lists Junpei3 on Nov13 as well as Nov7,10,11."
+        }
+      ],
+      "decision": "Use an early reminder only. Do not declare this episode or its successors permanently missed from the Nov11 boundary alone."
     }
   ]
 }

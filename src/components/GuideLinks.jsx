@@ -1,6 +1,7 @@
 import { trackEvent } from '../lib/analytics';
 
 const GUIDES = [
+  { id: 'persona-3-reload', path: 'games/persona-3-reload/', title: 'Persona 3 Reload planner', description: 'Plan your next day with Social Links and missable deadlines.' },
   { id: 'school-answers', path: 'guides/school-answers/', title: 'School and exam answers', description: 'Find Royal answers by date, month or exam.' },
   { id: 'third-semester', path: 'guides/third-semester/', title: 'Maruki deadline check', description: 'Check the rank and deadline needed for the third semester.' },
   { id: 'monthly-checklist', path: 'guides/monthly-checklist/', title: 'Monthly planning guide', description: 'Use monthly goals to plan your own playthrough.' },

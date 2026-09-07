@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "reviewedAt": "2026-09-07",
+  "completeness": "reviewed-subset",
+  "weekdayAnchor": {
+    "date": "04-22",
+    "weekday": "wed",
+    "calendarYear": 2009,
+    "januaryYear": 2010,
+    "evidence": [
+      {
+        "sourceId": "gamefaqs-marendarade-81170",
+        "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/april",
+        "locator": "Wed 4/22"
+      },
+      {
+        "sourceId": "steam-hayatebutler-3152126765",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+        "locator": "Wednesday, April 22; Friday, January 1; Monday, January 25"
+      }
+    ]
+  },
+  "schoolClosures": [
+    {
+      "id": "golden-week",
+      "start": "05-03",
+      "end": "05-05",
+      "reason": "Golden Week",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "05-03 through 05-05; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "showa-day",
+      "start": "04-29",
+      "end": "04-29",
+      "reason": "School holiday",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "04-29 through 04-29; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "summer-break",
+      "start": "07-26",
+      "end": "08-31",
+      "reason": "Summer break",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "07-26 through 08-31; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "silver-week",
+      "start": "09-21",
+      "end": "09-23",
+      "reason": "School holidays",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "09-21 through 09-23; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "sports-day",
+      "start": "10-12",
+      "end": "10-12",
+      "reason": "School holiday",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "10-12 through 10-12; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "labor-day",
+      "start": "11-23",
+      "end": "11-23",
+      "reason": "School holiday",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-23 through 11-23; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "emperor-birthday",
+      "start": "12-23",
+      "end": "12-23",
+      "reason": "School holiday",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "12-23 through 12-23; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "winter-break",
+      "start": "12-27",
+      "end": "01-07",
+      "reason": "Winter break",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "12-27 through 01-07; ordinary school schedule and holiday entries"
+        }
+      ]
+    },
+    {
+      "id": "coming-of-age",
+      "start": "01-11",
+      "end": "01-11",
+      "reason": "School holiday",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: school links unavailable during vacation periods; holiday dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "01-11 through 01-11; ordinary school schedule and holiday entries"
+        }
+      ]
+    }
+  ],
+  "preExamClosures": [
+    {
+      "id": "exam-prep-may",
+      "start": "05-11",
+      "end": "05-17",
+      "reason": "School links prepare for exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: week before exams, except Empress"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may",
+          "locator": "Exam beginning date and prior week"
+        }
+      ],
+      "exceptLinks": [
+        "empress"
+      ]
+    },
+    {
+      "id": "exam-prep-july",
+      "start": "07-07",
+      "end": "07-13",
+      "reason": "School links prepare for exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: week before exams, except Empress"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "Exam beginning date and prior week"
+        }
+      ],
+      "exceptLinks": [
+        "empress"
+      ]
+    },
+    {
+      "id": "exam-prep-october",
+      "start": "10-06",
+      "end": "10-12",
+      "reason": "School links prepare for exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: week before exams, except Empress"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "Exam beginning date and prior week"
+        }
+      ],
+      "exceptLinks": [
+        "empress"
+      ]
+    },
+    {
+      "id": "exam-prep-december",
+      "start": "12-07",
+      "end": "12-13",
+      "reason": "School links prepare for exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: week before exams, except Empress"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "Exam beginning date and prior week"
+        }
+      ],
+      "exceptLinks": [
+        "empress"
+      ]
+    }
+  ],
+  "linkExceptions": [
+    {
+      "link": "emperor",
+      "start": "11-03",
+      "end": "11-29",
+      "reason": "Student council unavailable",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: Emperor unavailable 11/3\u201311/29"
+        }
+      ]
+    },
+    {
+      "link": "moon",
+      "start": "07-26",
+      "end": "08-31",
+      "maxCurrentRank": 0,
+      "reason": "The first Moon meeting is unavailable during summer break",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375",
+          "locator": "Introduction: Moon rank1 cannot be done in summer; an established link remains available"
+        }
+      ]
+    },
+    {
+      "link": "aeon",
+      "start": "01-25",
+      "end": "01-25",
+      "reason": "Aigis is reported absent; choose another school link",
+      "status": "reported-exception",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "January25 lists other Monday links; January26 lists Aeon again"
+        }
+      ],
+      "notes": "Conservative omission from suggestions. Calendar absence alone does not prove unavailability. Multiple player reports agree, but no in-game verification was performed."
+    }
+  ],
+  "extraLinkDates": [
+    {
+      "link": "hermit",
+      "dates": [
+        "04-29",
+        "05-04",
+        "05-05",
+        "09-21",
+        "09-22",
+        "09-23",
+        "11-23",
+        "12-23",
+        "01-11",
+        "10-12"
+      ],
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability: additional Hermit dates"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "October12 explicitly lists Hermit"
+        }
+      ]
+    }
+  ],
+  "slotBlocks": [
+    {
+      "id": "opening-story",
+      "start": "04-06",
+      "end": "04-20",
+      "reason": "Opening story and Tartarus tutorial",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/april",
+          "locator": "April 6\u201320"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "April: first controllable after-school period April21"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "magician-intro",
+      "start": "04-22",
+      "end": "04-22",
+      "reason": "Automatic classmate introduction",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/april",
+          "locator": "April22 after school"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "Wednesday April22"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "hospital-visit",
+      "start": "05-01",
+      "end": "05-01",
+      "reason": "Story visit",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "May1 storyline"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "Friday May1 after school"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "may-exams",
+      "start": "05-18",
+      "end": "05-22",
+      "reason": "Exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may",
+          "locator": "05-18\u201305-22 exam entries"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "May exam interval"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "july-exams",
+      "start": "07-14",
+      "end": "07-17",
+      "reason": "Exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-14\u201307-17 exam entries"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "July exam interval"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "october-exams",
+      "start": "10-13",
+      "end": "10-16",
+      "reason": "Exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "10-13\u201310-16 exam entries"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "October exam interval"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "december-exams",
+      "start": "12-14",
+      "end": "12-18",
+      "reason": "Exams",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "12-14\u201312-18 exam entries"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "December exam interval"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "june-story",
+      "start": "06-20",
+      "end": "06-20",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/june",
+          "locator": "06-20\u201306-20 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "06-20\u201306-20 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "06-20\u201306-20 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "july-exam-story",
+      "start": "07-18",
+      "end": "07-18",
+      "reason": "Final exam and story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-18\u201307-18 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "07-18\u201307-18 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "07-18\u201307-18 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "yakushima-trip",
+      "start": "07-20",
+      "end": "07-22",
+      "reason": "Yakushima trip",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-20\u201307-22 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "07-20\u201307-22 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "07-20\u201307-22 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "yakushima-return",
+      "start": "07-23",
+      "end": "07-23",
+      "reason": "Return from Yakushima",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-23\u201307-23 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "07-23\u201307-23 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "07-23\u201307-23 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "training",
+      "start": "07-27",
+      "end": "08-01",
+      "reason": "Track training",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-27\u201308-01 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "07-27\u201308-01 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "07-27\u201308-01 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "tournament",
+      "start": "08-02",
+      "end": "08-02",
+      "reason": "Track tournament",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "08-02\u201308-02 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "08-02\u201308-02 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "08-02\u201308-02 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "summer-school",
+      "start": "08-10",
+      "end": "08-14",
+      "reason": "Summer school and story schedule",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "08-10\u201308-14 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "08-10\u201308-14 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "08-10\u201308-14 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "summer-school-final",
+      "start": "08-15",
+      "end": "08-15",
+      "reason": "Final summer-school day",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "08-15\u201308-15 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "08-15\u201308-15 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "08-15\u201308-15 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "summer-festival",
+      "start": "08-16",
+      "end": "08-16",
+      "reason": "Summer festival schedule",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "08-16\u201308-16 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "08-16\u201308-16 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "08-16\u201308-16 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "september-story",
+      "start": "09-02",
+      "end": "09-02",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september",
+          "locator": "09-02\u201309-02 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "09-02\u201309-02 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "09-02\u201309-02 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "typhoon",
+      "start": "09-18",
+      "end": "09-20",
+      "reason": "Story and typhoon schedule",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september",
+          "locator": "09-18\u201309-20 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "09-18\u201309-20 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "09-18\u201309-20 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "october-aftermath",
+      "start": "10-05",
+      "end": "10-05",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "10-05\u201310-05 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "10-05\u201310-05 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "10-05\u201310-05 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "november-aftermath",
+      "start": "11-04",
+      "end": "11-04",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-04\u201311-04 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-04\u201311-04 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-04\u201311-04 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "november-followup",
+      "start": "11-05",
+      "end": "11-05",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-05\u201311-05 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-05\u201311-05 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-05\u201311-05 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "kyoto-trip",
+      "start": "11-17",
+      "end": "11-19",
+      "reason": "Kyoto trip, check trip invitations",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-17\u201311-19 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-17\u201311-19 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-17\u201311-19 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "kyoto-return",
+      "start": "11-20",
+      "end": "11-20",
+      "reason": "Return from Kyoto",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-20\u201311-20 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-20\u201311-20 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-20\u201311-20 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "career-experience",
+      "start": "11-24",
+      "end": "11-26",
+      "reason": "Career experience",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-24\u201311-26 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-24\u201311-26 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-24\u201311-26 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "career-final",
+      "start": "11-27",
+      "end": "11-27",
+      "reason": "Final career-experience day",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-27\u201311-27 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "11-27\u201311-27 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-27\u201311-27 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "december-story",
+      "start": "12-03",
+      "end": "12-03",
+      "reason": "Story event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "12-03\u201312-03 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "12-03\u201312-03 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "12-03\u201312-03 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "new-year-decision",
+      "start": "12-31",
+      "end": "12-31",
+      "reason": "Year-end story decision",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "12-31\u201312-31 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "12-31\u201312-31 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "12-31\u201312-31 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "evening"
+      ]
+    },
+    {
+      "id": "new-year-day",
+      "start": "01-01",
+      "end": "01-01",
+      "reason": "New Year event",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/january",
+          "locator": "01-01\u201301-01 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "01-01\u201301-01 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "01-01\u201301-01 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ]
+    },
+    {
+      "id": "final-operation",
+      "start": "01-31",
+      "end": "01-31",
+      "reason": "Final operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/january",
+          "locator": "01-31\u201301-31 story or fixed event entries"
+        },
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "01-31\u201301-31 fixed calendar event"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "01-31\u201301-31 corresponding dated story schedule"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-may",
+      "start": "05-09",
+      "end": "05-09",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may",
+          "locator": "05-09 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "05-09 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-june",
+      "start": "06-08",
+      "end": "06-08",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/june",
+          "locator": "06-08 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "06-08 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-july",
+      "start": "07-07",
+      "end": "07-07",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "07-07 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "07-07 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-august",
+      "start": "08-06",
+      "end": "08-06",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "08-06 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "08-06 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-september",
+      "start": "09-05",
+      "end": "09-05",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september",
+          "locator": "09-05 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "09-05 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-october",
+      "start": "10-04",
+      "end": "10-04",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "10-04 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "10-04 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "operation-november",
+      "start": "11-03",
+      "end": "11-03",
+      "reason": "Full Moon operation",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "11-03 Full Moon operation"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "11-03 Full Moon"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ]
+    },
+    {
+      "id": "theurgy-tutorial",
+      "start": "06-13",
+      "end": "06-13",
+      "reason": "Tartarus tutorial",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/june",
+          "locator": "June13 evening Tartarus automatic"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "Saturday June13 evening Theurgy tutorial"
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "June13 Dark Hour Theurgy tutorial"
+        }
+      ],
+      "slots": [
+        "evening"
+      ]
+    }
+  ],
+  "conditionalSlotBlocks": [
+    {
+      "id": "christmas-date",
+      "start": "12-24",
+      "end": "12-24",
+      "reason": "An accepted Christmas date uses daytime and evening",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "December24 Christmas date; ordinary links explicitly uncertain"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "December24 after school and evening"
+        }
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "requiresFlag": "accepted-christmas-date"
+    },
+    {
+      "id": "january-optional-event",
+      "start": "01-21",
+      "end": "01-21",
+      "reason": "Earlier optional flower choices can reserve this afternoon",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei Link3.5 consequence"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "Thursday January21"
+        }
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "requiresFlag": "le-junpei-flower"
+    },
+    {
+      "id": "forced-first-exploration",
+      "start": "04-30",
+      "end": "04-30",
+      "reason": "A delayed first Tartarus exploration can force a visit tonight",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-lukaight-81375-calendar",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar",
+          "locator": "April30 night"
+        }
+      ],
+      "slots": [
+        "evening"
+      ],
+      "requiresFlag": "no-first-tartarus-exploration"
+    }
+  ],
+  "openingRequirements": {
+    "priestess": {
+      "requiredLinks": {
+        "fortune": 1
+      },
+      "requiredFlags": [
+        "introduction-completed"
+      ],
+      "notes": "Fortune1 and Courage6; first opening June19.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "priestess Rank1 and introduction flags"
+        }
+      ]
+    },
+    "justice": {
+      "requiredLinks": {
+        "emperor": 1
+      },
+      "requiredFlags": [
+        "three-introduction-conversations"
+      ],
+      "notes": "Join the student council and finish three introductory conversations.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "justice Rank1 and introduction flags"
+        }
+      ]
+    },
+    "strength": {
+      "requiredLinks": {
+        "chariot": 2
+      },
+      "requiredFlags": [
+        "walk-home-invitations"
+      ],
+      "notes": "Walk-home invitations during early Chariot events precede the link.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "strength Rank1 and introduction flags"
+        }
+      ]
+    },
+    "temperance": {
+      "requiredLinks": {
+        "hierophant": 3
+      },
+      "requiredFlags": [
+        "introduction-completed"
+      ],
+      "notes": "Meet the visitor through Hierophant3; Academics2 and school-club introduction.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "temperance Rank1 and introduction flags"
+        }
+      ]
+    },
+    "tower": {
+      "requiredLinks": {
+        "strength": 4
+      },
+      "requiredFlags": [
+        "monk-introduction",
+        "drink-order-task"
+      ],
+      "notes": "Ask the team manager about the monk; Courage4 and the bartender task.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "tower Rank1 and introduction flags"
+        }
+      ]
+    },
+    "moon": {
+      "requiredLinks": {
+        "magician": 3
+      },
+      "requiredFlags": [
+        "gourmet-introduction",
+        "gourmet-quiz",
+        "odd-morsel-given"
+      ],
+      "notes": "Speak to the classmate after Magician3; Charm2, quiz, and Odd Morsel.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "moon Rank1 and introduction flags"
+        },
+        {
+          "sourceId": "steam-hayatebutler-3152126765",
+          "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+          "locator": "May8: Moon introduction before Magician Rank4"
+        }
+      ]
+    },
+    "empress": {
+      "requiredLinks": {},
+      "requiredFlags": [
+        "top-exam-result"
+      ],
+      "notes": "Academics6, at least one top exam result, and November21 opening.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "empress Rank1 and introduction flags"
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Empress_Social_Link",
+          "locator": "Starting requirements"
+        }
+      ]
+    },
+    "hierophant": {
+      "requiredLinks": {},
+      "requiredFlags": [
+        "persimmon-leaf-given"
+      ],
+      "notes": "Visit the bookshop, retrieve the school tree leaf, and return it.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "hierophant Rank1 and introduction flags"
+        }
+      ]
+    },
+    "hanged-man": {
+      "requiredLinks": {},
+      "requiredFlags": [
+        "food-and-drink-given"
+      ],
+      "notes": "Give Weird Takoyaki and Mad Bull before the first meeting.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "hanged-man Rank1 and introduction flags"
+        }
+      ]
+    },
+    "devil": {
+      "requiredLinks": {},
+      "requiredFlags": [
+        "hermit-introduction",
+        "three-payments"
+      ],
+      "notes": "Hermit rank prerequisite remains disputed. Confirm the introduction and three payments totaling 40,000 yen. Charm4 required.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "devil Rank1 and introduction flags"
+        }
+      ]
+    },
+    "sun": {
+      "requiredLinks": {},
+      "requiredFlags": [
+        "hanged-man-introduction",
+        "red-fountain-pen-returned"
+      ],
+      "notes": "Hanged Man rank prerequisite remains disputed. Confirm introduction and return the pen obtained from Koromaru. Academics4 required.",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "sun Rank1 and introduction flags"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "All intervals are inclusive. January follows December.",
+    "School closures suppress ordinary school Social Link meetings, not phone invitations or town links.",
+    "Missing slot blocks do not prove a free slot. Options are usual-schedule candidates and still need an in-game availability check.",
+    "Explicit story events and route agreement support slot blocks. No complete in-game calendar validation has been performed.",
+    "The broader facts dataset remains releaseReady false. This file supplies a conservative subset for a beta planner."
+  ]
+}

@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.5.0",
+    date: "2026-09-07",
+    title: "Persona 3 Reload companion beta",
+    description: "Plan your next day in Reload with Social Links, deadline reminders and your own monthly goals.",
+    sections: [{ title: "Reload is available", items: [
+      "Find the Reload planner through Game companions or the new Reload link in the tracker.",
+      "Check missing-person deadlines, Elizabeth requests and Linked Episode windows, with sources and saved checkmarks.",
+      "The beta uses usual link schedules and reviewed calendar blocks. It does not guarantee a perfect run."
+    ] }]
+  },
+  {
     version: "2.4.3",
     date: "2026-09-07",
     title: "Better usage measurement",

@@ -132,3 +132,7 @@ This project was built with the assistance of AI (Google Gemini) to handle archi
 *Take your time.*
 
 School answer data lives in `src/data/schoolAnswers.json`, with source evidence for each date. After editing it, run `npm run build:guides` to update the static page. `npm run build` checks that the generated page is current. See [school answer maintenance](docs/school-answers.md).
+
+## Persona 3 Reload companion
+
+[Open the Reload calendar planner](https://zucram.github.io/P5Tracker/games/persona-3-reload/) for a flexible main-campaign beta with Social Link schedules, missable windows and saved progress. Read [release scope and validation](docs/p3-reload-release.md) and [source evidence](docs/p3-reload-calendar-evidence.md) before extending calendar rules.

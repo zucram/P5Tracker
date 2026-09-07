@@ -1980,6 +1980,8 @@ export default function App() {
         <section className="mt-12 text-center space-y-4" aria-label="About P5 Tracker">
           <ShareTracker />
           <p className="text-sm text-neutral-400">
+            <a className="underline" href={`${import.meta.env.BASE_URL}games/persona-3-reload/`} onClick={() => trackEvent('guide_opened', { guide: 'persona-3-reload', location: 'footer' })}>Persona 3 Reload planner</a>
+            {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}games/`} onClick={() => trackEvent('guide_opened', { guide: 'games', location: 'footer' })}>Game companions</a>
             {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/school-answers/`} onClick={() => trackEvent('guide_opened', { guide: 'school-answers', location: 'footer' })}>School and exam answers</a>

@@ -1,6 +1,6 @@
 # Persona 3 Reload knowledge base
 
-Research dataset for the main campaign, reviewed 7 September 2026. This is the basis for a flexible monthly companion. It is not a shipped guide or a verified 100% route. Original, FES, Portable and Episode Aigis data must not enter this dataset.
+Research dataset for the main campaign, reviewed 7 September 2026. This is the basis for a flexible monthly companion. A reviewed subset powers the beta planner. The complete collection is not a verified 100% route. Original, FES, Portable and Episode Aigis data must not enter this dataset.
 
 ## Files
 
@@ -9,6 +9,7 @@ Research dataset for the main campaign, reviewed 7 September 2026. This is the b
 - `months.json`: original monthly editorial briefs derived from fact IDs, with remaining research needs.
 - `disputes.json`: conflicting source claims and the decision for each.
 - `coverage.json`: measured coverage and release gaps.
+- `calendar-rules.json`: reviewed subset of school closures, fixed slots, and opening requirements for the beta planner.
 
 No full walkthrough prose, dialogue transcripts, screenshots or copied daily schedules are stored here. Source URLs and section locators let a reviewer check each claim in the author's own guide.
 
@@ -33,7 +34,7 @@ For a selected month, show dated risks first, then available opportunities and f
 
 Keep suggested targets separate from hard requirements. Never claim that an arbitrary monthly Social Link rank is mandatory. Avoid a green “you can still finish everything” result until the remaining schedule has a tested feasibility model. Prefer “these opportunities remain” with the relevant caveats.
 
-A release needs a complete school calendar, Social Link exceptions, prerequisite reconciliation, missed-episode behavior and playthrough validation. The prototype stays unpublished while those checks are incomplete.
+A complete availability or 100% guide needs the full school calendar, Social Link exceptions, prerequisite reconciliation, missed-episode behavior, and playthrough validation. The beta planner can use the reviewed subset in `calendar-rules.json` with explicit limits. It must label usual-schedule options, require player-confirmed introductions, suppress known closures, and avoid definitive conclusions from disputed facts. The broader dataset remains `releaseReady: false`.
 
 ## Review and validation
 

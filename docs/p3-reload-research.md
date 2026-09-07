@@ -50,4 +50,4 @@ No guide received an independent full-game playthrough during this audit. Author
 
 Known reference conflicts include missing-person dates in RPG Site versus GameFAQs and Game8 Japanese. The lead records field-level decisions in the knowledge base. Old reader comments can identify possible errors, but they do not establish that the current page still contains those errors.
 
-The availability calendar's omissions, older guide versions, and partially completed walkthroughs prevent a blanket claim that all dates are verified. The companion remains unpublished until calendar exceptions, prerequisites, missed-event behavior, and playthrough validation meet the release criteria in the [knowledge-base README](../knowledge/p3-reload/README.md).
+The availability calendar's omissions, older guide versions, and partially completed walkthroughs prevent a blanket claim that all dates are verified. The beta uses the reviewed calendar subset and conservative prerequisite handling described in [release scope](p3-reload-release.md). Full-route claims remain gated on wider calendar reconciliation and in-game validation.

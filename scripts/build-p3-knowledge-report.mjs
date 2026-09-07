@@ -42,7 +42,7 @@ const coverage = {
 };
 const lines = [
   '# Persona 3 Reload knowledge review', '',
-  `Reviewed ${coverage.reviewedAt}. This research supports the planned semi-day-by-day companion. The Reload prototype remains unpublished.`, '',
+  `Reviewed ${coverage.reviewedAt}. This research supports the Reload beta semi-daily companion. The complete knowledge base is not a verified perfect-run route; see p3-reload-release.md for the shipped subset and limits.`, '',
   `The catalog contains ${sources.length} source records. The knowledge base contains ${facts.length} factual and planning records, with original briefs for all ten months from April through January. The catalog includes mirrors and partial guides; these are labelled and are not counted as independent confirmation.`, '',
   '## What is collected', '',
   '| Category | Records |', '| --- | ---: |',
