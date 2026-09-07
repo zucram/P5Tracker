@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.5] - 2026-09-07
+
+- Add a searchable directory for all eleven guides, linked from the chooser, trackers and individual guides.
+- Restore fixed player-referral tags on Royal, Reload and chooser share links. Record native versus clipboard sharing for Reload and the chooser.
+- Measure Reload support-panel visibility and click location. Ignore background-tab time for both games' support impressions.
+
 ## [2.6.4] - 2026-09-07
 
 - Load six Reload reference sections on demand. The Reload entry bundle falls from about 1,581 kB to 432 kB before compression.

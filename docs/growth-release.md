@@ -4,7 +4,7 @@ P5 Tracker provides free Royal and Reload browser companions. The shared chooser
 
 ## Search pages
 
-Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, five Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
+Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, the guide directory, five Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
@@ -88,3 +88,12 @@ Save validation reads `src/p3/saveCatalog.json` for Persona, DLC and request IDs
 Compared with 2.6.3, Vite reports the Reload entry script at approximately 432 kB instead of 1,581 kB, or 73 kB instead of 194 kB using Vite's gzip estimate. React and shared dependencies are additional bytes in both builds. This is a bundle-size measurement, not a measured change to field loading times or search ranking. The equipment section remains large but is requested only when opened.
 
 Isolated Chromium network inspection confirmed that the calendar does not request the six deferred sections. Each section loaded on navigation at 390px, progress survived tab changes and reload, and blocking the equipment download left Calendar usable. A section error shows a reload action. If the app has a save warning, it instead directs the player to Sync before reloading. All 89 automated tests passed; generated-guide and site checks passed.
+
+
+## Guide directory and referrals in 2.6.5
+
+`/guides/` groups the eleven published guides by game and filters them by topic. `src/data/guideDirectory.js` owns the directory entries, and `npm run build:guides` generates its HTML. The build checks its sitemap entry and links. Each guide, the chooser and both apps link back to it. No account or JavaScript is needed to browse the guide links.
+
+All three share controls use fixed public URLs with the existing player-referral campaign. This repairs a documentation-versus-source mismatch: the pre-2.6.5 controls used bare links. Support measurement now includes Reload panel visibility and header/footer click location. The existing support placement is unchanged. Browser checks used stubbed analytics, simulated clipboard writes and prevented Ko-fi navigation; no payments or production test events were sent.
+
+The directory and filters fit 320, 390 and 1280px. Browser checks confirmed all eleven links without JavaScript, game/topic filtering, all three share destinations, background-tab impression suppression and one support impression per page load. See `docs/analytics.md` for event definitions and comparison limits.

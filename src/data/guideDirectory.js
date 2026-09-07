@@ -1,0 +1,13 @@
+export const GUIDE_DIRECTORY = [
+  { slug: 'school-answers', game: 'royal', title: 'Classroom and exam answers', description: 'Find Royal answer choices by date, month or exam.', terms: 'school quiz test questions knowledge' },
+  { slug: 'persona-5-royal-crossword-answers', game: 'royal', title: 'All 38 crossword answers', description: 'Search Leblanc puzzles by clue, answer or puzzle number.', terms: 'crosswords knowledge semesters pollenosis' },
+  { slug: 'third-semester', game: 'royal', title: 'Maruki deadline and third semester', description: 'Check the Councillor rank and deadline needed to unlock the third semester.', terms: 'confidant november 17 rank 9 requirements' },
+  { slug: 'monthly-checklist', game: 'royal', title: 'Monthly planning checklist', description: 'Plan your own daily route with Palace deadlines and monthly goals.', terms: 'walkthrough schedule calendar missables' },
+  { slug: 'confidant-tracker', game: 'royal', title: 'Confidant tracking guide', description: 'Record ranks, check stat requirements and keep a progress backup.', terms: 'relationships social links stats' },
+  { slug: 'persona-3-reload-school-answers', game: 'reload', title: 'School answers and exam requirements', description: 'Look up classroom choices, final-day Academics checks and stat activities.', terms: 'quiz test questions charm courage' },
+  { slug: 'persona-3-reload-social-link-answers', game: 'reload', title: 'Social Link answers by rank', description: 'Find answer cues for 190 ranks, with friendship and romance branches.', terms: 'dialogue affinity matching arcana characters' },
+  { slug: 'persona-3-reload-social-links', game: 'reload', title: 'Social Link requirements and schedules', description: 'Check introductions, stat gates and usual meeting days for all 22 links.', terms: 'unlock start dates weekdays availability' },
+  { slug: 'persona-3-reload-elizabeth-requests', game: 'reload', title: "Elizabeth's 101 requests", description: 'Search request solutions, prerequisites, rewards and reporting deadlines.', terms: 'quests items missing document muscle drink' },
+  { slug: 'persona-3-reload-deadlines', game: 'reload', title: 'Rescue and Linked Episode deadlines', description: 'Check missing-person rescue windows, dated requests and Linked Episodes.', terms: 'tartarus missables missing people dates calendar' },
+  { slug: 'persona-3-reload-fusion-guide', game: 'reload', title: 'Fusion recipes and Persona unlocks', description: 'Browse 173 base-game Personas, special recipes and native skills.', terms: 'calculator compendium arcana registry dlc' },
+];

@@ -9,6 +9,8 @@ import dailyLife from '../../knowledge/p3-reload/daily-life.json';
 import { dateNumber, monthForDate, shiftDate } from './planner';
 import { createElement, lazy, Suspense, useState, useEffect, useRef } from 'react';
 import SectionBoundary from './SectionBoundary';
+import { trackerShareUrl } from '../lib/shareUrl';
+import { useSupportImpression } from '../hooks/useSupportImpression';
 import { ArrowLeft, ArrowRight, Download, Heart, Upload, Users, CalendarDays, ShieldCheck, BookOpen, Sword, Menu } from 'lucide-react';
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS, SOURCES } from './data';
 import { loadState, persistState, importState, BACKUP_KEY, STORAGE_KEY, MAX_BYTES } from './save';
@@ -47,6 +49,7 @@ export default function ReloadTracker() {
   const [savingEnabled, setSavingEnabled] = useState(!loaded.warning);
   const [tab, setTab] = useState(() => VALID_TABS.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'calendar');
   const usedTracker = useRef(false);
+  const supportRef = useSupportImpression('footer', 'persona-3-reload');
   const [status, setStatus] = useState('');
   const [viewMonth, setViewMonth] = useState(loaded.state.month);
   useEffect(() => {
@@ -119,13 +122,13 @@ export default function ReloadTracker() {
     } catch { setStatus('The previous save is not accessible in this browser.'); }
   }
 
-  const shareUrl = `${window.location.origin}${BASE}p3/`;
+  const shareUrl = trackerShareUrl('reload');
   async function share() {
     try {
       if (navigator.share) await navigator.share({ title: 'Persona 3 Reload tracker', text: 'Plan your Reload playthrough with monthly checklists, Social Links and missable deadlines.', url: shareUrl });
       else await navigator.clipboard.writeText(shareUrl);
       setStatus(navigator.share ? 'Share dialog completed.' : 'Tracker link copied.');
-      track('p3_share_complete');
+      track('p3_share_complete', { method: navigator.share ? 'native' : 'clipboard' });
     } catch (error) {
       if (error?.name === 'AbortError') return;
       setShareFallback(true); setStatus('Copy the public link below. It contains no save data.');
@@ -146,7 +149,7 @@ export default function ReloadTracker() {
     <div className="reload-app">
       <header className="site-header">
         <div><h1><span>P3</span> Tracker <small>RELOAD · BETA</small></h1><p className="header-caption">Persona 3 Reload monthly guide & Social Link tracker</p></div>
-        <div className="header-actions"><a href={BASE}>All games</a><a href={`${BASE}p5/`}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
+        <div className="header-actions"><a href={BASE}>All games</a><a href={`${BASE}p5/`}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click', { location: 'header' })}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
       </header>
       <nav className="tabs" aria-label="Tracker sections">
         {[['briefing', BookOpen, 'Briefing'], ['calendar', CalendarDays, 'Calendar'], ['links', Users, 'Social Links'], ['deadlines', Sword, 'Tartarus'], ['more', Menu, 'More']].map(([id, Icon, title]) => <button key={id} aria-current={(tab === id || (id === 'calendar' && ['planner', 'month'].includes(tab)) || (id === 'deadlines' && TARTARUS_TABS.some(([key]) => key === tab)) || (id === 'more' && (tab === 'backup' || REFERENCE_TABS.some(([key]) => key === tab)))) ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 19 })}<span>{title}</span></button>)}
@@ -228,9 +231,9 @@ export default function ReloadTracker() {
         </Suspense></SectionBoundary>
         <p className="status" role="status">{status}</p><div className="save-indicator"><ShieldCheck size={14} /> {saveWarning ? 'Download a backup before leaving' : 'Saved on this browser'} <button onClick={() => selectTab('backup')}>Back up progress</button></div>
 
-        <section className="support-panel"><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>
+        <section className="support-panel" ref={supportRef}><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click', { location: 'footer' })}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>
         {shareFallback && <input aria-label="Public Reload tracker link" className="share-fallback" readOnly value={shareUrl} onFocus={event => event.target.select()} />}
-        <footer><a href={BASE}><ArrowLeft size={15} /> All games</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. The companion includes every manual Social Link rank, all 101 Elizabeth requests and the main-campaign reference systems. Choices and dialogue cues are original summaries with sources. Automated and browser checks do not replace a full in-game validation run. Episode Aigis is not included.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
+        <footer><a href={`${BASE}guides/`} onClick={() => track('p3_guide_opened', { guide: 'directory' })}>All guides and answer tools</a><br /><a href={BASE}><ArrowLeft size={15} /> All games</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. The companion includes every manual Social Link rank, all 101 Elizabeth requests and the main-campaign reference systems. Choices and dialogue cues are original summaries with sources. Automated and browser checks do not replace a full in-game validation run. Episode Aigis is not included.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
       </main>
     </div>
   );

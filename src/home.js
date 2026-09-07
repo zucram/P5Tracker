@@ -1,5 +1,6 @@
 import './home.css';
 import { legacyDestination } from './lib/siteRoutes';
+import { trackerShareUrl } from './lib/shareUrl';
 function redirectLegacyLink() {
   const target = legacyDestination(window.location, import.meta.env.BASE_URL);
   if (target) window.location.replace(target);
@@ -11,7 +12,7 @@ const shareButton = document.querySelector('#share-site');
 const status = document.querySelector('#share-status');
 const fallback = document.querySelector('#share-url');
 shareButton?.addEventListener('click', async () => {
-  const url = 'https://zucram.github.io/P5Tracker/';
+  const url = trackerShareUrl();
   try {
     if (navigator.share) {
       await navigator.share({ title: 'Persona Trackers', text: 'Free monthly guides and trackers for Persona 5 Royal and Persona 3 Reload.', url });
@@ -20,7 +21,7 @@ shareButton?.addEventListener('click', async () => {
       await navigator.clipboard.writeText(url);
       status.textContent = 'Link copied.';
     }
-    try { window.umami?.track('hub_share_complete')?.catch?.(() => {}); } catch { /* Sharing still works without analytics. */ }
+    try { window.umami?.track('hub_share_complete', { method: navigator.share ? 'native' : 'clipboard' })?.catch?.(() => {}); } catch { /* Sharing still works without analytics. */ }
   } catch (error) {
     if (error?.name === 'AbortError') return;
     fallback.hidden = false;

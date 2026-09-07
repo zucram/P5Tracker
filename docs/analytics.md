@@ -4,6 +4,16 @@ P5 Tracker uses Umami page views and feature events to measure discovery, use an
 
 Use the [post-launch agent guide](post-launch-agent-guide.md) for the review procedure. This document defines instrumentation. Actual account results and saved-report configuration stay in the private ledger.
 
+## Discovery and support in 2.6.5
+
+The guide directory uses `guide_lookup_used` with `guide: directory` and `directory_guide_opened` with the destination `guide` slug and `game: royal` or `reload`. Its tracker links use `guide_open_tracker` with `guide: directory-royal` or `directory-reload`. These events show navigation choices; they do not establish an ordered conversion funnel.
+
+Reload now emits `p3_support_card_view` with `game: persona-3-reload` and `location: footer` after at least half the existing panel remains visible for one continuous second. `p3_support_click` retains its name and game property, adding `location: header` or `footer`. Existing Royal `support_card_view` names and properties stay unchanged. Both games pause impression timing while the document is hidden. Counts are once per location per page load, with no retries when analytics is blocked.
+
+Royal, Reload and chooser share controls now use `src/lib/shareUrl.js` to emit public URLs with exactly `utm_source=app`, `utm_medium=share`, and `utm_campaign=player_referral`. No current-page query, fragment or save value is copied. `p3_share_complete` and `hub_share_complete` add `method: native` or `clipboard`; Royal already records the method. A canceled share or manual fallback does not emit completion.
+
+The September 7 source review found that all three pre-2.6.5 share URLs were bare, despite earlier documentation describing referral tags. Do not infer that older direct arrivals were tracked referrals. The historical Reddit campaign links remain unchanged.
+
 ## Guide lookups in 2.6.3
 
 `guide_lookup_used` fires once per page load after a nonempty search or category filter returns results. Its only property is `guide`, the fixed page slug. It covers Royal crossword answers and Reload school answers, Social Link answers, Elizabeth requests and fusion reference pages. It sends no query, selected category, request number, date or save data. Clearing filters, opening a fragment and unsuccessful searches do not emit it. These are lookup interactions, not proof of tracker use or payment.
@@ -27,7 +37,7 @@ Reload's `src/p3/App.jsx` helper adds `game: persona-3-reload` to these events:
 
 Date browsing, reference reading, and looking ahead at dialogue do not establish manual use. `p3_tracker_used` counts active mounts, not lifetime activation. Progress events can fire even when storage fails, because in-memory progress still changes. They do not prove durable saves or successful game actions.
 
-Reload currently has no support-card impression event or click-location property. Its guide-open event covers the instrumented More links, not every internal reference link. Its share event does not distinguish native sharing from clipboard copying. Report these limits rather than infer missing measurements.
+Before 2.6.5, Reload had no support-card impression event, click-location property or share-method property. Guide-open coverage still applies only to instrumented links, including More and the directory footer link. Report those limits when comparing historical windows.
 
 Reload static guide CTAs use `guide_open_tracker`, and guide support links use `guide_support_click`, with full `persona-3-reload-...` guide slugs. These are shared event names with Royal, so filter by guide or path. The chooser uses `game_open_tracker` with a game label.
 
@@ -45,7 +55,7 @@ Reload static guide CTAs use `guide_open_tracker`, and guide support links use `
 | `save_import_failed` | Save validation, file reading or persistence fails during an import | `method`: `paste`, `file` or `backup` |
 | `support_card_view` | At least half of a support card intersects the viewport for one continuous second, once per location per page load | `location`: `briefing` or `calendar` |
 
-`tracker_used` counts active page loads, not lifetime activation or unique people. Hash-tab changes do not reset it; a full reload or return from a static guide does. Importing a save and restoring existing state do not trigger manual-use events. Rank/stat changes at their bounds do not count. Checklist events include registry and crossword checks; checking and unchecking both count as manual changes. A download-start event does not prove that a file was written to disk. A card-view event measures viewport intersection, not attention; background tabs, blocked analytics and unavailable IntersectionObserver limit the measurement.
+`tracker_used` counts active page loads, not lifetime activation or unique people. Hash-tab changes do not reset it; a full reload or return from a static guide does. Importing a save and restoring existing state do not trigger manual-use events. Rank/stat changes at their bounds do not count. Checklist events include registry and crossword checks; checking and unchecking both count as manual changes. A download-start event does not prove that a file was written to disk. A card-view event measures viewport intersection, not attention; blocked analytics and unavailable IntersectionObserver limit the measurement. From 2.6.5, hidden-tab time does not count toward the one-second threshold.
 
 No new event sends task IDs, character names, ranks, stat values, search text, save contents, filenames, error messages or persistent user identifiers. The app has no new event queue or retry loop. Blocked or unavailable analytics can undercount use. Existing event names remain unchanged for historical comparisons.
 

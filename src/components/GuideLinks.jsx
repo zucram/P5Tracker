@@ -1,6 +1,7 @@
 import { trackEvent } from '../lib/analytics';
 
 const GUIDES = [
+  { id: 'directory', path: 'guides/', title: 'All guides and answer tools', description: 'Find a Royal or Reload guide by game or topic.' },
   { id: 'persona-3-reload', path: 'p3/', title: 'Persona 3 Reload tracker', description: 'Plan your month with Social Links and missable deadlines.' },
   { id: 'school-answers', path: 'guides/school-answers/', title: 'School and exam answers', description: 'Find Royal answers by date, month or exam.' },
   { id: 'persona-5-royal-crossword-answers', path: 'guides/persona-5-royal-crossword-answers/', title: 'Crossword answers', description: 'Search all 38 Leblanc puzzles by clue or number.' },

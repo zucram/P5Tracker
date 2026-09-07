@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.5",
+    date: "2026-09-07",
+    title: "One place for every guide",
+    description: "Browse Royal and Reload guides by game or topic.",
+    sections: [{ title: "Finding and sharing", items: [
+      "Search all eleven guides from the new guide directory.",
+      "Find the directory from the start page, trackers and every guide.",
+      "Shared tracker links identify player referrals without including your progress."
+    ] }]
+  },
+  {
     version: "2.6.4",
     date: "2026-09-07",
     title: "A lighter Reload calendar",

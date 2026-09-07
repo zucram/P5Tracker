@@ -59,7 +59,7 @@ const html = `<!doctype html>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script defer src="ui.js"></script>
 </head>
 <body><main>
-<nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p5/">P5 Royal tracker</a></nav>
+<nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p5/">P5 Royal tracker</a> · <a href="../">All guides</a></nav>
 <h1>Persona 5 Royal classroom and exam answers</h1>
 <p>Find your in-game date below, then choose the listed answers in order. These school answers are for <strong>Persona 5 Royal</strong>; the original Persona 5 has different questions.</p>
 ${coverage}

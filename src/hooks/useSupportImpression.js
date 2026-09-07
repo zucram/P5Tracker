@@ -3,22 +3,29 @@ import { trackEvent } from '../lib/analytics';
 
 const viewedLocations = new Set();
 
-export function useSupportImpression(location) {
+export function useSupportImpression(location, game) {
   const ref = useRef(null);
   useEffect(() => {
-    if (!ref.current || viewedLocations.has(location) || typeof IntersectionObserver === 'undefined') return;
+    const key = `${game || 'royal'}:${location}`;
+    if (!ref.current || viewedLocations.has(key) || typeof IntersectionObserver === 'undefined') return;
     let timer;
-    const observer = new IntersectionObserver(([entry]) => {
+    let visible = false;
+    const update = () => {
       clearTimeout(timer);
-      if (!entry.isIntersecting || entry.intersectionRatio < 0.5 || viewedLocations.has(location)) return;
+      if (!visible || document.hidden || viewedLocations.has(key)) return;
       timer = setTimeout(() => {
-        viewedLocations.add(location);
-        trackEvent('support_card_view', { location });
+        viewedLocations.add(key);
+        trackEvent(game === 'persona-3-reload' ? 'p3_support_card_view' : 'support_card_view', { location, ...(game ? { game } : {}) });
         observer.disconnect();
       }, 1000);
+    };
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting && entry.intersectionRatio >= 0.5;
+      update();
     }, { threshold: 0.5 });
     observer.observe(ref.current);
-    return () => { clearTimeout(timer); observer.disconnect(); };
-  }, [location]);
+    document.addEventListener('visibilitychange', update);
+    return () => { clearTimeout(timer); observer.disconnect(); document.removeEventListener('visibilitychange', update); };
+  }, [location, game]);
   return ref;
 }

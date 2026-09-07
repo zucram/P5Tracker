@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { trackerShareUrl } from '../lib/shareUrl';
 
-const SHARE_URL = 'https://zucram.github.io/P5Tracker/p5/';
+const SHARE_URL = trackerShareUrl('royal');
 
 function trackShare(method) {
   try {

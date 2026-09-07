@@ -52,7 +52,7 @@ const html = `<!doctype html>
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="P5 Tracker"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script></head>
-<body class="reload-guide"><a class="skip" href="#content">Skip to content</a><main id="content"><nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p3/">P3 Reload tracker</a></nav>
+<body class="reload-guide"><a class="skip" href="#content">Skip to content</a><main id="content"><nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p3/">P3 Reload tracker</a> · <a href="../">All guides</a></nav>
 <h1>${esc(title)}</h1><p>English classroom and exam answers for the Persona 3 Reload main campaign, arranged by date. Multiple answers in one row appear in the order they are asked. Episode Aigis is outside this guide's scope.</p>
 <p>${tracker}</p><nav aria-label="Jump to month">${months.map(([, name]) => `<a href="#${name.toLowerCase()}">${name}</a>`).join(' · ')} · <a href="#activities">Social-stat activities</a></nav>
 <p>Final exam days use an automatic answer. Their rows show the Academics rank needed for top marks alongside correct answers on the earlier exam days.</p>
