@@ -141,7 +141,7 @@ export default function ReloadTracker() {
       <main>
         {saveWarning && <div className="warning" role="alert">{saveWarning} <button onClick={download}>Download current progress</button>{loaded.unreadableSave != null && <button onClick={downloadUnreadableSave}>Download unreadable save</button>}</div>}
         {(tab === 'calendar' || tab === 'month') && <MonthCalendar state={state} commit={commit} month={viewMonth} setMonth={setViewMonth} selectTab={selectTab} />}
-        {tab === 'planner' && <>
+        {(tab === 'planner' || tab === 'deadlines') && <>
         <section id="planner" className="date-bar" aria-label="In-game date and time">
           <div><label htmlFor="current-month">In-game month</label><select id="current-month" value={state.month} onChange={event => {
             const index = MONTHS.findIndex(m => m.id === event.target.value);
@@ -154,8 +154,8 @@ export default function ReloadTracker() {
           <div><label htmlFor="current-slot">Time slot</label><select id="current-slot" value={state.slot} onChange={e => commit({ ...state, slot: e.target.value })}><option value="daytime">Daytime</option><option value="evening">Evening</option></select></div>
           <div className="date-step"><button aria-label="Previous day" disabled={state.date === '04-01'} onClick={() => { const date = shiftDate(state.date, -1); commit({ ...state, date, month: monthForDate(date) }); }}><ArrowLeft size={16} /></button><span>{new Date(dateNumber(state.date) * 86400000).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' })}</span><button aria-label="Next day" disabled={state.date === '01-31'} onClick={() => { const date = shiftDate(state.date, 1); commit({ ...state, date, month: monthForDate(date) }); }}><ArrowRight size={16} /></button></div>
         </section>
-        <button className="back-calendar" onClick={() => selectTab('calendar')}><ArrowLeft size={15} /> Monthly calendar</button>
-        <Planner state={state} commit={commit} selectTab={selectTab} />
+        {tab === 'planner' && <><button className="back-calendar" onClick={() => selectTab('calendar')}><ArrowLeft size={15} /> Monthly calendar</button>
+        <Planner state={state} commit={commit} selectTab={selectTab} /></>}
         </>}
 
         {tab === 'briefing' && <section>

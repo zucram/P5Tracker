@@ -1,6 +1,6 @@
 # Persona 3 Reload beta release
 
-The Reload companion follows the Royal tracker layout. Briefing, Calendar, Social Links, Tartarus and More use desktop tabs and fixed mobile navigation. Calendar is the default view, with monthly checklists, opening requirements and personal goals. The optional daily planner still uses the active date and time slot. The beta covers April through January in the main campaign.
+The Reload companion follows the Royal tracker layout. Briefing, Calendar, Social Links, Tartarus and More use desktop tabs and fixed mobile navigation. Calendar is the default view, with monthly checklists, opening requirements and personal goals. The optional daily planner still uses the active date and time slot. Its date controls are also available above Tartarus and deadline entries. The beta covers April through January in the main campaign.
 
 ## Behavior
 
