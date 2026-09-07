@@ -40,3 +40,13 @@ The existing full-repository lint baseline contains errors in legacy components 
 `public/guides/third-semester/` answers the Maruki rank and deadline question and checks a visitor's chosen rank and date range. The answer is available as HTML without JavaScript. The interactive form is revealed only when its module loads. Inputs stay in memory and never update tracker saves or enter analytics. Its test cases run with `npm test`.
 
 The page distinguishes the confidant requirement from later ending choices. It never estimates how many available afternoons remain. It cites GameSpot's Royal guide and RPG Site's Councillor and endings guides. November 17 is the last date used by the checker, with November 18 treated as after the deadline. The September rank cap uses September 20 as the boundary, consistent with the existing app calendar and RPG Site's statement that the cap ends after September 19. Guide verification is editorial source review, not a new full playthrough.
+
+## School answers release
+
+Version 2.4.1 adds `/guides/school-answers/`, a static answer table with month, type and text filters. The app and page share the reviewed Royal dataset, including corrected July answers and 28 additional dates. Existing dated task IDs remain stable. The undated July exam group and duplicate October exam summary are retired.
+
+The page links to the monthly calendar, is linked from the app and existing guides, and appears in the sitemap. Its title targets Royal classroom and exam answers. The third-semester page now names Maruki’s deadline in its title without claiming to be a full confidant dialogue guide.
+
+`school_answers_filtered` records the first successful nonempty filter use per page load. Its only property is the fixed guide name. It does not transmit search text, chosen dates, answers or saves. Existing `guide_open_tracker` records the calendar link click. These events are not proof of a successful game action or a payment.
+
+Validation covers shared answer integration, stable task IDs, Royal July content, static generation freshness, mobile filtering and analytics payload limits. See [school answer maintenance](school-answers.md).

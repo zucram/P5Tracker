@@ -1,4 +1,6 @@
-export const APP_DATA = {
+import { withSchoolAnswers } from './schoolAnswers.js';
+
+const BASE_APP_DATA = {
   confidants: [
     { arcana: 'Fool', name: 'Igor', target: 10, notes: 'Automatic progression.', monthlyTargets: { july: 6 } },
     { arcana: 'Magician', name: 'Morgana', target: 10, notes: 'Automatic progression.', monthlyTargets: { july: 5 } },
@@ -156,12 +158,6 @@ export const APP_DATA = {
       tasks: [
         { id: 'apr_pal_sec', text: 'DEADLINE: Secure Route (Kamoshida) by 4/20', isMissable: true },
         { id: 'apr_pal_strat', text: 'Strategy: Clear Palace early (by 4/18)', isMissable: true },
-        { id: 'apr_q1', text: '4/12 Answer: "Villains" (+1 Knowledge)', isMissable: true },
-        { id: 'apr_q2', text: '4/19 Answer: "They\'re the same" (+1 Knowledge)', isMissable: true },
-        { id: 'apr_q3', text: '4/23 Answer: "All of them" (+1 Knowledge)', isMissable: true },
-        { id: 'apr_q4', text: '4/25 Answer: "You unquestionably support it" -> "You have a duty to correct it" (+1 Knowledge/Charm)', isMissable: true },
-        { id: 'apr_q5', text: '4/27 Answer: "Four color theorem" (+1 Knowledge)', isMissable: true },
-        { id: 'apr_q6', text: '4/30 Answer: "Wonder" -> "Child" -> "A prodigy" (+1 Knowledge)', isMissable: true },
         { id: 'cw_opp_1', text: '4/18 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_2', text: '4/27 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'apr_tip1', text: 'Optimization: Clean room early to unlock TV/Console', isMissable: true }
@@ -176,16 +172,7 @@ export const APP_DATA = {
         { id: 'may_unlock_maruki', text: '5/13: Councillor (Maruki) Unlocks (PRIORITY)' },
         { id: 'may_unlock_kawakami', text: '5/24: Operation Maidwatch (Starts Temperance)' },
         { id: 'may_unlock_kasumi', text: '5/30: Faith (Yoshizawa) Rank 1' },
-        { id: 'may_exams', text: '5/11-5/14: Midterm Exams (Requires Knowledge 3)', isMissable: true },
-        { id: 'may_q1', text: '5/11 Exam: "Yoshitsune" -> "Yoritomo" -> "Yoritomo won" -> "The weak"', isMissable: true },
-        { id: 'may_q2', text: '5/12 Exam: "Cognition" -> "Both"', isMissable: true },
-        { id: 'may_q3', text: '5/13 Exam: "The Devil\'s Dictionary" -> "Femme Fatale"', isMissable: true },
-        { id: 'may_q4', text: '5/16 Answer: "The placebo effect" (+1 Knowledge)', isMissable: true },
-        { id: 'may_q5', text: '5/19 Answer: "Hokusai Katsushika" (+1 Knowledge)', isMissable: true },
-        { id: 'may_q6', text: '5/21 Answer: "1:1.414" (+1 Knowledge)', isMissable: true },
-        { id: 'may_q7', text: '5/23 Answer: "Together" -> "Senses" -> "Senses coming together" (+1 Knowledge)', isMissable: true },
-        { id: 'may_q8', text: '5/26 Answer: "Arthur Conan Doyle" (+1 Knowledge)', isMissable: true },
-        { id: 'may_q9', text: '5/31 Answer: "John Silver" (+1 Knowledge)', isMissable: true },
+        { id: 'may_exams', text: '5/11-5/14: Midterm exams; results also depend on Knowledge', isMissable: true },
         { id: 'cw_opp_3', text: '5/2 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_4', text: '5/10 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_5', text: '5/18 Crossword puzzle at LeBlanc', isMissable: true },
@@ -205,14 +192,6 @@ export const APP_DATA = {
         { id: 'jun_priestess', text: '6/24: Priestess (Makoto) Unlocks' },
         { id: 'jun_star', text: '6/25: Star (Hifumi) Unlocks' },
         { id: 'jun_darts', text: 'Activity: Play Darts to reach Baton Pass Rank 3', isMissable: true },
-        { id: 'jun_q1', text: '6/4 Answer: "The halo effect" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q2', text: '6/8 Answer: "Controlling public thought" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q3', text: '6/13 Answer: "Green" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q4', text: '6/15 Answer: "Coins" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q5', text: '6/20 Answer: "Smartphone" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q6', text: '6/23 Answer: "A pope" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q7', text: '6/27 Answer: "Dogs" (+1 Knowledge)', isMissable: true },
-        { id: 'jun_q8', text: '6/29 Answer: "Gold" (+1 Knowledge)', isMissable: true },
         { id: 'cw_opp_8', text: '6/3 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_9', text: '6/7 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_10', text: '6/16 Crossword puzzle at LeBlanc', isMissable: true },
@@ -226,7 +205,7 @@ export const APP_DATA = {
       palace: 'Pyramid (Futaba)',
       tasks: [
         { id: 'jun_pal_dead', text: 'DEADLINE: Secure Route (Kaneshiro) by 7/9', isMissable: true },
-        { id: 'july_exams', text: '7/13-7/15: Finals (Requires Knowledge 4/5)', isMissable: true },
+        { id: 'july_exams', text: '7/13-7/16: Finals; results also depend on Knowledge', isMissable: true },
         { id: 'july_kawakami_10', text: 'CRITICAL: Reach Kawakami Rank 10 before 7/24', isMissable: true },
         { id: 'july_speed_reading', text: '7/25: Go to Jinbocho Bookstore for Speed Reading', isMissable: true },
         { id: 'pal4_start', text: 'Strategy: Begin Futaba Palace Infiltration', isMissable: true },
@@ -235,13 +214,6 @@ export const APP_DATA = {
         { id: 'j3', text: '7/24: Last day to borrow school books before summer', isMissable: true },
         { id: 'j4', text: '7/26: Trader Sakai: Trade MRE Ration for Factorization Study Method', isMissable: true },
         { id: 'j5', text: 'Mementos: Complete "The Money-grubbing Uncle" (Kawakami Lock)' },
-        { id: 'july_q1', text: '7/1 Answer: "Barbarian\'s head" (+1 Knowledge)', isMissable: true },
-        { id: 'july_q2', text: '7/4 Answer: "Julius and Augustus" (+1 Knowledge)', isMissable: true },
-        { id: 'july_q3', text: '7/7 Answer: "The Milky Way" -> "Soumen noodles" (+1 Knowledge)', isMissable: true },
-        { id: 'july_q4', text: '7/9 Answer: "A triangle" (+1 Knowledge)', isMissable: true },
-        { id: 'july_q5', text: '7/11 Answer: "Memories that last a long time" (+1 Knowledge)', isMissable: true },
-        { id: 'july_q6', text: '7/12 Answer: "180 degrees" -> "Luciferin" -> "Ishikawa Goemon" (+1 Knowledge)', isMissable: true },
-        { id: 'july_exam_ans', text: 'Exam: "Nouveau riche" -> "Gentleman-thief" -> "Hideyoshi" -> "Boiled alive"', isMissable: true },
         { id: 'cw_opp_13', text: '7/7 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_14', text: '7/12 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_15', text: '7/19 Crossword puzzle at LeBlanc', isMissable: true },
@@ -282,12 +254,6 @@ export const APP_DATA = {
         { id: 's2', text: '9/25 Jazz Jin: Concentrate (Essential for Magic)', isMissable: true },
         { id: 's3', text: '9/19: School Trip Dates', isMissable: true },
         { id: 's4', text: 'Unlock Shinya (Tower) via Mementos' },
-        { id: 'sep_q1', text: '9/3 Answer: "Prosperity" (+1 Knowledge)', isMissable: true },
-        { id: 'sep_q2', text: '9/6 Answer: "Chronostasis" (+1 Knowledge)', isMissable: true },
-        { id: 'sep_q3', text: '9/14 Answer: "Loans for collateral" (+1 Knowledge)', isMissable: true },
-        { id: 'sep_q4', text: '9/17 Answer: "Cats eating tongues" (+1 Knowledge)', isMissable: true },
-        { id: 'sep_q5', text: '9/21 Answer: "Central Europe" (+1 Knowledge)', isMissable: true },
-        { id: 'sep_q6', text: '9/24 Answer: "20 white, 12 black" (+1 Knowledge)', isMissable: true },
         { id: 'cw_opp_23', text: '9/2 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_24', text: '9/19 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_25', text: '9/21 Crossword puzzle at LeBlanc', isMissable: true },
@@ -302,12 +268,8 @@ export const APP_DATA = {
         { id: 'pal5_secure', text: 'DEADLINE: Secure Route (Okumura) by 10/10', isMissable: true },
         { id: 'pal5_dead', text: 'DEADLINE: Send Calling Card (Okumura) by 10/11', isMissable: true },
         { id: 'oct_haru_prof', text: '10/31: Empress (Haru) Unlocks (Need Max Proficiency)' },
-        { id: 'oct_q1', text: '10/3 Answer: "Stars" (+1 Knowledge)', isMissable: true },
-        { id: 'oct_q2', text: '10/6 Answer: "Joseph-Ignace Guillotin" (+1 Knowledge)', isMissable: true },
-        { id: 'oct_q3', text: '10/11 Answer: "Bouba" (+1 Knowledge)', isMissable: true },
-        { id: 'oct_exams', text: '10/17-10/20: Midterm Exams (Requires Knowledge 5)', isMissable: true },
+        { id: 'oct_exams', text: '10/17-10/20: Midterm exams; results also depend on Knowledge', isMissable: true },
         { id: 'o1', text: '10/2: Buy "Donut-Worry" from Home Shopping', isMissable: true },
-        { id: 'o2', text: 'Exams: 10/17-10/20 (Knowledge 4 Required)', isMissable: true },
         { id: 'o3', text: '10/30: Cultural Festival Events', isMissable: true },
         { id: 'cw_opp_27', text: '10/10 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_28', text: '10/31 Crossword puzzle at LeBlanc', isMissable: true }
@@ -362,8 +324,6 @@ export const APP_DATA = {
         { id: 'j1_jan', text: 'Talk to friends for 3rd Tier Personas' },
         { id: 'j2_jan', text: '1/22 Jazz Jin: Ali Dance', isMissable: true },
         { id: 'j3_jan', text: '1/29 Jazz Jin: Arms Master', isMissable: true },
-        { id: 'jan_q1', text: '1/11 Answer: "How numerous they are" -> "The Eight Million Gods"', isMissable: true },
-        { id: 'jan_q2', text: '1/14 Answer: "Iwate"', isMissable: true },
         { id: 'cw_opp_36', text: '1/14 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_37', text: '1/19 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_38', text: '1/23 Crossword puzzle at LeBlanc', isMissable: true },
@@ -609,4 +569,9 @@ export const APP_DATA = {
       { text: 'SP Adhesives', note: 'Buy from Takemi (Death Rank 5). 7 SP/turn is infinite sustain.', icon: 'battery-charging' }
     ]
   }
+};
+
+export const APP_DATA = {
+  ...BASE_APP_DATA,
+  months: withSchoolAnswers(BASE_APP_DATA.months),
 };
