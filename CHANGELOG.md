@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.8] - 2026-09-07
+
+- Separate Maruki's third-semester requirement from Akechi and Kasumi's extra character content in Briefing and confidant notes.
+- Align Faith's deadline with December 22, retain the December 18 task as an early reminder, and correct the claim that Faith rank 10 is automatic.
+- Use whole-number matching in Royal's school-answer filters. Existing task IDs and analytics names remain stable.
+
 ## [2.6.7] - 2026-09-07
 
 - Keep Royal usable when browser storage is blocked or rejects writes. Show a warning and offer a current-progress download.

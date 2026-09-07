@@ -56,7 +56,7 @@ const html = `<!doctype html>
 <link rel="canonical" href="${canonical}"><link rel="icon" href="../../favicon.svg"><link rel="stylesheet" href="../guide.css"><link rel="stylesheet" href="localpage.css">
 <meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="P5 Tracker">
 <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
-<script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script defer src="ui.js"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script type="module" src="ui.js"></script>
 </head>
 <body><main>
 <nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p5/">P5 Royal tracker</a> · <a href="../">All guides</a></nav>

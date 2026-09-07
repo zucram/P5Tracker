@@ -117,3 +117,10 @@ The earlier Royal startup could crash when localStorage was blocked. Invalid JSO
 A successful explicit import resumes saving. If the startup save was unreadable, the import transaction also stores its raw field map in `p5r_unreadableSave`. Sync can download that recovery document after a reload. It is separate from a normal tracker import and holds one original snapshot. Failed imports keep the existing import rollback behavior. Clearing site data removes all browser-local recovery copies.
 
 Browser tests covered fully blocked storage, malformed checklist JSON, retained valid ranks, current and original downloads, a valid replacement import, recovery after reload, write quota failure and retry after storage becomes writable. Royal tests kept a seeded Reload save unchanged. All 97 automated tests passed. Targeted save-module lint passed; the Royal file now has three legacy lint errors and one warning, down from seven errors and one warning.
+
+
+## Royal requirement corrections in 2.6.8
+
+Briefing now separates the required Councillor milestone from optional Justice and Faith character goals. It reads ranks, targets, dates and notes from the existing app data and links to the deadline checker. The old shared mandatory label was incorrect. Faith's displayed deadline now matches the existing December 22 calendar cutoff, while its December 18 task remains an early reminder. The Faith rank-10 note now describes a manual meeting. Existing saved task IDs remain unchanged.
+
+The source review is recorded in [Royal content review](royal-content-review.md). Browser checks verified the required/optional grouping and layouts at 320, 390 and 1280px. The Royal school guide also uses the shared whole-number search matcher, with its existing event name preserved. Browser tests covered July 1, 07/14, no results, reset and month navigation.

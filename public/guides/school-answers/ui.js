@@ -1,3 +1,5 @@
+import { normalizeLookup as normalize, matchesLookup } from '../lookup.js';
+
 (() => {
   const form = document.getElementById('answer-filters');
   const month = document.getElementById('answer-month');
@@ -6,7 +8,7 @@
   const count = document.getElementById('answer-count');
   const noAnswers = document.getElementById('no-answers');
   const sections = [...document.querySelectorAll('[data-month-section]')];
-  const normalize = text => text.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
   const rows = [...document.querySelectorAll('[data-answer]')].map(row => ({
     element: row,
     text: normalize(`${row.textContent} ${row.dataset.date} ${row.dataset.date.replace('-', '/')}`),
@@ -16,7 +18,7 @@
     const terms = normalize(search.value).split(' ').filter(Boolean);
     let visible = 0;
     rows.forEach(({ element, text }) => {
-      const matches = (!month.value || element.dataset.month === month.value) && (!type.value || element.dataset.type === type.value) && terms.every(term => text.includes(term));
+      const matches = (!month.value || element.dataset.month === month.value) && (!type.value || element.dataset.type === type.value) && matchesLookup(text, search.value);
       element.hidden = !matches;
       if (matches) visible++;
     });

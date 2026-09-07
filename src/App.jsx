@@ -1,3 +1,4 @@
+import { RoyalRequirements } from './components/RoyalRequirements';
 import { WelcomeNotice } from './components/WelcomeNotice';
 import { isVersionNewer, readPreference, writePreference } from './lib/releaseNotices';
 import { useSupportImpression } from './hooks/useSupportImpression';
@@ -783,39 +784,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="bg-red-600 border border-red-500 rounded-3xl p-4 md:p-6 shadow-xl shadow-red-900/20 text-black flex flex-col justify-between">
-                <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.3em] mb-4 flex items-center gap-2">
-                    <Trophy className="w-3 h-3" /> Royal Readiness
-                  </h3>
-                  <div className="space-y-3">
-                    {[
-                      { arc: 'Councillor', target: 9, name: 'Maruki' },
-                      { arc: 'Justice', target: 8, name: 'Akechi' },
-                      { arc: 'Faith', target: 5, name: 'Kasumi' }
-                    ].map(check => {
-                      const current = confidantRanks[check.arc] || 0;
-                      const progress = Math.min(100, (current / check.target) * 100);
-                      const isDone = current >= check.target;
-                      return (
-                        <div key={check.arc} className="space-y-1">
-                          <div className="flex justify-between text-[10px] font-black uppercase italic">
-                            <span>{check.name}</span>
-                            <span>{current}/{check.target}</span>
-                          </div>
-                          <div className="h-1.5 bg-black/20 rounded-full overflow-hidden">
-                            <div 
-                              className={`h-full transition-all duration-1000 ${isDone ? 'bg-white' : 'bg-black'}`} 
-                              style={{ width: `${progress}%` }} 
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-                <p className="text-[8px] font-bold mt-4 opacity-60">System: Mandatory for 3rd Semester Access</p>
-              </div>
+              <RoyalRequirements ranks={confidantRanks} />
             </div>
 
             <SupportCard location="briefing" />

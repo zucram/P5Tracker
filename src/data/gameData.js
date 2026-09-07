@@ -51,7 +51,7 @@ const BASE_APP_DATA = {
       name: 'Goro Akechi',
       target: 8,
       deadline: '11/17',
-      notes: 'Rank 8 required for True End extra content.',
+      notes: 'Extra scenes also depend on dialogue choices. This is not the semester unlock.',
       monthlyTargets: { june: 2, july: 5, october: 6, november: 8 }
     },
     {
@@ -137,8 +137,8 @@ const BASE_APP_DATA = {
       arcana: 'Faith',
       name: 'Kasumi Yoshizawa',
       target: 5,
-      deadline: '12/18',
-      notes: 'Rank 5 is mandatory for 3rd Semester content.',
+      deadline: '12/22',
+      notes: 'Rank 5 lets her confidant continue in the third semester.',
       monthlyTargets: { july: 4, november: 5, january: 10 }
     },
     {
@@ -146,7 +146,7 @@ const BASE_APP_DATA = {
       name: 'Takuto Maruki',
       target: 9,
       deadline: '11/17',
-      notes: 'MANDATORY Rank 9 for 3rd Semester access.',
+      notes: 'This unlocks the third semester. Later story choices still matter.',
       monthlyTargets: { may: 2, july: 5, september: 7, october: 9 }
     }
   ],
@@ -283,7 +283,7 @@ const BASE_APP_DATA = {
         { id: 'pal6_dead', text: 'DEADLINE: Secure Route (Sae) by 11/17', isMissable: true },
         { id: 'nov_pal_strat', text: 'Strategy: Secure Route (Sae) early to free up social time', isMissable: true },
         { id: 'nov_deadline_maruki', text: '11/17 DEADLINE: Maruki MUST be Rank 9', isMissable: true },
-        { id: 'nov_deadline_akechi', text: '11/17 DEADLINE: Akechi MUST be Rank 8', isMissable: true },
+        { id: 'nov_deadline_akechi', text: '11/17 DEADLINE: Akechi Rank 8 for his extra scenes; dialogue choices also matter', isMissable: true },
         { id: 'nov_deadline_yoshida', text: '11/13 DEADLINE: Yoshida MUST be Rank 10', isMissable: true },
         { id: 'nov_interrogation', text: '11/20 TRAP: Do NOT sell out friends.', isMissable: true },
         { id: 'nov_akechi_choices', text: 'Akechi Choices: Rank 7: "You\'re my rival" | Rank 8: "I accept"', isMissable: true },
@@ -301,11 +301,11 @@ const BASE_APP_DATA = {
       tasks: [
         { id: 'pal7_dead', text: 'DEADLINE: Secure Route (Shido) by 12/16', isMissable: true },
         { id: 'dec_pal_strat', text: 'Strategy: Secure Route (Shido) early to minimize late-game stress', isMissable: true },
-        { id: 'dec_faith', text: '12/18 DEADLINE: Kasumi MUST be Rank 5', isMissable: true },
+        { id: 'dec_faith', text: '12/18: Aim for Kasumi Rank 5 before the 12/22 cutoff', isMissable: true },
         { id: 'dec_mementos', text: '12/24: Clear Mementos Depths entirely' },
         { id: 'dec_akechi', text: 'Post-Shido: Say "I want to keep our promise" to Akechi', isMissable: true },
         { id: 'd1', text: '12/11: Jazz Jin (Debilitate)', isMissable: true },
-        { id: 'd2', text: '12/22: Last day for Kasumi (Faith) Rank 5', isMissable: true },
+        { id: 'd2', text: '12/22 DEADLINE: Kasumi (Faith) Rank 5 to continue her confidant later', isMissable: true },
         { id: 'd3', text: '12/24: Christmas Eve Special Date', isMissable: true },
         { id: 'cw_opp_32', text: '12/2 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_33', text: '12/7 Crossword puzzle at LeBlanc', isMissable: true },

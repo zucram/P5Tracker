@@ -231,7 +231,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Faith': {
     bestGifts: ["Heart Muffler (Shibuya)", "Glass Vase (Shibuya)", "Flower Basket (Shinjuku)", "Crimson Lipstick (Underground Mall)"],
-    tips: "Rank 5 is mandatory for 3rd Semester content. Deadline 12/22.",
+    tips: "Reach Rank 5 by 12/22 to continue her confidant in the third semester. Maruki unlocks the semester itself.",
     ranks: {
       2: ["1: 'We're just getting started.'", "2: 'Next time, then.'", "Phone: 'Impressive.'"],
       3: ["1: 'Making bento?'", "2: 'I'm touched!'", "3: 'Is that all for you?'", "Phone: 'You could try again sometime?'"],
@@ -247,7 +247,7 @@ export const CONFIDANT_INTERACTIONS = {
         "4: 'I love you too.' (ROMANCE) OR 'Let's stay friends.' (FRIENDSHIP)",
         "Phone: 'Get used to it.' (ROMANCE) OR 'Of course.' (FRIENDSHIP)"
       ],
-      10: ["Automatic in 3rd Semester."]
+      10: ["Rank 10 requires another meeting in the third semester. It does not advance automatically."]
     }
   },
   'Judgement': {

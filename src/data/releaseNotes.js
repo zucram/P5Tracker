@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.8",
+    date: "2026-09-07",
+    title: "Clearer Royal requirements",
+    description: "The third-semester unlock is separated from extra character content.",
+    sections: [{ title: "Answers and deadlines", items: [
+      "Briefing identifies Maruki as the required confidant. Akechi and Kasumi have separate character goals.",
+      "Kasumi's deadline is consistently December 22. December 18 is an early planning reminder.",
+      "Royal school-answer searches match whole date numbers, so July 1 does not return July 11."
+    ] }]
+  },
+  {
     version: "2.6.7",
     date: "2026-09-07",
     title: "Keep Royal progress recoverable",
