@@ -106,3 +106,14 @@ New Royal players can use the tracker immediately. An optional welcome card appe
 Royal dialogs now have accessible labels, keep Tab focus inside the panel and close with Escape. Closing restores focus to the opener if it remains present, otherwise to the main content. Opening one dialog no longer lets the other inactive dialog effects undo the page's scroll lock.
 
 Isolated Chromium covered fresh visits, direct Calendar entry, returning users with an older version, notice dismissal and optional help. Tests verified current tab names, 320px layout, keyboard focus containment and restoration, existing Royal ranks and an untouched Reload save. The changed modules pass targeted lint; the Royal file retains its existing seven-error/one-warning lint baseline. Source helpers tolerate unavailable preference storage, but this does not establish that all legacy Royal save paths tolerate blocked storage.
+
+
+## Royal save recovery in 2.6.7
+
+The earlier Royal startup could crash when localStorage was blocked. Invalid JSON could also be replaced by an empty checklist during the initial persistence effect. Isolated Chromium reproduced both defects before this change.
+
+`loadStoredSave` now validates each stored field through the existing save parser, fills missing fields, and preserves other valid fields when one is unreadable. It performs no writes. Unreadable data pauses automatic persistence; inaccessible storage leaves the tracker usable in memory. The warning offers downloads of current progress and, when present, the original stored text. Ordinary persistence attempts to restore prior values if one field write fails. If the browser also refuses rollback writes, recovery depends on the in-memory export or an earlier downloaded backup.
+
+A successful explicit import resumes saving. If the startup save was unreadable, the import transaction also stores its raw field map in `p5r_unreadableSave`. Sync can download that recovery document after a reload. It is separate from a normal tracker import and holds one original snapshot. Failed imports keep the existing import rollback behavior. Clearing site data removes all browser-local recovery copies.
+
+Browser tests covered fully blocked storage, malformed checklist JSON, retained valid ranks, current and original downloads, a valid replacement import, recovery after reload, write quota failure and retry after storage becomes writable. Royal tests kept a seeded Reload save unchanged. All 97 automated tests passed. Targeted save-module lint passed; the Royal file now has three legacy lint errors and one warning, down from seven errors and one warning.

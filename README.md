@@ -4,7 +4,7 @@
 
 Free browser companions for planning a Persona playthrough. Follow monthly objectives, record progress, and look up answers while choosing your own daily schedule. Neither tracker guarantees a perfect 100% route.
 
-The current release is **2.6.6**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
+The current release is **2.6.7**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
 
 ## Trackers and guides
 
@@ -20,7 +20,7 @@ Both trackers use the same navigation pattern with separate game themes. Reload 
 
 ## Saves, support, and feedback
 
-Progress stays in browser storage. Use **Sync** to export or import a backup. Imports validate data and retain one previous save in that browser. Keep a downloaded backup because clearing site data also removes browser-local recovery. Royal and Reload have separate saves. Neither tracker reads game save files or syncs automatically between devices.
+Progress stays in browser storage. Use **Sync** to export or import a backup. Imports validate data and retain one previous save in that browser. Keep a downloaded backup because clearing site data also removes browser-local recovery. Royal and Reload have separate saves. If Royal cannot read stored data, it pauses automatic saving and offers the original text for download. Importing a valid backup resumes saving and retains one original-data recovery document. Neither tracker reads game save files or syncs automatically between devices.
 
 The apps are free, with no ads or required account. [Optional Ko-fi support](https://ko-fi.com/K3K11RWTSL) helps with maintenance and content checks. Report bugs and factual corrections through [GitHub Issues](https://github.com/zucram/P5Tracker/issues).
 

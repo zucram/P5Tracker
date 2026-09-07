@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.7",
+    date: "2026-09-07",
+    title: "Keep Royal progress recoverable",
+    description: "Royal stays usable when browser storage fails and protects unreadable saves.",
+    sections: [{ title: "Saves and controls", items: [
+      "Download current progress when browser storage is blocked or full.",
+      "Keep original unreadable data without overwriting it. A valid import resumes saving and retains a recovery copy.",
+      "Use labelled confidant rank controls and larger social-stat buttons."
+    ] }]
+  },
+  {
     version: "2.6.6",
     date: "2026-09-07",
     title: "Start playing without extra dialogs",

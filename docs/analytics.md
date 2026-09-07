@@ -4,6 +4,10 @@ P5 Tracker uses Umami page views and feature events to measure discovery, use an
 
 Use the [post-launch agent guide](post-launch-agent-guide.md) for the review procedure. This document defines instrumentation. Actual account results and saved-report configuration stay in the private ledger.
 
+## Royal storage failures in 2.6.7
+
+`save_persistence_failed` records the first storage warning per page load. Its only property is `kind: unreadable`, `unavailable` or `write_failed`. It sends no raw data, field names, error messages or player inputs. Initial unreadable saves and blocked storage can emit this event before manual tracker use. Existing progress events describe changes in memory and do not prove that browser storage accepted them.
+
 ## Optional Royal welcome in 2.6.6
 
 Royal no longer opens onboarding or changelog dialogs automatically. The optional Briefing card emits `welcome_calendar_opened` when its calendar action is chosen, or `welcome_dismissed` when dismissed. Neither event carries properties or proves manual tracker use. Explicit help openings retain `help-open`; closing help retains the historical `onboarding-complete` acknowledgment event. It does not establish that a player read every instruction. Compare onboarding counts across this change with care.

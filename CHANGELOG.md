@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.7] - 2026-09-07
+
+- Keep Royal usable when browser storage is blocked or rejects writes. Show a warning and offer a current-progress download.
+- Validate stored fields without writing over unreadable data. Preserve valid fields, pause automatic writes and offer the original stored text as a recovery document.
+- Retain the unreadable snapshot when an explicit valid import resumes saving. Roll back interrupted multi-field writes where storage permits.
+- Add accessible rank/stat labels, larger stat targets and a fixed-category persistence-failure event with no save contents.
+
 ## [2.6.6] - 2026-09-07
 
 - Replace Royal's automatic welcome and changelog dialogs with optional notices. Direct guide-to-tracker visits open the requested section.

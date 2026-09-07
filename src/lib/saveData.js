@@ -2,6 +2,8 @@ import { APP_DATA } from '../data/gameData.js';
 
 export const MAX_SAVE_BYTES = 1024 * 1024;
 export const PREVIOUS_SAVE_KEY = 'p5r_previousSave';
+export const ORIGINAL_SAVE_KEY = 'p5r_unreadableSave';
+const saveFields = ['checkedItems', 'confidantRanks', 'socialStats', 'anchoredMonth'];
 const stats = ['Knowledge', 'Guts', 'Proficiency', 'Kindness', 'Charm'];
 const unsafeKeys = new Set(['__proto__', 'prototype', 'constructor']);
 const isRecord = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -48,12 +50,22 @@ export function parseSave(text) {
 }
 
 // Persist before changing React state. Roll back if browser storage rejects a write.
-export function persistImportedSave(storage, current, incoming) {
-  const keys = ['checkedItems', 'confidantRanks', 'socialStats', 'anchoredMonth'];
+export function persistImportedSave(storage, current, incoming, original = null) {
   const entries = [
     [PREVIOUS_SAVE_KEY, JSON.stringify(current)],
-    ...keys.map(key => [`p5r_${key}`, key === 'anchoredMonth' ? incoming[key] : JSON.stringify(incoming[key])]),
+    ...(original ? [[ORIGINAL_SAVE_KEY, JSON.stringify(original)]] : []),
+    ...saveEntries(incoming),
   ];
+  try { persistEntries(storage, entries); } catch {
+    throw new Error('Browser storage could not save the import. Your current progress has not been changed. Download a backup and free some storage before trying again.');
+  }
+}
+
+function saveEntries(save) {
+  return saveFields.map(key => [`p5r_${key}`, key === 'anchoredMonth' ? save[key] : JSON.stringify(save[key])]);
+}
+
+function persistEntries(storage, entries) {
   const previous = entries.map(([key]) => [key, storage.getItem(key)]);
   try {
     for (const [key, value] of entries) storage.setItem(key, value);
@@ -61,6 +73,50 @@ export function persistImportedSave(storage, current, incoming) {
     for (const [key, value] of previous) {
       try { if (value === null) storage.removeItem(key); else storage.setItem(key, value); } catch { /* Keep attempting the remaining keys. */ }
     }
-    throw new Error('Browser storage could not save the import. Your current progress has not been changed. Download a backup and free some storage before trying again.');
+    throw new Error('Browser storage could not save every field.');
   }
+}
+
+export function persistProgress(storage, save) {
+  persistEntries(storage, saveEntries(save));
+}
+
+export function loadStoredSave(storage) {
+  const save = {
+    checkedItems: {},
+    confidantRanks: Object.fromEntries(APP_DATA.confidants.map(c => [c.arcana, 0])),
+    socialStats: Object.fromEntries(stats.map(stat => [stat, 1])),
+    anchoredMonth: 'april',
+  };
+  const raw = {};
+  let unreadable = false;
+  let inaccessible = false;
+  for (const field of saveFields) {
+    const key = `p5r_${field}`;
+    try { raw[key] = storage.getItem(key); } catch { inaccessible = true; continue; }
+    if (raw[key] === null) continue;
+    try {
+      const value = field === 'anchoredMonth' ? raw[key] : JSON.parse(raw[key]);
+      const validated = parseSave(JSON.stringify({ checkedItems: {}, [field]: value }));
+      save[field] = validated[field];
+    } catch { unreadable = true; }
+  }
+  let original = unreadable ? raw : null;
+  if (!original) {
+    try {
+      const recovered = JSON.parse(storage.getItem(ORIGINAL_SAVE_KEY));
+      if (isRecord(recovered) && Object.entries(recovered).every(([key, value]) => saveFields.some(field => key === `p5r_${field}`) && (value === null || typeof value === 'string'))) original = recovered;
+    } catch { /* An optional recovery copy does not affect the active save. */ }
+  }
+  return {
+    save,
+    original,
+    canSave: !unreadable && !inaccessible,
+    failure: unreadable ? 'unreadable' : inaccessible ? 'unavailable' : null,
+    warning: unreadable
+      ? 'Some saved progress could not be read. Automatic saving is paused to protect the original. Download the original data before importing a backup.'
+      : inaccessible
+        ? 'Browser storage is unavailable. You can use the tracker, but progress stays only in this tab. Download a backup before closing it.'
+        : '',
+  };
 }

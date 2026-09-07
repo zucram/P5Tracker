@@ -57,7 +57,7 @@ import { CROSSWORD_DATA } from './data/crosswordData';
 import { CONFIDANT_STAT_GATES, SOCIAL_STATS } from './data/socialStats';
 import { RELEASE_NOTES } from './data/releaseNotes';
 import { ROADMAP } from './data/roadmap';
-import { MAX_SAVE_BYTES, PREVIOUS_SAVE_KEY, parseSave, persistImportedSave } from './lib/saveData';
+import { MAX_SAVE_BYTES, PREVIOUS_SAVE_KEY, parseSave, persistImportedSave, loadStoredSave, persistProgress } from './lib/saveData';
 
 const STAT_ICONS = {
   Knowledge: Book,
@@ -119,6 +119,18 @@ function SupportCard({ location }) {
 }
 
 export default function App() {
+    const [loadedSave] = useState(() => {
+      try { return loadStoredSave(window.localStorage); } catch { return loadStoredSave(undefined); }
+    });
+    const [savingEnabled, setSavingEnabled] = useState(loadedSave.canSave);
+    const [saveWarning, setSaveWarning] = useState(loadedSave.warning);
+    const saveFailureTracked = useRef(false);
+    useEffect(() => {
+      if (saveWarning && !saveFailureTracked.current) {
+        saveFailureTracked.current = true;
+        trackEvent('save_persistence_failed', { kind: loadedSave.failure || 'write_failed' });
+      }
+    }, [saveWarning, loadedSave]);
     const [activeTab, setActiveTab] = useState(() => {
       // 1. Try URL Hash first
       const hash = window.location.hash.replace('#', '');
@@ -134,11 +146,11 @@ export default function App() {
       if (hash && hashMap[hash]) return hashMap[hash];
   
       // 2. Fallback to Local Storage
-      const saved = localStorage.getItem('p5r_activeTab') || 'cheatsheet';
+      const saved = readPreference('p5r_activeTab') || 'cheatsheet';
       if (saved === 'library') return 'library_view';
       if (saved === 'registry') return 'registry_view';
       if (saved === 'palaces' || saved === 'mementos') return 'metaverse';
-      return saved;
+      return ['cheatsheet', 'months', 'confidants', 'metaverse', 'more', 'library_view', 'registry_view'].includes(saved) ? saved : 'cheatsheet';
     });
   
     // Sync state to URL hash
@@ -155,7 +167,7 @@ export default function App() {
       if (stateToHash[activeTab]) {
         window.location.hash = stateToHash[activeTab];
       }
-      localStorage.setItem('p5r_activeTab', activeTab);
+      writePreference('p5r_activeTab', activeTab);
     }, [activeTab]);
   
     // Sync URL hash to state (Back/Forward support)
@@ -181,38 +193,17 @@ export default function App() {
         }, []);
       
         const [metaverseView, setMetaverseView] = useState('palaces');
-        const [anchoredMonth, setAnchoredMonth] = useState(() => localStorage.getItem('p5r_anchoredMonth') || 'april');
-        const [currentMonth, setCurrentMonth] = useState(() => localStorage.getItem('p5r_anchoredMonth') || 'april');
+        const [anchoredMonth, setAnchoredMonth] = useState(loadedSave.save.anchoredMonth);
+        const [currentMonth, setCurrentMonth] = useState(loadedSave.save.anchoredMonth);
         const [searchTerm, setSearchTerm] = useState('');
         const [registrySearch, setRegistrySearch] = useState('');
         const [registryFilter, setRegistryFilter] = useState('All');
         
         // Data State
-        const [checkedItems, setCheckedItems] = useState(() => {
-          try {
-            const saved = localStorage.getItem('p5r_checkedItems');
-            return saved ? JSON.parse(saved) : {};
-          } catch (e) { return {}; }
-        });
-      
-        const [socialStats, setSocialStats] = useState(() => {
-          try {
-            const saved = localStorage.getItem('p5r_socialStats');
-            return saved ? JSON.parse(saved) : { Knowledge: 1, Guts: 1, Proficiency: 1, Kindness: 1, Charm: 1 };
-          } catch (e) { return { Knowledge: 1, Guts: 1, Proficiency: 1, Kindness: 1, Charm: 1 }; }
-        });
-        
-        const [confidantRanks, setConfidantRanks] = useState(() => {
-          try {
-            const saved = localStorage.getItem('p5r_confidantRanks');
-            if (saved) return JSON.parse(saved);
-          } catch (e) {}
-          
-          const initial = {};
-          APP_DATA.confidants.forEach(c => initial[c.arcana] = 0);
-          return initial;
-        });
-      
+        const [checkedItems, setCheckedItems] = useState(loadedSave.save.checkedItems);
+        const [socialStats, setSocialStats] = useState(loadedSave.save.socialStats);
+        const [confidantRanks, setConfidantRanks] = useState(loadedSave.save.confidantRanks);
+
         const [expandedGuides, setExpandedGuides] = useState({});
         const [expandedPalace, setExpandedPalace] = useState(null);
         const [expandedMementos, setExpandedMementos] = useState(null);
@@ -238,20 +229,14 @@ export default function App() {
           setExpandedGuides(prev => ({ ...prev, [arcana]: !prev[arcana] }));
         };
   useEffect(() => {
-    localStorage.setItem('p5r_anchoredMonth', anchoredMonth);
-  }, [anchoredMonth]);
-
-  useEffect(() => {
-    localStorage.setItem('p5r_checkedItems', JSON.stringify(checkedItems));
-  }, [checkedItems]);
-
-  useEffect(() => {
-    localStorage.setItem('p5r_socialStats', JSON.stringify(socialStats));
-  }, [socialStats]);
-
-  useEffect(() => {
-    localStorage.setItem('p5r_confidantRanks', JSON.stringify(confidantRanks));
-  }, [confidantRanks]);
+    if (!savingEnabled) return;
+    try {
+      persistProgress(window.localStorage, { checkedItems, socialStats, confidantRanks, anchoredMonth });
+      setSaveWarning('');
+    } catch {
+      setSaveWarning('This browser could not save your latest changes. Keep this tab open and download a backup before leaving.');
+    }
+  }, [checkedItems, socialStats, confidantRanks, anchoredMonth, savingEnabled]);
 
   const migrateCrosswords = (items) => {
     const allKeys = Object.keys(items);
@@ -419,11 +404,24 @@ export default function App() {
     setSaveStatus('Save download started. Keep this file to transfer or recover your progress.');
   };
 
+  const exportOriginal = () => {
+    if (!loadedSave.original) return;
+    const url = URL.createObjectURL(new Blob([JSON.stringify({ format: 'p5tracker-original-storage', version: 1, values: loadedSave.original }, null, 2)], { type: 'application/json' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'p5tracker-original-storage.json';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    setSaveStatus('Original data download started. Keep this recovery document; it is not a normal import file.');
+  };
+
   const applySave = (text, restoring = false, method = 'paste') => {
     try {
       const parsed = parseSave(text);
       const next = { ...currentSave(), ...parsed, checkedItems: migrateCrosswords(parsed.checkedItems) };
-      persistImportedSave(localStorage, currentSave(), next);
+      persistImportedSave(localStorage, currentSave(), next, !savingEnabled ? loadedSave.original : null);
+      setSavingEnabled(true);
+      setSaveWarning('');
       setCheckedItems(next.checkedItems);
       setConfidantRanks(next.confidantRanks);
       setSocialStats(next.socialStats);
@@ -723,6 +721,14 @@ export default function App() {
       </nav>
 
       <main tabIndex={-1} className="max-w-6xl mx-auto pb-48 md:pb-24">
+        {saveWarning && <section role="alert" className="mb-5 rounded-xl border border-amber-600 bg-amber-950/40 p-4 text-sm text-amber-100">
+          <h2 className="font-bold">Keep a backup of your progress</h2><p className="mt-2 leading-relaxed">{saveWarning}</p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <button onClick={exportFile} className="rounded-lg border border-amber-500 px-3 py-3 font-semibold">Download current progress</button>
+            {loadedSave.original && <button onClick={exportOriginal} className="rounded-lg border border-amber-500 px-3 py-3 font-semibold">Download original stored data</button>}
+            <button onClick={() => setSaveModal(true)} className="px-3 py-3 underline">Open Sync</button>
+          </div>
+        </section>}
         {showWelcome && activeTab === 'cheatsheet' && <WelcomeNotice
           onCalendar={() => { dismissWelcome(); setActiveTab('months'); trackEvent('welcome_calendar_opened'); }}
           onHelp={() => { setShowOnboarding(true); trackEvent('help-open'); }}
@@ -762,7 +768,10 @@ export default function App() {
                             <button
                               key={lvl}
                               onClick={() => updateStat(stat.id, lvl)}
-                              className={`h-2 flex-1 rounded-full transition-all ${
+                              aria-label={`Set ${stat.id} to level ${lvl}`}
+                              aria-pressed={lvl === currentLvl}
+                              title={`${stat.id} level ${lvl}`}
+                              className={`h-6 flex-1 rounded-md transition-all ${
                                 lvl <= currentLvl ? stat.color : 'bg-neutral-800 hover:bg-neutral-700'
                               }`}
                             />
@@ -1211,10 +1220,12 @@ export default function App() {
                         {/* Rank Controls (Inline) */}
                         <div className="flex shrink-0 items-center gap-1">
                            <button 
+                             aria-label={`Decrease ${c.arcana} rank`}
                              onClick={(e) => { e.stopPropagation(); updateRank(c.arcana, rank - 1); }} 
                              className="w-8 h-8 flex items-center justify-center bg-neutral-800 hover:bg-red-600 rounded text-neutral-400 hover:text-white font-bold text-lg active:scale-90 transition-transform"
                            >-</button>
                            <button 
+                             aria-label={`Increase ${c.arcana} rank`}
                              onClick={(e) => { e.stopPropagation(); updateRank(c.arcana, rank + 1); }} 
                              className="w-8 h-8 flex items-center justify-center bg-neutral-800 hover:bg-red-600 rounded text-neutral-400 hover:text-white font-bold text-lg active:scale-90 transition-transform"
                            >+</button>
@@ -2023,7 +2034,7 @@ export default function App() {
       <Modal label="Sync and backup" isOpen={saveModal} onClose={() => setSaveModal(false)} className="max-w-2xl border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] rounded-[3rem]">
            <div className="p-10">
               <h2 className="text-4xl font-black text-red-600 italic uppercase mb-2 tracking-tighter">Sync Terminal</h2>
-              <p className="text-neutral-400 text-sm mb-8 font-mono">Progress is saved in this browser. Download or copy a save to move it to another device. Importing replaces your progress and keeps one previous save here.</p>
+              <p className="text-neutral-400 text-sm mb-8 font-mono">{saveWarning ? 'Automatic saving is unavailable. Download your progress before closing this tab.' : 'Progress is saved in this browser.'} Download or copy a save to move it to another device. Importing replaces your progress and keeps one previous save here.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                  <button onClick={exportFile} className="p-8 bg-red-600 hover:bg-white text-black font-black rounded-3xl transition-all flex flex-col items-center gap-3 shadow-xl group">
@@ -2042,6 +2053,7 @@ export default function App() {
                     </label>
                  </div>
               </div>
+              {loadedSave.original && <div className="mb-5 rounded-xl border border-amber-700 p-4 text-sm text-amber-100"><p>A recovery document with the original stored text is available. It is separate from a normal save import.</p><button onClick={exportOriginal} className="mt-3 rounded-lg border border-amber-500 px-3 py-3">Download original stored data</button></div>}
               {saveStatus && <p role="status" aria-live="polite" className="mb-5 text-sm text-neutral-200">{saveStatus}</p>}
               {hasPreviousSave && <button onClick={restorePreviousSave} className="mb-6 w-full rounded-2xl border border-neutral-700 p-3 text-sm text-neutral-300 hover:border-white">Restore previous save</button>}
               <input type="text" aria-hidden="true" tabIndex={-1} ref={hiddenInputRef} className="opacity-0 absolute pointer-events-none" />
