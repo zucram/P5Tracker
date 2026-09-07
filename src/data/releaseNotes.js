@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.4.2",
+    date: "2026-09-07",
+    title: "Guides within reach",
+    description: "Find answers and planning help directly from the tracker.",
+    sections: [{ title: "Navigation", items: [
+      "Calendar and Confidants now show links to relevant guides above their content.",
+      "Find every published guide and the game directory at the top of More and the Reference Hub.",
+      "Briefing includes shortcuts to monthly planning, school answers and the Maruki deadline check."
+    ] }]
+  },
+  {
     version: "2.4.1",
     date: "2026-09-07",
     title: "Reviewed school and exam answers",

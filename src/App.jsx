@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { GuideLinks } from './components/GuideLinks';
 import { NextGameVote } from './components/NextGameVote';
 import { ShareTracker } from './components/ShareTracker';
 import { CONFIDANT_INTERACTIONS } from './data/confidantData';
@@ -727,6 +728,7 @@ export default function App() {
       </nav>
 
       <main className="max-w-6xl mx-auto pb-48 md:pb-24">
+        <GuideLinks view={activeTab} />
         
         {/* CHEATSHEET VIEW */}
         {activeTab === 'cheatsheet' && (
@@ -1866,9 +1868,9 @@ export default function App() {
                 <ChevronRight className="w-4 h-4 rotate-180" /> Back to System Menu
             </button>
             <div className="text-center max-w-2xl mx-auto mb-6 md:mb-12">
-              <h2 className="text-2xl md:text-5xl font-black italic text-white uppercase tracking-tighter mb-2 md:mb-4">Command Center</h2>
+              <h2 className="text-2xl md:text-5xl font-black italic text-white uppercase tracking-tighter mb-2 md:mb-4">Reference Hub</h2>
               <p className="text-[10px] md:text-sm text-neutral-500 font-bold uppercase tracking-widest leading-relaxed px-4">
-                External tools and curated community intelligence.
+                Guides, tools and community resources.
               </p>
             </div>
 
