@@ -3,8 +3,7 @@ import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'jso
 import { ALL_GUIDE_TASK_IDS } from './monthGuide.js';
 import school from '../../knowledge/p3-reload/school-answers.json' with { type: 'json' };
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS } from './data.js';
-import requests from '../../knowledge/p3-reload/requests.json' with { type: 'json' };
-import { PERSONA_IDS, DLC_PERSONAS } from './fusion.js';
+import saveCatalog from './saveCatalog.json' with { type: 'json' };
 import { COLLECTION_IDS, DORM_ACTIVITY_IDS, ROMANCE_LINK_IDS } from './campaignData.js';
 
 export const STORAGE_KEY = 'p3reload_state_v1';
@@ -14,7 +13,7 @@ const forbiddenKeys = new Set(['__proto__', 'prototype', 'constructor']);
 const hasControls = value => [...value].some(char => char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127);
 const linkIds = SOCIAL_LINKS.map(link => link.id);
 const manualLinkIds = SOCIAL_LINKS.filter(link => link.kind !== 'story').map(link => link.id);
-const eventIds = new Set([...knowledge.facts.map(fact => fact.id), ...requests.entries.map(request => request.id)]);
+const eventIds = new Set([...knowledge.facts.map(fact => fact.id), ...saveCatalog.requestIds]);
 const taskIds = new Set([...ALL_GUIDE_TASK_IDS, ...tartarus.blocks.map(block => `tartarus-${block.id}`), ...school.entries.map(entry => entry.id)]);
 const monthNumbers = [4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
 const monthIds = MONTHS.map(month => month.id);
@@ -84,9 +83,9 @@ export function parseState(text) {
   const showEventNames = legacy ? false : state.showEventNames;
   if (typeof showEventNames !== 'boolean') throw new Error('The event name display setting is invalid.');
   const registeredPersonas = state.registeredPersonas === undefined ? [] : state.registeredPersonas;
-  validateIds(registeredPersonas, new Set(PERSONA_IDS), PERSONA_IDS.length, 'Registered Personas');
+  validateIds(registeredPersonas, new Set(saveCatalog.personaIds), saveCatalog.personaIds.length, 'Registered Personas');
   const enabledDlcPersonas = state.enabledDlcPersonas === undefined ? [] : state.enabledDlcPersonas;
-  validateIds(enabledDlcPersonas, new Set(DLC_PERSONAS.map(persona => persona.id)), DLC_PERSONAS.length, 'DLC Personas');
+  validateIds(enabledDlcPersonas, new Set(saveCatalog.dlcIds), saveCatalog.dlcIds.length, 'DLC Personas');
   const collectionChecks = state.collectionChecks === undefined ? [] : state.collectionChecks;
   validateIds(collectionChecks, new Set(COLLECTION_IDS), COLLECTION_IDS.length, 'Collections');
   const dormActivities = state.dormActivities === undefined ? Object.fromEntries(DORM_ACTIVITY_IDS.map(id => [id, 0])) : state.dormActivities;

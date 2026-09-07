@@ -5,7 +5,7 @@ import { getMonthGuide } from './monthGuide';
 import { dateLabel, dateNumber } from './planner';
 import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'json' };
 import school from '../../knowledge/p3-reload/school-answers.json' with { type: 'json' };
-import campaign from '../../knowledge/p3-reload/campaign.json' with { type: 'json' };
+import campaign from '../../knowledge/p3-reload/campaign.json';
 import { COLLECTION_SECTIONS } from './campaignData';
 import CampaignReference from './CampaignReference';
 

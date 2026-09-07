@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.4] - 2026-09-07
+
+- Load six Reload reference sections on demand. The Reload entry bundle falls from about 1,581 kB to 432 kB before compression.
+- Validate Persona and request saves against a generated ID catalog, so the calendar does not need the full fusion and request datasets.
+- Keep other tabs and Sync available when a reference section fails to load.
+
 ## [2.6.3] - 2026-09-07
 
 - Add a searchable Royal crossword guide with all 38 existing clues and answers.

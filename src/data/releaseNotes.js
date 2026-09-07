@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.4",
+    date: "2026-09-07",
+    title: "A lighter Reload calendar",
+    description: "The calendar opens without downloading every reference section first.",
+    sections: [{ title: "Loading", items: [
+      "Social Links, requests, combat, Personas, dorm activities and equipment load when opened.",
+      "Other tabs remain available if a section cannot download.",
+      "Existing saves and backups stay compatible."
+    ] }]
+  },
+  {
     version: "2.6.3",
     date: "2026-09-07",
     title: "Find an answer faster",

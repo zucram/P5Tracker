@@ -4,7 +4,7 @@
 
 Free browser companions for planning a Persona playthrough. Follow monthly objectives, record progress, and look up answers while choosing your own daily schedule. Neither tracker guarantees a perfect 100% route.
 
-The current release is **2.6.3**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
+The current release is **2.6.4**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
 
 ## Trackers and guides
 
@@ -39,7 +39,7 @@ npm run build
 npm run preview
 ```
 
-After changing generated guide data, run `npm run build:guides`. Prebuild validates the Reload knowledge collection and checks generated-page freshness. See [Royal school-answer maintenance](docs/school-answers.md) and the [Reload data inventory](knowledge/p3-reload/README.md).
+After changing generated guide data, run `npm run build:guides`. After changing Reload Persona or request IDs, run `npm run build:catalog`. Prebuild validates the Reload knowledge collection and checks generated-page freshness. See [Royal school-answer maintenance](docs/school-answers.md) and the [Reload data inventory](knowledge/p3-reload/README.md).
 
 The full ESLint check has a known legacy Royal baseline. Record that baseline when changing affected code, and lint new modules separately. The [browser review](docs/p3-reload-ui-review.md) records the latest UX checks and their limits.
 

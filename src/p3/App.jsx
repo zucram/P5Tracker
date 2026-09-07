@@ -2,22 +2,25 @@ import { Planner, Deadlines } from './Planner';
 import { TartarusProgress } from './TartarusProgress';
 import { MonthCalendar } from './MonthCalendar';
 import StudyReference from './StudyReference';
-import SocialLinksTable from './SocialLinksTable';
 import CampaignReference from './CampaignReference';
-import { CombatReference } from './CombatReference';
-import { PersonaReference } from './PersonaReference';
-import Requests from './Requests';
-import PartyBonding from './PartyBonding';
-import { EquipmentReference } from './EquipmentReference';
 import { COLLECTION_SECTIONS } from './campaignData';
-import campaign from '../../knowledge/p3-reload/campaign.json' with { type: 'json' };
+import campaign from '../../knowledge/p3-reload/campaign.json';
 import dailyLife from '../../knowledge/p3-reload/daily-life.json';
 import { dateNumber, monthForDate, shiftDate } from './planner';
-import { createElement, useState, useEffect, useRef } from 'react';
+import { createElement, lazy, Suspense, useState, useEffect, useRef } from 'react';
+import SectionBoundary from './SectionBoundary';
 import { ArrowLeft, ArrowRight, Download, Heart, Upload, Users, CalendarDays, ShieldCheck, BookOpen, Sword, Menu } from 'lucide-react';
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS, SOURCES } from './data';
 import { loadState, persistState, importState, BACKUP_KEY, STORAGE_KEY, MAX_BYTES } from './save';
 import './styles.css';
+
+const SocialLinksTable = lazy(() => import('./SocialLinksTable'));
+
+const CombatReference = lazy(() => import('./CombatReference').then(module => ({ default: module.CombatReference })));
+const PersonaReference = lazy(() => import('./PersonaReference').then(module => ({ default: module.PersonaReference })));
+const Requests = lazy(() => import('./Requests'));
+const PartyBonding = lazy(() => import('./PartyBonding'));
+const EquipmentReference = lazy(() => import('./EquipmentReference').then(module => ({ default: module.EquipmentReference })));
 
 const BASE = import.meta.env.BASE_URL;
 const VALID_TABS = ['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more', 'requests', 'combat', 'personas', 'party', 'campaign', 'equipment', 'collections', 'daily-life'];
@@ -44,6 +47,7 @@ export default function ReloadTracker() {
   const [savingEnabled, setSavingEnabled] = useState(!loaded.warning);
   const [tab, setTab] = useState(() => VALID_TABS.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'calendar');
   const usedTracker = useRef(false);
+  const [status, setStatus] = useState('');
   const [viewMonth, setViewMonth] = useState(loaded.state.month);
   useEffect(() => {
     const changed = () => { const next = window.location.hash.slice(1); if (VALID_TABS.includes(next)) { setTab(next); setStatus(''); window.scrollTo(0, 0); } };
@@ -53,7 +57,6 @@ export default function ReloadTracker() {
   function selectTab(next) { setTab(next); window.location.assign(`#${next}`); window.scrollTo(0, 0); setStatus(''); }
   const [filter, setFilter] = useState('all');
   const [query, setQuery] = useState('');
-  const [status, setStatus] = useState('');
   const [importText, setImportText] = useState('');
   const [shareFallback, setShareFallback] = useState(false);
 
@@ -150,6 +153,7 @@ export default function ReloadTracker() {
       </nav>
       <main>
         {saveWarning && <div className="warning" role="alert">{saveWarning} <button onClick={download}>Download current progress</button>{loaded.unreadableSave != null && <button onClick={downloadUnreadableSave}>Download unreadable save</button>}</div>}
+        <SectionBoundary key={tab} saveWarning={saveWarning}><Suspense fallback={<section className="panel" role="status">Loading this section...</section>}>
         {TARTARUS_TABS.some(([id]) => id === tab) && <nav className="reference-subnav" aria-label="Tartarus sections">{TARTARUS_TABS.map(([id, title]) => <button key={id} aria-current={id === tab ? 'page' : undefined} onClick={() => selectTab(id)}>{title}</button>)}</nav>}
         {REFERENCE_TABS.some(([id]) => id === tab) && <nav className="reference-subnav" aria-label="Reference sections"><button onClick={() => selectTab('more')}>More</button>{REFERENCE_TABS.map(([id, title]) => <button key={id} aria-current={id === tab ? 'page' : undefined} onClick={() => selectTab(id)}>{title}</button>)}</nav>}
         {(REFERENCE_TABS.some(([id]) => id === tab) || tab === 'combat') && <label className="name-toggle reference-spoilers"><input type="checkbox" checked={state.showEventNames} onChange={event => commit({ ...state, showEventNames: event.target.checked })} /> Show reference names and story spoilers</label>}
@@ -221,6 +225,7 @@ export default function ReloadTracker() {
 
         {tab === 'backup' && <section className="backup-panel" aria-labelledby="backup-title"><h2 id="backup-title">Sync & backup</h2><p>Your progress lives in this browser. It does not sync automatically. Download a backup, move the file to your other device, and import it there.</p><button className="primary" onClick={download}><Download size={18} /> Download Reload save</button>
           <div className="import-box"><h3>Import a Reload save</h3><p>Import replaces this tracker’s progress and keeps one previous save for recovery. Royal, Portable, FES and Episode Aigis saves are not compatible.</p><label className="file-label"><Upload size={17} /> Choose a backup file<input type="file" accept=".json,.txt" onChange={importFile} /></label><details><summary>Or paste backup text</summary><textarea aria-label="Reload backup text" rows={5} maxLength={MAX_BYTES} value={importText} onChange={event => setImportText(event.target.value)} /><button disabled={!importText.trim()} onClick={() => applyImport(importText)}>Import pasted save</button></details><button className="restore" onClick={restore}>Restore previous import</button></div><p className="small-note">Local recovery is lost when browser data is cleared. Keep a downloaded backup too.</p></section>}
+        </Suspense></SectionBoundary>
         <p className="status" role="status">{status}</p><div className="save-indicator"><ShieldCheck size={14} /> {saveWarning ? 'Download a backup before leaving' : 'Saved on this browser'} <button onClick={() => selectTab('backup')}>Back up progress</button></div>
 
         <section className="support-panel"><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>

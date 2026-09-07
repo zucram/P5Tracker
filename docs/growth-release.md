@@ -77,3 +77,14 @@ Index and fragment links reveal their target and open answer disclosures. The co
 `npm run build` now runs `scripts/check-site.mjs` after Vite. It checks every sitemap entry for unique titles and descriptions, matching canonicals, one HTML H1, valid JSON-LD, internal resource paths, guide fragments and incoming links. It validates the production directory under `/P5Tracker/`; it does not establish search indexing or rankings.
 
 Browser review used isolated Chromium with Umami blocked and stubbed. All five lookup pages fit 320, 390 and 1280px widths. Tests covered exact numbers, clue search, zero results, reset, filtered index navigation, direct rank/request fragments and no-JavaScript crossword coverage. Shared authenticated browser access was unavailable, so post-launch analytics and receipts remain unverified.
+
+
+## Reload loading in 2.6.4
+
+Reload loads Social Links, requests, combat, Persona fusion, dorm activities and equipment with React lazy imports. The calendar, navigation and save state remain in the main app. Campaign entries stay in the initial bundle because the monthly calendar displays them too.
+
+Save validation reads `src/p3/saveCatalog.json` for Persona, DLC and request IDs. Generate it from the full source datasets with `npm run build:catalog`. Prebuild rejects a stale catalog. The complete-system save round-trip test still imports every source Persona, DLC selection and request, and checks that Royal saves stay unchanged.
+
+Compared with 2.6.3, Vite reports the Reload entry script at approximately 432 kB instead of 1,581 kB, or 73 kB instead of 194 kB using Vite's gzip estimate. React and shared dependencies are additional bytes in both builds. This is a bundle-size measurement, not a measured change to field loading times or search ranking. The equipment section remains large but is requested only when opened.
+
+Isolated Chromium network inspection confirmed that the calendar does not request the six deferred sections. Each section loaded on navigation at 390px, progress survived tab changes and reload, and blocking the equipment download left Calendar usable. A section error shows a reload action. If the app has a save warning, it instead directs the player to Sync before reloading. All 89 automated tests passed; generated-guide and site checks passed.
