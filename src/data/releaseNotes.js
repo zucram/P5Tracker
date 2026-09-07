@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.13",
+    date: "2026-09-07",
+    title: "Strength request lookup",
+    description: "Find the twins' ten requests and the skills you need.",
+    sections: [{ title: "New guide", items: [
+      "Search by rank, Persona, skill or card donor. Check whether itemization needs a fusion alarm.",
+      "See fixed group ingredients and checked leveling routes, then return to Confidants to record your rank.",
+      "The page is readable without JavaScript and includes direct links to individual ranks."
+    ] }]
+  },
+  {
     version: "2.6.12",
     date: "2026-09-07",
     title: "Royal reference corrections",

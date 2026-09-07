@@ -1,3 +1,5 @@
+import { ROYAL_STRENGTH_REQUESTS } from './royalStrength.js';
+
 export const CONFIDANT_INTERACTIONS = {
   'Fool': {
     bestGifts: [],
@@ -348,17 +350,6 @@ export const CONFIDANT_INTERACTIONS = {
   'Strength': {
     bestGifts: [],
     tips: "Fusion based. Does not consume time. Just bring the required Persona with the required skill.",
-    ranks: {
-      1: "Jack Frost with Mabufu",
-      2: "Ame-no-Uzume with Frei",
-      3: "Flauros with Tarukaja",
-      4: "Phoenix with Counter",
-      5: "Setanta with Rakukaja",
-      6: "Neko Shogun with Dekaja",
-      7: "Lachesis with Tetraja",
-      8: "Hecatoncheires with Masukunda",
-      9: "Bugs with Samarecarm",
-      10: "Seth with High Counter"
-    }
+    ranks: Object.fromEntries(ROYAL_STRENGTH_REQUESTS.map(({ rank, persona, skill }) => [rank, `${persona} with ${skill}`]))
   }
 };

@@ -1,10 +1,11 @@
 {
-  "recipe": "b06d02161d0a7ddeb0daf5db4c6406aae7dccee60869bcffbf2e65771cf563f9",
+  "recipe": "96511aa84cc05268d2575b043ea77fabda6b2b435f09c29a84691a92b2b06dbd",
   "images": {
     "home": "6096a21becc9c613230397811dcd0cad486dee317f4c158f90130284db45649f",
     "royal": "97e8f30cfe0b67b51eeeda165bd579bbb2d475a74b5d309fc550e70edcafc2ee",
     "reload": "2e1910d59093ca31feddcaf181de40135e2ad5f41bc22933f7abefc1f6d8bc3d",
     "guides": "e7fabb404da0195e53846eef2329e8fbd351868e8e7d25619f7b30d6b4d89f66",
+    "persona-5-royal-strength-confidant": "c8763af7cb32f8859ac37c8b48d1ee5e74946cd1da08b8e13dcb2d5189f21b08",
     "school-answers": "ad1bd6cf6fc7f12c112e29ad972f389df5cb34ba8954e5210d5c00216c7e14c8",
     "persona-5-royal-crossword-answers": "9d12dd0100b998adca76ab3bdc0ab4d9206b12d81fdcd0acfb089d3936921486",
     "third-semester": "d63953424df76f85006a2490b0be3f54c3a7269af71e0eb7cc44dd5deac1a720",

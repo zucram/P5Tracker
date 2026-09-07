@@ -1,7 +1,7 @@
 {
   "name": "p5r-app",
   "private": true,
-  "version": "2.6.12",
+  "version": "2.6.13",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,8 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "node --test src/lib/*.test.js src/p3/*.test.js scripts/validate-p3-knowledge.test.mjs",
-    "build:guides": "node scripts/build-school-answers.mjs && node scripts/build-p3-guides.mjs && node scripts/build-p3-study-guide.mjs && node scripts/build-p3-playthrough-guides.mjs && node scripts/build-crossword-guide.mjs && node scripts/build-guide-directory.mjs && node scripts/build-royal-calendar-guide.mjs",
-    "prebuild": "node scripts/build-share-cards.mjs --check && node scripts/build-p3-save-catalog.mjs --check && node scripts/validate-p3-knowledge.mjs && node scripts/build-school-answers.mjs --check && node scripts/build-p3-guides.mjs --check && node scripts/build-p3-study-guide.mjs --check && node scripts/build-p3-playthrough-guides.mjs --check && node scripts/build-crossword-guide.mjs --check && node scripts/build-guide-directory.mjs --check && node scripts/build-royal-calendar-guide.mjs --check",
+    "build:guides": "node scripts/build-school-answers.mjs && node scripts/build-p3-guides.mjs && node scripts/build-p3-study-guide.mjs && node scripts/build-p3-playthrough-guides.mjs && node scripts/build-crossword-guide.mjs && node scripts/build-guide-directory.mjs && node scripts/build-royal-calendar-guide.mjs && node scripts/build-royal-strength-guide.mjs",
+    "prebuild": "node scripts/build-share-cards.mjs --check && node scripts/build-p3-save-catalog.mjs --check && node scripts/validate-p3-knowledge.mjs && node scripts/build-school-answers.mjs --check && node scripts/build-p3-guides.mjs --check && node scripts/build-p3-study-guide.mjs --check && node scripts/build-p3-playthrough-guides.mjs --check && node scripts/build-crossword-guide.mjs --check && node scripts/build-guide-directory.mjs --check && node scripts/build-royal-calendar-guide.mjs --check && node scripts/build-royal-strength-guide.mjs --check",
     "postbuild": "node scripts/check-site.mjs",
     "build:catalog": "node scripts/build-p3-save-catalog.mjs",
     "build:share-cards": "node scripts/build-share-cards.mjs"

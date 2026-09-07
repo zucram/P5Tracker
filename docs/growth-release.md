@@ -159,3 +159,12 @@ Reviewed combat notes now agree with the Royal Persona data source for the check
 Resources open the Royal fusion calculator and current walkthrough. The Reload resource card now opens the available beta tracker; speculative future-product cards were removed. The crossword guide's tracker link now opens Briefing, where Crossword Answers actually lives, and its instructions match that location.
 
 All 108 automated tests passed. The production build checks all 15 public pages. Isolated browser verification covers corrected reference destinations, the crossword-to-tracker path, visible combat notes and retained calendar progress. The separate Treasure Demon data list is complete but is not yet a displayed interface; no new page is claimed for it.
+
+
+## Strength search guide in 2.6.13
+
+`/guides/persona-5-royal-strength-confidant/` adds Royal's ten exact request targets, normal/alarm skill-card sources, four fixed group recipes and selected leveling/inheritance routes. The request pairs now share one data source with the app's Strength rank guide. The public page explains card prerequisites and directs ordinary fusion searches to Royal's DLC-aware calculator. Its source review is recorded in [Royal content review](royal-content-review.md).
+
+Fragment navigation now handles new and repeated anchors once each, preventing a delayed hash event from clearing a newly selected filter. The guide supports rank, Persona, skill and donor lookup, filtering by card mode, direct rank links and readable content without JavaScript. It links to Confidants for saving ranks. The guide directory, Royal Confidants/Reference navigation, confidant guide and sitemap link the new page, which has its own share card. There are now 16 sitemap pages and 12 directory guides. The existing fixed-slug lookup, tracker and support events apply; search terms are not sent.
+
+All 110 automated tests and generated-content/site checks passed. Browser checks cover exact rank/donor lookup, filter combinations, empty/reset states, fragment recovery, no-JavaScript access, 320/390/1280px layouts, the tracker handoff and unchanged seeded progress in both games. The new guide's indexability and usable content are verified locally; search rankings and incremental traffic remain unmeasured.

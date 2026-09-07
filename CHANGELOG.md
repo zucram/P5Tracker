@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.13 — 2026-09-07
+
+- Add a searchable Royal Strength guide with all ten requests, normal/alarm skill-card sources and four fixed group recipes.
+- Share the request list with the app and link the guide from Confidants and the guide directory.
+- Include a share-preview card, source notes and no-JavaScript access.
+
+
 ## 2.6.12 — 2026-09-07
 
 - Correct reviewed Royal Persona affinities, combat notes, Jazz Jin reminders and Speed Reader guidance.

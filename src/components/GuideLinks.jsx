@@ -1,6 +1,7 @@
 import { trackEvent } from '../lib/analytics';
 
 const GUIDES = [
+  { id: 'persona-5-royal-strength-confidant', path: 'guides/persona-5-royal-strength-confidant/', title: 'Strength requests and skill cards', description: 'Check all ten requests, card sources and group fusions.' },
   { id: 'directory', path: 'guides/', title: 'All guides and answer tools', description: 'Find a Royal or Reload guide by game or topic.' },
   { id: 'persona-3-reload', path: 'p3/', title: 'Persona 3 Reload tracker', description: 'Plan your month with Social Links and missable deadlines.' },
   { id: 'school-answers', path: 'guides/school-answers/', title: 'School and exam answers', description: 'Find Royal answers by date, month or exam.' },
@@ -14,7 +15,7 @@ const GUIDES = [
 const CONTEXT_GUIDES = {
   cheatsheet: ['monthly-checklist', 'school-answers', 'third-semester'],
   months: ['school-answers', 'persona-5-royal-crossword-answers', 'monthly-checklist'],
-  confidants: ['third-semester', 'confidant-tracker'],
+  confidants: ['third-semester', 'confidant-tracker', 'persona-5-royal-strength-confidant'],
 };
 
 export function GuideLinks({ view }) {

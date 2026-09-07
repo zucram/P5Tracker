@@ -4,13 +4,13 @@
 
 Free browser companions for planning a Persona playthrough. Follow monthly objectives, record progress, and look up answers while choosing your own daily schedule. Neither tracker guarantees a perfect 100% route.
 
-The current release is **2.6.12**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
+The current release is **2.6.13**. Reload covers the main campaign and remains in beta because individual details may need correction. Episode Aigis, FES, and Portable are outside its scope.
 
 ## Trackers and guides
 
 [Browse all guides](https://zucram.github.io/P5Tracker/guides/) and filter by game or topic.
 
-Royal includes monthly checklists, confidant ranks and dialogue, social stats, Palace and Mementos guidance, and a Persona registry. Its static guides cover [crossword answers](https://zucram.github.io/P5Tracker/guides/persona-5-royal-crossword-answers/), [school answers](https://zucram.github.io/P5Tracker/guides/school-answers/), [Maruki and third-semester requirements](https://zucram.github.io/P5Tracker/guides/third-semester/), [monthly planning](https://zucram.github.io/P5Tracker/guides/monthly-checklist/), and [confidant tracking](https://zucram.github.io/P5Tracker/guides/confidant-tracker/).
+Royal includes monthly checklists, confidant ranks and dialogue, social stats, Palace and Mementos guidance, and a Persona registry. Its static guides cover [Strength requests and skill cards](https://zucram.github.io/P5Tracker/guides/persona-5-royal-strength-confidant/), [crossword answers](https://zucram.github.io/P5Tracker/guides/persona-5-royal-crossword-answers/), [school answers](https://zucram.github.io/P5Tracker/guides/school-answers/), [Maruki and third-semester requirements](https://zucram.github.io/P5Tracker/guides/third-semester/), [monthly planning](https://zucram.github.io/P5Tracker/guides/monthly-checklist/), and [confidant tracking](https://zucram.github.io/P5Tracker/guides/confidant-tracker/).
 
 Reload includes April through January checklists, all 22 Social Links, 190 manual rank guides, all 101 Elizabeth requests, rescues, Linked Episodes, fusion, combat, equipment, dorm activities, and collections. Read [release scope and limits](docs/p3-reload-release.md) and the [coverage audit](docs/p3-reload-completion-audit.md).
 

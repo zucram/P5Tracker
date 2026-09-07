@@ -61,6 +61,8 @@ function revealFragment(hash = location.hash) {
 window.addEventListener('hashchange', () => revealFragment());
 document.addEventListener('click', event => {
   const link = event.target.closest('a[href^="#"]');
-  if (link) revealFragment(link.getAttribute('href'));
+  // A different fragment is handled by hashchange. Handle repeated links here
+  // because clicking the current fragment does not emit another hashchange.
+  if (link && link.getAttribute('href') === location.hash) revealFragment(location.hash);
 });
 revealFragment();
