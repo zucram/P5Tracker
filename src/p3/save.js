@@ -1,4 +1,7 @@
 import knowledge from '../../knowledge/p3-reload/facts.json' with { type: 'json' };
+import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'json' };
+import { ALL_GUIDE_TASK_IDS } from './monthGuide.js';
+import school from '../../knowledge/p3-reload/school-answers.json' with { type: 'json' };
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS } from './data.js';
 
 export const STORAGE_KEY = 'p3reload_state_v1';
@@ -9,6 +12,7 @@ const hasControls = value => [...value].some(char => char.charCodeAt(0) < 32 || 
 const linkIds = SOCIAL_LINKS.map(link => link.id);
 const manualLinkIds = SOCIAL_LINKS.filter(link => link.kind !== 'story').map(link => link.id);
 const eventIds = new Set(knowledge.facts.map(fact => fact.id));
+const taskIds = new Set([...ALL_GUIDE_TASK_IDS, ...tartarus.blocks.map(block => `tartarus-${block.id}`), ...school.entries.map(entry => entry.id)]);
 const monthNumbers = [4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
 const monthIds = MONTHS.map(month => month.id);
 const record = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -21,6 +25,7 @@ export function initialState() {
     date: '04-22',
     slot: 'daytime',
     completedEvents: [],
+    checkedTasks: [],
     unlockedLinks: [],
     showEventNames: false,
     ranks: Object.fromEntries(linkIds.map(id => [id, 0])),
@@ -64,6 +69,8 @@ export function parseState(text) {
   if (!['daytime', 'evening'].includes(slot)) throw new Error('The selected time slot is invalid.');
   const completedEvents = legacy ? [] : state.completedEvents;
   validateIds(completedEvents, eventIds, 300, 'Completed events');
+  const checkedTasks = legacy || state.checkedTasks === undefined ? [] : state.checkedTasks;
+  validateIds(checkedTasks, taskIds, 500, 'Checklist tasks');
   const unlockedLinks = legacy ? [] : state.unlockedLinks;
   validateIds(unlockedLinks, new Set(manualLinkIds), manualLinkIds.length, 'Confirmed introductions');
   const showEventNames = legacy ? false : state.showEventNames;
@@ -89,6 +96,7 @@ export function parseState(text) {
     date,
     slot,
     completedEvents: [...completedEvents],
+    checkedTasks: [...checkedTasks],
     unlockedLinks: [...unlockedLinks],
     showEventNames,
     ranks: { ...state.ranks },

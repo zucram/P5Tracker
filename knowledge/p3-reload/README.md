@@ -39,3 +39,7 @@ A complete availability or 100% guide needs the full school calendar, Social Lin
 ## Review and validation
 
 The [generated review](../../docs/p3-reload-knowledge-review.md) presents the coverage, disputes and monthly briefs. Run `node scripts/validate-p3-knowledge.mjs` before updating the report with `node scripts/build-p3-knowledge-report.mjs`. Structural validation does not verify gameplay facts.
+
+## Supplemental tracker datasets
+
+The monthly tracker also consumes `school-answers.json`, `activities.json` and `tartarus.json`. These records have their own source references and validation tests. They are outside the older `facts.json` coverage count. See [tracker data](../../docs/p3-reload-data.md) and [release behavior](../../docs/p3-reload-release.md) for scope and integration.

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 3 Reload",
+  "scope": "Main story. start is first normal exploration date, not a request notice or forced tutorial. toFloor is the reachable section cap, including its border floor. blockEndFloor is the full named block boundary and may remain locked.",
+  "blocks": [
+    {
+      "id": "thebel",
+      "name": "Thebel",
+      "start": "04-21",
+      "fromFloor": 2,
+      "toFloor": 22,
+      "blockEndFloor": 22,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Thebel floor breakdown"
+        }
+      ],
+      "notes": "Free exploration begins 4/21 after the 4/20 tutorial."
+    },
+    {
+      "id": "arqa-lower",
+      "name": "Arqa, lower",
+      "start": "05-10",
+      "fromFloor": 23,
+      "toFloor": 43,
+      "blockEndFloor": 69,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Arqa floor breakdown"
+        }
+      ]
+    },
+    {
+      "id": "arqa-upper",
+      "name": "Arqa, upper",
+      "start": "06-14",
+      "fromFloor": 44,
+      "toFloor": 69,
+      "blockEndFloor": 69,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Arqa floor breakdown"
+        },
+        {
+          "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/June",
+          "locator": "June 13 tutorial; June 14 new section notice and Tartarus trip"
+        }
+      ],
+      "notes": "6/13 is the forced Theurgy tutorial. This date marks normal exploration of the newly opened section."
+    },
+    {
+      "id": "yabbashah-lower",
+      "name": "Yabbashah, lower",
+      "start": "07-09",
+      "fromFloor": 70,
+      "toFloor": 92,
+      "blockEndFloor": 118,
+      "sources": [
+        {
+          "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/July",
+          "locator": "July 9: new area, climb to 92F"
+        }
+      ]
+    },
+    {
+      "id": "yabbashah-upper",
+      "name": "Yabbashah, upper",
+      "start": "08-08",
+      "fromFloor": 93,
+      "toFloor": 118,
+      "blockEndFloor": 118,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Yabbashah floor breakdown"
+        }
+      ]
+    },
+    {
+      "id": "tziah-lower",
+      "name": "Tziah, lower",
+      "start": "09-10",
+      "fromFloor": 119,
+      "toFloor": 144,
+      "blockEndFloor": 172,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Tziah floor breakdown"
+        }
+      ]
+    },
+    {
+      "id": "tziah-upper",
+      "name": "Tziah, upper",
+      "start": "10-06",
+      "fromFloor": 145,
+      "toFloor": 172,
+      "blockEndFloor": 172,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Tziah floor breakdown"
+        }
+      ]
+    },
+    {
+      "id": "harabah-lower",
+      "name": "Harabah, lower",
+      "start": "11-06",
+      "fromFloor": 173,
+      "toFloor": 198,
+      "blockEndFloor": 226,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Harabah floor breakdown"
+        }
+      ]
+    },
+    {
+      "id": "harabah-upper",
+      "name": "Harabah, upper",
+      "start": "12-10",
+      "fromFloor": 199,
+      "toFloor": 226,
+      "blockEndFloor": 226,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Harabah floor breakdown"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-december",
+          "locator": "December 10 evening: first night Tartarus is available again"
+        }
+      ],
+      "notes": "Normal Tartarus visits resume 12/10. Earlier December request notices do not mean the team can enter immediately."
+    },
+    {
+      "id": "adamah-lower",
+      "name": "Adamah, lower",
+      "start": "01-01",
+      "fromFloor": 227,
+      "toFloor": 256,
+      "blockEndFloor": 264,
+      "sources": [
+        {
+          "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/January",
+          "locator": "January 1: climb to 256F"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/january",
+          "locator": "January ascent: 255F gatekeeper and Monad Passage; 256F border floor"
+        }
+      ],
+      "notes": "Reach the barrier on 256F. The last gatekeeper and Monad Passage are on 255F; the tower summit is 264F and remains locked until 1/31."
+    },
+    {
+      "id": "adamah-upper",
+      "name": "Adamah, final ascent",
+      "start": "01-31",
+      "fromFloor": 257,
+      "toFloor": 264,
+      "blockEndFloor": 264,
+      "sources": [
+        {
+          "url": "https://www.playstationtrophies.org/game/persona-3-reload/guide/how-many-floors-is-tartarus-how-big-is-each-block",
+          "locator": "Adamah floor breakdown"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/january",
+          "locator": "January 31: continue beyond the 256F border"
+        }
+      ],
+      "notes": "The barrier beyond 256F opens on 1/31. This is the final ascent."
+    }
+  ],
+  "closures": [
+    {
+      "start": "12-03",
+      "end": "12-09",
+      "reason": "Normal Tartarus visits resume December 10.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-december",
+          "locator": "December 10 evening: first night Tartarus is available again"
+        }
+      ]
+    }
+  ]
+}

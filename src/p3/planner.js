@@ -1,3 +1,4 @@
+import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'json' };
 import knowledge from '../../knowledge/p3-reload/facts.json' with { type: 'json' };
 import briefs from '../../knowledge/p3-reload/months.json' with { type: 'json' };
 import rules from '../../knowledge/p3-reload/calendar-rules.json' with { type: 'json' };
@@ -28,15 +29,12 @@ export function shiftDate(date, offset) {
 const inWindow = (date, start, end) => dateNumber(date) >= dateNumber(start) && dateNumber(date) <= dateNumber(end);
 const hasDate = f => Number.isFinite(dateNumber(f.value.start)) && Number.isFinite(dateNumber(f.value.end));
 export const EVENTS = FACTS.filter(f => ['linked-episode', 'rescue', 'request'].includes(f.category) && hasDate(f));
-const CHAINS = ['junpei', 'akihiko', 'koromaru', 'ken', 'shinjiro', 'ryoji'];
 export function eventTitle(fact, showNames = false) {
   if (fact.category === 'rescue') return showNames ? `${fact.subject} · floor ${fact.value.floor}` : `Missing person · floor ${fact.value.floor}`;
   if (fact.category === 'request') return `Request ${fact.value.request}${fact.value.item ? ` · ${fact.value.item.replaceAll('-', ' ')}` : ' · special opportunity'}`;
   if (showNames) return fact.subject;
-  const character = fact.value.character || fact.id.split('-')[1];
-  const chain = CHAINS.indexOf(character) + 1;
   const part = fact.value.episode ? `part ${fact.value.episode}` : fact.value.dateMeaning === 'invitation' ? 'invitation' : 'preparation';
-  return `Linked episode · chain ${chain || '?'} · ${part}`;
+  return `Linked Episode · ${part}`;
 }
 export function eventState(fact, state) {
   const completed = state.completedEvents.includes(fact.id);
@@ -103,6 +101,7 @@ export function buildPlan(state) {
   const candidates = blocks.length ? [] : links.filter(x => x.eligible).sort((a, b) => Number(state.favorites.includes(b.link.id)) - Number(state.favorites.includes(a.link.id)) || Number(b.link.kind === 'school') - Number(a.link.kind === 'school'));
   const preparation = links.filter(x => x.preparation).slice(0, 4);
   const month = briefs.months.find(x => Number(x.id) === Number(state.date.slice(0, 2)));
-  const statTargets = SOCIAL_LINKS.filter(x => x.statGate && state.ranks[x.id] === 0 && state.stats[x.statGate.stat] < x.statGate.rank).sort((a, b) => Number(state.favorites.includes(b.id)) - Number(state.favorites.includes(a.id)));
-  return { blocks, conditional, calendar, events, urgent, active, next, candidates, preparation, month, statTargets };
+  const statTargets = SOCIAL_LINKS.filter(x => x.statGate && state.ranks[x.id] === 0 && state.stats[x.statGate.stat] < x.statGate.rank).sort((a, b) => Number(state.favorites.includes(b.id)) - Number(state.favorites.includes(a.id)) || a.statGate.rank - b.statGate.rank);
+  const tartarusClosed = tartarus.closures.some(row => inWindow(state.date, row.start, row.end));
+  return { tartarusClosed, blocks, conditional, calendar, events, urgent, active, next, candidates, preparation, month, statTargets };
 }

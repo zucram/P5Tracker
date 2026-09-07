@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 3 Reload",
+  "rewardUnit": "Internal social-stat points, not musical notes.",
+  "scope": "Repeatable options. Story events can override opening hours. Film schedules, library points and other jobs are omitted pending conflicting-source review.",
+  "activities": [
+    {
+      "id": "arcade-charm",
+      "title": "High School of Youth",
+      "venue": "Game Parade, Paulownia Mall",
+      "days": [
+        1,
+        4
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 1500,
+      "rewards": {
+        "charm": 4
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "High School of Youth"
+        }
+      ]
+    },
+    {
+      "id": "arcade-courage",
+      "title": "House of the Deceased",
+      "venue": "Game Parade, Paulownia Mall",
+      "days": [
+        2,
+        5
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 3000,
+      "rewards": {
+        "courage": 4
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "House of the Deceased"
+        }
+      ]
+    },
+    {
+      "id": "arcade-academics",
+      "title": "You're the Answer",
+      "venue": "Game Parade, Paulownia Mall",
+      "days": [
+        3,
+        6
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 3000,
+      "rewards": {
+        "academics": 4
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "You're the Answer"
+        }
+      ]
+    },
+    {
+      "id": "prodigy-platter",
+      "title": "Prodigy Platter",
+      "venue": "Wakatsu, Iwatodai Strip Mall",
+      "days": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 680,
+      "rewards": {
+        "academics": 3
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "Prodigy Platter"
+        }
+      ]
+    },
+    {
+      "id": "pork-ramen",
+      "title": "Pork Ramen",
+      "venue": "Hagakure, Iwatodai Strip Mall",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 900,
+      "rewards": {
+        "charm": 3
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "Pork Ramen"
+        }
+      ]
+    },
+    {
+      "id": "mystery-burger",
+      "title": "Mystery Burger",
+      "venue": "Wilduck, Iwatodai Strip Mall",
+      "days": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 1000,
+      "rewards": {
+        "courage": 3
+      },
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+          "locator": "Mystery Burger"
+        }
+      ]
+    },
+    {
+      "id": "seafood-course",
+      "title": "Seafood Full Course",
+      "venue": "Wakatsu, Iwatodai Strip Mall",
+      "days": [
+        1,
+        4,
+        5,
+        7
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 900,
+      "rewards": {
+        "academics": 4
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Seafood Full Course"
+        }
+      ],
+      "requirements": "Charm 3; eat Prodigy Platter on an eligible evening to unlock."
+    },
+    {
+      "id": "special-ramen",
+      "title": "Special Hagakure Bowl",
+      "venue": "Hagakure, Iwatodai Strip Mall",
+      "days": [
+        2,
+        3,
+        5
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 1200,
+      "rewards": {
+        "charm": 4
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Special Hagakure Bowl"
+        }
+      ],
+      "requirements": "Courage 3; eat Pork Ramen on an eligible evening to unlock."
+    },
+    {
+      "id": "weekend-wilduck",
+      "title": "Weekend Wilduck Set",
+      "venue": "Wilduck, Iwatodai Strip Mall",
+      "days": [
+        6,
+        7
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 1200,
+      "rewards": {
+        "courage": 4
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Weekend Wilduck Set"
+        }
+      ],
+      "requirements": "Complete Elizabeth request 11."
+    },
+    {
+      "id": "karaoke",
+      "title": "Solo karaoke",
+      "venue": "Mandragora, Paulownia Mall",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "slots": [
+        "daytime",
+        "evening"
+      ],
+      "costYen": 800,
+      "rewards": {
+        "courage": 2
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Solo karaoke"
+        }
+      ]
+    },
+    {
+      "id": "coffee-evening",
+      "title": "Pheromone coffee",
+      "venue": "Chagall Cafe, Paulownia Mall",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 500,
+      "rewards": {
+        "charm": 2
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Pheromone coffee"
+        }
+      ]
+    },
+    {
+      "id": "coffee-day",
+      "title": "Pheromone coffee",
+      "venue": "Chagall Cafe, Paulownia Mall",
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 500,
+      "rewards": {
+        "charm": 2
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Pheromone coffee"
+        }
+      ]
+    },
+    {
+      "id": "room-study",
+      "title": "Study at desk",
+      "venue": "Your room, dorm",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 0,
+      "rewards": {
+        "academics": 2
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Study at desk"
+        }
+      ],
+      "note": "Also available by day when there is no school."
+    },
+    {
+      "id": "cafe-job",
+      "title": "Cafe shift",
+      "venue": "Chagall Cafe, Paulownia Mall",
+      "days": [
+        1,
+        2,
+        3
+      ],
+      "slots": [
+        "evening"
+      ],
+      "costYen": 0,
+      "rewards": {
+        "charm": 1,
+        "courage": 1
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Cafe shift"
+        }
+      ],
+      "note": "Earn at least \u00a52,500; pay varies."
+    },
+    {
+      "id": "nurse-medicine",
+      "title": "Nurse medicine",
+      "venue": "Nurse's office, Gekkoukan",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 0,
+      "rewards": {
+        "courage": 2
+      },
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Nurse medicine"
+        }
+      ],
+      "requirements": "School day after Tartarus or a Full Moon Operation.",
+      "note": "No time passes.",
+      "consumesTime": false
+    }
+  ]
+}

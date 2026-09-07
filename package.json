@@ -1,7 +1,7 @@
 {
   "name": "p5r-app",
   "private": true,
-  "version": "2.5.0",
+  "version": "2.5.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,8 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "node --test src/lib/*.test.js src/p3/*.test.js scripts/validate-p3-knowledge.test.mjs",
-    "build:guides": "node scripts/build-school-answers.mjs && node scripts/build-p3-guides.mjs",
-    "prebuild": "node scripts/validate-p3-knowledge.mjs && node scripts/build-school-answers.mjs --check && node scripts/build-p3-guides.mjs --check"
+    "build:guides": "node scripts/build-school-answers.mjs && node scripts/build-p3-guides.mjs && node scripts/build-p3-study-guide.mjs",
+    "prebuild": "node scripts/validate-p3-knowledge.mjs && node scripts/build-school-answers.mjs --check && node scripts/build-p3-guides.mjs --check && node scripts/build-p3-study-guide.mjs --check"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",

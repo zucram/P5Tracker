@@ -1,0 +1,955 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 3 Reload",
+  "scope": "Main story, English answers. August has no classroom questions.",
+  "entries": [
+    {
+      "id": "school-04-08",
+      "date": "04-08",
+      "month": 4,
+      "kind": "classroom",
+      "topic": "Summer",
+      "answers": [
+        "Vivid carp streamers"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 4/8"
+        }
+      ]
+    },
+    {
+      "id": "school-04-18",
+      "date": "04-18",
+      "month": 4,
+      "kind": "classroom",
+      "topic": "Jomon waste",
+      "answers": [
+        "Middens"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 4/18"
+        }
+      ]
+    },
+    {
+      "id": "school-04-27",
+      "date": "04-27",
+      "month": 4,
+      "kind": "classroom",
+      "topic": "Spiral",
+      "answers": [
+        "A"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 4/27"
+        }
+      ]
+    },
+    {
+      "id": "school-05-06",
+      "date": "05-06",
+      "month": 5,
+      "kind": "classroom",
+      "topic": "Train electricity",
+      "answers": [
+        "A pantograph"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 5/6"
+        }
+      ]
+    },
+    {
+      "id": "school-05-13",
+      "date": "05-13",
+      "month": 5,
+      "kind": "classroom",
+      "topic": "Foucault",
+      "answers": [
+        "The pendulum"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 5/13"
+        }
+      ]
+    },
+    {
+      "id": "school-05-15",
+      "date": "05-15",
+      "month": 5,
+      "kind": "classroom",
+      "topic": "May sickness",
+      "answers": [
+        "May Blues"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 5/15"
+        }
+      ]
+    },
+    {
+      "id": "school-05-18",
+      "date": "05-18",
+      "month": 5,
+      "kind": "exam-check",
+      "topic": "May midterms begin",
+      "answers": [],
+      "requiredAcademics": 3,
+      "note": "Automatic answer. Reach Academics 3 before exams for top marks, then answer all four manual questions correctly.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/may",
+          "locator": "5/18 Monday: automatic question"
+        },
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Social Stats > Required For: May exam results"
+        }
+      ]
+    },
+    {
+      "id": "school-05-19",
+      "date": "05-19",
+      "month": 5,
+      "kind": "exam",
+      "topic": "May sickness",
+      "answers": [
+        "May Blues"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Exam answers, 5/19"
+        }
+      ]
+    },
+    {
+      "id": "school-05-20",
+      "date": "05-20",
+      "month": 5,
+      "kind": "exam",
+      "topic": "Foucault",
+      "answers": [
+        "A pendulum"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Exam answers, 5/20"
+        }
+      ]
+    },
+    {
+      "id": "school-05-21",
+      "date": "05-21",
+      "month": 5,
+      "kind": "exam",
+      "topic": "Pantograph",
+      "answers": [
+        "Electricity"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Exam answers, 5/21"
+        }
+      ]
+    },
+    {
+      "id": "school-05-22",
+      "date": "05-22",
+      "month": 5,
+      "kind": "exam",
+      "topic": "Middens",
+      "answers": [
+        "Jomon"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Exam answers, 5/22"
+        }
+      ]
+    },
+    {
+      "id": "school-05-23",
+      "date": "05-23",
+      "month": 5,
+      "kind": "exam-check",
+      "topic": "May midterms",
+      "answers": [],
+      "requiredAcademics": 3,
+      "note": "Automatic answer. Top marks require this Academics rank and every exam answer correct.",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Social Stats > Required For"
+        },
+        {
+          "url": "https://www.pushsquare.com/guides/persona-3-reload-exam-answers-all-school-and-test-questions-answered",
+          "locator": "05/23 final exam day"
+        }
+      ]
+    },
+    {
+      "id": "school-06-15",
+      "date": "06-15",
+      "month": 6,
+      "kind": "classroom",
+      "topic": "Perception",
+      "answers": [
+        "Keen eye"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 6/15"
+        }
+      ]
+    },
+    {
+      "id": "school-06-17",
+      "date": "06-17",
+      "month": 6,
+      "kind": "classroom",
+      "topic": "Magic origins",
+      "answers": [
+        "Shamanism"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 6/17"
+        }
+      ]
+    },
+    {
+      "id": "school-06-22",
+      "date": "06-22",
+      "month": 6,
+      "kind": "classroom",
+      "topic": "Curve",
+      "answers": [
+        "Witch of Agnesi"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 6/22"
+        }
+      ]
+    },
+    {
+      "id": "school-06-25",
+      "date": "06-25",
+      "month": 6,
+      "kind": "classroom",
+      "topic": "Whirlpool bath",
+      "answers": [
+        "The flutter effect"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 6/25"
+        }
+      ]
+    },
+    {
+      "id": "school-06-29",
+      "date": "06-29",
+      "month": 6,
+      "kind": "classroom",
+      "topic": "Water finding",
+      "answers": [
+        "Dowsing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 6/29"
+        }
+      ]
+    },
+    {
+      "id": "school-07-03",
+      "date": "07-03",
+      "month": 7,
+      "kind": "classroom",
+      "topic": "Tale",
+      "answers": [
+        "About romance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 7/3"
+        }
+      ]
+    },
+    {
+      "id": "school-07-08",
+      "date": "07-08",
+      "month": 7,
+      "kind": "classroom",
+      "topic": "Punctuation",
+      "answers": [
+        "Between \"time\" and \"it's\""
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 7/8"
+        }
+      ]
+    },
+    {
+      "id": "school-07-09",
+      "date": "07-09",
+      "month": 7,
+      "kind": "classroom",
+      "topic": "Farmers",
+      "answers": [
+        "Social disparity"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 7/9"
+        }
+      ]
+    },
+    {
+      "id": "school-07-10",
+      "date": "07-10",
+      "month": 7,
+      "kind": "classroom",
+      "topic": "Jewish mysticism",
+      "answers": [
+        "Kabbalah"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 7/10"
+        }
+      ]
+    },
+    {
+      "id": "school-07-11",
+      "date": "07-11",
+      "month": 7,
+      "kind": "classroom",
+      "topic": "Samurai",
+      "answers": [
+        "The katana"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 7/11"
+        }
+      ]
+    },
+    {
+      "id": "school-07-14",
+      "date": "07-14",
+      "month": 7,
+      "kind": "exam",
+      "topic": "Water finding",
+      "answers": [
+        "Dowsing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 7/14"
+        }
+      ]
+    },
+    {
+      "id": "school-07-15",
+      "date": "07-15",
+      "month": 7,
+      "kind": "exam",
+      "topic": "Agnesi",
+      "answers": [
+        "An error in translation"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 7/15"
+        }
+      ]
+    },
+    {
+      "id": "school-07-16",
+      "date": "07-16",
+      "month": 7,
+      "kind": "exam",
+      "topic": "Katana prototype",
+      "answers": [
+        "Taira no Masakado"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 7/16"
+        }
+      ]
+    },
+    {
+      "id": "school-07-17",
+      "date": "07-17",
+      "month": 7,
+      "kind": "exam",
+      "topic": "Punctuation",
+      "answers": [
+        "Comma splice"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 7/17"
+        }
+      ]
+    },
+    {
+      "id": "school-07-18",
+      "date": "07-18",
+      "month": 7,
+      "kind": "exam-check",
+      "topic": "July finals",
+      "answers": [],
+      "requiredAcademics": 4,
+      "note": "Automatic answer. Top marks require this Academics rank and every exam answer correct.",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Social Stats > Required For"
+        },
+        {
+          "url": "https://www.pushsquare.com/guides/persona-3-reload-exam-answers-all-school-and-test-questions-answered",
+          "locator": "07/18 final exam day"
+        }
+      ]
+    },
+    {
+      "id": "school-09-01",
+      "date": "09-01",
+      "month": 9,
+      "kind": "classroom",
+      "topic": "Superconductivity",
+      "answers": [
+        "Resistance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 9/1"
+        }
+      ]
+    },
+    {
+      "id": "school-09-10",
+      "date": "09-10",
+      "month": 9,
+      "kind": "classroom",
+      "topic": "Idiom",
+      "answers": [
+        "To reveal a secret"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 9/10"
+        }
+      ]
+    },
+    {
+      "id": "school-09-11",
+      "date": "09-11",
+      "month": 9,
+      "kind": "classroom",
+      "topic": "Renaissance magic",
+      "answers": [
+        "The Hermetica"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 9/11"
+        }
+      ]
+    },
+    {
+      "id": "school-09-14",
+      "date": "09-14",
+      "month": 9,
+      "kind": "classroom",
+      "topic": "Better half",
+      "answers": [
+        "Their soulmate"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 9/14"
+        }
+      ]
+    },
+    {
+      "id": "school-09-26",
+      "date": "09-26",
+      "month": 9,
+      "kind": "classroom",
+      "topic": "Numerology",
+      "answers": [
+        "Tetractys"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 9/26"
+        }
+      ]
+    },
+    {
+      "id": "school-10-07",
+      "date": "10-07",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "Achievement",
+      "answers": [
+        "Dopamine"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/7"
+        }
+      ]
+    },
+    {
+      "id": "school-10-10",
+      "date": "10-10",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "Theosophy",
+      "answers": [
+        "Helena Blavatsky"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/10"
+        }
+      ]
+    },
+    {
+      "id": "school-10-13",
+      "date": "10-13",
+      "month": 10,
+      "kind": "exam",
+      "topic": "Dopamine",
+      "answers": [
+        "Addiction"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 10/13"
+        }
+      ]
+    },
+    {
+      "id": "school-10-14",
+      "date": "10-14",
+      "month": 10,
+      "kind": "exam",
+      "topic": "Numerologist",
+      "answers": [
+        "Pythagoras"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 10/14"
+        }
+      ]
+    },
+    {
+      "id": "school-10-15",
+      "date": "10-15",
+      "month": 10,
+      "kind": "exam",
+      "topic": "Zero resistance",
+      "answers": [
+        "Superconductivity"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 10/15"
+        }
+      ]
+    },
+    {
+      "id": "school-10-16",
+      "date": "10-16",
+      "month": 10,
+      "kind": "exam",
+      "topic": "Idiom",
+      "answers": [
+        "To reveal a secret"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 10/16"
+        }
+      ]
+    },
+    {
+      "id": "school-10-17",
+      "date": "10-17",
+      "month": 10,
+      "kind": "exam-check",
+      "topic": "October midterms",
+      "answers": [],
+      "requiredAcademics": 5,
+      "note": "Automatic answer. Top marks require this Academics rank and every exam answer correct.",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Social Stats > Required For"
+        },
+        {
+          "url": "https://www.pushsquare.com/guides/persona-3-reload-exam-answers-all-school-and-test-questions-answered",
+          "locator": "10/17 final exam day"
+        }
+      ]
+    },
+    {
+      "id": "school-10-19",
+      "date": "10-19",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "Zero",
+      "answers": [
+        "India"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/19"
+        }
+      ]
+    },
+    {
+      "id": "school-10-22",
+      "date": "10-22",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "April",
+      "answers": [
+        "Venus"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/22"
+        }
+      ]
+    },
+    {
+      "id": "school-10-26",
+      "date": "10-26",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "Gods' gathering",
+      "answers": [
+        "Izumo"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/26"
+        }
+      ]
+    },
+    {
+      "id": "school-10-30",
+      "date": "10-30",
+      "month": 10,
+      "kind": "classroom",
+      "topic": "Sweet potatoes",
+      "answers": [
+        "Beta-amylase"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 10/30"
+        }
+      ]
+    },
+    {
+      "id": "school-11-07",
+      "date": "11-07",
+      "month": 11,
+      "kind": "classroom",
+      "topic": "Indian text",
+      "answers": [
+        "The Upanishads"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 11/7"
+        }
+      ]
+    },
+    {
+      "id": "school-11-12",
+      "date": "11-12",
+      "month": 11,
+      "kind": "classroom",
+      "topic": "Poetry",
+      "answers": [
+        "Her favorite time in winter"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 11/12"
+        }
+      ]
+    },
+    {
+      "id": "school-11-30",
+      "date": "11-30",
+      "month": 11,
+      "kind": "classroom",
+      "topic": "Genji comparison",
+      "answers": [
+        "The cherry blossom"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 11/30"
+        }
+      ]
+    },
+    {
+      "id": "school-12-07",
+      "date": "12-07",
+      "month": 12,
+      "kind": "classroom",
+      "topic": "Atmosphere",
+      "answers": [
+        "The ozone layer"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 12/7"
+        }
+      ]
+    },
+    {
+      "id": "school-12-09",
+      "date": "12-09",
+      "month": 12,
+      "kind": "classroom",
+      "topic": "Himiko",
+      "answers": [
+        "Kido"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 12/9"
+        }
+      ]
+    },
+    {
+      "id": "school-12-11",
+      "date": "12-11",
+      "month": 12,
+      "kind": "classroom",
+      "topic": "Plural",
+      "answers": [
+        "Lives"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 12/11"
+        }
+      ]
+    },
+    {
+      "id": "school-12-14",
+      "date": "12-14",
+      "month": 12,
+      "kind": "exam",
+      "topic": "Indian origin",
+      "answers": [
+        "The number zero"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 12/14"
+        }
+      ]
+    },
+    {
+      "id": "school-12-15",
+      "date": "12-15",
+      "month": 12,
+      "kind": "exam",
+      "topic": "Disaccharide",
+      "answers": [
+        "Maltose"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 12/15"
+        }
+      ]
+    },
+    {
+      "id": "school-12-16",
+      "date": "12-16",
+      "month": 12,
+      "kind": "exam",
+      "topic": "April",
+      "answers": [
+        "Venus"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 12/16"
+        }
+      ]
+    },
+    {
+      "id": "school-12-17",
+      "date": "12-17",
+      "month": 12,
+      "kind": "exam",
+      "topic": "Genji",
+      "answers": [
+        "Murasaki-no-Ue"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 12/17"
+        }
+      ]
+    },
+    {
+      "id": "school-12-18",
+      "date": "12-18",
+      "month": 12,
+      "kind": "exam",
+      "topic": "Incorrect plural",
+      "answers": [
+        "Geeses"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Exam answers, 12/18"
+        }
+      ]
+    },
+    {
+      "id": "school-12-19",
+      "date": "12-19",
+      "month": 12,
+      "kind": "exam-check",
+      "topic": "December finals",
+      "answers": [],
+      "requiredAcademics": 6,
+      "note": "Automatic answer. Top marks require this Academics rank and every exam answer correct.",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Social Stats > Required For"
+        },
+        {
+          "url": "https://www.pushsquare.com/guides/persona-3-reload-exam-answers-all-school-and-test-questions-answered",
+          "locator": "12/19 final exam day"
+        }
+      ]
+    },
+    {
+      "id": "school-12-22",
+      "date": "12-22",
+      "month": 12,
+      "kind": "classroom",
+      "topic": "Near-death joy",
+      "answers": [
+        "Euphoria"
+      ],
+      "sources": [
+        {
+          "url": "https://www.gameskinny.com/tips/classroom-and-exam-question-answers-for-persona-3-reload/",
+          "locator": "Classroom answers, 12/22"
+        }
+      ]
+    },
+    {
+      "id": "school-01-08",
+      "date": "01-08",
+      "month": 1,
+      "kind": "classroom",
+      "topic": "Journey",
+      "answers": [
+        "The underworld"
+      ],
+      "sources": [
+        {
+          "url": "https://www.rpgsite.net/guide/15319-persona-3-reload-school-answers-exam-test-solutions-list",
+          "locator": "Classroom answers, 1/8"
+        }
+      ]
+    },
+    {
+      "id": "school-01-18",
+      "date": "01-18",
+      "month": 1,
+      "kind": "classroom",
+      "topic": "Sorceress",
+      "answers": [
+        "Circe"
+      ],
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Classroom answers, 1/18"
+        }
+      ]
+    }
+  ]
+}

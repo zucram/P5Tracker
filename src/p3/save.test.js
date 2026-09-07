@@ -100,3 +100,25 @@ test('failed v1 import removes a newly created backup and restores a corrupt ori
   assert.equal(storage.getItem(BACKUP_KEY), null);
   assert.equal(storage.getItem(STORAGE_KEY), '{broken');
 });
+
+test('released v2 saves gain an empty checklist without losing progress', () => {
+  const old = { ...initialState(), ranks: { ...initialState().ranks, magician: 3 }, completedEvents: ['le-junpei-1'] };
+  delete old.checkedTasks;
+  const migrated = parse(old);
+  assert.deepEqual(migrated.checkedTasks, []);
+  assert.equal(migrated.ranks.magician, 3);
+  assert.deepEqual(migrated.completedEvents, ['le-junpei-1']);
+});
+
+test('monthly answers and opening checkmarks survive transfer and reject unknown tasks', () => {
+  const current = { ...initialState(), checkedTasks: ['school-04-08', 'guide-opening-magician'] };
+  const storage = memoryStorage([['p5r_checkedItems', 'royal untouched']]);
+  persistState(storage, current);
+  assert.deepEqual(loadState(storage).state.checkedTasks, current.checkedTasks);
+  const imported = importState(storage, initialState(), JSON.stringify(current));
+  assert.deepEqual(imported.checkedTasks, current.checkedTasks);
+  assert.equal(storage.getItem('p5r_checkedItems'), 'royal untouched');
+  for (const checkedTasks of [null, ['not-a-task'], ['school-04-08', 'school-04-08']]) {
+    assert.throws(() => parse({ ...current, checkedTasks }), /Checklist/);
+  }
+});

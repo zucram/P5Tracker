@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.5.1",
+    date: "2026-09-07",
+    title: "Reload follows the Royal tracker layout",
+    description: "Plan Reload month by month with familiar navigation, useful checklists and more game data.",
+    sections: [{ title: "Reload calendar and reference", items: [
+      "Use Briefing, Calendar, Social Links, Tartarus and More, with bottom navigation on mobile.",
+      "Monthly checklists now include school answers, Social Link introductions and Tartarus floor goals alongside rescues and requests.",
+      "Look up social-stat activities with locations, schedules, costs and rewards. Existing Reload saves remain compatible."
+    ] }]
+  },
+  {
     version: "2.5.0",
     date: "2026-09-07",
     title: "Persona 3 Reload companion beta",

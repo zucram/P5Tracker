@@ -28,12 +28,20 @@ These gates describe only the social-stat condition. A met gate does not mean a 
 
 ## Source disagreements and limits
 
-Neoseeker's overview and GameFAQs disagree on some prerequisite link ranks, including Devil, Moon, and Sun. The module names the prerequisite relationship without encoding those disputed rank numbers.
+Neoseeker's overview and GameFAQs disagree on some prerequisite link ranks, including Devil and Sun. The module names the prerequisite relationship without encoding those disputed rank numbers.
 
 Neoseeker's social-stat table lists Tower at Courage 2, but its [dedicated Tower guide](https://www.neoseeker.com/persona-3-reload/guides/Tower_Social_Link) requires Courage 4. The detailed GameFAQs walkthrough and [independent GameFAQs chart](https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81489) also specify 4. The module uses 4. Club entry and starting Mutatsu's link are separate conditions.
 
-Both the detailed GameFAQs walkthrough and [Neoseeker's Empress guide](https://www.neoseeker.com/persona-3-reload/guides/Empress_Social_Link) list an exam result alongside max Academics. The tracker does not model exam results or enforce an exhaustive Empress unlock checklist. Its note directs readers to the fuller guide. No independent in-game save test was performed for this condition.
+Both the detailed GameFAQs walkthrough and [Neoseeker's Empress guide](https://www.neoseeker.com/persona-3-reload/guides/Empress_Social_Link) list an exam result alongside max Academics. The tracker does not model exam results or enforce an exhaustive Empress unlock checklist. Its introduction details include the exam result and link to the source guide. No independent in-game save test was performed for this condition.
 
 The month list is a set of planning buckets. It does not claim that the entire story ends in January. The roster module itself contains no daily schedules or deadlines. The separate planner combines it with the canonical knowledge facts and calendar rules; no required monthly rank targets or guarantee of completing every Social Link in one run are provided.
 
 This review checks published original player walkthroughs against each other. It is not a fresh playthrough or verification against game code. The official ATLUS product page was attempted but could not be fetched through the web reader, and it is not cited as evidence for numerical requirements.
+
+## Monthly reference datasets
+
+Version 2.5.1 adds `knowledge/p3-reload/school-answers.json`, `activities.json` and `tartarus.json`. These retain source URLs and lookup locations per record and feed the tracker directly. The school-answer and activity tables also feed the static school-answer guide. They are supplemental datasets; the older facts/report counts do not include them.
+
+The school dataset separates classroom questions, manual exam answers and automatic checks. May 18 is an automatic exam day, with the manual answers starting May 19. Stat rewards use internal points rather than displayed musical notes. Tartarus ranges distinguish a currently reachable barrier floor from the full block boundary. The January border is floor 256; floor 255 contains the preceding encounters.
+
+`src/p3/monthGuide.js` turns canonical facts into original player instructions. It does not display internal research notes or claim a complete daily route. Source disagreements and conditional events are separate from single-source evidence coverage.

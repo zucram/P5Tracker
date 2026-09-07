@@ -1,13 +1,17 @@
 import { Planner, Deadlines } from './Planner';
-import { dateNumber, monthForDate, shiftDate } from './planner';
+import { TartarusProgress } from './TartarusProgress';
+import { MonthCalendar } from './MonthCalendar';
+import StudyReference from './StudyReference';
+import { getMonthGuide } from './monthGuide';
+import { dateLabel, FACT_BY_ID, dateNumber, monthForDate, shiftDate } from './planner';
 import { createElement, useState, useEffect, useRef } from 'react';
-import { ArrowLeft, ArrowRight, Bookmark, Check, Download, Heart, Upload, Users, CalendarDays, ShieldCheck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Bookmark, Check, Download, Heart, Upload, Users, CalendarDays, ShieldCheck, BookOpen, Sword, Menu } from 'lucide-react';
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS, SOURCES } from './data';
 import { loadState, persistState, importState, BACKUP_KEY, STORAGE_KEY, MAX_BYTES } from './save';
 import './styles.css';
 
 const BASE = import.meta.env.BASE_URL;
-const PROMPTS = ['Choose the Social Links I want to prioritize this month', 'Check the social stats needed for my priority links', 'Review current Tartarus, rescue and request deadlines in-game'];
+const LINK_OPENINGS = Object.fromEntries(MONTHS.flatMap(month => getMonthGuide(month.id).targets).map(task => [task.opensLinkId, task]));
 
 function track(event, data = {}) {
   try { window.umami?.track(event, { game: 'persona-3-reload', ...data })?.catch?.(() => {}); } catch { /* Keep the tracker usable when analytics is blocked. */ }
@@ -27,18 +31,18 @@ export default function ReloadTracker() {
   const [state, setState] = useState(loaded.state);
   const [saveWarning, setSaveWarning] = useState(loaded.warning || '');
   const [savingEnabled, setSavingEnabled] = useState(!loaded.warning);
-  const validTabs = ['planner', 'deadlines', 'links', 'month', 'backup'];
-  const [tab, setTab] = useState(() => validTabs.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'planner');
+  const validTabs = ['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more'];
+  const [tab, setTab] = useState(() => validTabs.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'calendar');
   const usedTracker = useRef(false);
+  const [viewMonth, setViewMonth] = useState(loaded.state.month);
   useEffect(() => {
-    const changed = () => { const next = window.location.hash.slice(1); if (['planner', 'deadlines', 'links', 'month', 'backup'].includes(next)) setTab(next); };
+    const changed = () => { const next = window.location.hash.slice(1); if (['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more'].includes(next)) setTab(next); };
     window.addEventListener('hashchange', changed);
     return () => window.removeEventListener('hashchange', changed);
   }, []);
-  function selectTab(next) { setTab(next); window.location.assign(`#${next}`); setStatus(''); }
+  function selectTab(next) { setTab(next); window.location.assign(`#${next}`); window.scrollTo(0, 0); setStatus(''); }
   const [filter, setFilter] = useState('all');
   const [query, setQuery] = useState('');
-  const [goal, setGoal] = useState('');
   const [status, setStatus] = useState('');
   const [importText, setImportText] = useState('');
   const [shareFallback, setShareFallback] = useState(false);
@@ -58,16 +62,6 @@ export default function ReloadTracker() {
   function setRank(id, value) {
     const rank = Math.max(0, Math.min(10, Number(value)));
     if (rank !== state.ranks[id]) commit({ ...state, ranks: { ...state.ranks, [id]: rank } }, 'link_rank');
-  }
-
-  function addGoal(text) {
-    const clean = text.trim();
-    if (!clean) return;
-    if (state.goals.length >= 100) { setStatus('Your checklist has 100 goals. Remove a finished goal before adding another.'); return; }
-    const id = `goal-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    commit({ ...state, goals: [...state.goals, { id, text: clean.slice(0, 200), month: state.month, done: false }] }, 'goal_added');
-    setGoal('');
-    setStatus('Goal added to this month.');
   }
 
   function downloadUnreadableSave() {
@@ -90,7 +84,7 @@ export default function ReloadTracker() {
   function applyImport(text, method = 'paste') {
     try {
       const next = importState(window.localStorage, state, text);
-      setState(next); setSavingEnabled(true); setSaveWarning(''); setImportText('');
+      setState(next); setViewMonth(next.month); setSavingEnabled(true); setSaveWarning(''); setImportText('');
       track('p3_save_imported', { method });
       setStatus('Save imported. Your previous progress can be restored below.');
     } catch (error) { track('p3_save_import_failed', { method }); setStatus(error.message || 'The save could not be imported. Your current progress is unchanged.'); }
@@ -115,7 +109,7 @@ export default function ReloadTracker() {
   const shareUrl = `${window.location.origin}${BASE}games/persona-3-reload/?utm_source=app&utm_medium=share&utm_campaign=p3_player_referral`;
   async function share() {
     try {
-      if (navigator.share) await navigator.share({ title: 'Persona 3 Reload tracker', text: 'Plan your next day in Reload with Social Links, missable deadlines and Linked Episode reminders.', url: shareUrl });
+      if (navigator.share) await navigator.share({ title: 'Persona 3 Reload tracker', text: 'Plan your Reload playthrough with monthly checklists, Social Links and missable deadlines.', url: shareUrl });
       else await navigator.clipboard.writeText(shareUrl);
       setStatus(navigator.share ? 'Share dialog completed.' : 'Tracker link copied.');
       track('p3_share_complete');
@@ -126,7 +120,6 @@ export default function ReloadTracker() {
   }
 
   const completed = SOCIAL_LINKS.filter(link => state.ranks[link.id] === 10).length;
-  const monthlyGoals = state.goals.filter(item => item.month === state.month);
   const shownLinks = SOCIAL_LINKS.filter(link => {
     const rank = state.ranks[link.id];
     if (filter === 'priority' && !state.favorites.includes(link.id)) return false;
@@ -139,26 +132,16 @@ export default function ReloadTracker() {
   return (
     <div className="reload-app">
       <header className="site-header">
-        <a href={`${BASE}games/`} className="brand"><span className="brand-symbol">G</span> Game companions</a>
-        <a href={BASE} className="royal-link">Royal tracker <ArrowRight size={15} /></a>
+        <div><h1><span>P3</span> Tracker <small>RELOAD · BETA</small></h1><p className="header-caption">Persona 3 Reload monthly guide & Social Link tracker</p></div>
+        <div className="header-actions"><a href={BASE}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
       </header>
+      <nav className="tabs" aria-label="Tracker sections">
+        {[['briefing', BookOpen, 'Briefing'], ['calendar', CalendarDays, 'Calendar'], ['links', Users, 'Social Links'], ['deadlines', Sword, 'Tartarus'], ['more', Menu, 'More']].map(([id, Icon, title]) => <button key={id} aria-current={(tab === id || (id === 'calendar' && ['planner', 'month'].includes(tab)) || (id === 'more' && tab === 'backup')) ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 19 })}<span>{title}</span></button>)}
+      </nav>
       <main>
-        <section className="hero">
-          <div className="hero-copy">
-            <p className="eyebrow">PERSONA 3 RELOAD · BETA</p>
-            <h1>Persona 3 Reload<br /><span>calendar planner.</span></h1>
-            <p className="intro">A Persona 3 Reload calendar and Social Link tracker. See approaching deadlines, check your next options and keep your playthrough yours.</p>
-            <p className="scope">Main campaign, April through January. A flexible semi-daily guide, with source-checked reminders. No account, ads or paywall. Not a guaranteed 100% route; Episode Aigis is not covered.</p>
-          </div>
-          <div className="progress-card">
-            <p className="eyebrow">YOUR PLAYTHROUGH</p>
-            <div className="progress-number">{completed}<span> / {SOCIAL_LINKS.length}</span></div>
-            <p>Social Links at rank 10</p>
-            <progress aria-label="Social Links at rank 10" value={completed} max={SOCIAL_LINKS.length} />
-            <p className="small-note">Your ranks and checkmarks stay on this browser. Make a backup before switching devices.</p>
-          </div>
-        </section>
-
+        {saveWarning && <div className="warning" role="alert">{saveWarning} <button onClick={download}>Download current progress</button>{loaded.unreadableSave != null && <button onClick={downloadUnreadableSave}>Download unreadable save</button>}</div>}
+        {(tab === 'calendar' || tab === 'month') && <MonthCalendar state={state} commit={commit} month={viewMonth} setMonth={setViewMonth} selectTab={selectTab} />}
+        {tab === 'planner' && <>
         <section id="planner" className="date-bar" aria-label="In-game date and time">
           <div><label htmlFor="current-month">In-game month</label><select id="current-month" value={state.month} onChange={event => {
             const index = MONTHS.findIndex(m => m.id === event.target.value);
@@ -171,11 +154,12 @@ export default function ReloadTracker() {
           <div><label htmlFor="current-slot">Time slot</label><select id="current-slot" value={state.slot} onChange={e => commit({ ...state, slot: e.target.value })}><option value="daytime">Daytime</option><option value="evening">Evening</option></select></div>
           <div className="date-step"><button aria-label="Previous day" disabled={state.date === '04-01'} onClick={() => { const date = shiftDate(state.date, -1); commit({ ...state, date, month: monthForDate(date) }); }}><ArrowLeft size={16} /></button><span>{new Date(dateNumber(state.date) * 86400000).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' })}</span><button aria-label="Next day" disabled={state.date === '01-31'} onClick={() => { const date = shiftDate(state.date, 1); commit({ ...state, date, month: monthForDate(date) }); }}><ArrowRight size={16} /></button></div>
         </section>
-        <nav className="reload-guide-links" aria-label="Reload guides"><a href={`${BASE}guides/persona-3-reload-social-links/`} onClick={() => track('p3_guide_opened', { guide: 'social-links' })}>Social Link requirements and schedules</a><a href={`${BASE}guides/persona-3-reload-deadlines/`} onClick={() => track('p3_guide_opened', { guide: 'deadlines' })}>Missing people and missable deadlines</a></nav>
+        <button className="back-calendar" onClick={() => selectTab('calendar')}><ArrowLeft size={15} /> Monthly calendar</button>
+        <Planner state={state} commit={commit} selectTab={selectTab} />
+        </>}
 
-        {saveWarning && <div className="warning" role="alert">{saveWarning} Your changes in this tab are still available to download. <button onClick={download}>Download current progress</button>{loaded.unreadableSave != null && <button onClick={downloadUnreadableSave}>Download unreadable save</button>}</div>}
-        <div className="save-indicator"><ShieldCheck size={15} /> {saveWarning ? 'Check your backup before leaving' : 'Saved on this browser. No account needed.'} <button onClick={() => { selectTab('backup'); }}>Back up or move devices</button></div>
-
+        {tab === 'briefing' && <section>
+        <div className="section-heading"><div><h2>Briefing</h2><p>Record your stats, then use the calendar to plan your month.</p></div><span className="count-pill">{completed}/{SOCIAL_LINKS.length} links maxed</span></div>
         <section className="stats-row" aria-label="Social stats">
           {SOCIAL_STATS.map(stat => <div className="stat-card" key={stat}>
             <label htmlFor={`stat-${stat}`}>{stat}</label>
@@ -186,15 +170,13 @@ export default function ReloadTracker() {
           </div>)}
         </section>
 
-        <nav className="tabs" aria-label="Tracker sections">
-          {[['planner', CalendarDays, 'Plan my day'], ['deadlines', CalendarDays, 'Deadlines'], ['links', Users, 'Social Links'], ['month', CalendarDays, 'My goals'], ['backup', Download, 'Save & restore']].map(([id, Icon, title]) => <button key={id} aria-current={tab === id ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 17 })}{title}</button>)}
-        </nav>
-
-        {tab === 'planner' && <Planner state={state} commit={commit} selectTab={selectTab} />}
-        {tab === 'deadlines' && <Deadlines state={state} commit={commit} />}
+        <div className="briefing-notes panel"><h3>Make each free day count</h3><ul><li>Bring a Persona of the matching Arcana when meeting a Social Link.</li><li>Use school days for school links. Holidays and the week before exams restrict their availability.</li><li>Build social stats in the evening when possible. Check the activities below for where to go.</li><li>Check messages for Linked Episodes. Their windows are reminders, not appointments every day.</li></ul><button onClick={() => selectTab('calendar')}>Open monthly calendar <ArrowRight size={15} /></button></div>
+        <StudyReference section="activities" />
+        </section>}
+        {tab === 'deadlines' && <><div className="section-heading"><div><h2>Tartarus & requests</h2><p>Rescue floors, Elizabeth's requests and Linked Episode reminders.</p></div></div><TartarusProgress state={state} commit={commit} /><Deadlines state={state} commit={commit} /></>}
 
         {tab === 'links' && <section aria-labelledby="links-title">
-          <div className="section-heading"><div><h2 id="links-title">Every bond, at your pace.</h2><p>Update ranks from your game. Priorities help you choose what to focus on next.</p></div>
+          <div className="section-heading"><div><h2 id="links-title">Social Links</h2><p>Update ranks from your game. Priorities help you choose what to focus on next.</p></div>
             <label className="name-toggle"><input type="checkbox" checked={state.showNames} onChange={event => commit({ ...state, showNames: event.target.checked })} /> Show character names and notes</label>
           </div>
           <div className="filters"><input aria-label="Search Social Links" placeholder={state.showNames ? 'Search arcana or character…' : 'Search arcana…'} value={query} onChange={event => setQuery(event.target.value)} />
@@ -205,6 +187,8 @@ export default function ReloadTracker() {
             const rank = state.ranks[link.id];
             const priority = state.favorites.includes(link.id);
             const gate = link.statGate;
+            const schedule = FACT_BY_ID[`sl-${link.id}`]?.value;
+            const opening = LINK_OPENINGS[link.id];
             const statReady = gate && state.stats[gate.stat] >= gate.rank;
             return <article className={`link-card ${rank === 10 ? 'is-maxed' : ''}`} key={link.id}>
               <div className="card-top"><span className="arcana-type">{link.kind === 'story' ? 'STORY PROGRESSION' : link.kind.toUpperCase()}</span><button className={`favorite ${priority ? 'selected' : ''}`} aria-label={`${priority ? 'Remove' : 'Add'} ${link.arcana} ${priority ? 'from' : 'to'} priorities`} aria-pressed={priority} onClick={() => commit({ ...state, favorites: priority ? state.favorites.filter(id => id !== link.id) : [...state.favorites, link.id] })}><Bookmark size={19} fill={priority ? 'currentColor' : 'none'} /></button></div>
@@ -212,30 +196,27 @@ export default function ReloadTracker() {
               {state.showNames && <p className="character-name">{link.name}</p>}
               <div className="rank-control"><button aria-label={`Decrease ${link.arcana} rank`} disabled={rank === 0} onClick={() => setRank(link.id, rank - 1)}>−</button><label htmlFor={`rank-${link.id}`}>Rank <select id={`rank-${link.id}`} value={rank} onChange={event => setRank(link.id, event.target.value)}>{Array.from({ length: 11 }, (_, index) => <option key={index} value={index}>{index === 10 ? '10 · MAX' : index}</option>)}</select></label><button aria-label={`Increase ${link.arcana} rank`} disabled={rank === 10} onClick={() => setRank(link.id, rank + 1)}>+</button></div>
               {gate && <p className={`gate ${statReady ? 'ready' : ''}`}>{statReady && <Check size={14} />}{gate.stat} rank {gate.rank} {statReady ? 'met' : 'needed'}</p>}
-              {state.showNames && <p className="link-note">{link.note}</p>}
+              {schedule?.days?.length > 0 && <p className="link-note">Usually {schedule.days.map(day => day[0].toUpperCase() + day.slice(1)).join(', ')} · {schedule.timeSlot.replaceAll('-', ' ')}{link.id === 'hermit' ? ', plus some holidays' : ''}{schedule.start && <><br />First opening: {dateLabel(schedule.start)}</>}</p>}
+              {opening && <details><summary>Introduction & requirements{!state.showNames ? ' · includes names' : ''}</summary><p>{opening.detail}</p><a href={opening.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide</a></details>}
+              {link.kind === 'story' && <p className="link-note">{link.note}</p>}
               {link.kind !== 'story' && rank === 0 && <label className="introduction-check"><input type="checkbox" checked={state.unlockedLinks.includes(link.id)} onChange={() => commit({ ...state, unlockedLinks: state.unlockedLinks.includes(link.id) ? state.unlockedLinks.filter(id => id !== link.id) : [...state.unlockedLinks, link.id] }, 'introduction_confirmed')} /> I completed this introduction in-game</label>}
             </article>;
           })}</div>
           {!shownLinks.length && <p className="empty">No links match this view. Bookmark a link to add a priority, or change the filter.</p>}
         </section>}
 
-        {tab === 'month' && <section aria-labelledby="month-title">
-          <div className="section-heading"><div><h2 id="month-title">Your {MONTHS.find(month => month.id === state.month)?.name} plan</h2><p>A personal checklist for this month. Set goals that fit your playthrough.</p></div><span className="count-pill">{monthlyGoals.filter(item => item.done).length}/{monthlyGoals.length} done</span></div>
-          <div className="planning-grid"><div className="goals-panel">
-            <form onSubmit={event => { event.preventDefault(); addGoal(goal); }}><label htmlFor="new-goal">Add a goal</label><div className="goal-input"><input id="new-goal" value={goal} maxLength={200} onChange={event => setGoal(event.target.value)} placeholder="For example, reach Courage rank 4" required /><button type="submit">Add</button></div></form>
-            <ul className="goal-list">{monthlyGoals.map(item => <li key={item.id}><label><input type="checkbox" checked={item.done} onChange={() => commit({ ...state, goals: state.goals.map(other => other.id === item.id ? { ...other, done: !other.done } : other) }, 'goal_checked')} /><span className={item.done ? 'done' : ''}>{item.text}</span></label><button aria-label={`Remove goal: ${item.text}`} onClick={() => { commit({ ...state, goals: state.goals.filter(other => other.id !== item.id) }); setStatus('Goal removed.'); }}>×</button></li>)}</ul>
-            {!monthlyGoals.length && <p className="empty">Start with one goal, or add a planning prompt below. Nothing is assigned automatically.</p>}
-            <details><summary>Planning prompts</summary><p>These are general planning reminders, not a verified monthly route.</p>{PROMPTS.map(text => <button className="prompt" key={text} onClick={() => addGoal(text)}>+ {text}</button>)}</details>
-          </div><aside className="priority-panel"><h3>Your priority links</h3>{state.favorites.length ? SOCIAL_LINKS.filter(link => state.favorites.includes(link.id)).map(link => <div className="priority-item" key={link.id}><span>{link.arcana}</span><strong>{state.ranks[link.id]}/10</strong>{link.statGate && state.stats[link.statGate.stat] < link.statGate.rank && <small>{link.statGate.stat} needs rank {link.statGate.rank}</small>}</div>) : <p>Bookmark links in the Social Links view to keep your priorities here.</p>}<p className="small-note">Changing months keeps previous checklists. Unfinished goals stay in their original month.</p></aside></div>
+        {tab === 'more' && <section><div className="section-heading"><div><h2>More</h2><p>Reference guides, backups and tracker information.</p></div></div>
+          <div className="more-grid"><a className="panel" href={`${BASE}guides/persona-3-reload-school-answers/`} onClick={() => track('p3_guide_opened', { guide: 'school-answers' })}><h3>School & exam answers</h3><p>All dated answers, exam requirements and social-stat activities.</p></a><a className="panel" href={`${BASE}guides/persona-3-reload-social-links/`} onClick={() => track('p3_guide_opened', { guide: 'social-links' })}><h3>Social Link guide</h3><p>Opening requirements and weekly schedules.</p></a><a className="panel" href={`${BASE}guides/persona-3-reload-deadlines/`} onClick={() => track('p3_guide_opened', { guide: 'deadlines' })}><h3>Deadlines guide</h3><p>Missing people, requests and episode windows.</p></a><button className="panel" onClick={() => selectTab('backup')}><h3>Sync & backup</h3><p>Move your progress to another browser or device.</p></button><button className="panel" onClick={share}><h3>Share the tracker</h3><p>Send a link to another Reload player.</p></button></div>
+          <div className="panel scope-panel"><h3>About this beta</h3><p>A flexible monthly guide for the main campaign, April through January. It is not a guaranteed 100% route. Episode Aigis is not covered. Source links and future months can reveal spoilers.</p><p>Your progress stays in this browser. Every feature is free.</p></div>
         </section>}
 
-        {tab === 'backup' && <section className="backup-panel" aria-labelledby="backup-title"><h2 id="backup-title">Keep a copy of your playthrough.</h2><p>Your progress lives in this browser. It does not sync automatically. Download a backup, move the file to your other device, and import it there.</p><button className="primary" onClick={download}><Download size={18} /> Download Reload save</button>
+        {tab === 'backup' && <section className="backup-panel" aria-labelledby="backup-title"><h2 id="backup-title">Sync & backup</h2><p>Your progress lives in this browser. It does not sync automatically. Download a backup, move the file to your other device, and import it there.</p><button className="primary" onClick={download}><Download size={18} /> Download Reload save</button>
           <div className="import-box"><h3>Import a Reload save</h3><p>Import replaces this tracker’s progress and keeps one previous save for recovery. Royal, Portable, FES and Episode Aigis saves are not compatible.</p><label className="file-label"><Upload size={17} /> Choose a backup file<input type="file" accept=".json,.txt" onChange={importFile} /></label><details><summary>Or paste backup text</summary><textarea aria-label="Reload backup text" rows={5} maxLength={MAX_BYTES} value={importText} onChange={event => setImportText(event.target.value)} /><button disabled={!importText.trim()} onClick={() => applyImport(importText)}>Import pasted save</button></details><button className="restore" onClick={restore}>Restore previous import</button></div><p className="small-note">Local recovery is lost when browser data is cleared. Keep a downloaded backup too.</p></section>}
-        <p className="status" role="status">{status}</p>
+        <p className="status" role="status">{status}</p><div className="save-indicator"><ShieldCheck size={14} /> {saveWarning ? 'Download a backup before leaving' : 'Saved on this browser'} <button onClick={() => selectTab('backup')}>Back up progress</button></div>
 
         <section className="support-panel"><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>
         {shareFallback && <input aria-label="Public Reload tracker link" className="share-fallback" readOnly value={shareUrl} onFocus={event => event.target.select()} />}
-        <footer><a href={`${BASE}games/`}><ArrowLeft size={15} /> All game companions</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. No full in-game playthrough was performed to validate this beta. Episode Aigis and dialogue-answer walkthroughs are not covered.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
+        <footer><a href={`${BASE}games/`}><ArrowLeft size={15} /> All game companions</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. No full in-game playthrough was performed to validate this beta. Episode Aigis and Social Link dialogue walkthroughs are not covered.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
       </main>
     </div>
   );
