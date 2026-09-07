@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "reviewedAt": "2026-09-07",
+  "releaseReady": false,
+  "sourceRecords": 21,
+  "factualAndPlanningRecords": 133,
+  "recordsByCategory": {
+    "linked-episode": 33,
+    "rescue": 20,
+    "request": 17,
+    "social-link": 19,
+    "social-stat": 9,
+    "calendar": 18,
+    "tartarus": 9,
+    "planning": 8
+  },
+  "recordsByStatus": {
+    "corroborated": 94,
+    "single-source": 30,
+    "disputed": 7,
+    "editorial": 2
+  },
+  "disputesByStatus": {
+    "resolved-for-planning": 9,
+    "open": 5
+  },
+  "months": [
+    {
+      "id": "04",
+      "name": "April",
+      "referencedRecords": 22
+    },
+    {
+      "id": "05",
+      "name": "May",
+      "referencedRecords": 29
+    },
+    {
+      "id": "06",
+      "name": "June",
+      "referencedRecords": 35
+    },
+    {
+      "id": "07",
+      "name": "July",
+      "referencedRecords": 40
+    },
+    {
+      "id": "08",
+      "name": "August",
+      "referencedRecords": 38
+    },
+    {
+      "id": "09",
+      "name": "September",
+      "referencedRecords": 48
+    },
+    {
+      "id": "10",
+      "name": "October",
+      "referencedRecords": 49
+    },
+    {
+      "id": "11",
+      "name": "November",
+      "referencedRecords": 51
+    },
+    {
+      "id": "12",
+      "name": "December",
+      "referencedRecords": 46
+    },
+    {
+      "id": "01",
+      "name": "January",
+      "referencedRecords": 41
+    }
+  ],
+  "limits": [
+    "Source discovery is broad, not an exhaustive census of every online guide.",
+    "Catalog inclusion does not mean a complete guide audit or independent evidence.",
+    "Record status is a summary; evidence.supports identifies which fields each source actually supports.",
+    "A source agreement is not an in-game test. Unknown and disputed rules cannot justify a completion guarantee.",
+    "The 19 baseline availability records cover manual Social Links. The prototype roster separately includes three story-related links.",
+    "Document floors are recorded; Tartarus opening dates and all gatekeeper details are not yet modelled.",
+    "Only dated or preparation-sensitive requests are extracted; this is not a complete 101-request solution database."
+  ],
+  "releaseGaps": [
+    {
+      "id": "school-calendar",
+      "required": "Complete school closures, pre-exam exceptions, holidays, sports training and per-slot story blocks.",
+      "acceptance": "April–January event calendar reconciled against two distinct routes; free slots never inferred from an omitted entry."
+    },
+    {
+      "id": "link-prerequisites",
+      "required": "Resolve introductions, required ranks, items, exam conditions and rank-specific availability.",
+      "acceptance": "Every suggested Social Link opening has a complete, cited eligibility rule and explicit unknown handling."
+    },
+    {
+      "id": "episode-days",
+      "required": "Actual available meeting days inside Linked Episode windows, optional branches and missed-chain behavior.",
+      "acceptance": "No outer-window endpoint is presented as a guaranteed available meeting; invitation and event dates are distinct."
+    },
+    {
+      "id": "tartarus",
+      "required": "Unlock dates, forced/tutorial visits, rescue access and alternatives for players needing multiple visits.",
+      "acceptance": "Recommendations distinguish dungeon access, document floors, rescue deadlines and author-chosen visit dates."
+    },
+    {
+      "id": "affinity-recovery",
+      "required": "Point requirements, matching Arcana effects, platonic/romance differences and recovery activities.",
+      "acceptance": "A rank-up suggestion can explain its assumptions and has a fallback if affinity is insufficient."
+    },
+    {
+      "id": "source-disputes",
+      "required": "Resolve or safely omit remaining disputed advice.",
+      "acceptance": "No unresolved claim drives a definitive warning or eligibility result."
+    },
+    {
+      "id": "playthrough-validation",
+      "required": "Check the semi-guide against full campaign routes and representative in-game saves.",
+      "acceptance": "Early, midgame and January scenarios tested, including missed rescues, missed episodes and optional events. No blanket 100% promise."
+    }
+  ]
+}

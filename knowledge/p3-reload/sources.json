@@ -1,0 +1,816 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 3 Reload",
+  "edition": "main campaign",
+  "accessed": "2026-09-07",
+  "releaseReady": false,
+  "scopeNotes": [
+    "Catalog of discovered guides, not an exhaustive census of Internet guides.",
+    "Complete describes published coverage, not correctness or independent playtesting.",
+    "No calendar prose, dialogue transcripts or complete daily schedules are reproduced.",
+    "Null metadata means not established from inspected pages.",
+    "Monthly page lists reflect inspected indexes; not every individual month received a full audit."
+  ],
+  "sources": [
+    {
+      "id": "gamefaqs-marendarade-81170",
+      "title": "All Voiced Events Walkthrough",
+      "author": "marendarade",
+      "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Max Social Links, stats, achievements, requests, compendium and extensive optional voiced events.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January index and calendar inspected.",
+      "lineage": {
+        "group": "marendarade-ave",
+        "status": "Named original author; aqiu384 page appears to present the same route.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Author reports a Merciless test playthrough. This catalog did not playtest the route.",
+        "Monthly actions depend on earlier choices; a chosen action date is not its last available date.",
+        "Lead inspected linked-episodes, social-links, tv-shopping-and-missing-people and elizabeth-requests subpages."
+      ],
+      "version": "1.0.0",
+      "updated": "2024-03-30",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "format": "Monthly headings and nested lists",
+        "monthlyPages": [
+          {
+            "month": "april",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/april"
+          },
+          {
+            "month": "may",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may"
+          },
+          {
+            "month": "june",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/june"
+          },
+          {
+            "month": "july",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july"
+          },
+          {
+            "month": "august",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august"
+          },
+          {
+            "month": "september",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september"
+          },
+          {
+            "month": "october",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october"
+          },
+          {
+            "month": "november",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november"
+          },
+          {
+            "month": "december",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december"
+          },
+          {
+            "month": "january",
+            "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/january"
+          }
+        ],
+        "supplementalPages": [
+          "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests"
+        ]
+      }
+    },
+    {
+      "id": "aqiu384-ave",
+      "title": "All Voiced Events Walkthrough",
+      "author": null,
+      "url": "https://aqiu384.github.io/megaten-database/p3r/ave-walkthrough",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Same broad voiced-event schedule as GameFAQs 81170.",
+      "accessed": "2026-09-07",
+      "completeness": "Single-page April through January calendar inspected.",
+      "lineage": {
+        "group": "marendarade-ave",
+        "status": "Text and route goals match 81170. Likely mirror; attribution and shared author identity were not confirmed on this page.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Host account is aqiu384; that is not a verified page byline.",
+        "Do not count this and 81170 as independent agreement."
+      ],
+      "version": null,
+      "updated": null,
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "format": "Headings and nested lists; zero HTML tables observed",
+        "locatorExamples": [
+          "#tue-126",
+          "#after-school-144"
+        ]
+      }
+    },
+    {
+      "id": "gamefaqs-tensquare3-81159",
+      "title": "Persona 3 Reload 100% Walkthrough",
+      "author": "TenSquare3",
+      "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Trophies, Social Links, linked episodes, dorm events, requests, rescues, compendium and optional events.",
+      "accessed": "2026-09-07",
+      "completeness": "Main campaign April through January and epilogue. Separate Episode Aigis content excluded.",
+      "lineage": {
+        "group": "tensquare3",
+        "status": "Authored route. Contributions page credits external loot and skill-card research, not a borrowed calendar.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Version metadata and monthly index inspected.",
+        "End-of-month checklists and 12 spare evenings are route-specific.",
+        "Contributions page credits Zirth and other contributors for combat and item data."
+      ],
+      "version": "2.5.0",
+      "updated": "2025-01-21",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "format": "Monthly pages, actions and progress checklists",
+        "monthlyPages": [
+          {
+            "month": "april",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/april"
+          },
+          {
+            "month": "may",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/may"
+          },
+          {
+            "month": "june",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/june"
+          },
+          {
+            "month": "july",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/july"
+          },
+          {
+            "month": "august",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/august"
+          },
+          {
+            "month": "september",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/september"
+          },
+          {
+            "month": "october",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/october"
+          },
+          {
+            "month": "november",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/november"
+          },
+          {
+            "month": "december",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/december"
+          },
+          {
+            "month": "january",
+            "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/january"
+          }
+        ],
+        "metadataPages": [
+          "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/contributions",
+          "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/guide-update-notes"
+        ]
+      }
+    },
+    {
+      "id": "gamefaqs-lukaight-81177",
+      "title": "Guide",
+      "author": "Lukaight",
+      "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Max Social Links and stats, linked episodes, requests, rescues, true ending, romance or platonic route, and most compendium entries.",
+      "accessed": "2026-09-07",
+      "completeness": "Full calendar page reaches final operation and final battle.",
+      "lineage": {
+        "group": "lukaight",
+        "status": "Author describes adapting their earlier Portable work for Reload. Same-author Portuguese and availability guides are related evidence.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "95 HTML tables observed on /guide.",
+        "Some optional experiences require viewing and reloading, so all experiences are not necessarily retained in one save.",
+        "Most compendium entries is narrower than a completed compendium."
+      ],
+      "version": "2.22",
+      "updated": "2026-07-15",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "format": "One large calendar page with HTML tables",
+        "calendarUrl": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/guide",
+        "metadataPages": [
+          "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/version-changes"
+        ]
+      }
+    },
+    {
+      "id": "gamefaqs-lukaight-81169-pt",
+      "title": "Walkthrough (Portuguese)",
+      "author": "Lukaight",
+      "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81169",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "pt",
+      "scope": "Portuguese Reload route for Social Links, linked episodes, stats, requests and true ending.",
+      "accessed": "2026-09-07",
+      "completeness": "Full-route introduction and guide link inspected; entire Portuguese calendar not audited.",
+      "lineage": {
+        "group": "lukaight",
+        "status": "Same author as 81177; language companion, not independent corroboration. Exact version parity unverified.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Uses Portuguese game terminology.",
+        "Do not assume English and Portuguese versions contain identical corrections."
+      ],
+      "version": "2.251",
+      "updated": "2026-07-01",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "calendarUrl": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81169/guia"
+      }
+    },
+    {
+      "id": "gamefaqs-lukaight-81375-calendar",
+      "title": "Calendar and Events Breakdown",
+      "author": "Lukaight",
+      "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Availability calendar rather than a chosen 100% route.",
+      "accessed": "2026-09-07",
+      "completeness": "Explicitly incomplete linked-episode coverage; Moon regular availability omitted.",
+      "lineage": {
+        "group": "lukaight",
+        "status": "Same author as 81177 and 81169.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Introduction states missing Junpei episode dates and planned additions.",
+        "Absence from this calendar cannot establish unavailability."
+      ],
+      "version": "0.51",
+      "updated": "2024-09-09",
+      "published": null,
+      "role": "availability",
+      "extraction": {
+        "calendarUrl": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81375/calendar"
+      }
+    },
+    {
+      "id": "gamefaqs-hurricanehaon-81261",
+      "title": "Persona 3 Reload 100% Guide",
+      "author": "Hurricanehaon",
+      "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Broad completion route with Social Links, linked episodes, stats, dorm activities, requests and compendium.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January and epilogue present; broader guide remains unfinished.",
+      "lineage": {
+        "group": "hurricanehaon",
+        "status": "No external route attribution found in inspected introduction.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Version roadmap still lists future test and replay milestones.",
+        "Known problems section contains a placeholder. Calendar presence does not prove completed playtesting.",
+        "Separate Episode Aigis material excluded."
+      ],
+      "version": "0.51",
+      "updated": "2025-01-14",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "calendarUrl": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/walkthrough",
+        "locatorExamples": [
+          "#april",
+          "#january"
+        ]
+      }
+    },
+    {
+      "id": "gamefaqs-gamblrshirasagi-81117",
+      "title": "Walkthrough",
+      "author": "GamblrShirasagi",
+      "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "General narrative and combat walkthrough with dated progress.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January and epilogue indexed; GameFAQs labels walkthrough incomplete.",
+      "lineage": {
+        "group": "gamblrshirasagi",
+        "status": "No external route attribution found in inspected introduction.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "January page inspected; some boss statistics remain question marks.",
+        "An optimized max-Social-Link route was not established by this inspection."
+      ],
+      "version": "1.9.9",
+      "updated": "2024-03-08",
+      "published": null,
+      "role": "general-walkthrough",
+      "extraction": {
+        "monthlyPages": [
+          {
+            "month": "april",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-april"
+          },
+          {
+            "month": "may",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-may"
+          },
+          {
+            "month": "june",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-june"
+          },
+          {
+            "month": "july",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-july"
+          },
+          {
+            "month": "august",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-august"
+          },
+          {
+            "month": "september",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-september"
+          },
+          {
+            "month": "october",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-october"
+          },
+          {
+            "month": "november",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-november"
+          },
+          {
+            "month": "december",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-december"
+          },
+          {
+            "month": "january",
+            "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81117/walkthrough-january"
+          }
+        ]
+      }
+    },
+    {
+      "id": "powerpyx-monomaru-100",
+      "title": "Persona 3 Reload 100% Walkthrough",
+      "author": "Monomaru",
+      "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Trophy-focused full daily route with Social Links, linked episodes and dorm activities.",
+      "accessed": "2026-09-07",
+      "completeness": "One page, April through January plus March epilogue.",
+      "lineage": {
+        "group": "powerpyx-monomaru",
+        "status": "Header credits text to Monomaru and three verification playthroughs to DK, HardyBoy and LuckySlime.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Author verification is reported provenance, not testing by this project.",
+        "Author comments point to a separate request guide for all requests. Trophy completion is narrower than every request.",
+        "Month-specific child pages were not observed."
+      ],
+      "version": null,
+      "updated": null,
+      "published": "2024-02-01",
+      "role": "calendar",
+      "extraction": {
+        "format": "Single page with numeric dates and nested lists"
+      }
+    },
+    {
+      "id": "psnprofiles-ultimate-18797",
+      "title": "Persona 3 Reload Ultimate 100% Walkthrough",
+      "author": [
+        "ObsiEez",
+        "BeforeJam",
+        "yanderegogeta"
+      ],
+      "url": "https://psnprofiles.com/guide/18797-persona-3-reload-ultimate-100-walkthrough",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Trophies, all Social Links, linked episodes, stats, characteristics, 101 requests, 20 rescues and compendium.",
+      "accessed": "2026-09-07",
+      "completeness": "Full April through January calendar and March epilogue inspected.",
+      "lineage": {
+        "group": "psnprofiles-ultimate",
+        "status": "Named authors differ from PowerPyx. No shared-route attribution found; actual independence remains unproven.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Guide is balanced around Normal difficulty and includes story spoilers.",
+        "145 HTML tables observed, including material outside the calendar."
+      ],
+      "version": null,
+      "updated": "2025-01-11",
+      "published": "2024-04-29",
+      "role": "calendar",
+      "extraction": {
+        "format": "One long page with month sections and HTML tables",
+        "locatorExamples": [
+          "#1-april",
+          "#10-january"
+        ]
+      }
+    },
+    {
+      "id": "neoseeker-ragingtasmanian",
+      "title": "Persona 3 Reload Walkthrough and Guide",
+      "author": "RagingTasmanian",
+      "url": "https://www.neoseeker.com/persona-3-reload/walkthrough",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Day-by-day route aiming to max Social Links before the final battle.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January and March chapter links inspected.",
+      "lineage": {
+        "group": "neoseeker-ragingtasmanian",
+        "status": "No external route attribution found in inspected introduction.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Hub edit stamp observed as Mar 29, 2024 at 11:37pm; individual chapters have separate edits.",
+        "Prior prerequisite audit found inconsistent Tower stat ranks between overview and dedicated page. Cross-check individual facts."
+      ],
+      "version": null,
+      "updated": "2024-03-29",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "monthlyPages": [
+          {
+            "month": "april",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/April"
+          },
+          {
+            "month": "may",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/May"
+          },
+          {
+            "month": "june",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/June"
+          },
+          {
+            "month": "july",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/July"
+          },
+          {
+            "month": "august",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/August"
+          },
+          {
+            "month": "september",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/September"
+          },
+          {
+            "month": "october",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/October"
+          },
+          {
+            "month": "november",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/November"
+          },
+          {
+            "month": "december",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/December"
+          },
+          {
+            "month": "january",
+            "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/January"
+          }
+        ],
+        "epilogueUrl": "https://www.neoseeker.com/persona-3-reload/walkthrough/March"
+      }
+    },
+    {
+      "id": "steam-hayatebutler-3152126765",
+      "title": "100% Perfect Schedule Guide",
+      "author": "HayateButler",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152126765",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Full completion schedule with flexibility and free time distributed across the route.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January, March and epilogue sections inspected.",
+      "lineage": {
+        "group": "hayatebutler",
+        "status": "Author claims original Reload testing. Recommends marendarade and TenSquare3 as alternative guides, not credited source routes.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Updated label displays 20 Feb at 1:30pm without a year; normalized update date left null.",
+        "Live browser rendered the public guide. Hidden removed-content banners in search extraction did not match visible state."
+      ],
+      "version": null,
+      "updated": null,
+      "published": "2024-02-01",
+      "role": "calendar",
+      "extraction": {
+        "format": "Steam sections, lists and BBCode table-like divs; one HTML table observed",
+        "updateLabel": "20 Feb @ 1:30pm"
+      }
+    },
+    {
+      "id": "steam-hayatebutler-legacy-3161529062",
+      "title": "Legacy Version 100% Achievements Guide",
+      "author": "HayateButler",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3161529062",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Earlier retained full schedule for players already following it.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January and March sections inspected.",
+      "lineage": {
+        "group": "hayatebutler",
+        "status": "Explicit legacy version of the current Steam guide; not independent evidence.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Author directs new players to 3152126765.",
+        "Legacy comments describe earlier correction lag; do not assume those old faults remain in current text."
+      ],
+      "version": null,
+      "updated": "2024-04-01",
+      "published": "2024-02-23",
+      "role": "legacy-calendar",
+      "extraction": {}
+    },
+    {
+      "id": "game8-100-439345",
+      "title": "Walkthrough and 100% Completion Guide",
+      "author": "Persona 3 Reload Walkthrough Team",
+      "url": "https://game8.co/games/Persona-3-Reload/archives/439345",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Monthly route for one-playthrough max Social Links and exam results.",
+      "accessed": "2026-09-07",
+      "completeness": "All ten month links present; January daily schedule inspected.",
+      "lineage": {
+        "group": "game8-en",
+        "status": "Editorial byline; external route derivation not found.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Hub updated September 11, 2024; January page updated February 18, 2024.",
+        "January contains seven HTML tables. Individual chapters can have older revisions than the hub.",
+        "Episode Aigis banner and links are outside this catalog scope."
+      ],
+      "version": null,
+      "updated": "2024-09-11",
+      "published": null,
+      "role": "calendar",
+      "extraction": {
+        "monthlyPages": [
+          {
+            "month": "april",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/442709"
+          },
+          {
+            "month": "may",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/443139"
+          },
+          {
+            "month": "june",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/443467"
+          },
+          {
+            "month": "july",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/443551"
+          },
+          {
+            "month": "august",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/443668"
+          },
+          {
+            "month": "september",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/443771"
+          },
+          {
+            "month": "october",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/444087"
+          },
+          {
+            "month": "november",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/444307"
+          },
+          {
+            "month": "december",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/444388"
+          },
+          {
+            "month": "january",
+            "url": "https://game8.co/games/Persona-3-Reload/archives/444450"
+          }
+        ],
+        "januaryLocator": "#hm_2"
+      }
+    },
+    {
+      "id": "rpgsite-max-social-links-15321",
+      "title": "Persona 3 Reload - 100% Max Social Link Guide",
+      "author": "Chao Min Wu",
+      "url": "https://www.rpgsite.net/guide/15321-persona-3-reload-100-max-social-link-guide",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Minimal route focused on max Social Links; some optional purchases and activities omitted.",
+      "accessed": "2026-09-07",
+      "completeness": "April through January 31 calendar inspected.",
+      "lineage": {
+        "group": "rpgsite-chao-min-wu",
+        "status": "No external route attribution found in inspected introduction.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Provides route-specific catch-up suggestions, not a general feasibility proof.",
+        "A recommended stat target date is not an unlock deadline.",
+        "Duplicated rank labels appear in early entries; cross-check rank progression."
+      ],
+      "version": null,
+      "updated": null,
+      "published": "2024-02-02",
+      "role": "calendar",
+      "extraction": {
+        "format": "One page; monthly headings and dated nested lists"
+      }
+    },
+    {
+      "id": "yayas-world-reload-walkthrough",
+      "title": "Walkthrough",
+      "author": null,
+      "url": "https://onigirionegai.info/~yayoi/guides/p3reload/walkthrough/",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Flexible daily event notices rather than a prescribed completion route.",
+      "accessed": "2026-09-07",
+      "completeness": "Partial; inspected page stops at a grouped entry through July 3.",
+      "lineage": {
+        "group": "yayas-world",
+        "status": "Personal-site account suggests yayoi; no explicit byline observed.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Contains unknown combat statistics and incomplete calendar coverage.",
+        "Useful example of flexible format, not a full-year factual authority."
+      ],
+      "version": null,
+      "updated": null,
+      "published": "2024-03-19",
+      "role": "partial-calendar",
+      "extraction": {}
+    },
+    {
+      "id": "ludo-100-guide",
+      "title": "100% Guide",
+      "author": "teroqim",
+      "url": "https://www.ludo.guide/guide/persona-3-reload/100-guide",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Claims full completion coverage but inspected landing page contains a short mechanics summary.",
+      "accessed": "2026-09-07",
+      "completeness": "Full day-by-day route not established; linked chapter contents not audited.",
+      "lineage": {
+        "group": "ludo-unknown",
+        "status": "No original-route attribution established. Do not count as independent corroboration.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Visible metadata says originally published May 2026 and updated 2 months ago; exact dates unknown.",
+        "Not selected as a factual source."
+      ],
+      "version": null,
+      "updated": null,
+      "published": "2026-05",
+      "role": "unverified-candidate",
+      "extraction": {}
+    },
+    {
+      "id": "rpgsite-missing-persons-15390",
+      "title": "Persona 3 Reload Missing Person quest: Missing People List, Locations, Deadlines, & Rewards",
+      "author": null,
+      "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Missing-person dates, floors and rewards.",
+      "accessed": "2026-09-07",
+      "completeness": "Supplemental page inspected by lead; January omissions reported.",
+      "lineage": {
+        "group": "rpgsite",
+        "status": "No external route attribution found in inspected introduction.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Lead found September deadline and November appearance-date conflicts against GameFAQs and Game8 Japanese. See disputes.json.",
+        "Byline and update metadata not supplied by lead."
+      ],
+      "version": null,
+      "updated": null,
+      "published": null,
+      "role": "supplemental",
+      "extraction": {}
+    },
+    {
+      "id": "powerpyx-elizabeth-requests",
+      "title": "Persona 3 Reload Elizabeth Request Guide",
+      "author": null,
+      "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "en",
+      "scope": "Elizabeth request requirements and rewards.",
+      "accessed": "2026-09-07",
+      "completeness": "Supplemental page inspected by lead.",
+      "lineage": {
+        "group": "powerpyx-monomaru",
+        "status": "Same publisher as main PowerPyx walkthrough; separate authorship not verified here.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "Exact singular request-guide URL verified by lead.",
+        "Byline and update metadata not supplied by lead."
+      ],
+      "version": null,
+      "updated": null,
+      "published": null,
+      "role": "supplemental",
+      "extraction": {}
+    },
+    {
+      "id": "game8jp-linked-episodes-719675",
+      "title": "Linked episodes reference",
+      "author": null,
+      "url": "https://game8.jp/p3re/719675",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "ja",
+      "scope": "Japanese linked-episode timing and requirements.",
+      "accessed": "2026-09-07",
+      "completeness": "Supplemental page inspected by lead.",
+      "lineage": {
+        "group": "game8-jp",
+        "status": "Same publishing brand as English Game8; translation or shared data lineage unknown.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "English title is a catalog label, not a verified translated page title.",
+        "Byline and update metadata not supplied by lead."
+      ],
+      "version": null,
+      "updated": null,
+      "published": null,
+      "role": "supplemental",
+      "extraction": {}
+    },
+    {
+      "id": "game8jp-missing-persons-721428",
+      "title": "Missing persons reference",
+      "author": null,
+      "url": "https://game8.jp/p3re/721428",
+      "edition": "Persona 3 Reload main campaign",
+      "language": "ja",
+      "scope": "Japanese missing-person tables and notes.",
+      "accessed": "2026-09-07",
+      "completeness": "Supplemental tables and notes inspected by lead.",
+      "lineage": {
+        "group": "game8-jp",
+        "status": "Same publishing brand as English Game8; translation or shared data lineage unknown.",
+        "independence": "unproven"
+      },
+      "verificationNotes": [
+        "English title is a catalog label, not a verified translated page title.",
+        "Lead observed update date 2025.11.21."
+      ],
+      "version": null,
+      "updated": "2025-11-21",
+      "published": null,
+      "role": "supplemental",
+      "extraction": {}
+    }
+  ]
+}

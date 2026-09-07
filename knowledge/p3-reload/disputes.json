@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "disputes": [
+    {
+      "id": "september-rescue-deadline",
+      "subject": "September rescue closing date",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "09-04"
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "claim": "09-04"
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "claim": "09-05"
+        }
+      ],
+      "decision": "Use 09-04. Two dedicated tables agree and full routes put a story operation on 09-05. No in-game save check performed.",
+      "affectedFactIds": [
+        "rescue-satsuki",
+        "rescue-hirotaka",
+        "rescue-reiko"
+      ]
+    },
+    {
+      "id": "november-rescue-opening",
+      "subject": "First November disappearance",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Both people appear 11-28"
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "claim": "Both people appear 11-28"
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "claim": "One appears 11-27"
+        }
+      ],
+      "decision": "Use 11-28 for both records; both sources agree on 12-01 closing date.",
+      "affectedFactIds": [
+        "rescue-tomoyuki"
+      ]
+    },
+    {
+      "id": "tower-courage",
+      "subject": "Club access versus Tower requirement",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "claim": "Overview says rank 2; dedicated Tower page says rank 4"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Tower requires Courage 4"
+        }
+      ],
+      "decision": "Use Courage 4 for the link. Do not equate Club Escapade entry with starting Tower.",
+      "affectedFactIds": [
+        "gate-tower"
+      ]
+    },
+    {
+      "id": "social-link-prerequisites",
+      "subject": "Introductions and required link ranks",
+      "status": "open",
+      "claims": [
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "claim": "Some prerequisite ranks differ from GameFAQs"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Devil Hermit3; Moon Magician3; Sun Hanged3"
+        }
+      ],
+      "decision": "Do not encode these rank numbers as verified prerequisites until dedicated guides or in-game evidence resolve each case.",
+      "affectedFactIds": [
+        "sl-devil",
+        "sl-moon",
+        "sl-sun"
+      ]
+    },
+    {
+      "id": "junpei-flower-date",
+      "subject": "Optional flower branch timing",
+      "status": "open",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Linked Episode supplement gives 11-07 through 11-11"
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "claim": "November instructions give 11-08; December 8 also repeats flower advice"
+        }
+      ],
+      "decision": "Hold actionable timing; preserve the documented optional January21 time cost. Verify item purchase and handover dates separately.",
+      "affectedFactIds": [
+        "le-junpei-flower"
+      ]
+    },
+    {
+      "id": "request-40-alternative",
+      "subject": "Later Max Safety Shoes purchase",
+      "status": "open",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "7/12 TV shopping or a later Port Island NPC purchase"
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "claim": "Labels missable and only describes 7/12 shopping"
+        }
+      ],
+      "decision": "Keep 7/12 as a useful opportunity, not a definitive miss deadline. Verify alternative stock and cost.",
+      "affectedFactIds": [
+        "request-40-shopping"
+      ]
+    },
+    {
+      "id": "request-44-month-typo",
+      "subject": "Beach pickup month",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Request table says 6/20; July route says 7/20"
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "claim": "7/20 beach collection"
+        }
+      ],
+      "decision": "Use July20, consistent with the actual trip section and second source.",
+      "affectedFactIds": [
+        "request-44-beach"
+      ]
+    },
+    {
+      "id": "summer-school-end",
+      "subject": "Summer school final day",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "8/10 to 8/15"
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "claim": "8/15 explicitly has summer school"
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "claim": "Only groups 8/10 to 8/14"
+        }
+      ],
+      "decision": "Include August15 daytime. Do not assume evenings are uniformly blocked.",
+      "affectedFactIds": [
+        "cal-summer-school"
+      ]
+    },
+    {
+      "id": "dating-note-opening",
+      "subject": "Dating Site Note earliest sale",
+      "status": "open",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Route uses it on 11/12"
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "claim": "Documents later use for recovery"
+        }
+      ],
+      "decision": "Remove unverified opening date before use in product logic. Inspect the shop source for an actual unlock, not first route use.",
+      "affectedFactIds": [
+        "plan-dating-note"
+      ]
+    },
+    {
+      "id": "request-97-letter-acquisition",
+      "subject": "Rescue condition for the Christmas-request letter",
+      "status": "open",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Requires rescuing Ayako.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests"
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "claim": "Ayako rescue supplies the note.",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/"
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "claim": "A letter from at least one rescued person works.",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Requests"
+        }
+      ],
+      "decision": "Require the letter, but do not declare the request lost solely because Ayako was missed. Specific acquisition condition needs in-game or stronger primary evidence.",
+      "affectedFactIds": [
+        "request-97-letter"
+      ]
+    },
+    {
+      "id": "ryoji-3-invitation-date",
+      "subject": "Kyoto invitation versus linked-event date",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Supplement lists 11/18 and explicitly says agree to hang out.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes"
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Monthly route gives invitation 11/18 evening and automatic Link 3 on 11/19 daytime.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november"
+        },
+        {
+          "sourceId": "gamefaqs-tensquare3-81159",
+          "claim": "Invitation 11/18 evening; Linked Episode 3 on 11/19 afternoon.",
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/november"
+        }
+      ],
+      "decision": "Separate invitation and event records. Calendar must not show the linked event as completed by accepting the invitation.",
+      "affectedFactIds": [
+        "le-ryoji-3",
+        "le-ryoji-3-invitation"
+      ]
+    },
+    {
+      "id": "exam-final-day-may",
+      "subject": "May exam final day",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Route lists free actions after the last answered-quiz date; does not say the exam period ends on that quiz date.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may"
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "claim": "Final morning exam on 05-23, then free after-school and evening activities.",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/443139"
+        }
+      ],
+      "decision": "Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots.",
+      "affectedFactIds": [
+        "cal-exam-may"
+      ]
+    },
+    {
+      "id": "exam-final-day-october",
+      "subject": "October exam final day",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Route lists free actions after the last answered-quiz date; does not say the exam period ends on that quiz date.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october"
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "claim": "Final morning exam on 10-17, then free after-school and evening activities.",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/444087"
+        }
+      ],
+      "decision": "Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots.",
+      "affectedFactIds": [
+        "cal-exam-october"
+      ]
+    },
+    {
+      "id": "exam-final-day-december",
+      "subject": "December exam final day",
+      "status": "resolved-for-planning",
+      "claims": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "claim": "Route lists free actions after the last answered-quiz date; does not say the exam period ends on that quiz date.",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december"
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "claim": "Final morning exam on 12-19, then free after-school and evening activities.",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/444388"
+        }
+      ],
+      "decision": "Include the final morning exam. Remove the inferred earlier endpoint; retain free later slots.",
+      "affectedFactIds": [
+        "cal-exam-december"
+      ]
+    }
+  ]
+}

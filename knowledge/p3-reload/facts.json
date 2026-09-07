@@ -1,0 +1,5394 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "reviewedAt": "2026-09-07",
+  "releaseReady": false,
+  "facts": [
+    {
+      "id": "le-junpei-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Junpei episode 1",
+      "value": {
+        "character": "junpei",
+        "episode": 1,
+        "start": "05-12",
+        "end": "07-03",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Junpei table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-junpei-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Junpei episode 2",
+      "value": {
+        "character": "junpei",
+        "episode": 2,
+        "start": "08-09",
+        "end": "08-28",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Junpei table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-junpei-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-junpei-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Junpei episode 3",
+      "value": {
+        "character": "junpei",
+        "episode": 3,
+        "start": "11-07",
+        "end": "11-11",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Junpei table / row 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-junpei-2"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-junpei-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Junpei episode 4",
+      "value": {
+        "character": "junpei",
+        "episode": 4,
+        "start": "12-19",
+        "end": "12-26",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Junpei table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-junpei-3"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-junpei-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Junpei episode 5",
+      "value": {
+        "character": "junpei",
+        "episode": 5,
+        "start": "01-15",
+        "end": "01-29",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Junpei table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-junpei-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-akihiko-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Akihiko episode 1",
+      "value": {
+        "character": "akihiko",
+        "episode": 1,
+        "start": "05-29",
+        "end": "07-10",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Akihiko / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Akihiko table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-akihiko-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Akihiko episode 2",
+      "value": {
+        "character": "akihiko",
+        "episode": 2,
+        "start": "07-24",
+        "end": "08-31",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Akihiko / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Akihiko table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-akihiko-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-akihiko-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Akihiko episode 3",
+      "value": {
+        "character": "akihiko",
+        "episode": 3,
+        "start": "10-09",
+        "end": "11-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Akihiko / Link 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Akihiko table / row 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-akihiko-2"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-akihiko-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Akihiko episode 4",
+      "value": {
+        "character": "akihiko",
+        "episode": 4,
+        "start": "12-12",
+        "end": "12-22",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Akihiko / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Akihiko table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-akihiko-3"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-akihiko-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Akihiko episode 5",
+      "value": {
+        "character": "akihiko",
+        "episode": 5,
+        "start": "01-04",
+        "end": "01-29",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Akihiko / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Akihiko table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-akihiko-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-koromaru-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Koromaru episode 1",
+      "value": {
+        "character": "koromaru",
+        "episode": 1,
+        "start": "08-22",
+        "end": "01-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Koromaru / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Koromaru table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-koromaru-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Koromaru episode 2",
+      "value": {
+        "character": "koromaru",
+        "episode": 2,
+        "start": "09-04",
+        "end": "01-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Koromaru / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Koromaru table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-koromaru-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-koromaru-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Koromaru episode 3",
+      "value": {
+        "character": "koromaru",
+        "episode": 3,
+        "start": "09-04",
+        "end": "01-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Koromaru / Link 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Koromaru table / row 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-koromaru-2"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-koromaru-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Koromaru episode 4",
+      "value": {
+        "character": "koromaru",
+        "episode": 4,
+        "start": "09-04",
+        "end": "01-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Koromaru / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Koromaru table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-koromaru-3"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-koromaru-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Koromaru episode 5",
+      "value": {
+        "character": "koromaru",
+        "episode": 5,
+        "start": "01-05",
+        "end": "01-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Koromaru / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Koromaru table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-koromaru-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-ken-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ken episode 1",
+      "value": {
+        "character": "ken",
+        "episode": 1,
+        "start": "09-08",
+        "end": "09-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ken / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ken table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-ken-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ken episode 2",
+      "value": {
+        "character": "ken",
+        "episode": 2,
+        "start": "09-15",
+        "end": "09-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ken / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ken table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-ken-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-ken-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ken episode 3",
+      "value": {
+        "character": "ken",
+        "episode": 3,
+        "start": "11-10",
+        "end": "12-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ken / Link 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ken table / row 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-ken-2"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-ken-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ken episode 4",
+      "value": {
+        "character": "ken",
+        "episode": 4,
+        "start": "12-22",
+        "end": "12-30",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ken / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ken table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-ken-3"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-ken-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ken episode 5",
+      "value": {
+        "character": "ken",
+        "episode": 5,
+        "start": "01-19",
+        "end": "01-27",
+        "dateMeaning": "outer-window",
+        "timeSlot": "evening",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ken / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ken table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-ken-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-shinjiro-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shinjiro episode 1",
+      "value": {
+        "character": "shinjiro",
+        "episode": 1,
+        "start": "09-04",
+        "end": "10-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval. Speak with Mitsuru to initiate this chain."
+    },
+    {
+      "id": "le-shinjiro-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shinjiro episode 2",
+      "value": {
+        "character": "shinjiro",
+        "episode": 2,
+        "start": "09-11",
+        "end": "10-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-shinjiro-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-shinjiro-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shinjiro episode 3",
+      "value": {
+        "character": "shinjiro",
+        "episode": 3,
+        "start": "09-11",
+        "end": "10-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro table / row 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-shinjiro-2"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval."
+    },
+    {
+      "id": "le-shinjiro-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shinjiro episode 4",
+      "value": {
+        "character": "shinjiro",
+        "episode": 4,
+        "start": "09-11",
+        "end": "10-02",
+        "dateMeaning": "outer-window",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "dependsOn": [
+        "le-shinjiro-3",
+        "le-shinjiro-setup"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval. The conversation with Mitsuru is a required separate step."
+    },
+    {
+      "id": "le-shinjiro-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Shinjiro episode 5",
+      "value": {
+        "character": "shinjiro",
+        "episode": 5,
+        "start": "10-05",
+        "end": "10-31",
+        "dateMeaning": "outer-window",
+        "timeSlot": "varies",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-shinjiro-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval. Closing date has one explicit source; GameFAQs gives only the opening date."
+    },
+    {
+      "id": "le-ryoji-1",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryoji episode 1",
+      "value": {
+        "character": "ryoji",
+        "episode": 1,
+        "start": "11-09",
+        "end": "11-09",
+        "dateMeaning": "outer-window",
+        "timeSlot": "varies",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ryoji / Link 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ryoji table / row 1",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [],
+      "notes": "Prerequisites and specific available days still apply within this interval. Story-specific meetings require accepting the relevant invitations; the 11/18 entry is the invitation step."
+    },
+    {
+      "id": "le-ryoji-2",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryoji episode 2",
+      "value": {
+        "character": "ryoji",
+        "episode": 2,
+        "start": "11-12",
+        "end": "11-16",
+        "dateMeaning": "outer-window",
+        "timeSlot": "varies",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ryoji / Link 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ryoji table / row 2",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-ryoji-1"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval. Story-specific meetings require accepting the relevant invitations; the 11/18 entry is the invitation step."
+    },
+    {
+      "id": "le-ryoji-3",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryoji episode 3",
+      "value": {
+        "character": "ryoji",
+        "episode": 3,
+        "start": "11-19",
+        "end": "11-19",
+        "dateMeaning": "calendar-event",
+        "timeSlot": "daytime",
+        "dailyAvailabilityKnown": true
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "Thu 11/19 / Daytime / Ryoji Link 3 auto",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end",
+            "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-tensquare3-81159",
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/november",
+          "locator": "11/19 Thursday / Afternoon / Ryoji Linked Episode 3",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-ryoji-3-invitation"
+      ],
+      "notes": "The automatic daytime event follows accepting the previous evening invitation. Numbering includes the automatic first meeting; other guides omit that meeting and use a different number.",
+      "disputeIds": [
+        "ryoji-3-invitation-date"
+      ]
+    },
+    {
+      "id": "le-ryoji-4",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryoji episode 4",
+      "value": {
+        "character": "ryoji",
+        "episode": 4,
+        "start": "12-01",
+        "end": "12-01",
+        "dateMeaning": "outer-window",
+        "timeSlot": "varies",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ryoji / Link 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ryoji table / row 4",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-ryoji-3"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval. Story-specific meetings require accepting the relevant invitations; the 11/18 entry is the invitation step."
+    },
+    {
+      "id": "le-ryoji-5",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryoji episode 5",
+      "value": {
+        "character": "ryoji",
+        "episode": 5,
+        "start": "12-31",
+        "end": "12-31",
+        "dateMeaning": "outer-window",
+        "timeSlot": "varies",
+        "dailyAvailabilityKnown": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Ryoji / Link 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Ryoji table / row 5",
+          "supports": [
+            "value.character",
+            "value.episode",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-ryoji-4"
+      ],
+      "notes": "Prerequisites and specific available days still apply within this interval. Story-specific meetings require accepting the relevant invitations; the 11/18 entry is the invitation step."
+    },
+    {
+      "id": "le-shinjiro-setup",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Shinjiro episode 4 setup",
+      "value": {
+        "start": "09-11",
+        "end": "10-02",
+        "dateMeaning": "outer-window",
+        "consumesSlot": false,
+        "requiresConversation": "Mitsuru",
+        "requiresWithholdingForm": true
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Shinjiro / Link 3.5",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.consumesSlot",
+            "value.requiresConversation",
+            "value.requiresWithholdingForm"
+          ]
+        },
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Shinjiro / episode 1 and 4 instructions",
+          "supports": [
+            "value.requiresConversation",
+            "value.requiresWithholdingForm"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-shinjiro-3"
+      ],
+      "notes": "Exact dates are explicit in GameFAQs. Keep the form when talking to Mitsuru. Japanese guide confirms the conversation choice, not its full date range."
+    },
+    {
+      "id": "le-junpei-flower",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Optional Junpei flower branch",
+      "value": {
+        "start": "11-07",
+        "end": "11-11",
+        "dateMeaning": "outer-window",
+        "consumesSlot": false,
+        "blocksLaterDay": "01-21"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+          "locator": "Junpei / Link 3.5",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.consumesSlot",
+            "value.blocksLaterDay"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "url": "https://www.rpgsite.net/guide/15321-persona-3-reload-100-max-social-link-guide",
+          "locator": "November 8",
+          "supports": [
+            "value.blocksLaterDay"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-junpei-3"
+      ],
+      "disputeIds": [
+        "junpei-flower-date"
+      ],
+      "notes": "Optional branch, not required for episode 4. The exact flower window needs reconciliation before an actionable reminder."
+    },
+    {
+      "id": "rescue-ayako",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ayako",
+      "value": {
+        "person": "ayako",
+        "start": "06-18",
+        "end": "07-06",
+        "floor": 50,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / ayako",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 50",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 07-06 / floor 50",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-kenjiro",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Kenjiro",
+      "value": {
+        "person": "kenjiro",
+        "start": "06-26",
+        "end": "07-06",
+        "floor": 56,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / kenjiro",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 56",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 07-06 / floor 56",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-yoshimi",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Yoshimi",
+      "value": {
+        "person": "yoshimi",
+        "start": "06-26",
+        "end": "07-06",
+        "floor": 64,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / yoshimi",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 64",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 07-06 / floor 64",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-yasuko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Yasuko",
+      "value": {
+        "person": "yasuko",
+        "start": "08-03",
+        "end": "08-05",
+        "floor": 79,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / yasuko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 79",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 08-05 / floor 79",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-shuichi",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Shuichi",
+      "value": {
+        "person": "shuichi",
+        "start": "08-03",
+        "end": "08-05",
+        "floor": 84,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / shuichi",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 84",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 08-05 / floor 84",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-satsuki",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Satsuki",
+      "value": {
+        "person": "satsuki",
+        "start": "08-19",
+        "end": "09-04",
+        "floor": 101,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / satsuki",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 101",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "disputeIds": [
+        "september-rescue-deadline"
+      ]
+    },
+    {
+      "id": "rescue-hirotaka",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Hirotaka",
+      "value": {
+        "person": "hirotaka",
+        "start": "08-29",
+        "end": "09-04",
+        "floor": 109,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / hirotaka",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 109",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "disputeIds": [
+        "september-rescue-deadline"
+      ]
+    },
+    {
+      "id": "rescue-reiko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Reiko",
+      "value": {
+        "person": "reiko",
+        "start": "09-03",
+        "end": "09-04",
+        "floor": 114,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / reiko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 114",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "disputeIds": [
+        "september-rescue-deadline"
+      ]
+    },
+    {
+      "id": "rescue-bunkichi",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Bunkichi",
+      "value": {
+        "person": "bunkichi",
+        "start": "09-12",
+        "end": "10-03",
+        "floor": 120,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening",
+        "lostLinkIfMissed": "hierophant"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / bunkichi",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 120",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 10-03 / floor 120",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Consequences of missed rescues",
+          "supports": [
+            "value.lostLinkIfMissed"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-aki",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Aki",
+      "value": {
+        "person": "aki",
+        "start": "09-22",
+        "end": "10-03",
+        "floor": 135,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / aki",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 135",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 10-03 / floor 135",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-yasunobu",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Yasunobu",
+      "value": {
+        "person": "yasunobu",
+        "start": "09-22",
+        "end": "10-03",
+        "floor": 140,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / yasunobu",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 140",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 10-03 / floor 140",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-maiko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Maiko",
+      "value": {
+        "person": "maiko",
+        "start": "10-21",
+        "end": "11-02",
+        "floor": 146,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening",
+        "lostLinkIfMissed": "hanged-man"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / maiko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 146",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 11-02 / floor 146",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Consequences of missed rescues",
+          "supports": [
+            "value.lostLinkIfMissed"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-ryohei",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Ryohei",
+      "value": {
+        "person": "ryohei",
+        "start": "10-21",
+        "end": "11-02",
+        "floor": 159,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / ryohei",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 159",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 11-02 / floor 159",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-takeko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Takeko",
+      "value": {
+        "person": "takeko",
+        "start": "10-30",
+        "end": "11-02",
+        "floor": 165,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / takeko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 165",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 11-02 / floor 165",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-tomoyuki",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Tomoyuki",
+      "value": {
+        "person": "tomoyuki",
+        "start": "11-28",
+        "end": "12-01",
+        "floor": 177,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / tomoyuki",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 177",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character",
+      "disputeIds": [
+        "november-rescue-opening"
+      ]
+    },
+    {
+      "id": "rescue-katsue",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Katsue",
+      "value": {
+        "person": "katsue",
+        "start": "11-28",
+        "end": "12-01",
+        "floor": 196,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / katsue",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 196",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 12-01 / floor 196",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-yumiko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Yumiko",
+      "value": {
+        "person": "yumiko",
+        "start": "12-22",
+        "end": "12-30",
+        "floor": 209,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / yumiko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 209",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 12-30 / floor 209",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-nobuko",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Nobuko",
+      "value": {
+        "person": "nobuko",
+        "start": "12-22",
+        "end": "12-30",
+        "floor": 221,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / nobuko",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 221",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Deadline 12-30 / floor 221",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-fumika",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Fumika",
+      "value": {
+        "person": "fumika",
+        "start": "01-15",
+        "end": "01-30",
+        "floor": 232,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / fumika",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 232",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "rescue-mitsutoshi",
+      "category": "rescue",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Mitsutoshi",
+      "value": {
+        "person": "mitsutoshi",
+        "start": "01-15",
+        "end": "01-30",
+        "floor": 250,
+        "dateMeaning": "rescue-deadline",
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "Missing People / mitsutoshi",
+          "supports": [
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "game8jp-missing-persons-721428",
+          "url": "https://game8.jp/p3re/721428",
+          "locator": "Missing people / floor 250",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "character"
+    },
+    {
+      "id": "request-12",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 12",
+      "value": {
+        "request": 12,
+        "start": "05-10",
+        "end": "06-06",
+        "item": "pine-resin",
+        "provider": "yukari",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #12",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #12",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-13",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 13",
+      "value": {
+        "request": 13,
+        "start": "05-10",
+        "end": "06-06",
+        "item": "handheld-console",
+        "provider": "junpei",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #13",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #13",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": [
+        "request-12"
+      ]
+    },
+    {
+      "id": "request-27",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 27",
+      "value": {
+        "request": 27,
+        "start": "06-13",
+        "end": "07-05",
+        "item": "triangular-sword",
+        "provider": "mitsuru",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #27",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #27",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-28",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 28",
+      "value": {
+        "request": 28,
+        "start": "06-13",
+        "end": "07-05",
+        "item": "protein",
+        "provider": "akihiko",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #28",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #28",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": [
+        "request-27"
+      ]
+    },
+    {
+      "id": "request-29",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 29",
+      "value": {
+        "request": 29,
+        "start": "06-13",
+        "end": "07-05",
+        "item": "fashionable-item",
+        "provider": "club-vendor",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #29",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #29",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-43",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 43",
+      "value": {
+        "request": 43,
+        "start": "07-09",
+        "end": "08-04",
+        "item": "christmas-star",
+        "provider": "fuuka",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #43",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #43",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-58",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 58",
+      "value": {
+        "request": 58,
+        "start": "08-08",
+        "end": "08-31",
+        "item": "barter-chain",
+        "provider": "town-npcs",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #58",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #58",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-68",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 68",
+      "value": {
+        "request": 68,
+        "start": "09-10",
+        "end": "10-02",
+        "item": "fruit-knife",
+        "provider": "shinjiro",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #68",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #68",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-69",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 69",
+      "value": {
+        "request": 69,
+        "start": "09-10",
+        "end": "10-02",
+        "item": "oil",
+        "provider": "aigis",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #69",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #69",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": [
+        "request-68"
+      ]
+    },
+    {
+      "id": "request-76",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 76",
+      "value": {
+        "request": 76,
+        "start": "10-06",
+        "end": "11-01",
+        "item": "glasses-wipe",
+        "provider": "ikutsuki",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #76",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #76",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-94",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 94",
+      "value": {
+        "request": 94,
+        "start": "11-06",
+        "end": "11-30",
+        "item": "dog-food",
+        "provider": "koromaru",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #94",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #94",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": []
+    },
+    {
+      "id": "request-95",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 95",
+      "value": {
+        "request": 95,
+        "start": "11-06",
+        "end": "11-30",
+        "item": "action-figure",
+        "provider": "ken",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #95",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #95",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening date is from GameFAQs; both sources explicitly state the closing date. Accept the request and check the provider in game.",
+      "dependsOn": [
+        "request-94"
+      ]
+    },
+    {
+      "id": "request-97",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 97",
+      "value": {
+        "request": 97,
+        "start": "12-04",
+        "end": "12-25",
+        "item": "christmas-present",
+        "provider": "town-npc",
+        "dateMeaning": "request-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #97",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #97",
+          "supports": [
+            "value.request",
+            "value.end",
+            "value.item",
+            "value.provider"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Opening and closing dates describe the request. Accept it before looking for the Eccentric Man. The required letter is separate from its disputed rescue acquisition condition.",
+      "dependsOn": [
+        "request-97-letter"
+      ]
+    },
+    {
+      "id": "request-40-shopping",
+      "category": "request",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Request 40 purchase opportunity",
+      "value": {
+        "request": 40,
+        "start": "07-12",
+        "end": "07-12",
+        "dateMeaning": "purchase-opportunity",
+        "priceYen": 9800,
+        "alternativeExists": true
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/tv-shopping-and-missing-people",
+          "locator": "TV Shopping / 7/12",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.priceYen"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #40",
+          "supports": [
+            "value.alternativeExists"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #40",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "A useful purchase date, not a proven hard deadline. GameFAQs describes a later Port Island NPC purchase; PowerPyx labels the quest missable. Do not show a lost-quest warning from missing this date.",
+      "disputeIds": [
+        "request-40-alternative"
+      ]
+    },
+    {
+      "id": "request-44-beach",
+      "category": "request",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Request 44 beach collection",
+      "value": {
+        "request": 44,
+        "start": "07-20",
+        "end": "07-20",
+        "dateMeaning": "item-opportunity",
+        "acceptBeforeTrip": true
+      },
+      "evidence": [
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "7/20",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #44",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "July / 7/9 and 7/20",
+          "supports": [
+            "value.request",
+            "value.start",
+            "value.end",
+            "value.acceptBeforeTrip"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Accept the request before departure, then collect a beach souvenir. This is the pickup opportunity, not a claim that the report must be filed that day.",
+      "disputeIds": [
+        "request-44-month-typo"
+      ]
+    },
+    {
+      "id": "request-96-kyoto",
+      "category": "request",
+      "kind": "route-choice",
+      "status": "single-source",
+      "subject": "Request 96 trip supplies",
+      "value": {
+        "request": 96,
+        "start": "11-17",
+        "end": "11-17",
+        "dateMeaning": "purchase-opportunity",
+        "buyDistinctDrinks": 3,
+        "location": "Kyoto-hotel-vending-machine"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #96 / all three Kyoto drinks",
+          "supports": [
+            "value.request",
+            "value.buyDistinctDrinks",
+            "value.location"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "11/17 Tuesday / Evening / Kyoto vending machine purchase",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.location"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "PowerPyx explicitly buys Kyoto drinks on November 17 evening. This is one documented purchase opportunity, not the full shop window or a closing deadline. The last interactable purchase slot remains unknown."
+    },
+    {
+      "id": "sl-magician",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Magician baseline availability",
+      "value": {
+        "link": "magician",
+        "start": "04-22",
+        "days": [
+          "tue",
+          "thu",
+          "fri"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / magician",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-priestess",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Priestess baseline availability",
+      "value": {
+        "link": "priestess",
+        "start": null,
+        "days": [
+          "mon",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / priestess",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-empress",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Empress baseline availability",
+      "value": {
+        "link": "empress",
+        "start": "11-21",
+        "days": [
+          "mon",
+          "tue",
+          "wed",
+          "thu",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / empress",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-emperor",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Emperor baseline availability",
+      "value": {
+        "link": "emperor",
+        "start": "04-27",
+        "days": [
+          "mon",
+          "wed",
+          "fri"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / emperor",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-hierophant",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Hierophant baseline availability",
+      "value": {
+        "link": "hierophant",
+        "start": "04-25",
+        "days": [
+          "sun",
+          "tue",
+          "wed",
+          "thu",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / hierophant",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-lovers",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Lovers baseline availability",
+      "value": {
+        "link": "lovers",
+        "start": "07-25",
+        "days": [
+          "mon",
+          "wed",
+          "thu",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / lovers",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-chariot",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Chariot baseline availability",
+      "value": {
+        "link": "chariot",
+        "start": "04-23",
+        "days": [
+          "mon",
+          "tue",
+          "thu",
+          "fri"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / chariot",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-justice",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Justice baseline availability",
+      "value": {
+        "link": "justice",
+        "start": null,
+        "days": [
+          "tue",
+          "thu",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / justice",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-hermit",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Hermit baseline availability",
+      "value": {
+        "link": "hermit",
+        "start": "04-29",
+        "days": [
+          "sun"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / hermit",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-fortune",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Fortune baseline availability",
+      "value": {
+        "link": "fortune",
+        "start": "06-17",
+        "days": [
+          "tue",
+          "wed",
+          "thu"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / fortune",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-strength",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Strength baseline availability",
+      "value": {
+        "link": "strength",
+        "start": null,
+        "days": [
+          "wed",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / strength",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-hanged-man",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Hanged-Man baseline availability",
+      "value": {
+        "link": "hanged-man",
+        "start": "05-06",
+        "days": [
+          "mon",
+          "wed",
+          "sat"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / hanged-man",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-temperance",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Temperance baseline availability",
+      "value": {
+        "link": "temperance",
+        "start": null,
+        "days": [
+          "tue",
+          "wed",
+          "fri"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / temperance",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-devil",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Devil baseline availability",
+      "value": {
+        "link": "devil",
+        "start": null,
+        "days": [
+          "tue",
+          "sat"
+        ],
+        "timeSlot": "evening",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / devil",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": [
+        "social-link-prerequisites"
+      ]
+    },
+    {
+      "id": "sl-tower",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Tower baseline availability",
+      "value": {
+        "link": "tower",
+        "start": null,
+        "days": [
+          "sun",
+          "thu",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "evening",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / tower",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-star",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Star baseline availability",
+      "value": {
+        "link": "star",
+        "start": "08-05",
+        "days": [
+          "sun",
+          "wed",
+          "fri"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / star",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "sl-moon",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Moon baseline availability",
+      "value": {
+        "link": "moon",
+        "start": null,
+        "days": [
+          "sun",
+          "mon",
+          "tue",
+          "wed",
+          "thu",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / moon",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": [
+        "social-link-prerequisites"
+      ]
+    },
+    {
+      "id": "sl-sun",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Sun baseline availability",
+      "value": {
+        "link": "sun",
+        "start": "08-23",
+        "days": [
+          "sun"
+        ],
+        "timeSlot": "daytime",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / sun",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": [
+        "social-link-prerequisites"
+      ]
+    },
+    {
+      "id": "sl-aeon",
+      "category": "social-link",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Aeon baseline availability",
+      "value": {
+        "link": "aeon",
+        "start": "01-08",
+        "days": [
+          "mon",
+          "tue",
+          "wed",
+          "thu",
+          "fri",
+          "sat"
+        ],
+        "timeSlot": "after-school",
+        "dateMeaning": "baseline-pattern",
+        "exceptionsComplete": false
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Availability table / aeon",
+          "supports": [
+            "value.start",
+            "value.days",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Baseline only. Prerequisite conversations, stat gates, school closures, story events and rank-specific exceptions are not all modelled. Hermit also has holiday access. First listed date can be an introduction rather than a rank-up.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-temperance",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Temperance social-stat gate",
+      "value": {
+        "stat": "academics",
+        "link": "temperance",
+        "rank": 2
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / temperance",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "temperance requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-sun",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Sun social-stat gate",
+      "value": {
+        "stat": "academics",
+        "link": "sun",
+        "rank": 4
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / sun",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "sun requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-empress",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Empress social-stat gate",
+      "value": {
+        "stat": "academics",
+        "link": "empress",
+        "rank": 6
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / empress",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "empress requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-moon",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Moon social-stat gate",
+      "value": {
+        "stat": "charm",
+        "link": "moon",
+        "rank": 2
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / moon",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "moon requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-devil",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Devil social-stat gate",
+      "value": {
+        "stat": "charm",
+        "link": "devil",
+        "rank": 4
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / devil",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "devil requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-lovers",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Lovers social-stat gate",
+      "value": {
+        "stat": "charm",
+        "link": "lovers",
+        "rank": 6
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / lovers",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "lovers requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-tower",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Tower social-stat gate",
+      "value": {
+        "stat": "courage",
+        "link": "tower",
+        "rank": 4
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / tower",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Tower_Social_Link",
+          "locator": "tower requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": [
+        "tower-courage"
+      ]
+    },
+    {
+      "id": "gate-star",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Star social-stat gate",
+      "value": {
+        "stat": "courage",
+        "link": "star",
+        "rank": 4
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / star",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "star requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "gate-priestess",
+      "category": "social-stat",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Priestess social-stat gate",
+      "value": {
+        "stat": "courage",
+        "link": "priestess",
+        "rank": 6
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social-stat unlocks / priestess",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Social_Stats",
+          "locator": "priestess requirement",
+          "supports": [
+            "value.stat",
+            "value.link",
+            "value.rank"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Only the social-stat requirement. Meeting this gate does not prove that the link is unlocked.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-may",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon May",
+      "value": {
+        "start": "05-09",
+        "end": "05-09",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may",
+          "locator": "may / 05-09 to 05-09",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "05-09 to 05-09",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-june",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon June",
+      "value": {
+        "start": "06-08",
+        "end": "06-08",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/june",
+          "locator": "june / 06-08 to 06-08",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "06-08 to 06-08",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-july",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon July",
+      "value": {
+        "start": "07-07",
+        "end": "07-07",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "july / 07-07 to 07-07",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "07-07 to 07-07",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-august",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon August",
+      "value": {
+        "start": "08-06",
+        "end": "08-06",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "august / 08-06 to 08-06",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "08-06 to 08-06",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-september",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon September",
+      "value": {
+        "start": "09-05",
+        "end": "09-05",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september",
+          "locator": "september / 09-05 to 09-05",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "09-05 to 09-05",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-october",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon October",
+      "value": {
+        "start": "10-04",
+        "end": "10-04",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "october / 10-04 to 10-04",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "10-04 to 10-04",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-full-moon-november",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Full Moon November",
+      "value": {
+        "start": "11-03",
+        "end": "11-03",
+        "event": "story-operation",
+        "timeSlot": "story-operation",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "november / 11-03 to 11-03",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "11-03 to 11-03",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling. The operation consumes story time; this field must not be used to infer a free daytime slot.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-exam-may",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Exam May",
+      "value": {
+        "start": "05-18",
+        "end": "05-23",
+        "event": "exam-period",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event",
+        "finalDayExamSlot": "morning",
+        "finalDayAfterSchool": "free",
+        "finalDayEvening": "free"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/may",
+          "locator": "may / 05-18 to 05-22",
+          "supports": [
+            "value.start",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "05-18 to 05-22",
+          "supports": [
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/443139",
+          "locator": "May 23 daily schedule row / Morning and subsequent activities",
+          "supports": [
+            "value.end",
+            "value.event",
+            "value.finalDayExamSlot",
+            "value.finalDayAfterSchool",
+            "value.finalDayEvening"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "The exam period includes the final morning. After-school and evening activities resume that day. This interval must not block all slots on its final date.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-exam-july",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Exam July",
+      "value": {
+        "start": "07-14",
+        "end": "07-18",
+        "event": "exam-period",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event",
+        "finalDayExamSlot": "morning",
+        "finalDayAfterSchool": "story-event",
+        "finalDayEvening": "free"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "july / 07-14 to 07-18",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "07-14 to 07-18",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/443551",
+          "locator": "July 18 daily schedule row / Morning and subsequent activities",
+          "supports": [
+            "value.end",
+            "value.event",
+            "value.finalDayExamSlot",
+            "value.finalDayAfterSchool",
+            "value.finalDayEvening"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "The final morning remains part of the exam period. Later slots differ from the fully occupied earlier exam days. July 18 has a forced Ken introduction after school and a free evening.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-exam-october",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Exam October",
+      "value": {
+        "start": "10-13",
+        "end": "10-17",
+        "event": "exam-period",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event",
+        "finalDayExamSlot": "morning",
+        "finalDayAfterSchool": "free",
+        "finalDayEvening": "free"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/october",
+          "locator": "october / 10-13 to 10-16",
+          "supports": [
+            "value.start",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "10-13 to 10-16",
+          "supports": [
+            "value.start",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/444087",
+          "locator": "October 17 daily schedule row / Morning and subsequent activities",
+          "supports": [
+            "value.end",
+            "value.event",
+            "value.finalDayExamSlot",
+            "value.finalDayAfterSchool",
+            "value.finalDayEvening"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "The exam period includes the final morning. After-school and evening activities resume that day. This interval must not block all slots on its final date.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-exam-december",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Exam December",
+      "value": {
+        "start": "12-14",
+        "end": "12-19",
+        "event": "exam-period",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event",
+        "finalDayExamSlot": "morning",
+        "finalDayAfterSchool": "free",
+        "finalDayEvening": "free"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "december / 12-14 to 12-18",
+          "supports": [
+            "value.start",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "12-14 to 12-18",
+          "supports": [
+            "value.start",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "game8-100-439345",
+          "url": "https://game8.co/games/Persona-3-Reload/archives/444388",
+          "locator": "December 19 daily schedule row / Morning and subsequent activities",
+          "supports": [
+            "value.end",
+            "value.event",
+            "value.finalDayExamSlot",
+            "value.finalDayAfterSchool",
+            "value.finalDayEvening"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "The exam period includes the final morning. After-school and evening activities resume that day. This interval must not block all slots on its final date.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-summer-school",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Summer School",
+      "value": {
+        "start": "08-10",
+        "end": "08-15",
+        "event": "mandatory-classes",
+        "timeSlot": "daytime",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/august",
+          "locator": "august / 08-10 to 08-15",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "08-10 to 08-15",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": [
+        "summer-school-end"
+      ]
+    },
+    {
+      "id": "cal-yakushima-trip",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Yakushima Trip",
+      "value": {
+        "start": "07-20",
+        "end": "07-23",
+        "event": "story-trip",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/july",
+          "locator": "july / 07-20 to 07-23",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "07-20 to 07-23",
+          "supports": [
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-kyoto-trip",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Kyoto Trip",
+      "value": {
+        "start": "11-17",
+        "end": "11-20",
+        "event": "story-trip",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "november / 11-17 to 11-20",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "11-17 to 11-20",
+          "supports": [
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-school-return-september",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "School Return September",
+      "value": {
+        "start": "09-01",
+        "end": "09-01",
+        "event": "school-resumes",
+        "timeSlot": "school-day",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/september",
+          "locator": "september / 09-01 to 09-01",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "09-01 to 09-01",
+          "supports": [
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-school-return-january",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "School Return January",
+      "value": {
+        "start": "01-08",
+        "end": "01-08",
+        "event": "school-resumes",
+        "timeSlot": "school-day",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/january",
+          "locator": "january / 01-08 to 01-08",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "01-08 to 01-08",
+          "supports": [
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-new-year-decision",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "New Year Decision",
+      "value": {
+        "start": "12-31",
+        "end": "12-31",
+        "event": "story-branch",
+        "timeSlot": "evening",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/december",
+          "locator": "december / 12-31 to 12-31",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "12-31 to 12-31",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "cal-final-battle",
+      "category": "calendar",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Final Battle",
+      "value": {
+        "start": "01-31",
+        "end": "01-31",
+        "event": "story-operation",
+        "timeSlot": "varies",
+        "dateMeaning": "calendar-event"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/january",
+          "locator": "january / 01-31 to 01-31",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "01-31 to 01-31",
+          "supports": [
+            "value.start",
+            "value.end",
+            "value.event"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "notes": "This interval identifies the event. It is not a blanket assertion that every daytime and evening slot is occupied. Final exam dates with later free time require slot-level modelling.",
+      "disputeIds": []
+    },
+    {
+      "id": "document-2",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 2",
+      "value": {
+        "request": 2,
+        "floor": 22
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #2",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #2",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-14",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 14",
+      "value": {
+        "request": 14,
+        "floor": 43
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #14",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #14",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-21",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 21",
+      "value": {
+        "request": 21,
+        "floor": 69
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #21",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #21",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-30",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 30",
+      "value": {
+        "request": 30,
+        "floor": 92
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #30",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #30",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-45",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 45",
+      "value": {
+        "request": 45,
+        "floor": 118
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #45",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #45",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-59",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 59",
+      "value": {
+        "request": 59,
+        "floor": 144
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #59",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #59",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-70",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 70",
+      "value": {
+        "request": 70,
+        "floor": 172
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #70",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #70",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-82",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 82",
+      "value": {
+        "request": 82,
+        "floor": 198
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #82",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #82",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "document-83",
+      "category": "tartarus",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Document for request 83",
+      "value": {
+        "request": 83,
+        "floor": 226
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "locator": "Request #83",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        },
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #83",
+          "supports": [
+            "value.request",
+            "value.floor"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Document floor only. This record does not set an unlock date or a required visit date."
+    },
+    {
+      "id": "plan-matching-arcana",
+      "category": "planning",
+      "kind": "recommendation",
+      "status": "corroborated",
+      "subject": "Bring a matching Persona",
+      "value": {
+        "mechanic": "matching-arcana-affinity"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-links",
+          "locator": "Affinity multipliers",
+          "supports": [
+            "value.mechanic"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "url": "https://www.rpgsite.net/guide/15321-persona-3-reload-100-max-social-link-guide",
+          "locator": "Route assumptions / matching arcana",
+          "supports": [
+            "value.mechanic"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Use a Persona of the relevant Arcana for links that need affinity. Do not infer a guaranteed rank-up from rank alone."
+    },
+    {
+      "id": "plan-rescue-batching",
+      "category": "planning",
+      "kind": "recommendation",
+      "status": "editorial",
+      "subject": "Combine rescues when feasible",
+      "value": {
+        "mechanic": "group-rescues-before-deadline"
+      },
+      "evidence": [
+        {
+          "sourceId": "rpgsite-missing-persons-15390",
+          "url": "https://www.rpgsite.net/guide/15390-persona-3-reload-missing-person-quest-missing-people-list-locations-deadlines-rewards",
+          "locator": "Missing person guidance",
+          "supports": [
+            "value.mechanic"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Suggest a visit after the last person in a batch arrives, with time to spare before the earliest deadline. Player strength and available evenings must override efficiency."
+    },
+    {
+      "id": "plan-linked-window",
+      "category": "planning",
+      "kind": "constraint",
+      "status": "single-source",
+      "subject": "Linked Episodes need repeated opportunities",
+      "value": {
+        "mechanic": "window-is-not-daily-availability"
+      },
+      "evidence": [
+        {
+          "sourceId": "game8jp-linked-episodes-719675",
+          "url": "https://game8.jp/p3re/719675",
+          "locator": "Missed episodes / recurrence",
+          "supports": [
+            "value.mechanic"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Do not treat the final calendar date in an interval as a guaranteed available meeting. Encourage early completion and check in-game availability."
+    },
+    {
+      "id": "plan-school-priority",
+      "category": "planning",
+      "kind": "recommendation",
+      "status": "editorial",
+      "subject": "Use school days for school links",
+      "value": {
+        "mechanic": "preserve-school-opportunities"
+      },
+      "evidence": [
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "url": "https://www.rpgsite.net/guide/15321-persona-3-reload-100-max-social-link-guide",
+          "locator": "Route introduction / classmate scheduling",
+          "supports": [
+            "value.mechanic"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "When no dated event is at risk, favour available school links over town links. This is a flexible priority, not an instruction to ignore a favourite character."
+    },
+    {
+      "id": "plan-nurse",
+      "category": "planning",
+      "kind": "recommendation",
+      "status": "single-source",
+      "subject": "Visit the nurse after Tartarus",
+      "value": {
+        "mechanic": "post-tartarus-courage",
+        "consumesSlot": false,
+        "requiresSchoolDay": true
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/social-stats",
+          "locator": "Social Stat Scheduled Activities / General",
+          "supports": [
+            "value.mechanic",
+            "value.consumesSlot",
+            "value.requiresSchoolDay"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "School-day access is necessary. Check the nurse after a Tartarus visit or full-moon operation; the guide reports a Courage benefit without using a time slot."
+    },
+    {
+      "id": "plan-dating-note",
+      "category": "planning",
+      "kind": "recommendation",
+      "status": "disputed",
+      "subject": "Evening affinity recovery",
+      "value": {
+        "mechanic": "dating-site-note",
+        "start": null,
+        "dateMeaning": "shop-unlock",
+        "priceYen": 3000,
+        "timeSlot": "evening"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "November / 11/12 Dating Site Note use",
+          "supports": [
+            "value.mechanic",
+            "value.priceYen",
+            "value.timeSlot"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-max-social-links-15321",
+          "url": "https://www.rpgsite.net/guide/15321-persona-3-reload-100-max-social-link-guide",
+          "locator": "January introduction / recovery",
+          "supports": [
+            "value.mechanic",
+            "value.timeSlot"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Evening affinity recovery is documented. Earliest purchase date is unknown here; inspect the dedicated shop source before using an unlock rule.",
+      "disputeIds": [
+        "dating-note-opening"
+      ]
+    },
+    {
+      "id": "route-marendarade-tartarus",
+      "category": "planning",
+      "kind": "route-choice",
+      "status": "single-source",
+      "subject": "marendarade early Tartarus allocation",
+      "value": {
+        "firstMonths": 3,
+        "visitsPerMonth": 2,
+        "dateMeaning": "route-choice"
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/all-voiced-events-walkthrough",
+          "locator": "Altering the Schedule",
+          "supports": [
+            "value.firstMonths",
+            "value.visitsPerMonth"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "Author allows combining each pair if the player can finish the work. Do not require one-night dungeon clears for the semi-guide."
+    },
+    {
+      "id": "route-powerpyx-affinity",
+      "category": "planning",
+      "kind": "route-choice",
+      "status": "single-source",
+      "subject": "PowerPyx route assumptions",
+      "value": {
+        "matchingArcanaExpectedFrom": "05-11",
+        "dateMeaning": "route-choice"
+      },
+      "evidence": [
+        {
+          "sourceId": "powerpyx-monomaru-100",
+          "url": "https://www.powerpyx.com/persona-3-reload-100-walkthrough/",
+          "locator": "5/10 / following-day assumption",
+          "supports": [
+            "value.matchingArcanaExpectedFrom"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "This is an author-specific route assumption, not a game unlock or deadline."
+    },
+    {
+      "id": "request-97-letter",
+      "category": "request",
+      "kind": "constraint",
+      "status": "disputed",
+      "subject": "Request 97 proof of a good deed",
+      "value": {
+        "request": 97,
+        "requiredItem": "letter-of-thanks",
+        "acquisitionRequirement": null
+      },
+      "evidence": [
+        {
+          "sourceId": "powerpyx-elizabeth-requests",
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "locator": "Request #97 / trade Thank You Note",
+          "supports": [
+            "value.request",
+            "value.requiredItem"
+          ]
+        },
+        {
+          "sourceId": "neoseeker-ragingtasmanian",
+          "url": "https://www.neoseeker.com/persona-3-reload/guides/Requests",
+          "locator": "#97 / proof of good deed and thank-you letter",
+          "supports": [
+            "value.request",
+            "value.requiredItem"
+          ]
+        }
+      ],
+      "spoiler": "mechanic",
+      "notes": "The letter requirement is supported. Sources disagree whether only Ayako can provide it or any rescue qualifies. Item names vary between guides. No hard Ayako dependency is encoded.",
+      "disputeIds": [
+        "request-97-letter-acquisition"
+      ]
+    },
+    {
+      "id": "le-ryoji-3-invitation",
+      "category": "linked-episode",
+      "kind": "constraint",
+      "status": "corroborated",
+      "subject": "Accept the Kyoto invitation",
+      "value": {
+        "character": "ryoji",
+        "start": "11-18",
+        "end": "11-18",
+        "dateMeaning": "invitation",
+        "timeSlot": "evening",
+        "requiresAcceptance": true
+      },
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-81170",
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/november",
+          "locator": "Wed 11/18 / Evening / Inn 2F",
+          "supports": [
+            "value.character",
+            "value.start",
+            "value.end",
+            "value.timeSlot",
+            "value.requiresAcceptance"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-tensquare3-81159",
+          "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/november",
+          "locator": "11/18 Wednesday / Evening / agree to spend tomorrow together",
+          "supports": [
+            "value.character",
+            "value.start",
+            "value.end",
+            "value.timeSlot",
+            "value.requiresAcceptance"
+          ]
+        }
+      ],
+      "spoiler": "story",
+      "dependsOn": [
+        "le-ryoji-2"
+      ],
+      "notes": "This is the invitation step. The linked event occurs on November 19."
+    }
+  ]
+}
