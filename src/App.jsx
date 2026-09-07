@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { NextGameVote } from './components/NextGameVote';
+import { ShareTracker } from './components/ShareTracker';
 import { CONFIDANT_INTERACTIONS } from './data/confidantData';
 import { 
   CheckCircle2, 
@@ -50,6 +52,7 @@ import { CROSSWORD_DATA } from './data/crosswordData';
 import { CONFIDANT_STAT_GATES, SOCIAL_STATS } from './data/socialStats';
 import { RELEASE_NOTES } from './data/releaseNotes';
 import { ROADMAP } from './data/roadmap';
+import { MAX_SAVE_BYTES, PREVIOUS_SAVE_KEY, parseSave, persistImportedSave } from './lib/saveData';
 
 const STAT_ICONS = {
   Knowledge: Book,
@@ -78,8 +81,11 @@ const FORMAT_ICONS = {
 
 // Analytics Helper
 const trackEvent = (eventName, eventData = {}) => {
-  if (window.umami) {
-    window.umami.track(eventName, eventData);
+  try {
+    const result = window.umami?.track(eventName, eventData);
+    result?.catch?.(() => {});
+  } catch {
+    // Analytics must not interrupt tracking or save actions.
   }
 };
 
@@ -96,7 +102,7 @@ function SupportCard({ location }) {
               Support This Project
             </h4>
             <p className="text-[11px] md:text-xs text-neutral-400 leading-relaxed max-w-xl">
-              P5 Tracker is free and ad-free. If it saves you time, consider supporting the dev.
+              P5 Tracker is free and ad-free. If it helped your playthrough, an optional tip supports fixes and updates.
             </p>
           </div>
         </div>
@@ -218,12 +224,16 @@ export default function App() {
         const [importText, setImportText] = useState('');
         const [copied, setCopied] = useState(false);
         const hiddenInputRef = useRef(null);
+        const [saveStatus, setSaveStatus] = useState('');
+        const [hasPreviousSave, setHasPreviousSave] = useState(() => {
+          try { return Boolean(localStorage.getItem(PREVIOUS_SAVE_KEY)); } catch { return false; }
+        });
       
         useEffect(() => {
           if (import.meta.env.DEV) {
             document.title = 'P5Tracker - DEV';
           } else {
-            document.title = 'P5 Tracker';
+            document.title = 'Persona 5 Royal tracker | Monthly goals and confidants';
           }
         }, []);
       
@@ -361,6 +371,7 @@ export default function App() {
   };
 
   const toggleItem = (id) => {
+    if (!checkedItems[id]) trackEvent('task_checked');
     // Crossword Opportunity Logic (Calendar)
     if (id.startsWith('cw_opp_')) {
       const isChecking = !checkedItems[id];
@@ -386,47 +397,73 @@ export default function App() {
     setCheckedItems(prev => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const handleCopy = () => {
-    const data = JSON.stringify({ checkedItems, confidantRanks, anchoredMonth, socialStats });
-    if (hiddenInputRef.current) {
-      hiddenInputRef.current.value = data;
-      hiddenInputRef.current.select();
-      document.execCommand('copy');
+  const currentSave = () => ({ checkedItems, confidantRanks, anchoredMonth, socialStats });
+
+  const handleCopy = async () => {
+    const data = JSON.stringify(currentSave());
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(data);
+      } else if (hiddenInputRef.current) {
+        hiddenInputRef.current.value = data;
+        hiddenInputRef.current.select();
+        if (!document.execCommand('copy')) throw new Error('Copy failed');
+      } else throw new Error('Copy unavailable');
       setCopied(true);
+      setSaveStatus('Save copied. Paste it into the Sync Terminal on your other device.');
       setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setSaveStatus('Clipboard access is unavailable. Use Download Save instead.');
     }
   };
 
   const exportFile = () => {
-    const data = JSON.stringify({ checkedItems, confidantRanks, anchoredMonth, socialStats });
-    const blob = new Blob([data], { type: 'text/plain' });
+    const blob = new Blob([JSON.stringify(currentSave())], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
     a.download = `p5r_tactician_save.txt`;
     a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    setSaveStatus('Save download started. Keep this file to transfer or recover your progress.');
   };
 
-  const handleImport = () => {
+  const applySave = (text, restoring = false) => {
     try {
-      const parsed = JSON.parse(importText);
-      if (parsed.checkedItems) {
-        // Run migration immediately on the imported data
-        const migratedItems = migrateCrosswords(parsed.checkedItems);
-        setCheckedItems(migratedItems);
-      }
-      if (parsed.confidantRanks) setConfidantRanks(parsed.confidantRanks);
-      if (parsed.socialStats) setSocialStats(parsed.socialStats);
-      if (parsed.anchoredMonth) {
-        setAnchoredMonth(parsed.anchoredMonth);
-        setCurrentMonth(parsed.anchoredMonth);
-      }
-      setSaveModal(false);
+      const parsed = parseSave(text);
+      const next = { ...currentSave(), ...parsed, checkedItems: migrateCrosswords(parsed.checkedItems) };
+      persistImportedSave(localStorage, currentSave(), next);
+      setCheckedItems(next.checkedItems);
+      setConfidantRanks(next.confidantRanks);
+      setSocialStats(next.socialStats);
+      setAnchoredMonth(next.anchoredMonth);
+      setCurrentMonth(next.anchoredMonth);
+      setHasPreviousSave(true);
       setImportText('');
-      alert("Data synchronized.");
-    } catch (e) {
-      alert("Invalid format.");
+      setSaveStatus(restoring ? 'Previous save restored. You can restore again to undo this change.' : 'Save imported. Your previous progress is backed up on this device.');
+    } catch (error) {
+      setSaveStatus(error.message);
     }
+  };
+
+  const handleImportFile = async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file) return;
+    if (!/\.(txt|json)$/i.test(file.name) || file.size > MAX_SAVE_BYTES) {
+      setSaveStatus('Choose a .txt or .json save file smaller than 1 MB.');
+      return;
+    }
+    try { applySave(await file.text()); }
+    catch { setSaveStatus('The file could not be read. Your progress has not changed.'); }
+  };
+
+  const restorePreviousSave = () => {
+    try {
+      const backup = localStorage.getItem(PREVIOUS_SAVE_KEY);
+      if (!backup) { setSaveStatus('No previous save is available on this device.'); return; }
+      applySave(backup, true);
+    } catch { setSaveStatus('The previous save could not be read. Your progress has not changed.'); }
   };
 
   // --- Smart Backlog Logic ---
@@ -1922,6 +1959,18 @@ export default function App() {
           </div>
         )}
 
+        <NextGameVote />
+        <section className="mt-12 text-center space-y-4" aria-label="About P5 Tracker">
+          <ShareTracker />
+          <p className="text-sm text-neutral-400">
+            <a className="underline" href={`${import.meta.env.BASE_URL}games/`}>Game companions</a>
+            {' · '}
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`}>Monthly planning guide</a>
+            {' · '}
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/confidant-tracker/`}>Confidant tracking guide</a>
+          </p>
+          <p className="text-xs text-neutral-500">Unofficial fan tool. Not affiliated with ATLUS or SEGA. Progress is saved in this browser. Umami measures visits and feature use.</p>
+        </section>
         {/* Footer */}
         <div className="mt-20 pt-10 border-t border-neutral-800 text-center opacity-60 hover:opacity-100 transition-opacity">
           <p className="text-[10px] tracking-[0.2em] text-neutral-500 mb-4 flex items-center justify-center gap-2">
@@ -1961,7 +2010,7 @@ export default function App() {
       <Modal isOpen={saveModal} onClose={() => setSaveModal(false)} className="max-w-2xl border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] rounded-[3rem]">
            <div className="p-10">
               <h2 className="text-4xl font-black text-red-600 italic uppercase mb-2 tracking-tighter">Sync Terminal</h2>
-              <p className="text-neutral-400 text-sm mb-8 font-mono">Backup your tactical data before exiting.</p>
+              <p className="text-neutral-400 text-sm mb-8 font-mono">Progress is saved in this browser. Download or copy a save to move it to another device. Importing replaces your progress and keeps one previous save here.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                  <button onClick={exportFile} className="p-8 bg-red-600 hover:bg-white text-black font-black rounded-3xl transition-all flex flex-col items-center gap-3 shadow-xl group">
@@ -1973,11 +2022,16 @@ export default function App() {
                        {copied ? <ClipboardCheck className="text-green-500" /> : <Copy />}
                        {copied ? "Memory Synced!" : "Copy Data String"}
                     </button>
-                    <textarea placeholder="Paste save data here..." value={importText} onChange={(e) => setImportText(e.target.value)} className="w-full h-32 bg-black border border-neutral-800 rounded-2xl p-4 font-mono text-[10px] text-red-500 outline-none focus:border-red-600 mb-6" />
-                    <button onClick={handleImport} className="w-full bg-white text-black p-4 rounded-2xl text-xs font-bold tracking-widest">Apply Import</button>
+                    <textarea aria-label="Save data to import" maxLength={MAX_SAVE_BYTES} placeholder="Paste save data here..." value={importText} onChange={(e) => setImportText(e.target.value)} className="w-full h-32 bg-black border border-neutral-800 rounded-2xl p-4 font-mono text-[10px] text-red-500 outline-none focus:border-red-600 mb-6" />
+                    <button onClick={() => applySave(importText)} disabled={!importText.trim()} className="w-full bg-white text-black p-4 rounded-2xl text-xs font-bold tracking-widest disabled:opacity-40">Import pasted save</button>
+                    <label className="text-sm text-neutral-300">Or import a save file
+                      <input type="file" accept=".txt,.json,application/json,text/plain" onChange={handleImportFile} className="mt-2 block w-full text-xs text-neutral-400 file:mr-3 file:rounded-lg file:border-0 file:bg-neutral-800 file:px-3 file:py-2 file:text-white" />
+                    </label>
                  </div>
               </div>
-              <input type="text" ref={hiddenInputRef} className="opacity-0 absolute pointer-events-none" />
+              {saveStatus && <p role="status" aria-live="polite" className="mb-5 text-sm text-neutral-200">{saveStatus}</p>}
+              {hasPreviousSave && <button onClick={restorePreviousSave} className="mb-6 w-full rounded-2xl border border-neutral-700 p-3 text-sm text-neutral-300 hover:border-white">Restore previous save</button>}
+              <input type="text" aria-hidden="true" tabIndex={-1} ref={hiddenInputRef} className="opacity-0 absolute pointer-events-none" />
               <button onClick={() => setSaveModal(false)} className="w-full text-neutral-600 hover:text-red-500 text-[10px] font-black tracking-[0.5em] transition-colors uppercase">Close Terminal</button>
            </div>
       </Modal>

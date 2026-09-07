@@ -1,13 +1,14 @@
 {
   "name": "p5r-app",
   "private": true,
-  "version": "2.3.0",
+  "version": "2.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test src/lib/*.test.js"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",

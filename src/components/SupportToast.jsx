@@ -48,9 +48,9 @@ const MESSAGES = {
       { title: "Stat Grinding", text: "Maxing out those social stats? 🧠 Proficiency, Charm, and maybe a little support for the dev?" },
       { title: "High Ranking", text: "Your progress is impressive! 📈 If the tracker is an essential tool for you, consider a donation." },
       { title: "The 100% Run", text: "Dedicated to the cause! ✊ 100% completion is closer than ever. Support helps us get there." },
-      { title: "Privacy First", text: "No ads, no trackers, just data. 🔒 If you value your privacy and our tool, consider a tip." },
+      { title: "Privacy First", text: "Your progress stays in your browser. If the tracker helps your playthrough, an optional tip supports its maintenance." },
       { title: "Team Building", text: "Building the ultimate Persona team? 🐲 If our resources helped, a coffee would be amazing." },
-      { title: "Power User", text: "Thousands of tasks tracked! 🔢 You're a true master. Support the dev to keep the code clean." }
+      { title: "Power User", text: "Finding the tracker useful? An optional tip helps support fixes and updates." }
     ]
   }
 };

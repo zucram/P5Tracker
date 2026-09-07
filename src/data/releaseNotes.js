@@ -1,5 +1,28 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.4.0",
+    date: "2026-09-07",
+    title: "Safer saves and your next game",
+    description: "Move your progress between devices more safely and help choose the next companion.",
+    sections: [
+      {
+        title: "Save transfer",
+        items: [
+          "Import a save file or paste your existing save text. Invalid saves leave your progress unchanged.",
+          "Restore the previous local save after an import. Download backups to keep a copy outside your browser."
+        ]
+      },
+      {
+        title: "Find and share the tracker",
+        items: [
+          "Read the new monthly planning and confidant tracking guides.",
+          "Share a public tracker link without including your save data.",
+          "Visit Game companions and suggest the Persona or Metaphor tracker you would use next. Royal is the only available tracker today."
+        ]
+      }
+    ]
+  },
+  {
     version: "2.3.0",
     date: "2026-01-16",
     title: "The Compendium Update",

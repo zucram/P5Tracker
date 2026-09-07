@@ -27,3 +27,6 @@ server_pid.txt
 storage/*
 !storage/.keep
 my_progress_backup.json
+
+# Private planning and local reports
+.local/

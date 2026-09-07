@@ -8,13 +8,23 @@ This interactive tracker helps you optimize your playthrough with a "Soft-Guide"
 
 ## Support & Feedback
 
-This project is currently in **Public Beta (v2.0)**. 
+The current release is **v2.4.0**.
 
 If you find this tracker helpful for your heist, consider supporting the maintenance and future updates:
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K11RWTSL)
 
 Feedback, bug reports, and strategy corrections are welcome via [GitHub Issues](https://github.com/zucram/P5Tracker/issues).
+
+## Planning and save transfer
+
+Read the [monthly planning guide](https://zucram.github.io/P5Tracker/guides/monthly-checklist/) or [confidant tracking guide](https://zucram.github.io/P5Tracker/guides/confidant-tracker/).
+
+Use **Sync Terminal** to download a backup or import a `.txt` or `.json` save file. Imports validate the data before applying it and keep one previous save in this browser for recovery. Browser-local recovery is lost if you clear site data, so keep a downloaded backup too. Saves do not synchronize automatically between devices.
+
+The [game directory](https://zucram.github.io/P5Tracker/games/) lists Royal as available and other games as candidates. Suggest the next game using the prompt at the bottom of the app. No other tracker or release date is promised.
+
+See [release implementation notes](docs/growth-release.md) for search pages, analytics and validation. Run save validation tests with `node --test src/lib/saveData.test.js`.
 
 ## Gallery
 
