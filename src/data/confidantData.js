@@ -30,7 +30,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Empress': {
     bestGifts: ["Flower Basket (Shinjuku)", "Glass Vase (Shibuya)", "Heart Muffler (Shibuya)"],
-    tips: "Starts 10/31. Requires Proficiency 5 for Rank 2.",
+    tips: "Available from 10/30. Requires Proficiency 5 for Rank 2.",
     ranks: {
       2: ["1: 'Are you opening a café?'", "2: 'He sounds suspicious.'", "Phone: 'Moonlight Carrot.'"],
       3: ["1: 'They won't find out.'", "2: 'I don't want to go with you.'", "3: 'Not yet.'", "Phone: 'Smart response.'"],
@@ -354,10 +354,10 @@ export const CONFIDANT_INTERACTIONS = {
       3: "Flauros with Tarukaja",
       4: "Phoenix with Counter",
       5: "Setanta with Rakukaja",
-      6: "Dakini with High Counter",
-      7: "Pazuzu with Tetraja",
+      6: "Neko Shogun with Dekaja",
+      7: "Lachesis with Tetraja",
       8: "Hecatoncheires with Masukunda",
-      9: "Bugs with Samarearm",
+      9: "Bugs with Samarecarm",
       10: "Seth with High Counter"
     }
   }

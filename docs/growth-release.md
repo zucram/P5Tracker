@@ -142,3 +142,11 @@ The existing `/guides/monthly-checklist/` URL now includes searchable Palace sch
 Targeted confidant corrections distinguish initial story ranks from later stat gates and remove incorrect Ohya/Shinya stat requirements. The detailed source review and a Futaba date-source disagreement are recorded in [Royal content review](royal-content-review.md). This release does not claim a full revalidation of legacy Royal data.
 
 All 101 automated tests passed, including reviewed date sequences, prerequisite dates, original task IDs and corrected introduction notes. Browser checks cover guide filters, fragments, no-JavaScript content, mobile/desktop layouts and retained Royal/Reload progress.
+
+## Confidant warnings and rank guides in 2.6.11
+
+The earlier note corrections exposed a separate outdated source in `socialStats.js`. Ann and Futaba warnings now apply to rank 2, Ohya/Shinya have no fabricated stat gate, Iwai's Guts-5 check applies after rank 7, and Akechi's rank-3 check includes both Knowledge and Charm. The pure requirement helper returns every missing stat, so Briefing highlights both when needed. Meeting a stat gate alone does not establish date, affinity or request eligibility.
+
+Mobile cards display missing stats without expansion. Desktop rank buttons have accessible names. A shared rank-guide component handles both dialogue arrays and string entries. This restores Strength requests and automatic story-rank descriptions that previously displayed as missing data. It also shows an explicit completed state at rank 10. Strength's rank-6/rank-7 requests and rank-9 skill spelling are corrected.
+
+All 106 automated tests passed. Isolated mobile and desktop Chromium checks verified the corrected warnings, live stat updates, Strength and automatic guides, rank persistence and unchanged Reload data. The changed modules pass targeted lint; Royal's remaining lint baseline is three legacy errors, with the prior memo dependency warning resolved.

@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.11",
+    date: "2026-09-07",
+    title: "Correct confidant stat checks",
+    description: "Royal shows the right stat requirements and restores missing rank guides.",
+    sections: [{ title: "Confidants", items: [
+      "Akechi's rank-3 check includes both Knowledge and Charm. Ann, Futaba and Iwai checks apply at the right ranks.",
+      "Ohya and Shinya no longer show incorrect stat warnings. Phone layouts show missing stats without opening the guide.",
+      "Strength fusion requests and automatic ranks now display. Strength ranks 6, 7 and 9 are corrected.",
+      "Desktop rank buttons have accessible names."
+    ] }]
+  },
+  {
     version: "2.6.10",
     date: "2026-09-07",
     title: "Correct Royal Palace deadlines",

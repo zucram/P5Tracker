@@ -1,3 +1,4 @@
+import { ConfidantRankGuide } from './components/ConfidantRankGuide';
 import { RoyalRequirements } from './components/RoyalRequirements';
 import { WelcomeNotice } from './components/WelcomeNotice';
 import { isVersionNewer, readPreference, writePreference } from './lib/releaseNotices';
@@ -33,7 +34,6 @@ import {
   CheckSquare,
   Square,
   Gift,
-  MessageCircle,
   ChevronDown,
   Wrench,
   Heart,
@@ -55,7 +55,7 @@ import { PERSONA_DATA } from './data/personaData';
 import { APP_VERSION } from './data/version';
 import { RESOURCE_DATA } from './data/resourceData';
 import { CROSSWORD_DATA } from './data/crosswordData';
-import { CONFIDANT_STAT_GATES, SOCIAL_STATS } from './data/socialStats';
+import { unmetConfidantStatGates, SOCIAL_STATS } from './data/socialStats';
 import { RELEASE_NOTES } from './data/releaseNotes';
 import { ROADMAP } from './data/roadmap';
 import { MAX_SAVE_BYTES, PREVIOUS_SAVE_KEY, parseSave, persistImportedSave, loadStoredSave, persistProgress } from './lib/saveData';
@@ -334,10 +334,8 @@ export default function App() {
   };
 
   const isGateBlocked = (arcana, currentRank) => {
-    const nextRank = currentRank + 1;
-    const gate = CONFIDANT_STAT_GATES[arcana]?.[nextRank];
-    if (!gate) return false;
-    return socialStats[gate.stat] < gate.lvl ? gate : false;
+    const gates = unmetConfidantStatGates(arcana, currentRank, socialStats);
+    return gates.length ? gates : false;
   };
 
   const isTaskChecked = (task) => {
@@ -532,8 +530,8 @@ export default function App() {
   const bottleneckStats = useMemo(() => {
     const stats = new Set();
     APP_DATA.confidants.forEach(c => {
-      const gate = isGateBlocked(c.arcana, confidantRanks[c.arcana]);
-      if (gate) stats.add(gate.stat);
+      unmetConfidantStatGates(c.arcana, confidantRanks[c.arcana], socialStats)
+        .forEach(requirement => stats.add(requirement.stat));
     });
     return stats;
   }, [socialStats, confidantRanks]);
@@ -1212,17 +1210,19 @@ export default function App() {
                       </div>
                     </div>
 
+                           {gate && (
+                              <div className="flex items-center gap-2 text-[10px] font-black text-red-500 bg-red-950/20 p-2 rounded border border-red-900/30">
+                                <AlertTriangle className="w-3 h-3" />
+                                <span>Next rank needs {gate.map(requirement => `${requirement.stat} ${requirement.lvl}`).join(' and ')}</span>
+                              </div>
+                           )}
+
                     {/* Expanded Detail View */}
                     {isExpanded && (
                       <div className="bg-black/20 border-t border-neutral-800 p-4 space-y-4 animate-in slide-in-from-top-2 duration-200">
                         {/* Notes & Warnings */}
                         <div className="space-y-2">
-                           {gate && (
-                              <div className="flex items-center gap-2 text-[10px] font-black text-red-500 bg-red-950/20 p-2 rounded border border-red-900/30">
-                                <AlertTriangle className="w-3 h-3" />
-                                <span>LOCKED: Requires {gate.stat} Lv.{gate.lvl}</span>
-                              </div>
-                           )}
+
                            <p className="text-xs text-neutral-400 italic leading-relaxed">{c.notes}</p>
                            {c.deadline && <div className="text-[10px] font-black text-red-500 uppercase tracking-widest">⚠️ Deadline: {c.deadline}</div>}
                         </div>
@@ -1242,15 +1242,7 @@ export default function App() {
 
                              {/* Best Responses */}
                              <div>
-                                <h5 className="text-xs font-black text-red-500 uppercase mb-2 flex items-center gap-1"><MessageCircle className="w-3.5 h-3.5" /> Best Responses (Rank {rank + 1})</h5>
-                                <div className="bg-neutral-900 p-3 rounded-lg border border-neutral-800 space-y-2">
-                                  {Array.isArray(CONFIDANT_INTERACTIONS[c.arcana].ranks[rank + 1]) 
-                                    ? CONFIDANT_INTERACTIONS[c.arcana].ranks[rank + 1].map((step, idx) => (
-                                        <p key={idx} className="text-sm text-neutral-300 border-b border-neutral-800 last:border-0 pb-1.5 last:pb-0">{step}</p>
-                                      ))
-                                    : <p className="text-xs text-neutral-500 italic">No dialogue data for this rank.</p>
-                                  }
-                                </div>
+                                <ConfidantRankGuide arcana={c.arcana} rank={rank} />
                              </div>
                           </div>
                         )}
@@ -1291,7 +1283,7 @@ export default function App() {
                                   return (
                                     <div className="mt-2 inline-flex items-center gap-1.5 bg-red-950/30 border border-red-900/50 px-2 py-1 rounded-lg">
                                       <AlertTriangle className="w-3.5 h-3.5 text-red-500" />
-                                      <span className="text-[10px] font-black uppercase text-red-500 tracking-wider">Blocked: {gate.stat} Lv.{gate.lvl} Required</span>
+                                      <span className="text-[10px] font-black uppercase text-red-500 tracking-wider">Next rank needs {gate.map(requirement => `${requirement.stat} ${requirement.lvl}`).join(' and ')}</span>
                                     </div>
                                   );
                                 }
@@ -1304,6 +1296,7 @@ export default function App() {
                         <td className="p-8 flex justify-center">
                           <div className="flex items-center justify-center gap-2" onClick={(e) => e.stopPropagation()}>
                             <button 
+                              aria-label={`Decrease ${c.arcana} rank`}
                               onClick={() => updateRank(c.arcana, (confidantRanks[c.arcana] || 0) - 1)} 
                               className="p-2 bg-neutral-800 rounded-lg text-neutral-400 hover:text-red-500 text-3xl font-black transition-colors"
                             >
@@ -1311,6 +1304,7 @@ export default function App() {
                             </button>
                             <span className="p-2 text-4xl font-black text-center text-red-600 w-24">{confidantRanks[c.arcana] || 0}</span>
                             <button 
+                              aria-label={`Increase ${c.arcana} rank`}
                               onClick={() => updateRank(c.arcana, (confidantRanks[c.arcana] || 0) + 1)} 
                               className="p-2 bg-neutral-800 rounded-lg text-neutral-400 hover:text-red-500 text-3xl font-black transition-colors"
                             >
@@ -1359,17 +1353,7 @@ export default function App() {
                                   )}
                                </div>
                                <div>
-                                  <h5 className="text-xs font-black text-red-500 uppercase mb-4 flex items-center gap-2"><MessageCircle className="w-4 h-4" /> Next Rank Interaction: {confidantRanks[c.arcana] + 1}</h5>
-                                  <div className="space-y-2 bg-neutral-900/50 p-4 rounded-2xl border border-neutral-800">
-                                     {Array.isArray(CONFIDANT_INTERACTIONS[c.arcana].ranks[confidantRanks[c.arcana] + 1]) 
-                                       ? CONFIDANT_INTERACTIONS[c.arcana].ranks[confidantRanks[c.arcana] + 1].map((step, idx) => (
-                                           <p key={idx} className="text-xs text-neutral-400 leading-relaxed border-b border-neutral-800 last:border-0 pb-2 mb-2 last:pb-0 last:mb-0">
-                                              {step}
-                                           </p>
-                                         ))
-                                       : <p className="text-xs text-neutral-400 italic">No data for this rank or max rank reached.</p>
-                                     }
-                                  </div>
+                                  <ConfidantRankGuide arcana={c.arcana} rank={confidantRanks[c.arcana] || 0} />
                                   <p className="text-xs text-neutral-600 italic mt-4">{CONFIDANT_INTERACTIONS[c.arcana].tips}</p>
                                </div>
                             </div>

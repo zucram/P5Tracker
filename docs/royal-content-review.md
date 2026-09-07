@@ -41,3 +41,9 @@ Early-clear strategies no longer give impossible completion dates. Existing dead
 - September 4 introduces the request leading to Shinya, rather than automatically unlocking his confidant. Kindness 3 was an incorrect gate. [RPG Site Tower guide](https://www.rpgsite.net/feature/5475-persona-5-royal-oda-confidant-guide-tower-choices-unlock-list).
 
 This remains a targeted audit. Other legacy calendar activities, gift lists, combat notes and dialogue answers have not all been revalidated in this review.
+
+## Warning logic and Strength requests in 2.6.11
+
+The stat warnings had a separate data source from the displayed notes. `socialStats.js` now matches the reviewed Lovers/Hermit rank-2 gates and the absent Devil/Tower gates. Justice rank 3 requires both Knowledge 3 and Charm 3; rank 7 requires Knowledge 4. Iwai's Guts-5 check occurs at the rank-7 follow-up on the way to rank 8. Evidence: [RPG Site Justice guide](https://www.rpgsite.net/feature/9601-persona-5-royal-akechi-confidant-guide-justice-choices-unlocks), [aqiu384's Royal walkthrough](https://aqiu384.github.io/megaten-database/p5r/ace-walkthrough), specifically its Justice rank-3 and Hanged rank-7.1 entries. Requirements are advisory and do not prevent recording ranks from the player's game.
+
+The [RPG Site Strength guide](https://www.rpgsite.net/feature/5486-persona-5-royal-strength-confidant-fusion-solutions-guide) identifies Neko Shogun with Dekaja at rank 6, Lachesis with Tetraja at rank 7 and Bugs with Samarecarm at rank 9. The previous Dakini and Pazuzu entries were incorrect. This change checks the ten requested Persona/skill pairs, without adopting or asserting specific fusion recipes. The UI now renders those existing string entries rather than incorrectly reporting missing data. Haru's second, separately written tip now also uses October 30.

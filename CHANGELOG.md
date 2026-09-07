@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.11 — 2026-09-07
+
+- Correct confidant warning logic and check both of Akechi's rank-3 stat requirements.
+- Show mobile stat warnings before expanding a card and label desktop rank controls.
+- Display string-based rank guides, including Strength requests and automatic story ranks.
+- Correct Strength ranks 6 and 7, Samarecarm's spelling, and the remaining Haru start-date note.
+
+
 ## 2.6.10 — 2026-09-07
 
 - Correct Royal Palace route, calling-card and heist deadlines from reviewed date records shared by the app and monthly guide.
