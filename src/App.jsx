@@ -607,22 +607,6 @@ export default function App() {
     if (memIdx !== -1) setExpandedMementos(memIdx);
   }, [anchoredMonth]);
 
-  // Group Mementos logic
-  const mementosGroups = useMemo(() => {
-    const anchoredMonthIdx = APP_DATA.months.findIndex(m => m.id === anchoredMonth);
-    const history = [];
-    const active = [];
-
-    APP_DATA.mementos.forEach((mem, index) => {
-      const memMonthIdx = APP_DATA.months.findIndex(m => mem.timing.toLowerCase().includes(m.name.toLowerCase()));
-      const isHistory = memMonthIdx !== -1 && memMonthIdx < anchoredMonthIdx - 1;
-      const memWithIdx = { ...mem, originalIdx: index };
-      if (isHistory) history.push(memWithIdx);
-      else active.push(memWithIdx);
-    });
-    return { history, active };
-  }, [anchoredMonth]);
-
   // Group Roadmap Tasks
   const groupedTasks = useMemo(() => {
     if (!activeMonthData) return null;
@@ -1496,65 +1480,14 @@ export default function App() {
         {activeTab === 'metaverse' && metaverseView === 'mementos' && (
           <div className="space-y-4 md:space-y-8 animate-in fade-in duration-500">
             {(() => {
-              const { history: historyMem, active: activeMem } = mementosGroups;
+              const activeMem = APP_DATA.mementos.map((mem, originalIdx) => ({ ...mem, originalIdx }));
 
               return (
                 <>
-                  {historyMem.length > 0 && (
-                    <div className="bg-neutral-900 border border-dashed border-neutral-800 rounded-3xl overflow-hidden">
-                      <button 
-                        onClick={() => { setShowArchived(!showArchived); trackEvent('mementos-history-toggle', { state: !showArchived }); }}
-                        className="w-full p-4 flex items-center justify-between text-neutral-500 text-xs font-bold uppercase tracking-widest hover:bg-neutral-800 transition-colors"
-                      >
-                        <span>Previous Paths ({historyMem.length})</span>
-                        <ChevronDown className={`w-4 h-4 transition-transform ${showArchived ? 'rotate-180' : ''}`} />
-                      </button>
-                      
-                      {showArchived && (
-                        <div className="border-t border-neutral-800 p-2 space-y-4">
-                          {historyMem.map((mem) => {
-                            const idx = mem.originalIdx;
-                            return (
-                            <div key={mem.id} className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all">
-                                <div className={`bg-neutral-950 border-l-[8px] border-red-900 rounded-2xl overflow-hidden shadow-lg`}>
-                                  <DisclosureCard
-                                    className="p-3 cursor-pointer hover:bg-neutral-900 transition-all flex justify-between items-center"
-                                    label={mem.path} expanded={expandedMementos === `hist-${idx}`} onChange={() => setExpandedMementos(expandedMementos === `hist-${idx}` ? null : `hist-${idx}`)}
-                                  >
-                                    <div className="flex items-center justify-between w-full pr-4">
-                                      <div>
-                                        <h3 className="text-base font-black italic uppercase text-neutral-400 tracking-tighter">{mem.path}</h3>
-                                      </div>
-                                      <div className="text-xs font-black text-neutral-600 border border-neutral-800 px-2 py-0.5 rounded">LVL {mem.targetLvl}</div>
-                                    </div>
-                                    <ChevronRight className={`transition-transform w-4 h-4 text-neutral-600 ${expandedMementos === `hist-${idx}` ? 'rotate-90' : ''}`} />
-                                  </DisclosureCard>
-
-                                  {expandedMementos === `hist-${idx}` && (
-                                    <div className="p-3 pt-0 space-y-3 bg-black/20 border-t border-neutral-900">
-                                      <div className="mt-3">
-                                        <div className="grid grid-cols-1 gap-2">
-                                          {mem.requests.map(req => (
-                                            <CheckableCard key={req.id} label={req.name} checked={checkedItems[req.id]} onChange={() => toggleItem(req.id)} className={`bg-black/50 p-3 border rounded-xl cursor-pointer ${checkedItems[req.id] ? 'opacity-30 border-neutral-800' : 'border-neutral-800'}`}>
-                                              <div className="flex items-center gap-2 italic mb-1">
-                                                  {checkedItems[req.id] ? <CheckSquare className="w-3.5 h-3.5 text-green-500" /> : <Square className="w-3.5 h-3.5 text-neutral-700" />}
-                                                  <span className="text-sm font-black text-white uppercase tracking-tighter">{req.name}</span>
-                                              </div>
-                                              <div className="text-xs font-black text-red-600 ml-5">Reward: {req.reward}</div>
-                                            </CheckableCard>
-                                          ))}
-                                        </div>
-                                      </div>
-                                    </div>
-                                  )}
-                                </div>
-                            </div>
-                          )})}
-                        </div>
-                      )}
-                    </div>
-                  )}
-
+                  <aside className="rounded-2xl border border-neutral-700 bg-neutral-900 p-4 text-sm leading-relaxed text-neutral-300">
+                    <p>Selected requests by their original paths. Earlier paths stay listed for later confidant requests. Some unfinished targets move to Da’at in the third semester; check the in-game request map.</p>
+                    <p className="mt-2"><a className="text-red-300 underline" href="https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/mementos" target="_blank" rel="noopener noreferrer">Full Royal request reference</a></p>
+                  </aside>
                   {activeMem.map((mem) => {
                     const idx = mem.originalIdx;
                     return (
@@ -1566,9 +1499,9 @@ export default function App() {
                         <div className="flex items-center justify-between w-full pr-4 md:pr-8">
                           <div>
                             <h3 className="text-lg md:text-4xl font-black italic uppercase text-red-600 tracking-tighter">{mem.path}</h3>
-                            <p className="text-neutral-500 text-xs font-black mt-1 tracking-widest">Timing: {mem.timing}</p>
+                            <p className="text-neutral-500 text-xs font-black mt-1 tracking-widest">{mem.timing}</p>
                           </div>
-                          <div className="bg-black px-3 py-1 md:px-6 md:py-3 rounded-xl md:rounded-2xl text-xs md:text-2xl font-black border border-red-900 text-red-500 shadow-[2px_2px_0px_0px_rgba(153,27,27,1)] md:shadow-[4px_4px_0px_0px_rgba(153,27,27,1)]">LVL {mem.targetLvl}</div>
+                          <div className="bg-black px-3 py-1 md:px-6 md:py-3 rounded-xl md:rounded-2xl text-xs md:text-2xl font-black border border-red-900 text-red-500 shadow-[2px_2px_0px_0px_rgba(153,27,27,1)] md:shadow-[4px_4px_0px_0px_rgba(153,27,27,1)]">{mem.requests.filter(req => checkedItems[req.id]).length}/{mem.requests.length} done</div>
                         </div>
                         <ChevronRight className={`transition-transform w-6 h-6 md:w-10 md:h-10 text-neutral-500 ${expandedMementos === idx ? 'rotate-90 text-red-600' : ''}`} />
                       </DisclosureCard>

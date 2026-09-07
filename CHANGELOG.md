@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.16 — 2026-09-07
+
+- Correct reviewed Royal Mementos request names, rewards, paths and confidant requirements.
+- Add Kaitul and checked late-game requests; retain thirteen existing request IDs and retire the unverified January placeholder without reassignment.
+- Keep earlier paths visible and replace unreviewed level targets with completion counts.
+- Correct Akechi’s introduction, school-trip/festival hangouts and July planning advice; move Sojiro’s request reminder out of July.
+
+
 ## 2.6.15 — 2026-09-07
 
 - Add a searchable Royal Treasure Demon weakness table with all nine entries, recruitment notes and a share card.

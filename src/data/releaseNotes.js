@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.16",
+    date: "2026-09-07",
+    title: "Correct Royal request guidance",
+    description: "Mementos requests show corrected rewards, paths and confidant links.",
+    sections: [{ title: "Requests and activities", items: [
+      "Kawakami, Sojiro, Futaba and Shinya requests are identified correctly. Existing request checkmarks are retained when entries move.",
+      "Kaitul and four checked January requests are included. An unverified placeholder was removed without reusing its checkmark.",
+      "Earlier Mementos paths stay visible for later confidant requests and show completion counts.",
+      "School-trip and festival hangouts use September 10 and October 26. July planning tips no longer give false hard deadlines."
+    ] }]
+  },
+  {
     version: "2.6.15",
     date: "2026-09-07",
     title: "Treasure Demon quick reference",

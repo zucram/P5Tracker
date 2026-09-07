@@ -1,3 +1,4 @@
+import { ROYAL_MEMENTOS_PATHS } from './royalMementos.js';
 import { palaceDeadlineTask } from './palaceDeadlines.js';
 import { withSchoolAnswers } from './schoolAnswers.js';
 
@@ -190,7 +191,7 @@ const BASE_APP_DATA = {
         palaceDeadlineTask('may_pal_dead'),
         { id: 'jun_pal_strat', text: 'Strategy: Secure Route (Kaneshiro) ASAP', isMissable: true },
         { id: 'jun_fortune', text: '6/21: Unlock Fortune (Chihaya) - Need 100k Yen (CRITICAL)' },
-        { id: 'jun_justice', text: '6/10: Justice (Akechi) Unlocks (Night, Kichijoji)' },
+        { id: 'jun_justice', text: '6/10: Justice (Akechi) Rank 1 unlocks automatically through the story' },
         { id: 'jun_priestess', text: '6/24: Priestess (Makoto) Unlocks' },
         { id: 'jun_star', text: '6/25: Star (Hifumi) Unlocks' },
         { id: 'jun_darts', text: 'Activity: Play Darts to reach Baton Pass Rank 3', isMissable: true },
@@ -208,14 +209,13 @@ const BASE_APP_DATA = {
       tasks: [
         palaceDeadlineTask('jun_pal_dead'),
         { id: 'july_exams', text: '7/13-7/16: Finals; results also depend on Knowledge', isMissable: true },
-        { id: 'july_kawakami_10', text: 'CRITICAL: Reach Kawakami Rank 10 before 7/24', isMissable: true },
+        { id: 'july_kawakami_10', text: 'Strategy: Aim for Kawakami Rank 10 before summer break for Special Massage', isMissable: true },
         { id: 'july_speed_reading', text: 'Strategy: Read Speed Reader from the Shujin library to read more chapters per session', isMissable: true },
         { id: 'pal4_start', text: 'Strategy: Begin Futaba Palace Infiltration', isMissable: true },
         { id: 'j1', text: '7/1: Borrow "Speed Reader" from Shujin Library', isMissable: true },
         { id: 'j2', text: '7/11: Trader Sakai: Trade Soothing Soba for Koedo Sword', isMissable: true },
-        { id: 'j3', text: '7/24: Last day to borrow school books before summer', isMissable: true },
+        { id: 'j3', text: 'Before summer break: Borrow your next book from the Shujin library', isMissable: true },
         { id: 'j4', text: '7/26: Trader Sakai: Trade MRE Ration for Factorization Study Method', isMissable: true },
-        { id: 'j5', text: 'Mementos: Complete "The Money-grubbing Uncle" (Kawakami Lock)' },
         { id: 'cw_opp_13', text: '7/7 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_14', text: '7/12 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_15', text: '7/19 Crossword puzzle at LeBlanc', isMissable: true },
@@ -250,11 +250,12 @@ const BASE_APP_DATA = {
       tasks: [
         { id: 'pal5_strat', text: 'Strategy: Secure Route (Okumura) ASAP', isMissable: true },
         { id: 'sep_okumura_fix', text: 'Boss Strategy: Build Baton Pass chains with weakness hits; changing difficulty is optional', isMissable: true },
+        { id: 'j5', text: 'Sojiro: Complete The Money-grubbing Uncle after Hierophant Rank 8; talk to Futaba outside Leblanc' },
         { id: 'sep_maruki_5', text: '9/20: Maruki\'s rank lock lifts. Priority 1.' },
         { id: 'sep_unlock_tower', text: '9/4: Winners Don\'t Use Cheats request becomes available; follow it to meet Shinya' },
         { id: 's1', text: '9/4 Jazz Jin: Charge (Essential for Phys)', isMissable: true },
         { id: 's2', text: '9/25 Jazz Jin: Concentrate (Essential for Magic)', isMissable: true },
-        { id: 's3', text: '9/19: School Trip Dates', isMissable: true },
+        { id: 's3', text: '9/10: Hawaii school-trip hangout', isMissable: true },
         { id: 's4', text: 'Unlock Shinya (Tower) via Mementos' },
         { id: 'cw_opp_23', text: '9/2 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_24', text: '9/19 Crossword puzzle at LeBlanc', isMissable: true },
@@ -272,7 +273,7 @@ const BASE_APP_DATA = {
         { id: 'oct_haru_prof', text: '10/30: Empress (Haru) can start; Proficiency 5 is needed for Rank 2' },
         { id: 'oct_exams', text: '10/17-10/20: Midterm exams; results also depend on Knowledge', isMissable: true },
         { id: 'o1', text: '10/2: Buy "Donut-Worry" from Home Shopping', isMissable: true },
-        { id: 'o3', text: '10/30: Cultural Festival Events', isMissable: true },
+        { id: 'o3', text: '10/26: Post-festival confidant hangout', isMissable: true },
         { id: 'cw_opp_27', text: '10/10 Crossword puzzle at LeBlanc', isMissable: true },
         { id: 'cw_opp_28', text: '10/31 Crossword puzzle at LeBlanc', isMissable: true }
       ]
@@ -334,78 +335,7 @@ const BASE_APP_DATA = {
       ]
     }
   ],
-  mementos: [
-    {
-      id: 'mem0',
-      path: 'Path of Qimranut',
-      timing: 'May',
-      targetLvl: '10-15',
-      requests: [
-        { id: 'r0', name: 'Beware the Clingy Ex-boyfriend', reward: 'Adhesive Bandage', tip: 'Tutorial mission.' }
-      ]
-    },
-    {
-      id: 'mem_a',
-      path: 'Path of Aiyatsbus',
-      timing: 'May/June',
-      targetLvl: '15-25',
-      requests: [
-        { id: 'ra1', name: 'The Bark and Bite of a Bully', reward: 'Physical Ointment', tip: 'Available 5/9.' },
-        { id: 'ra2', name: 'One Who Bullies Bullies', reward: 'Black Frost Unlock', tip: 'Identify at school gate.' },
-        { id: 'ra3', name: 'If Cats Disappeared from the City', reward: 'Koma-Inu', tip: 'Identify at Yongen-Jaya.' }
-      ]
-    },
-    {
-      id: 'mem_c',
-      path: 'Path of Chemdah',
-      timing: 'June/July',
-      targetLvl: '25-32',
-      requests: [
-        { id: 'rc1', name: 'Part-time Job, Full-time Hell', reward: 'Chinese Sweets', tip: 'Unlocks at Moon Rank 4.' },
-        { id: 'rc2', name: 'Phantom Thieves VS Burglary Ring', reward: 'Miracle Punch', tip: 'Available 6/18.' },
-        { id: 'rc3', name: 'Sadism Is Just a Sign of Love', reward: 'Chemdah Area 7', tip: 'Available 6/6.' }
-      ]
-    },
-    {
-      id: 'mem1',
-      path: 'Path of Akzeriyyuth',
-      timing: 'July/August',
-      targetLvl: '32-35',
-      requests: [
-        { id: 'r1', name: 'The Money-grubbing Uncle', reward: 'Kawakami Lock Clear', tip: 'Essential to finish Temperance.' },
-        { id: 'r2', name: 'Who’s Been Assaulting People?', reward: 'Sticky Paste', tip: 'Target is on middle floors.' }
-      ]
-    },
-    {
-      id: 'mem2',
-      path: 'Path of Adyeshach',
-      timing: 'September/October',
-      targetLvl: '42-45',
-      requests: [
-        { id: 'r3', name: 'Winners Don’t Use Cheats', reward: 'Tower Unlock', tip: 'Talk to Shinya in Akihabara after losing.' },
-        { id: 'r4', name: 'A Teacher Maid in Hell', reward: 'Kawakami Rank 9', tip: 'Essential story mission for Kawakami.' }
-      ]
-    },
-    {
-      id: 'mem3',
-      path: 'Path of Sheriruth',
-      timing: 'November/December',
-      targetLvl: '55-65',
-      requests: [
-        { id: 'r5', name: 'A Mother’s Aggression', reward: 'Futaba Lock Clear', tip: 'Needed for Hermit progression.' },
-        { id: 'r6', name: 'The Killer Who Cleans Up', reward: 'High-end Armor', tip: 'Target is in the deep areas.' }
-      ]
-    },
-    {
-      id: 'mem4',
-      path: 'Path of Da\'at',
-      timing: 'January (Royal)',
-      targetLvl: '85-99',
-      requests: [
-        { id: 'r7', name: 'Ending the Nightmare', reward: 'Ultimate Gear', tip: '3rd Semester exclusive mission.' }
-      ]
-    }
-  ],
+  mementos: ROYAL_MEMENTOS_PATHS,
   palaces: [
     {
       id: 'pal_kamo',
