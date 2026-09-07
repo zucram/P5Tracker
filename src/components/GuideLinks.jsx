@@ -6,7 +6,7 @@ const GUIDES = [
   { id: 'school-answers', path: 'guides/school-answers/', title: 'School and exam answers', description: 'Find Royal answers by date, month or exam.' },
   { id: 'persona-5-royal-crossword-answers', path: 'guides/persona-5-royal-crossword-answers/', title: 'Crossword answers', description: 'Search all 38 Leblanc puzzles by clue or number.' },
   { id: 'third-semester', path: 'guides/third-semester/', title: 'Maruki deadline check', description: 'Check the rank and deadline needed for the third semester.' },
-  { id: 'monthly-checklist', path: 'guides/monthly-checklist/', title: 'Monthly planning guide', description: 'Use monthly goals to plan your own playthrough.' },
+  { id: 'monthly-checklist', path: 'guides/monthly-checklist/', title: 'Palace deadlines and planning', description: 'Check Palace route, calling-card and boss deadlines.' },
   { id: 'confidant-tracker', path: 'guides/confidant-tracker/', title: 'Confidant tracking guide', description: 'Record ranks, check stat requirements and back up progress.' },
   { id: 'games', path: '', title: 'All games', description: 'Choose the Persona 5 Royal or Persona 3 Reload tracker.' },
 ];

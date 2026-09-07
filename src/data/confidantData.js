@@ -81,7 +81,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Lovers': {
     bestGifts: ["Heart Muffler (Shibuya)", "Heart Ring (Shibuya)", "Uji Matcha (Shibuya)", "Rose Bouquet (Shibuya)"],
-    tips: "Kindness 2 needed to start.",
+    tips: "Rank 1 starts through the story; Kindness 2 is needed for Rank 2.",
     ranks: {
       2: ["1: 'Are you feeling better now?'", "2: 'You might be right.'", "3: 'I couldn't just ignore you.'", "Phone: 'Leave it to me.'"],
       3: ["1: 'Can we stop yet?'", "2: 'Has that happened to you?'", "Phone: 'Could be.'"],
@@ -116,7 +116,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Hermit': {
     bestGifts: ["Motorbike Figure (Akihabara)", "Local Mascot (Akihabara)", "Uji Matcha (Shibuya)"],
-    tips: "Starts 8/31. Kindness 4 needed to start.",
+    tips: "Starts automatically on 8/31. Kindness 4 is needed for Rank 2.",
     ranks: {
       2: ["1: 'If we work together.'", "Phone: 'I bet it will.'"],
       3: ["1: 'I was about to come find you.'", "2: 'Good to see you again.'", "Phone: 'We'll both do our best.'"],
@@ -152,7 +152,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Devil': {
     bestGifts: ["Black Mug (Shinjuku)", "Classical Hits (Shibuya)", "Fountain Pen (Shinjuku)"],
-    tips: "Charm 3 needed to start. Reduces Palace security.",
+    tips: "Speak to Ohya at Crossroads in Shinjuku; no Charm gate. Reduces Palace security.",
     ranks: {
       2: ["1: 'Mishima might…'", "2: 'It's for the article.'"],
       3: ["1: 'You shouldn't make assumptions.'", "2: 'She was falsely accused?'"],
@@ -167,7 +167,7 @@ export const CONFIDANT_INTERACTIONS = {
   },
   'Tower': {
     bestGifts: ["Local Mascot (Akihabara)", "Motorbike Figure (Akihabara)", "Smartphone Case (Shibuya)"],
-    tips: "Starts 9/4. Kindness 3 needed.",
+    tips: "Follow the Winners Don’t Use Cheats request available from 9/4. No Kindness gate.",
     ranks: {
       1: ["Phone: 'Call me when it's game time.'"],
       2: ["1: 'Don't compare me to you.'", "2: 'So do I.'", "Phone: 'I'll work hard.'"],

@@ -1,0 +1,11 @@
+.palace-dates { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.palace-dates > section { border: 1px solid #48303a; border-radius: 16px; padding: 20px; margin: 0; background: #161316; }
+.palace-dates h2 { margin-top: 0; font-size: 22px; }
+.palace-dates h2 span { display: block; margin-top: 4px; font-size: 14px; color: #c4b9bf; font-weight: 400; }
+.palace-dates dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.palace-dates dt { color: #d3c6ce; font-size: 13px; }
+.palace-dates dd { margin: 4px 0 0; font-size: 20px; font-weight: 700; }
+.palace-dates p { margin-bottom: 12px; }
+.palace-dates summary { cursor: pointer; color: #f5a3b4; padding: 8px 0; }
+.palace-dates details { overflow-wrap: anywhere; }
+@media (max-width: 420px) { .palace-dates > section { padding: 14px; } .palace-dates dl { gap: 6px; } .palace-dates dd { font-size: 15px; } }

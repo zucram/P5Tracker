@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.10",
+    date: "2026-09-07",
+    title: "Correct Royal Palace deadlines",
+    description: "Route, calling-card and boss dates are now shown separately.",
+    sections: [{ title: "Planning corrections", items: [
+      "Corrected late Palace deadlines for Madarame, Kaneshiro, Futaba and Okumura, plus Kamoshida's early deadline.",
+      "Added the missing early-visit and Mementos requirements. Existing checklist progress is preserved.",
+      "Compare all eight Palace schedules in the searchable monthly guide.",
+      "Corrected Ann, Futaba, Haru, Ohya and Shinya introduction notes."
+    ] }]
+  },
+  {
     version: "2.6.9",
     date: "2026-09-07",
     title: "Recognizable shared links",

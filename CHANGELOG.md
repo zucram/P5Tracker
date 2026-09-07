@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.10 — 2026-09-07
+
+- Correct Royal Palace route, calling-card and heist deadlines from reviewed date records shared by the app and monthly guide.
+- Add prerequisite visit reminders, preserve existing task IDs and remove impossible early-clear suggestions.
+- Expand the existing monthly guide with searchable schedules for all eight Palace missions and source notes.
+- Correct confidant introduction stat gates and Futaba's August rank target.
+
+
 ## 2.6.9 — 2026-09-07
 
 - Add original share-preview cards and complete image metadata to all 15 public pages.

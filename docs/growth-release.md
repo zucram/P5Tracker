@@ -132,3 +132,13 @@ Every sitemap page now has a distinct 1200 × 630 PNG card, including the two tr
 `share-cards.mjs` defines cards from the guide directory and supplies metadata to guide generators. The six hand-maintained HTML pages include the same metadata. `npm run build:share-cards` uses Python 3, Pillow and DejaVu Sans to regenerate committed images. `SHARE_CARD_FONT_DIR` can point to the DejaVu font directory on another machine. These rendering dependencies are not needed in CI or the browser. The prebuild checks the renderer/data recipe and PNG hashes against the committed manifest; postbuild checks each page's metadata and image dimensions.
 
 The metadata follows the [Open Graph protocol](https://ogp.me/). Local checks establish that a crawler can read metadata and fetch the corresponding image without JavaScript. Social platforms control whether, when and how they display or cache cards; no social post or platform-cache refresh was submitted. This release does not establish a change in click-through rate.
+
+## Royal calendar and deadline guide in 2.6.10
+
+The legacy calendar mixed route and heist deadlines, including dates that were already too late to finish a Palace. `palaceDeadlines.js` now owns the eight mission schedules and prerequisite reminders. The app creates its original deadline tasks from those records, preserving existing checkmark IDs. A new May task makes Madarame's required first visit visible before the June deadline view. Early-clear suggestions no longer give impossible dates.
+
+The existing `/guides/monthly-checklist/` URL now includes searchable Palace schedules, sources and planning instructions. It keeps its canonical URL and tracker/support event identifiers. The directory and Royal navigation describe its expanded coverage. The share card is regenerated from the directory title. All schedules remain readable without JavaScript. The new guide uses the existing `guide_lookup_used` event with the fixed `monthly-checklist` identifier.
+
+Targeted confidant corrections distinguish initial story ranks from later stat gates and remove incorrect Ohya/Shinya stat requirements. The detailed source review and a Futaba date-source disagreement are recorded in [Royal content review](royal-content-review.md). This release does not claim a full revalidation of legacy Royal data.
+
+All 101 automated tests passed, including reviewed date sequences, prerequisite dates, original task IDs and corrected introduction notes. Browser checks cover guide filters, fragments, no-JavaScript content, mobile/desktop layouts and retained Royal/Reload progress.

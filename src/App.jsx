@@ -1958,7 +1958,7 @@ export default function App() {
             {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/third-semester/`} onClick={() => trackEvent('guide_opened', { guide: 'third-semester', location: 'footer' })}>Maruki deadline check</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`} onClick={() => trackEvent('guide_opened', { guide: 'monthly-checklist', location: 'footer' })}>Monthly planning guide</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}guides/monthly-checklist/`} onClick={() => trackEvent('guide_opened', { guide: 'monthly-checklist', location: 'footer' })}>Palace deadlines and planning</a>
             {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/confidant-tracker/`} onClick={() => trackEvent('guide_opened', { guide: 'confidant-tracker', location: 'footer' })}>Confidant tracking guide</a>
           </p>
