@@ -1,5 +1,15 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.5.2",
+    date: "2026-09-07",
+    title: "One start page for both trackers",
+    description: "Choose Royal or Reload from the shared homepage and share a shorter game link.",
+    sections: [{ title: "Navigation", items: [
+      "Royal and Reload now have short /p5/ and /p3/ addresses, with All games links in both trackers.",
+      "Existing tracker bookmarks still work. Saved progress stays in the same browser storage."
+    ] }]
+  },
+  {
     version: "2.5.1",
     date: "2026-09-07",
     title: "Reload follows the Royal tracker layout",

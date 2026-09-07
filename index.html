@@ -1,29 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Persona 5 Royal tracker | Monthly goals and confidants</title>
-    <meta name="description" content="Track Persona 5 Royal monthly goals, confidant ranks, social stats and your Persona collection. A free companion without a rigid day-by-day walkthrough." />
-    <link rel="canonical" href="https://zucram.github.io/P5Tracker/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="P5 Tracker | Play at your own pace" />
-    <meta property="og:description" content="Monthly goals, confidant tracking and a Persona registry for Persona 5 Royal. Free, with progress saved on your device." />
-    <meta property="og:url" content="https://zucram.github.io/P5Tracker/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Persona 5 Royal tracker" />
-    <meta name="twitter:description" content="Monthly goals and confidant tracking without a rigid daily walkthrough. Free, with no account required." />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"P5 Tracker","url":"https://zucram.github.io/P5Tracker/","description":"A free Persona 5 Royal companion with monthly goals, confidant tracking and a Persona registry.","applicationCategory":"GameApplication","operatingSystem":"Any with a modern web browser","isAccessibleForFree":true}</script>
-    <meta name="theme-color" content="#dc2626" />
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script>
-  </head>
-  <body>
-    <div id="root">
-      <h1>Persona 5 Royal tracker</h1>
-      <p>Plan your playthrough with monthly goals, confidant ranks, social stats and a Persona registry. Free to use, with no account required.</p>
-      <p>The interactive tracker needs JavaScript. Read about <a href="./guides/monthly-checklist/">monthly planning</a> or <a href="./guides/confidant-tracker/">tracking confidants</a>, or look up <a href="./guides/school-answers/">Royal school and exam answers</a>.</p>
-    </div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Persona Trackers | Persona 5 Royal & Persona 3 Reload guides</title>
+  <meta name="description" content="Free monthly guides and progress trackers for Persona 5 Royal and Persona 3 Reload. Choose your game for school answers, relationship goals and missable deadlines.">
+  <link rel="canonical" href="https://zucram.github.io/P5Tracker/">
+  <link rel="icon" href="/favicon.svg"><meta name="theme-color" content="#0b0e14">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Persona Trackers"><meta property="og:title" content="Persona Trackers | Choose your game"><meta property="og:description" content="Free monthly guides for Persona 5 Royal and Persona 3 Reload. Keep your progress and choose your own daily route."><meta property="og:url" content="https://zucram.github.io/P5Tracker/">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Persona Trackers"><meta name="twitter:description" content="Free monthly guides and progress trackers for Persona 5 Royal and Persona 3 Reload.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Persona Trackers","alternateName":"P5 Tracker","url":"https://zucram.github.io/P5Tracker/","description":"Free monthly guides and progress trackers for Persona 5 Royal and Persona 3 Reload.","inLanguage":"en","hasPart":[{"@type":"WebApplication","name":"Persona 5 Royal tracker","url":"https://zucram.github.io/P5Tracker/p5/","applicationCategory":"GameApplication","isAccessibleForFree":true},{"@type":"WebApplication","name":"Persona 3 Reload tracker","url":"https://zucram.github.io/P5Tracker/p3/","applicationCategory":"GameApplication","isAccessibleForFree":true}]}</script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script>
+</head>
+<body>
+  <a class="skip" href="#games">Skip to games</a>
+  <div class="home-shell">
+    <header><a class="wordmark" href="./">PERSONA <span>TRACKERS</span></a><button id="share-site" type="button">Share this page <span aria-hidden="true">↗</span></button></header>
+    <main>
+      <div class="intro"><p class="eyebrow">FREE FAN-MADE GAME COMPANIONS</p><h1>Choose your game.<br><span>Keep your own pace.</span></h1><p>Monthly goals and useful answers for your next playthrough.<br class="desktop-break"> Follow a checklist without following a rigid daily route.</p></div>
+      <section class="game-grid" id="games" aria-label="Available trackers">
+        <article class="game royal">
+          <a class="game-main" href="./p5/" data-umami-event="game_open_tracker" data-umami-event-game="persona-5-royal">
+            <div class="game-top"><span class="game-number" aria-hidden="true">P5</span><span class="game-status">ROYAL</span></div>
+            <h2>Persona 5 Royal</h2><p class="game-description">Plan your months, build confidants and keep track of what matters.</p>
+            <ul><li>Monthly checklists & confidant ranks</li><li>School answers & third-semester requirements</li><li>Social stats & Persona collection</li></ul>
+            <span class="game-cta">Open Royal tracker <span aria-hidden="true">→</span></span>
+          </a>
+          <nav class="game-guides" aria-label="Royal guides"><a href="./guides/school-answers/">School answers</a><a href="./guides/confidant-tracker/">Confidant guide</a><a href="./guides/third-semester/">Third semester</a></nav>
+        </article>
+        <article class="game reload">
+          <a class="game-main" href="./p3/" data-umami-event="game_open_tracker" data-umami-event-game="persona-3-reload">
+            <div class="game-top"><span class="game-number" aria-hidden="true">P3</span><span class="game-status">RELOAD · BETA</span></div>
+            <h2>Persona 3 Reload</h2><p class="game-description">Build Social Links and plan Tartarus visits around the dates that matter.</p>
+            <ul><li>Monthly checklists & Social Link ranks</li><li>School answers & social-stat activities</li><li>Tartarus floors, rescues & missable requests</li></ul>
+            <span class="game-cta">Open Reload tracker <span aria-hidden="true">→</span></span>
+          </a>
+          <nav class="game-guides" aria-label="Reload guides"><a href="./guides/persona-3-reload-school-answers/">School answers</a><a href="./guides/persona-3-reload-social-links/">Social Links</a><a href="./guides/persona-3-reload-deadlines/">Deadlines</a></nav>
+        </article>
+      </section>
+      <div class="save-note"><span class="save-symbol" aria-hidden="true">✓</span><p>No account or ads. Progress saves in this browser, separately for each game. Both trackers support backups for moving between devices.</p></div>
+      <section class="about"><div><h2>Two games. A familiar way to plan.</h2><p>Pick a month, check off completed tasks and update your relationship ranks. These are flexible companions for Royal and Reload's main campaigns. Reload is in beta; neither tracker promises a perfect run.</p></div><a href="https://ko-fi.com/K3K11RWTSL" class="support" data-umami-event="hub_support_click">Support the trackers <span aria-hidden="true">↗</span></a></section>
+      <p id="share-status" role="status"></p><input id="share-url" aria-label="Shared start page link" type="text" readonly hidden>
+    </main>
+    <footer><p>Unofficial fan tools. Not affiliated with ATLUS or SEGA.</p><p><a href="https://github.com/zucram/P5Tracker/issues">Feedback & corrections</a> · Umami measures visits and feature use. Save contents stay on your device.</p></footer>
+  </div>
+  <script type="module" src="/src/home.js"></script>
+</body>
 </html>

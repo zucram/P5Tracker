@@ -106,7 +106,7 @@ export default function ReloadTracker() {
     } catch { setStatus('The previous save is not accessible in this browser.'); }
   }
 
-  const shareUrl = `${window.location.origin}${BASE}games/persona-3-reload/?utm_source=app&utm_medium=share&utm_campaign=p3_player_referral`;
+  const shareUrl = `${window.location.origin}${BASE}p3/`;
   async function share() {
     try {
       if (navigator.share) await navigator.share({ title: 'Persona 3 Reload tracker', text: 'Plan your Reload playthrough with monthly checklists, Social Links and missable deadlines.', url: shareUrl });
@@ -133,7 +133,7 @@ export default function ReloadTracker() {
     <div className="reload-app">
       <header className="site-header">
         <div><h1><span>P3</span> Tracker <small>RELOAD · BETA</small></h1><p className="header-caption">Persona 3 Reload monthly guide & Social Link tracker</p></div>
-        <div className="header-actions"><a href={BASE}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
+        <div className="header-actions"><a href={BASE}>All games</a><a href={`${BASE}p5/`}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
       </header>
       <nav className="tabs" aria-label="Tracker sections">
         {[['briefing', BookOpen, 'Briefing'], ['calendar', CalendarDays, 'Calendar'], ['links', Users, 'Social Links'], ['deadlines', Sword, 'Tartarus'], ['more', Menu, 'More']].map(([id, Icon, title]) => <button key={id} aria-current={(tab === id || (id === 'calendar' && ['planner', 'month'].includes(tab)) || (id === 'more' && tab === 'backup')) ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 19 })}<span>{title}</span></button>)}
@@ -216,7 +216,7 @@ export default function ReloadTracker() {
 
         <section className="support-panel"><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>
         {shareFallback && <input aria-label="Public Reload tracker link" className="share-fallback" readOnly value={shareUrl} onFocus={event => event.target.select()} />}
-        <footer><a href={`${BASE}games/`}><ArrowLeft size={15} /> All game companions</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. No full in-game playthrough was performed to validate this beta. Episode Aigis and Social Link dialogue walkthroughs are not covered.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
+        <footer><a href={BASE}><ArrowLeft size={15} /> All games</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. No full in-game playthrough was performed to validate this beta. Episode Aigis and Social Link dialogue walkthroughs are not covered.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
       </main>
     </div>
   );

@@ -135,4 +135,13 @@ School answer data lives in `src/data/schoolAnswers.json`, with source evidence 
 
 ## Persona 3 Reload companion
 
-[Open the Reload calendar planner](https://zucram.github.io/P5Tracker/games/persona-3-reload/) for a flexible main-campaign beta with Social Link schedules, missable windows and saved progress. Read [release scope and validation](docs/p3-reload-release.md) and [source evidence](docs/p3-reload-calendar-evidence.md) before extending calendar rules.
+[Open the Reload calendar planner](https://zucram.github.io/P5Tracker/p3/) for a flexible main-campaign beta with Social Link schedules, missable windows and saved progress. Read [release scope and validation](docs/p3-reload-release.md) and [source evidence](docs/p3-reload-calendar-evidence.md) before extending calendar rules.
+
+
+## Site entry points
+
+The shared start page is https://zucram.github.io/P5Tracker/. Royal lives at `/P5Tracker/p5/` and Reload at `/P5Tracker/p3/`. Both trackers link back to the shared page. Internal guide links and per-game sharing use the short routes.
+
+Vite builds all three entry points plus compatibility pages for `/games/` and `/games/persona-3-reload/`. The compatibility pages redirect in the browser while preserving query strings and view fragments; they include ordinary links for readers without JavaScript. Old Royal root fragments such as `/#calendar` redirect to `/p5/#calendar`. The bare root always opens the chooser. This static host does not provide HTTP 301 redirects.
+
+No save migration is needed: the origin and per-game localStorage keys are unchanged. Canonicals and the sitemap use the new routes. Tests cover redirect targets and retained query/fragment values.

@@ -34,7 +34,7 @@ const table = (caption, headings, rows) => `<div class="table-scroll" role="regi
 const row = (id, cells) => `<tr id="${esc(id)}"><th scope="row">${cells[0]}</th>${cells.slice(1).map(c => `<td>${c}</td>`).join('')}</tr>`;
 const slSlug = 'persona-3-reload-social-links';
 const dlSlug = 'persona-3-reload-deadlines';
-const tracker = slug => `<a class="cta" href="../../games/persona-3-reload/#calendar" data-umami-event="guide_open_tracker" data-umami-event-guide="${slug}">Open the Reload calendar</a>`;
+const tracker = slug => `<a class="cta" href="../../p3/#calendar" data-umami-event="guide_open_tracker" data-umami-event-guide="${slug}">Open the Reload calendar</a>`;
 function page(slug, title, description, body) {
   const canonical = `https://zucram.github.io/P5Tracker/guides/${slug}/`;
   const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: canonical, inLanguage: 'en', dateModified: data.reviewedAt };
@@ -44,7 +44,7 @@ function page(slug, title, description, body) {
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="P5 Tracker"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script></head>
-<body class="reload-guide"><a class="skip" href="#content">Skip to content</a><main id="content"><nav aria-label="Main"><a href="../../">P5 Tracker</a> · <a href="../../games/">All games</a></nav>
+<body class="reload-guide"><a class="skip" href="#content">Skip to content</a><main id="content"><nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p3/">P3 Reload tracker</a></nav>
 <h1>${esc(title)}</h1><p class="notice">Spoilers: character identities, unlock requirements and dates through January. These tables cover the Persona 3 Reload main campaign, excluding Episode Aigis.</p>
 ${body}
 <section aria-labelledby="coverage"><h2 id="coverage">Sources and coverage</h2><p>Last reviewed: <time datetime="${esc(data.reviewedAt)}">${esc(data.reviewedAt)}</time>. Each table links to the source sections used for its entries. Corroborated means multiple sources support the entry; a single-source label means it has one reviewed reference. Individual fields may have different source coverage.</p><p>The planner is in beta. These guides cover the listed mechanics and do not promise a complete daily route or every availability exception. Unresolved dates are omitted. Check the in-game invitation, request or notice before spending a time slot.</p></section>

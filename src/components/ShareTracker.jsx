@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const SHARE_URL = 'https://zucram.github.io/P5Tracker/?utm_source=app&utm_medium=share&utm_campaign=player_referral';
+const SHARE_URL = 'https://zucram.github.io/P5Tracker/p5/';
 
 function trackShare(method) {
   try {

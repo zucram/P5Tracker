@@ -1,6 +1,6 @@
 # Persona 3 Reload beta release
 
-The Reload companion follows the Royal tracker layout. Briefing, Calendar, Social Links, Tartarus and More use desktop tabs and fixed mobile navigation. Calendar is the default view, with monthly checklists, opening requirements and personal goals. The optional daily planner still uses the active date and time slot. Its date controls are also available above Tartarus and deadline entries. The beta covers April through January in the main campaign.
+The Reload companion at `/P5Tracker/p3/` follows the Royal tracker layout. Briefing, Calendar, Social Links, Tartarus and More use desktop tabs and fixed mobile navigation. Calendar is the default view, with monthly checklists, opening requirements and personal goals. The optional daily planner still uses the active date and time slot. Its date controls are also available above Tartarus and deadline entries. The beta covers April through January in the main campaign.
 
 ## Behavior
 
@@ -41,3 +41,7 @@ Browser review checks desktop/mobile layout, date changes, link introductions an
 `school-answers.json` contains 36 classroom dates, 17 manual exam dates and five automatic exam dates. `activities.json` contains 15 sourced social-stat options with venues, weekday/time-slot schedules, costs, point rewards and conditions. Their coverage excludes unresolved movie schedules and some jobs. `tartarus.json` contains 11 sections with first normal exploration dates, reachable floor caps and whole-block boundaries. It distinguishes the June tutorial from normal exploration and records the December 3–9 closure.
 
 The month adapter derives existing rescue, request, episode and opening rows from canonical facts and calendar rules. School answers and Tartarus goals join those rows in the Calendar. Introduction requirements remain visible in Social Links. Factual prerequisite ranks are not prescribed end-of-month targets. Disputed episode cutoffs remain explicitly uncertain.
+
+## Shared start page
+
+The main `/P5Tracker/` address opens a game chooser, with Royal at `/p5/` and Reload at `/p3/` beneath that base. Existing `/games/persona-3-reload/` links redirect to Reload with their query strings and fragments preserved. The origin and Reload storage keys are unchanged. New internal, guide and share links use the short routes.

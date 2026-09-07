@@ -59,11 +59,11 @@ const html = `<!doctype html>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script defer src="ui.js"></script>
 </head>
 <body><main>
-<nav aria-label="Main"><a href="../../">P5 Tracker</a></nav>
+<nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p5/">P5 Royal tracker</a></nav>
 <h1>Persona 5 Royal classroom and exam answers</h1>
 <p>Find your in-game date below, then choose the listed answers in order. These school answers are for <strong>Persona 5 Royal</strong>; the original Persona 5 has different questions.</p>
 ${coverage}
-<p><a class="cta" href="../../#calendar" data-umami-event="guide_open_tracker" data-umami-event-guide="school-answers">Plan the rest of your month</a></p>
+<p><a class="cta" href="../../p5/#calendar" data-umami-event="guide_open_tracker" data-umami-event-guide="school-answers">Plan the rest of your month</a></p>
 <nav class="month-links" aria-label="Jump to a month">${monthLinks}</nav>
 <form id="answer-filters" hidden role="search" aria-label="Filter school answers">
 <div class="filter-grid"><label for="answer-month">Month<select id="answer-month"><option value="">All months</option>${monthOptions}</select></label><label for="answer-type">Type<select id="answer-type"><option value="">Classroom and exams</option><option value="classroom">Classroom</option><option value="exam">Exams</option></select></label></div>

@@ -714,6 +714,8 @@ export default function App() {
           <p className="text-neutral-500 mt-1 md:mt-2 font-mono text-[8px] md:text-[10px] tracking-[0.4em] hidden md:block">Integrated Strategy Compendium</p>
         </div>
         <div className="flex gap-2 md:gap-4 flex-wrap justify-center items-center">
+            <a href={import.meta.env.BASE_URL} className="border border-neutral-700 px-3 py-1.5 md:py-3 text-[10px] md:text-xs font-bold text-neutral-200 hover:border-red-500 hover:text-white">All games</a>
+            <a href={`${import.meta.env.BASE_URL}p3/`} className="border border-neutral-700 px-3 py-1.5 md:py-3 text-[10px] md:text-xs font-bold text-neutral-200 hover:border-sky-500 hover:text-white">P3 Reload</a>
             <a 
               href="https://ko-fi.com/K3K11RWTSL" 
               target="_blank" 
@@ -1980,9 +1982,9 @@ export default function App() {
         <section className="mt-12 text-center space-y-4" aria-label="About P5 Tracker">
           <ShareTracker />
           <p className="text-sm text-neutral-400">
-            <a className="underline" href={`${import.meta.env.BASE_URL}games/persona-3-reload/`} onClick={() => trackEvent('guide_opened', { guide: 'persona-3-reload', location: 'footer' })}>Persona 3 Reload planner</a>
+            <a className="underline" href={`${import.meta.env.BASE_URL}p3/`} onClick={() => trackEvent('guide_opened', { guide: 'persona-3-reload', location: 'footer' })}>Persona 3 Reload planner</a>
             {' · '}
-            <a className="underline" href={`${import.meta.env.BASE_URL}games/`} onClick={() => trackEvent('guide_opened', { guide: 'games', location: 'footer' })}>Game companions</a>
+            <a className="underline" href={import.meta.env.BASE_URL} onClick={() => trackEvent('guide_opened', { guide: 'games', location: 'footer' })}>All games</a>
             {' · '}
             <a className="underline" href={`${import.meta.env.BASE_URL}guides/school-answers/`} onClick={() => trackEvent('guide_opened', { guide: 'school-answers', location: 'footer' })}>School and exam answers</a>
             {' · '}

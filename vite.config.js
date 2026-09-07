@@ -20,8 +20,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        royal: fileURLToPath(new URL('./index.html', import.meta.url)),
-        reload: fileURLToPath(new URL('./games/persona-3-reload/index.html', import.meta.url))
+        home: fileURLToPath(new URL('./index.html', import.meta.url)),
+        royal: fileURLToPath(new URL('./p5/index.html', import.meta.url)),
+        reload: fileURLToPath(new URL('./p3/index.html', import.meta.url)),
+        legacyReload: fileURLToPath(new URL('./games/persona-3-reload/index.html', import.meta.url)),
+        legacyGames: fileURLToPath(new URL('./games/index.html', import.meta.url))
       }
     }
   },
