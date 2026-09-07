@@ -50,3 +50,10 @@ The page links to the monthly calendar, is linked from the app and existing guid
 `school_answers_filtered` records the first successful nonempty filter use per page load. Its only property is the fixed guide name. It does not transmit search text, chosen dates, answers or saves. Existing `guide_open_tracker` records the calendar link click. These events are not proof of a successful game action or a payment.
 
 Validation covers shared answer integration, stable task IDs, Royal July content, static generation freshness, mobile filtering and analytics payload limits. See [school answer maintenance](school-answers.md).
+
+
+## Guide navigation
+
+Version 2.4.2 makes published guides accessible above the app content. Briefing links to monthly planning, school answers and the Maruki deadline checker. Calendar links to school answers and monthly planning; Confidants links to the deadline checker and confidant tracking guide. More and the Reference Hub show all four guides and the game directory with descriptions. Footer links remain available in every view.
+
+`src/components/GuideLinks.jsx` owns these contextual links. They use the configured Vite base path and ordinary same-tab anchors. When adding a published guide, update this list and verify navigation under `/P5Tracker/` at mobile and desktop widths.
