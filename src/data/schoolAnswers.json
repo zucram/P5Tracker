@@ -1,0 +1,2277 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 5 Royal",
+  "edition": "Royal, English answer options",
+  "reviewedAt": "2026-09-07",
+  "coverage": {
+    "summary": "Reviewed classroom and exam answer dates from April through January in Persona 5 Royal. Multi-part answers appear in order. January requires the third semester.",
+    "entryCount": 68,
+    "scope": "Scheduled classroom questions and selectable exam answers. This is not a record of every story dialogue choice.",
+    "omitted": [
+      {
+        "date": "06-11",
+        "reason": "The studio-visit question is outside the scheduled classroom and exam scope."
+      },
+      {
+        "reason": "Automatic exam segments without selectable answers are outside this answer list."
+      }
+    ],
+    "limitations": [
+      "Reviewed against published original-author guides, not independently replayed in game.",
+      "Exact punctuation is simplified. August has no scheduled classroom rows in the inspected calendar.",
+      "No exam score guarantees or social-stat reward values are encoded."
+    ]
+  },
+  "sources": [
+    {
+      "id": "gamefaqs-marendarade-78212",
+      "title": "Persona 5 Royal walkthrough",
+      "author": "marendarade",
+      "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212",
+      "version": "1.1.3",
+      "updated": "2020-04-28",
+      "accessed": "2026-09-07"
+    },
+    {
+      "id": "gamefaqs-road-to-dawn-78335",
+      "title": "Crossword/School/Confidant Answer Guide",
+      "author": "Road_to_Dawn",
+      "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+      "version": "0.95",
+      "updated": "2021-03-28",
+      "accessed": "2026-09-07",
+      "notes": "Author describes original playthrough research and incomplete broader guide. September 3 is incorrectly labelled September 2."
+    },
+    {
+      "id": "rpgsite-royal-school-9602",
+      "title": "Persona 5 Royal Exam Answers & Class Test Solutions",
+      "author": "RPG Site Staff",
+      "url": "https://www.rpgsite.net/feature/9602-persona-5-royal-exam-answers-class-test-solutions",
+      "published": "2022-10-19",
+      "accessed": "2026-09-07",
+      "notes": "Secondary comparison only. Date and wording errors were resolved against the two GameFAQs authors."
+    }
+  ],
+  "reviewNotes": [
+    {
+      "dates": [
+        "07-13",
+        "07-14",
+        "07-15"
+      ],
+      "issue": "RPG Site lists May date prefixes inside its July exam section.",
+      "resolution": "Use July dates shown by both GameFAQs authors."
+    },
+    {
+      "date": "09-03",
+      "issue": "Road_to_Dawn labels Prosperity as September 2.",
+      "resolution": "September 3 matches marendarade and RPG Site."
+    },
+    {
+      "date": "09-14",
+      "issue": "RPG Site labels the pawn-shop question September 13.",
+      "resolution": "September 14 matches both GameFAQs authors."
+    },
+    {
+      "date": "05-19",
+      "issue": "RPG Site reverses the name order.",
+      "resolution": "Preserve Hokusai Katsushika as recorded by both GameFAQs authors and the existing app."
+    },
+    {
+      "date": "09-28",
+      "issue": "RPG Site uses Vibrating.",
+      "resolution": "Use Vibration, matching both GameFAQs authors."
+    }
+  ],
+  "entries": [
+    {
+      "id": "p5r-classroom-04-12",
+      "date": "04-12",
+      "type": "classroom",
+      "answers": [
+        "Villains"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/12 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/12",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-04-19",
+      "date": "04-19",
+      "type": "classroom",
+      "answers": [
+        "They're the same"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/19 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/19",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-04-23",
+      "date": "04-23",
+      "type": "classroom",
+      "answers": [
+        "All of them"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/23 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/23",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-04-25",
+      "date": "04-25",
+      "type": "classroom",
+      "answers": [
+        "You unquestioningly support it",
+        "You have a duty to correct it"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q4",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/25 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/25",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-04-27",
+      "date": "04-27",
+      "type": "classroom",
+      "answers": [
+        "Four color theorem"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q5",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/27 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/27",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-04-30",
+      "date": "04-30",
+      "type": "classroom",
+      "answers": [
+        "Wonder",
+        "Child",
+        "A prodigy"
+      ],
+      "month": "april",
+      "appTaskId": "apr_q6",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/april",
+          "locator": "4/30 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 4/30",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-07",
+      "date": "05-07",
+      "type": "classroom",
+      "answers": [
+        "Fatal woman"
+      ],
+      "month": "may",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/7 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/7",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-10",
+      "date": "05-10",
+      "type": "classroom",
+      "answers": [
+        "The Heian period"
+      ],
+      "month": "may",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/10 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/10",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-05-11",
+      "date": "05-11",
+      "type": "exam",
+      "answers": [
+        "Minamoto no Yoshitsune",
+        "Minamoto no Yoritomo",
+        "Yoritomo won",
+        "The weak"
+      ],
+      "month": "may",
+      "appTaskId": "may_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/11 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/11",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-05-12",
+      "date": "05-12",
+      "type": "exam",
+      "answers": [
+        "Cognition",
+        "Both"
+      ],
+      "month": "may",
+      "appTaskId": "may_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/12 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/12",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-05-13",
+      "date": "05-13",
+      "type": "exam",
+      "answers": [
+        "The Devil's Dictionary",
+        "Femme Fatale"
+      ],
+      "month": "may",
+      "appTaskId": "may_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/13 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/13",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-16",
+      "date": "05-16",
+      "type": "classroom",
+      "answers": [
+        "The placebo effect"
+      ],
+      "month": "may",
+      "appTaskId": "may_q4",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/16 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/16",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-19",
+      "date": "05-19",
+      "type": "classroom",
+      "answers": [
+        "Hokusai Katsushika"
+      ],
+      "month": "may",
+      "appTaskId": "may_q5",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/19 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/19",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-21",
+      "date": "05-21",
+      "type": "classroom",
+      "answers": [
+        "1:1.414"
+      ],
+      "month": "may",
+      "appTaskId": "may_q6",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/21 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/21",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-23",
+      "date": "05-23",
+      "type": "classroom",
+      "answers": [
+        "Together",
+        "Senses",
+        "Senses coming together"
+      ],
+      "month": "may",
+      "appTaskId": "may_q7",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/23 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/23",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-26",
+      "date": "05-26",
+      "type": "classroom",
+      "answers": [
+        "Arthur Conan Doyle"
+      ],
+      "month": "may",
+      "appTaskId": "may_q8",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/26 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/26",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-05-31",
+      "date": "05-31",
+      "type": "classroom",
+      "answers": [
+        "John Silver"
+      ],
+      "month": "may",
+      "appTaskId": "may_q9",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/may",
+          "locator": "5/31 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 5/31",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-04",
+      "date": "06-04",
+      "type": "classroom",
+      "answers": [
+        "The halo effect"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/4 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/4",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-07",
+      "date": "06-07",
+      "type": "classroom",
+      "answers": [
+        "The number of legs"
+      ],
+      "month": "june",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/7 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/7",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-08",
+      "date": "06-08",
+      "type": "classroom",
+      "answers": [
+        "Controlling public thought"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/8 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/8",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-13",
+      "date": "06-13",
+      "type": "classroom",
+      "answers": [
+        "Green"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/13 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/13",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-15",
+      "date": "06-15",
+      "type": "classroom",
+      "answers": [
+        "Coins"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q4",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/15 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/15",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-20",
+      "date": "06-20",
+      "type": "classroom",
+      "answers": [
+        "Smartphone"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q5",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/20 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/20",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-23",
+      "date": "06-23",
+      "type": "classroom",
+      "answers": [
+        "A pope"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q6",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/23 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/23",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-27",
+      "date": "06-27",
+      "type": "classroom",
+      "answers": [
+        "Dogs"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q7",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/27 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/27",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-06-29",
+      "date": "06-29",
+      "type": "classroom",
+      "answers": [
+        "Gold"
+      ],
+      "month": "june",
+      "appTaskId": "jun_q8",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/june",
+          "locator": "6/29 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 6/29",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-01",
+      "date": "07-01",
+      "type": "classroom",
+      "answers": [
+        "Barbarian's head"
+      ],
+      "month": "july",
+      "appTaskId": "july_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/1 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/1",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-04",
+      "date": "07-04",
+      "type": "classroom",
+      "answers": [
+        "Julius and Augustus"
+      ],
+      "month": "july",
+      "appTaskId": "july_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/4 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/4",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-07",
+      "date": "07-07",
+      "type": "classroom",
+      "answers": [
+        "The Milky Way",
+        "Soumen noodles"
+      ],
+      "month": "july",
+      "appTaskId": "july_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/7 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/7",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-09",
+      "date": "07-09",
+      "type": "classroom",
+      "answers": [
+        "A triangle"
+      ],
+      "month": "july",
+      "appTaskId": "july_q4",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/9 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/9",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-11",
+      "date": "07-11",
+      "type": "classroom",
+      "answers": [
+        "Memories that last a long time",
+        "Infinite",
+        "Forever"
+      ],
+      "month": "july",
+      "appTaskId": "july_q5",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/11 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/11",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-07-12",
+      "date": "07-12",
+      "type": "classroom",
+      "answers": [
+        "Thievery"
+      ],
+      "month": "july",
+      "appTaskId": "july_q6",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/12 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/12",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-07-13",
+      "date": "07-13",
+      "type": "exam",
+      "answers": [
+        "64 degrees",
+        "Zhuge Liang",
+        "Barbarians' heads",
+        "To offer them instead of heads"
+      ],
+      "month": "july",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/13 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/13",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-07-14",
+      "date": "07-14",
+      "type": "exam",
+      "answers": [
+        "Red King Crab (Paralithodes)",
+        "It caused confusion in the economy"
+      ],
+      "month": "july",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/14 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/14",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-07-15",
+      "date": "07-15",
+      "type": "exam",
+      "answers": [
+        "Raining cats and dogs",
+        "Demon Guts"
+      ],
+      "month": "july",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/july",
+          "locator": "7/15 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 7/15",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-03",
+      "date": "09-03",
+      "type": "classroom",
+      "answers": [
+        "Prosperity"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/3 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/2",
+          "supports": [
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "rpgsite-royal-school-9602",
+          "url": "https://www.rpgsite.net/feature/9602-persona-5-royal-exam-answers-class-test-solutions",
+          "locator": "September / 9/3",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-06",
+      "date": "09-06",
+      "type": "classroom",
+      "answers": [
+        "Chronostasis"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/6 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/6",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-14",
+      "date": "09-14",
+      "type": "classroom",
+      "answers": [
+        "Money loans for collateral"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/14 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/14",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-17",
+      "date": "09-17",
+      "type": "classroom",
+      "answers": [
+        "Cats eating human tongues"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q4",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/17 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/17",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-21",
+      "date": "09-21",
+      "type": "classroom",
+      "answers": [
+        "Central Europe"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q5",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/21 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/21",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-24",
+      "date": "09-24",
+      "type": "classroom",
+      "answers": [
+        "20 white, 12 black"
+      ],
+      "month": "september",
+      "appTaskId": "sep_q6",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/24 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/24",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-28",
+      "date": "09-28",
+      "type": "classroom",
+      "answers": [
+        "Phantom",
+        "Vibration",
+        "Syndrome"
+      ],
+      "month": "september",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/28 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/28",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-09-29",
+      "date": "09-29",
+      "type": "classroom",
+      "answers": [
+        "Imperial Household Agency"
+      ],
+      "month": "september",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/september",
+          "locator": "9/29 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 9/29",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-10-03",
+      "date": "10-03",
+      "type": "classroom",
+      "answers": [
+        "Stars"
+      ],
+      "month": "october",
+      "appTaskId": "oct_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/3 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/3",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-10-06",
+      "date": "10-06",
+      "type": "classroom",
+      "answers": [
+        "Joseph-Ignace Guillotin"
+      ],
+      "month": "october",
+      "appTaskId": "oct_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/6 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/6",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-10-11",
+      "date": "10-11",
+      "type": "classroom",
+      "answers": [
+        "Bouba"
+      ],
+      "month": "october",
+      "appTaskId": "oct_q3",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/11 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/11",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-10-17",
+      "date": "10-17",
+      "type": "exam",
+      "answers": [
+        "32 surfaces",
+        "It used to be one color",
+        "Black and white picture"
+      ],
+      "month": "october",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/17 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/17",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-10-18",
+      "date": "10-18",
+      "type": "exam",
+      "answers": [
+        "Charles-Henri Sanson",
+        "It's a hereditary profession"
+      ],
+      "month": "october",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/18 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/18",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-10-19",
+      "date": "10-19",
+      "type": "exam",
+      "answers": [
+        "Slave labor",
+        "3 bees in all of Europe"
+      ],
+      "month": "october",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/19 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/19",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-10-22",
+      "date": "10-22",
+      "type": "classroom",
+      "answers": [
+        "15"
+      ],
+      "month": "october",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/22 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/22",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-10-24",
+      "date": "10-24",
+      "type": "classroom",
+      "answers": [
+        "Memory bias"
+      ],
+      "month": "october",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/october",
+          "locator": "10/24 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 10/24",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-02",
+      "date": "11-02",
+      "type": "classroom",
+      "answers": [
+        "A share of stolen goods"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/2 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/2",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-04",
+      "date": "11-04",
+      "type": "classroom",
+      "answers": [
+        "A sword"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/4 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/4",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-08",
+      "date": "11-08",
+      "type": "classroom",
+      "answers": [
+        "Any age"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/8 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/8",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-10",
+      "date": "11-10",
+      "type": "classroom",
+      "answers": [
+        "Crow eyes are hard to see"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/10 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/10",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-12",
+      "date": "11-12",
+      "type": "classroom",
+      "answers": [
+        "Because the voice is synthetic"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/12 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/12",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-14",
+      "date": "11-14",
+      "type": "classroom",
+      "answers": [
+        "Because of high altitude"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/14 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/14",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-15",
+      "date": "11-15",
+      "type": "classroom",
+      "answers": [
+        "His head was put on display"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/15 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/15",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-11-17",
+      "date": "11-17",
+      "type": "classroom",
+      "answers": [
+        "Cochleoid"
+      ],
+      "month": "november",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/november",
+          "locator": "11/17 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 11/17",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-12-20",
+      "date": "12-20",
+      "type": "exam",
+      "answers": [
+        "D",
+        "Over one billion yen",
+        "Having his head displayed",
+        "Public performance"
+      ],
+      "month": "december",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/december",
+          "locator": "12/20 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 12/20",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-12-21",
+      "date": "12-21",
+      "type": "exam",
+      "answers": [
+        "Hearts",
+        "Attend"
+      ],
+      "month": "december",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/december",
+          "locator": "12/21 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 12/21",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-exam-12-22",
+      "date": "12-22",
+      "type": "exam",
+      "answers": [
+        "Japan",
+        "Dreadnought"
+      ],
+      "month": "december",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/december",
+          "locator": "12/22 / exams",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 12/22",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-11",
+      "date": "01-11",
+      "type": "classroom",
+      "answers": [
+        "How numerous they are",
+        "The Eight Million Gods"
+      ],
+      "month": "january",
+      "appTaskId": "jan_q1",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/11 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/11",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-14",
+      "date": "01-14",
+      "type": "classroom",
+      "answers": [
+        "Iwate"
+      ],
+      "month": "january",
+      "appTaskId": "jan_q2",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/14 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/14",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-18",
+      "date": "01-18",
+      "type": "classroom",
+      "answers": [
+        "Impressive"
+      ],
+      "month": "january",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/18 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/18",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-21",
+      "date": "01-21",
+      "type": "classroom",
+      "answers": [
+        "A snake"
+      ],
+      "month": "january",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/21 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/21",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-24",
+      "date": "01-24",
+      "type": "classroom",
+      "answers": [
+        "Kind-hearted",
+        "Negative",
+        "Resentful"
+      ],
+      "month": "january",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/24 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/24",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p5r-classroom-01-27",
+      "date": "01-27",
+      "type": "classroom",
+      "answers": [
+        "To friends of friends of friends"
+      ],
+      "month": "january",
+      "evidence": [
+        {
+          "sourceId": "gamefaqs-marendarade-78212",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212/january",
+          "locator": "1/27 / class question",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        },
+        {
+          "sourceId": "gamefaqs-road-to-dawn-78335",
+          "url": "https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78335",
+          "locator": "[SCQ] / 1/27",
+          "supports": [
+            "date",
+            "type",
+            "answers"
+          ]
+        }
+      ]
+    }
+  ]
+}

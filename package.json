@@ -1,14 +1,16 @@
 {
   "name": "p5r-app",
   "private": true,
-  "version": "2.4.0",
+  "version": "2.4.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "node --test src/lib/*.test.js"
+    "test": "node --test src/lib/*.test.js",
+    "build:guides": "node scripts/build-school-answers.mjs",
+    "prebuild": "node scripts/build-school-answers.mjs --check"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",

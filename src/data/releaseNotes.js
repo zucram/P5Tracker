@@ -1,5 +1,21 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.4.1",
+    date: "2026-09-07",
+    title: "Reviewed school and exam answers",
+    description: "Look up 68 Royal classroom and exam dates in the tracker or the new searchable guide.",
+    sections: [
+      {
+        title: "Answer corrections",
+        items: [
+          "Corrected July answers and replaced the old July exam group with Royal's dated exam choices.",
+          "Added 28 missing answer dates. Existing dated answer checkmarks are preserved.",
+          "The new school answers guide supports month, exam and text filters, and works without JavaScript."
+        ]
+      }
+    ]
+  },
+  {
     version: "2.4.0",
     date: "2026-09-07",
     title: "Safer saves and your next game",

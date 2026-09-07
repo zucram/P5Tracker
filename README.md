@@ -18,6 +18,8 @@ Feedback, bug reports, and strategy corrections are welcome via [GitHub Issues](
 
 ## Planning and save transfer
 
+Find [Royal school and exam answers by date](https://zucram.github.io/P5Tracker/guides/school-answers/) on the new searchable page.
+
 Use the [third-semester requirement checker](https://zucram.github.io/P5Tracker/guides/third-semester/) to check Maruki's rank and deadline without changing your save.
 
 Read the [monthly planning guide](https://zucram.github.io/P5Tracker/guides/monthly-checklist/) or [confidant tracking guide](https://zucram.github.io/P5Tracker/guides/confidant-tracker/).
@@ -128,3 +130,5 @@ This project was built with the assistance of AI (Google Gemini) to handle archi
 
 ---
 *Take your time.*
+
+School answer data lives in `src/data/schoolAnswers.json`, with source evidence for each date. After editing it, run `npm run build:guides` to update the static page. `npm run build` checks that the generated page is current. See [school answer maintenance](docs/school-answers.md).
