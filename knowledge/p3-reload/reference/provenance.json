@@ -1,0 +1,62 @@
+{
+  "repository": "https://github.com/aqiu384/megaten-fusion-tool",
+  "commit": "e93dd1c87ca453de8fae8165bdbef220732feabc",
+  "license": "Unlicense",
+  "scope": "Persona 3 Reload main campaign. Episode Aigis data excluded. Enemy variants and unknown areas retained as published.",
+  "files": [
+    {
+      "local": "demon-data.json",
+      "source": "src/app/p3r/data/demon-data.json",
+      "sha256": "f157aae90e7f44f2017e091fdf43a5ba9fddfe4b9b9827c2abc7c3fc3e075e0d"
+    },
+    {
+      "local": "demon-unlocks.json",
+      "source": "src/app/p3r/data/demon-unlocks.json",
+      "sha256": "bf5f2b832e0de5da17ff8fc9c41441203fc1a9cb2b088d6303a1e77f7a40abc6"
+    },
+    {
+      "local": "enemy-data.json",
+      "source": "src/app/p3r/data/enemy-data.json",
+      "sha256": "32c4ef560dfd56ffa3c994ef13d761a6dc57a6a3e08a2b7ab7715bba7f36ef4c"
+    },
+    {
+      "local": "party-data.json",
+      "source": "src/app/p3r/data/party-data.json",
+      "sha256": "339e6d9b5dea3deb5f9627ede5ac13407194a600def3f8e9cbe9b65cc7342b84"
+    },
+    {
+      "local": "special-recipes.json",
+      "source": "src/app/p3r/data/special-recipes.json",
+      "sha256": "24e5f2d96878ca377be2f858fb831b1c674559f7707e9803d516d77a7738b83b"
+    },
+    {
+      "local": "fusion-chart.json",
+      "source": "src/app/p3r/data/fusion-chart.json",
+      "sha256": "037ea711831172e5938dd4280257327fe964c98f44fa178dcb5c9910a472d758"
+    },
+    {
+      "local": "comp-config.json",
+      "source": "src/app/p3r/data/comp-config.json",
+      "sha256": "08b963a717f6871a85706ea8f865aedb66fd77132b29ec4280bd3e11bc1b2c1a"
+    },
+    {
+      "local": "skill-data.json",
+      "source": "src/app/p3r/data/skill-data.json",
+      "sha256": "646a825ff64d0e30067fcf714009696cc25adc09b1b254c0b8e9677ccf995191"
+    },
+    {
+      "local": "skill-effects.json",
+      "source": "src/app/compendium/data/skill-effects.json",
+      "sha256": "bdb2364219e7554b80d405ae0c8619d3da89b3d6257704858523a7784545d0d5"
+    }
+  ],
+  "algorithmSources": [
+    "src/app/compendium/fusions/smt-nonelem-fusions.ts",
+    "src/app/compendium/fusions/per-nonelem-fusions.ts",
+    "src/app/pq2/models/per-fusion-chart.ts",
+    "src/app/pq2/models/compendium.ts",
+    "src/app/pq2/models/skill-importer.ts",
+    "src/app/compendium/pipes.ts",
+    "src/app/p3r/compendium.module.ts"
+  ]
+}

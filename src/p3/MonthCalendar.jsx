@@ -5,6 +5,9 @@ import { getMonthGuide } from './monthGuide';
 import { dateLabel, dateNumber } from './planner';
 import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'json' };
 import school from '../../knowledge/p3-reload/school-answers.json' with { type: 'json' };
+import campaign from '../../knowledge/p3-reload/campaign.json' with { type: 'json' };
+import { COLLECTION_SECTIONS } from './campaignData';
+import CampaignReference from './CampaignReference';
 
 function TaskRow({ task, state, toggle }) {
   const done = task.factId ? state.completedEvents.includes(task.factId) : (state.checkedTasks || []).includes(task.id);
@@ -38,6 +41,9 @@ export function MonthCalendar({ state, commit, month, setMonth, selectTab }) {
   const calendar = guide.timeline.filter(task => task.category === 'calendar');
   const timeline = [...floorTasks, ...guide.targets.filter(task => task.date).map(task => ({ ...task, title: `Start ${SOCIAL_LINKS.find(link => link.id === task.opensLinkId).arcana}`, category: 'social-link' })), ...guide.timeline.filter(task => !criticalIds.has(task.id) && task.category !== 'calendar'), ...schoolTasks].sort((a,b) => dateNumber(a.date) - dateNumber(b.date));
   const goals = state.goals.filter(item => item.month === month);
+  const monthNumber = index === 9 ? 1 : index + 4;
+  const extras = COLLECTION_SECTIONS.filter(section => section.id !== 'fragments').map(section => ({ ...section, entries: section.entries.filter(entry => Number(entry.date?.slice(0, 2)) === monthNumber) }));
+  const monthCampaign = campaign.sections.map(section => ({ ...section, entries: section.entries.filter(entry => [entry.date, entry.deadline].some(date => Number(date?.slice(0, 2)) === monthNumber)) }));
   function toggle(task) {
     const key = task.factId ? 'completedEvents' : 'checkedTasks';
     const id = task.factId || task.id;
@@ -57,8 +63,10 @@ export function MonthCalendar({ state, commit, month, setMonth, selectTab }) {
       <div className="month-tools"><select aria-label="Browse month" value={month} onChange={event => setMonth(event.target.value)}>{MONTHS.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select><button onClick={() => selectTab('planner')}>Plan a specific day</button></div>
     </div>
     <div className="calendar-sheet"><h2>{name} checklist</h2><p className="calendar-intro">Choose your own daily route. Check off what you finish in-game. Browsing months keeps your active month unchanged.</p>
+      <div className="month-reference-links"><button onClick={() => selectTab('links')}>Social Link answers</button><button onClick={() => selectTab('requests')}>All Elizabeth requests</button><button onClick={() => selectTab('party')}>Dorm activities</button><button onClick={() => selectTab('campaign')}>Bosses & story choices</button></div>
       <label className="name-toggle"><input type="checkbox" checked={state.showEventNames} onChange={event => commit({ ...state, showEventNames: event.target.checked })} /> Show character names in events</label>
       {!!guide.critical.length && <section className="task-section critical"><h3>Don't miss</h3><div className="task-list">{guide.critical.map(task => <TaskRow key={task.id} task={task} state={state} toggle={toggle} />)}</div></section>}
+      {monthCampaign.some(section => section.entries.length) && <details className="monthly-extras"><summary>Bosses & story choices this month</summary><CampaignReference key={month} sections={monthCampaign} showSpoilers={state.showEventNames} /></details>}
       {!!timeline.length && <section className="task-section"><h3>Timeline</h3><div className="task-list">{timeline.map(task => <TaskRow key={task.id} task={task} state={state} toggle={toggle} />)}</div></section>}
       {!!guide.targets.length && <section className="target-section"><h3>Social Link goals</h3><p className="small-note">Opening requirements to work toward. These are not required end-of-month ranks.</p><div className="target-grid">{guide.targets.map(task => {
         const opened = state.ranks[task.opensLinkId] > 0;
@@ -68,6 +76,7 @@ export function MonthCalendar({ state, commit, month, setMonth, selectTab }) {
       })}</div></section>}
       {!!calendar.length && <details className="strategy-panel"><summary>Story dates, holidays & exam restrictions</summary><ul>{calendar.map(task => <li key={task.id}><strong>{dateLabel(task.date)}{task.end !== task.date && ` to ${dateLabel(task.end)}`}</strong> · {task.title}<p>{task.detail} <a href={task.sourceUrl} target="_blank" rel="noopener noreferrer">Source</a></p></li>)}</ul></details>}
       <div className="strategy-panel"><h3>Monthly strategy</h3><ul>{guide.strategy.slice(0,3).map(task => <li key={task.id}>{task.detail}</li>)}</ul><button onClick={() => selectTab('briefing')}>Social stat activities</button></div>
+      {extras.some(section => section.entries.length) && <details className="monthly-extras"><summary>Optional invitations, walks & shopping this month</summary><p>Choose these when they fit your plan. An outing uses the same time you could spend on a Social Link rank.</p><CampaignReference key={month} sections={extras} completedIds={state.collectionChecks} showSpoilers={state.showEventNames} onToggle={id => commit({ ...state, collectionChecks: state.collectionChecks.includes(id) ? state.collectionChecks.filter(value => value !== id) : [...state.collectionChecks, id] }, 'collection_checked')} /></details>}
       <section className="personal-goals"><h3>Your own goals</h3><form className="goal-input" onSubmit={addGoal}><input aria-label="New monthly goal" value={goal} onChange={e => setGoal(e.target.value)} maxLength={200} placeholder="Add a goal for this month" required /><button type="submit">Add</button></form>{goalError && <p role="alert">{goalError}</p>}<ul className="goal-list">{goals.map(item => <li key={item.id}><label><input type="checkbox" checked={item.done} onChange={() => commit({ ...state, goals: state.goals.map(other => other.id === item.id ? { ...other, done: !other.done } : other) }, 'goal_checked')} /><span className={item.done ? 'done' : ''}>{item.text}</span></label><button aria-label={`Remove goal: ${item.text}`} onClick={() => commit({ ...state, goals: state.goals.filter(other => other.id !== item.id) })}>×</button></li>)}</ul></section>
     </div>
   </section>;

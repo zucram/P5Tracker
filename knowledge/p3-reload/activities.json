@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "game": "Persona 3 Reload",
   "rewardUnit": "Internal social-stat points, not musical notes.",
-  "scope": "Repeatable options. Story events can override opening hours. Film schedules, library points and other jobs are omitted pending conflicting-source review.",
+  "scope": "Repeatable social-stat options. Story events override ordinary hours. Dorm bonding, computer software and seasonal invitations have separate references.",
   "activities": [
     {
       "id": "arcade-charm",
@@ -355,7 +355,7 @@
           "locator": "Cafe shift"
         }
       ],
-      "note": "Earn at least \u00a52,500; pay varies."
+      "note": "Earn at least ¥2,500; pay varies."
     },
     {
       "id": "nurse-medicine",
@@ -385,6 +385,131 @@
       "requirements": "School day after Tartarus or a Full Moon Operation.",
       "note": "No time passes.",
       "consumesTime": false
+    },
+    {
+      "id": "movie-academics",
+      "title": "Cinema film",
+      "venue": "Screen Shot, Port Island Station",
+      "days": [
+        3,
+        6
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 1500,
+      "rewards": {
+        "academics": 4
+      },
+      "note": "Daytime showing; the schedule can change during holidays and the summer festival.",
+      "requirements": "",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Regular social-stat activities"
+        }
+      ]
+    },
+    {
+      "id": "movie-charm",
+      "title": "Cinema film",
+      "venue": "Screen Shot, Port Island Station",
+      "days": [
+        2,
+        5
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 1500,
+      "rewards": {
+        "charm": 4
+      },
+      "note": "Daytime showing; check the poster before buying a ticket.",
+      "requirements": "",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Regular social-stat activities"
+        }
+      ]
+    },
+    {
+      "id": "movie-courage",
+      "title": "Cinema film",
+      "venue": "Screen Shot, Port Island Station",
+      "days": [
+        1,
+        4
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 1500,
+      "rewards": {
+        "courage": 4
+      },
+      "note": "Daytime showing; check the poster before buying a ticket.",
+      "requirements": "",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Regular social-stat activities"
+        }
+      ]
+    },
+    {
+      "id": "beblue-job",
+      "title": "Be Blue V shift",
+      "venue": "Be Blue V, Paulownia Mall",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 0,
+      "rewards": {
+        "academics": 1,
+        "courage": 1
+      },
+      "note": "Earn at least ¥3,500; pay can vary.",
+      "requirements": "Available from July 24.",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Regular social-stat activities"
+        }
+      ]
+    },
+    {
+      "id": "cinema-job",
+      "title": "Cinema shift",
+      "venue": "Screen Shot, Port Island Station",
+      "days": [
+        7
+      ],
+      "slots": [
+        "daytime"
+      ],
+      "costYen": 0,
+      "rewards": {
+        "academics": 1,
+        "charm": 1
+      },
+      "note": "Earn at least ¥5,000. Also available on eligible holidays and Saturdays without school.",
+      "requirements": "",
+      "sources": [
+        {
+          "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+          "locator": "Regular social-stat activities"
+        }
+      ]
     }
   ]
 }

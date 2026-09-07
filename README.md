@@ -135,7 +135,7 @@ School answer data lives in `src/data/schoolAnswers.json`, with source evidence 
 
 ## Persona 3 Reload companion
 
-[Open the Reload calendar planner](https://zucram.github.io/P5Tracker/p3/) for a flexible main-campaign beta with Social Link schedules, missable windows and saved progress. Read [release scope and validation](docs/p3-reload-release.md) and [source evidence](docs/p3-reload-calendar-evidence.md) before extending calendar rules.
+[Open the Reload companion](https://zucram.github.io/P5Tracker/p3/) for monthly planning, all 190 manual Social Link ranks, all 101 Elizabeth requests, combat, fusion, equipment, dorm activities and saved collections. Beta means individual details may need correction. The companion covers the main campaign; Episode Aigis is separate. Read [release scope and validation](docs/p3-reload-release.md) and [source evidence](docs/p3-reload-calendar-evidence.md) before extending calendar rules.
 
 
 ## Site entry points

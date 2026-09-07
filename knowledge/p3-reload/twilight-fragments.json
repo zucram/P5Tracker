@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "entries": [
+    {
+      "id": "fragment-1",
+      "title": "School entrance",
+      "summary": "Second lamp on the right",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-2",
+      "title": "School 1F entrance",
+      "summary": "Between the two pillars",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-3",
+      "title": "School 1F faculty corridor",
+      "summary": "Outside the printing room",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-4",
+      "title": "School outdoor corridor",
+      "summary": "Bench opposite the persimmon tree",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-5",
+      "title": "School gym hallway",
+      "summary": "Beside the lockers",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-6",
+      "title": "School 2F",
+      "summary": "Sink near the upstairs staircase",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-7",
+      "title": "School roof",
+      "summary": "Second bench from the entrance",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-8",
+      "title": "Iwatodai Station",
+      "summary": "Construction cone",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-9",
+      "title": "Iwatodai 3F",
+      "summary": "Beside the stairs and Umiushi",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-10",
+      "title": "Naganaki Shrine",
+      "summary": "Near the Inari shrine",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-11",
+      "title": "Naganaki Shrine playground",
+      "summary": "Beside the climbing frame",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-12",
+      "title": "Port Island Station",
+      "summary": "Fountain-side bench",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-13",
+      "title": "Port Island Outskirts",
+      "summary": "Rubbish bags near Que Sera Sera",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-14",
+      "title": "Dorm 4F",
+      "summary": "Lamp by the roof staircase",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-15",
+      "title": "Dorm roof",
+      "summary": "Corner beside the planters",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [
+        "Dorm rooftop access, available in late May."
+      ],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-16",
+      "title": "Paulownia Mall",
+      "summary": "Beside the fountain",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    },
+    {
+      "id": "fragment-17",
+      "title": "Club Escapade",
+      "summary": "Stage-side dance floor",
+      "steps": [
+        "Collect the blue sparkle at this landmark."
+      ],
+      "requirements": [
+        "Courage rank 2 for Club Escapade."
+      ],
+      "sources": [
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-all-twilight-fragment-locations/",
+          "label": "Locations with screenshots"
+        }
+      ]
+    }
+  ]
+}

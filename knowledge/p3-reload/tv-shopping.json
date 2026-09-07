@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "entries": [
+    {
+      "id": "tv-05-03",
+      "title": "Rose Bouquet ×1 / Luxury Chocolate ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "05-03",
+      "deadline": "05-03",
+      "requirements": [
+        "¥2,980"
+      ],
+      "steps": [
+        "Order on 05-03. Delivery date: 05-05."
+      ],
+      "rewards": [
+        "Rose Bouquet ×1",
+        "Luxury Chocolate ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-05-10",
+      "title": "Antibiotic Gel ×2 / Sappy Jelly ×5",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "05-10",
+      "deadline": "05-10",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 05-10. Delivery date: 05-12."
+      ],
+      "rewards": [
+        "Antibiotic Gel ×2",
+        "Sappy Jelly ×5"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-05-17",
+      "title": "Blinding Flashlight ×3 / Freeze Spray ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "05-17",
+      "deadline": "05-17",
+      "requirements": [
+        "¥2,980"
+      ],
+      "steps": [
+        "Order on 05-17. Delivery date: 05-23."
+      ],
+      "rewards": [
+        "Blinding Flashlight ×3",
+        "Freeze Spray ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-05-24",
+      "title": "All-Purpose Apron ×1 / Umugi Water ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "05-24",
+      "deadline": "05-24",
+      "requirements": [
+        "¥5,980"
+      ],
+      "steps": [
+        "Order on 05-24. Delivery date: 05-26."
+      ],
+      "rewards": [
+        "All-Purpose Apron ×1",
+        "Umugi Water ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-05-31",
+      "title": "Health Sandals ×1 / Diet Food ×4",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "05-31",
+      "deadline": "05-31",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 05-31. Delivery date: 06-02."
+      ],
+      "rewards": [
+        "Health Sandals ×1",
+        "Diet Food ×4"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-06-07",
+      "title": "Perfume ×1 / Health Supplement ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "06-07",
+      "deadline": "06-07",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 06-07. Delivery date: 06-10."
+      ],
+      "rewards": [
+        "Perfume ×1",
+        "Health Supplement ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-06-14",
+      "title": "Brand Watch ×1 / Mega Protein ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "06-14",
+      "deadline": "06-14",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 06-14. Delivery date: 06-16."
+      ],
+      "rewards": [
+        "Brand Watch ×1",
+        "Mega Protein ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-06-21",
+      "title": "Amenity Suit ×1 / Super Diet Food ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "06-21",
+      "deadline": "06-21",
+      "requirements": [
+        "¥9,800"
+      ],
+      "steps": [
+        "Order on 06-21. Delivery date: 06-23."
+      ],
+      "rewards": [
+        "Amenity Suit ×1",
+        "Super Diet Food ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-06-28",
+      "title": "Amronion Sprout ×2 / Buff Potato Sprout ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "06-28",
+      "deadline": "06-28",
+      "requirements": [
+        "¥2,980"
+      ],
+      "steps": [
+        "Order on 06-28. Delivery date: 06-30."
+      ],
+      "rewards": [
+        "Amronion Sprout ×2",
+        "Buff Potato Sprout ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-07-05",
+      "title": "YABA Chocolate ×3 / Doctor in Jelly ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "07-05",
+      "deadline": "07-05",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 07-05. Delivery date: 07-06."
+      ],
+      "rewards": [
+        "YABA Chocolate ×3",
+        "Doctor in Jelly ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-07-12",
+      "title": "Max Safety Shoes ×1 / Instant Curry ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "07-12",
+      "deadline": "07-12",
+      "requirements": [
+        "¥9,800"
+      ],
+      "steps": [
+        "Order on 07-12. Delivery date: 07-13."
+      ],
+      "rewards": [
+        "Max Safety Shoes ×1",
+        "Instant Curry ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-07-19",
+      "title": "Tetracone ×3 / Makaracone ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "07-19",
+      "deadline": "07-19",
+      "requirements": [
+        "¥14,800"
+      ],
+      "steps": [
+        "Order on 07-19. Delivery date: 07-23."
+      ],
+      "rewards": [
+        "Tetracone ×3",
+        "Makaracone ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-07-26",
+      "title": "Brand Wallet ×1 / Perfume ×1",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "07-26",
+      "deadline": "07-26",
+      "requirements": [
+        "¥6,980"
+      ],
+      "steps": [
+        "Order on 07-26. Delivery date: 07-28."
+      ],
+      "rewards": [
+        "Brand Wallet ×1",
+        "Perfume ×1"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-08-09",
+      "title": "Isotope Soda ×10 / Mad Bull ×20",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "08-09",
+      "deadline": "08-09",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 08-09. Delivery date: 08-15."
+      ],
+      "rewards": [
+        "Isotope Soda ×10",
+        "Mad Bull ×20"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-08-17",
+      "title": "Curse Paper ×3 / Vanish Ball ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "08-17",
+      "deadline": "08-17",
+      "requirements": [
+        "¥3,980"
+      ],
+      "steps": [
+        "Order on 08-17. Delivery date: 08-18."
+      ],
+      "rewards": [
+        "Curse Paper ×3",
+        "Vanish Ball ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-08-23",
+      "title": "Soul Spinach Sprout ×2 / Buff Potato Sprout ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "08-23",
+      "deadline": "08-23",
+      "requirements": [
+        "¥2,980"
+      ],
+      "steps": [
+        "Order on 08-23. Delivery date: 08-25."
+      ],
+      "rewards": [
+        "Soul Spinach Sprout ×2",
+        "Buff Potato Sprout ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-08-30",
+      "title": "Fierce Sutra ×3 / Depleting Sutra ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "08-30",
+      "deadline": "08-30",
+      "requirements": [
+        "¥9,800"
+      ],
+      "steps": [
+        "Order on 08-30. Delivery date: 09-01."
+      ],
+      "rewards": [
+        "Fierce Sutra ×3",
+        "Depleting Sutra ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-09-06",
+      "title": "Brand Purse ×1 / Brand Wallet ×1",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "09-06",
+      "deadline": "09-06",
+      "requirements": [
+        "¥9,800"
+      ],
+      "steps": [
+        "Order on 09-06. Delivery date: 09-08."
+      ],
+      "rewards": [
+        "Brand Purse ×1",
+        "Brand Wallet ×1"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-09-13",
+      "title": "Emergency Vest ×1 / First Aid Kit M ×5",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "09-13",
+      "deadline": "09-13",
+      "requirements": [
+        "¥24,800"
+      ],
+      "steps": [
+        "Order on 09-13. Delivery date: 09-15."
+      ],
+      "rewards": [
+        "Emergency Vest ×1",
+        "First Aid Kit M ×5"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-09-27",
+      "title": "R/C Geta ×1 / Hyper-Metal Robot ×1",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "09-27",
+      "deadline": "09-27",
+      "requirements": [
+        "¥19,800"
+      ],
+      "steps": [
+        "Order on 09-27. Delivery date: 09-30."
+      ],
+      "rewards": [
+        "R/C Geta ×1",
+        "Hyper-Metal Robot ×1"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-10-11",
+      "title": "Paring Knife ×1 / Candy Hosui Pear ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "10-11",
+      "deadline": "10-11",
+      "requirements": [
+        "¥19,800"
+      ],
+      "steps": [
+        "Order on 10-11. Delivery date: 10-17."
+      ],
+      "rewards": [
+        "Paring Knife ×1",
+        "Candy Hosui Pear ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-10-18",
+      "title": "Instant Curry ×5 / Instant Ramen ×10",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "10-18",
+      "deadline": "10-18",
+      "requirements": [
+        "¥4,980"
+      ],
+      "steps": [
+        "Order on 10-18. Delivery date: 10-20."
+      ],
+      "rewards": [
+        "Instant Curry ×5",
+        "Instant Ramen ×10"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-10-25",
+      "title": "Pumpkin Mask ×1 / Halloween Candy ×50",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "10-25",
+      "deadline": "10-25",
+      "requirements": [
+        "¥24,800"
+      ],
+      "steps": [
+        "Order on 10-25. Delivery date: 10-28."
+      ],
+      "rewards": [
+        "Pumpkin Mask ×1",
+        "Halloween Candy ×50"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-11-01",
+      "title": "Myoho Masamura ×1 / Samurai's Haori ×1",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "11-01",
+      "deadline": "11-01",
+      "requirements": [
+        "¥39,800"
+      ],
+      "steps": [
+        "Order on 11-01. Delivery date: 11-02."
+      ],
+      "rewards": [
+        "Myoho Masamura ×1",
+        "Samurai's Haori ×1"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-11-08",
+      "title": "Japanese Doll ×3 / Homunculus ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "11-08",
+      "deadline": "11-08",
+      "requirements": [
+        "¥9,800"
+      ],
+      "steps": [
+        "Order on 11-08. Delivery date: 11-10."
+      ],
+      "rewards": [
+        "Japanese Doll ×3",
+        "Homunculus ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-11-15",
+      "title": "Sid's Jacket ×1 / Mega Protein ×8",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "11-15",
+      "deadline": "11-15",
+      "requirements": [
+        "¥39,800"
+      ],
+      "steps": [
+        "Order on 11-15. Delivery date: 11-16."
+      ],
+      "rewards": [
+        "Sid's Jacket ×1",
+        "Mega Protein ×8"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-11-22",
+      "title": "Garnet ×3 / Opal ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "11-22",
+      "deadline": "11-22",
+      "requirements": [
+        "¥49,800"
+      ],
+      "steps": [
+        "Order on 11-22. Delivery date: 11-27."
+      ],
+      "rewards": [
+        "Garnet ×3",
+        "Opal ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-11-29",
+      "title": "Shoes of Bane ×1 / Infrared Goggles ×1",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "11-29",
+      "deadline": "11-29",
+      "requirements": [
+        "¥39,800"
+      ],
+      "steps": [
+        "Order on 11-29. Delivery date: 12-01."
+      ],
+      "rewards": [
+        "Shoes of Bane ×1",
+        "Infrared Goggles ×1"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-12-06",
+      "title": "Hogyoku Apple ×3 / Hiranya Mandarin ×2",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "12-06",
+      "deadline": "12-06",
+      "requirements": [
+        "¥14,800"
+      ],
+      "steps": [
+        "Order on 12-06. Delivery date: 12-08."
+      ],
+      "rewards": [
+        "Hogyoku Apple ×3",
+        "Hiranya Mandarin ×2"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-12-13",
+      "title": "Victory Headband ×1 / Mind Supplement ×10",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "12-13",
+      "deadline": "12-13",
+      "requirements": [
+        "¥29,800"
+      ],
+      "steps": [
+        "Order on 12-13. Delivery date: 12-19."
+      ],
+      "rewards": [
+        "Victory Headband ×1",
+        "Mind Supplement ×10"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-12-20",
+      "title": "Pink Duffle Coat ×1 / Luxe Shiruko Can ×3",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "12-20",
+      "deadline": "12-20",
+      "requirements": [
+        "¥49,800"
+      ],
+      "steps": [
+        "Order on 12-20. Delivery date: 12-22."
+      ],
+      "rewards": [
+        "Pink Duffle Coat ×1",
+        "Luxe Shiruko Can ×3"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    },
+    {
+      "id": "tv-12-27",
+      "title": "Ruby ×2 / Opal ×5",
+      "summary": "Tanaka TV shopping, dorm lounge",
+      "date": "12-27",
+      "deadline": "12-27",
+      "requirements": [
+        "¥99,000"
+      ],
+      "steps": [
+        "Order on 12-27. Delivery date: 12-29."
+      ],
+      "rewards": [
+        "Ruby ×2",
+        "Opal ×5"
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/Field/Data/DataTable/DT_FldMailOrderTable.tsv",
+          "label": "Game TV schedule"
+        }
+      ]
+    }
+  ]
+}

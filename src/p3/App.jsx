@@ -2,6 +2,16 @@ import { Planner, Deadlines } from './Planner';
 import { TartarusProgress } from './TartarusProgress';
 import { MonthCalendar } from './MonthCalendar';
 import StudyReference from './StudyReference';
+import SocialLinkDialogue from './SocialLinkDialogue';
+import CampaignReference from './CampaignReference';
+import { CombatReference } from './CombatReference';
+import { PersonaReference } from './PersonaReference';
+import Requests from './Requests';
+import PartyBonding from './PartyBonding';
+import { EquipmentReference } from './EquipmentReference';
+import { COLLECTION_SECTIONS } from './campaignData';
+import campaign from '../../knowledge/p3-reload/campaign.json' with { type: 'json' };
+import dailyLife from '../../knowledge/p3-reload/daily-life.json';
 import { getMonthGuide } from './monthGuide';
 import { dateLabel, FACT_BY_ID, dateNumber, monthForDate, shiftDate } from './planner';
 import { createElement, useState, useEffect, useRef } from 'react';
@@ -11,6 +21,9 @@ import { loadState, persistState, importState, BACKUP_KEY, STORAGE_KEY, MAX_BYTE
 import './styles.css';
 
 const BASE = import.meta.env.BASE_URL;
+const VALID_TABS = ['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more', 'requests', 'combat', 'personas', 'party', 'campaign', 'equipment', 'collections', 'daily-life'];
+const TARTARUS_TABS = [['deadlines', 'Progress & rescues'], ['requests', 'Elizabeth requests'], ['combat', 'Enemies & bosses']];
+const REFERENCE_TABS = [['campaign', 'Campaign guide'], ['party', 'Dorm activities'], ['personas', 'Personas & fusion'], ['equipment', 'Equipment & shops'], ['daily-life', 'Daily life'], ['collections', 'Collections & outings']];
 const LINK_OPENINGS = Object.fromEntries(MONTHS.flatMap(month => getMonthGuide(month.id).targets).map(task => [task.opensLinkId, task]));
 
 function track(event, data = {}) {
@@ -31,12 +44,11 @@ export default function ReloadTracker() {
   const [state, setState] = useState(loaded.state);
   const [saveWarning, setSaveWarning] = useState(loaded.warning || '');
   const [savingEnabled, setSavingEnabled] = useState(!loaded.warning);
-  const validTabs = ['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more'];
-  const [tab, setTab] = useState(() => validTabs.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'calendar');
+  const [tab, setTab] = useState(() => VALID_TABS.includes(window.location.hash.slice(1)) ? window.location.hash.slice(1) : 'calendar');
   const usedTracker = useRef(false);
   const [viewMonth, setViewMonth] = useState(loaded.state.month);
   useEffect(() => {
-    const changed = () => { const next = window.location.hash.slice(1); if (['briefing', 'calendar', 'planner', 'deadlines', 'links', 'month', 'backup', 'more'].includes(next)) setTab(next); };
+    const changed = () => { const next = window.location.hash.slice(1); if (VALID_TABS.includes(next)) { setTab(next); setStatus(''); window.scrollTo(0, 0); } };
     window.addEventListener('hashchange', changed);
     return () => window.removeEventListener('hashchange', changed);
   }, []);
@@ -136,10 +148,21 @@ export default function ReloadTracker() {
         <div className="header-actions"><a href={BASE}>All games</a><a href={`${BASE}p5/`}>P5 Royal</a><a className="support-button" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support</a><button className="primary" onClick={() => selectTab('backup')}><Download size={15} /> Sync</button></div>
       </header>
       <nav className="tabs" aria-label="Tracker sections">
-        {[['briefing', BookOpen, 'Briefing'], ['calendar', CalendarDays, 'Calendar'], ['links', Users, 'Social Links'], ['deadlines', Sword, 'Tartarus'], ['more', Menu, 'More']].map(([id, Icon, title]) => <button key={id} aria-current={(tab === id || (id === 'calendar' && ['planner', 'month'].includes(tab)) || (id === 'more' && tab === 'backup')) ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 19 })}<span>{title}</span></button>)}
+        {[['briefing', BookOpen, 'Briefing'], ['calendar', CalendarDays, 'Calendar'], ['links', Users, 'Social Links'], ['deadlines', Sword, 'Tartarus'], ['more', Menu, 'More']].map(([id, Icon, title]) => <button key={id} aria-current={(tab === id || (id === 'calendar' && ['planner', 'month'].includes(tab)) || (id === 'deadlines' && TARTARUS_TABS.some(([key]) => key === tab)) || (id === 'more' && (tab === 'backup' || REFERENCE_TABS.some(([key]) => key === tab)))) ? 'page' : undefined} onClick={() => selectTab(id)}>{createElement(Icon, { size: 19 })}<span>{title}</span></button>)}
       </nav>
       <main>
         {saveWarning && <div className="warning" role="alert">{saveWarning} <button onClick={download}>Download current progress</button>{loaded.unreadableSave != null && <button onClick={downloadUnreadableSave}>Download unreadable save</button>}</div>}
+        {TARTARUS_TABS.some(([id]) => id === tab) && <nav className="reference-subnav" aria-label="Tartarus sections">{TARTARUS_TABS.map(([id, title]) => <button key={id} aria-current={id === tab ? 'page' : undefined} onClick={() => selectTab(id)}>{title}</button>)}</nav>}
+        {REFERENCE_TABS.some(([id]) => id === tab) && <nav className="reference-subnav" aria-label="Reference sections"><button onClick={() => selectTab('more')}>More</button>{REFERENCE_TABS.map(([id, title]) => <button key={id} aria-current={id === tab ? 'page' : undefined} onClick={() => selectTab(id)}>{title}</button>)}</nav>}
+        {(REFERENCE_TABS.some(([id]) => id === tab) || tab === 'combat') && <label className="name-toggle reference-spoilers"><input type="checkbox" checked={state.showEventNames} onChange={event => commit({ ...state, showEventNames: event.target.checked })} /> Show reference names and story spoilers</label>}
+        {tab === 'requests' && <Requests state={state} commit={commit} selectTab={selectTab} />}
+        {tab === 'combat' && <><button className="back-calendar" onClick={() => selectTab('campaign')}>Tartarus mechanics, boss tactics & story choices <ArrowRight size={15} /></button><CombatReference state={state} commit={commit} showSpoilers={state.showEventNames} /></>}
+        {tab === 'personas' && <PersonaReference state={state} commit={commit} showSpoilers={state.showEventNames} />}
+        {tab === 'party' && <PartyBonding state={state} commit={commit} />}
+        {tab === 'daily-life' && <section><div className="section-heading"><div><h2>Daily life</h2><p>Affinity, gifts, gardening and computer upgrades.</p></div></div><CampaignReference sections={dailyLife.sections} initialSection="daily-life" showSpoilers={state.showEventNames} /></section>}
+        {tab === 'equipment' && <EquipmentReference showSpoilers={state.showEventNames} />}
+        {tab === 'campaign' && <section><div className="section-heading"><div><h2>Campaign guide</h2><p>Tartarus mechanics, boss preparation, story choices, Linked Episodes and Theurgy. Open a story entry when you reach it.</p></div></div><CampaignReference sections={campaign.sections} showSpoilers={state.showEventNames} /></section>}
+        {tab === 'collections' && <section><div className="section-heading"><div><h2>Collections & outings</h2><p>Town fragments, dated invitations and TV offers. Each checkmark records the activity shown.</p></div></div><CampaignReference sections={COLLECTION_SECTIONS} initialSection="fragments" completedIds={state.collectionChecks} showSpoilers={state.showEventNames} onToggle={id => commit({ ...state, collectionChecks: state.collectionChecks.includes(id) ? state.collectionChecks.filter(value => value !== id) : [...state.collectionChecks, id] }, 'collection_checked')} /></section>}
         {(tab === 'calendar' || tab === 'month') && <MonthCalendar state={state} commit={commit} month={viewMonth} setMonth={setViewMonth} selectTab={selectTab} />}
         {(tab === 'planner' || tab === 'deadlines') && <>
         <section id="planner" className="date-bar" aria-label="In-game date and time">
@@ -199,6 +222,7 @@ export default function ReloadTracker() {
               {schedule?.days?.length > 0 && <p className="link-note">Usually {schedule.days.map(day => day[0].toUpperCase() + day.slice(1)).join(', ')} · {schedule.timeSlot.replaceAll('-', ' ')}{link.id === 'hermit' ? ', plus some holidays' : ''}{schedule.start && <><br />First opening: {dateLabel(schedule.start)}</>}</p>}
               {opening && <details><summary>Introduction & requirements{!state.showNames ? ' · includes names' : ''}</summary><p>{opening.detail}</p><a href={opening.sourceUrl} target="_blank" rel="noopener noreferrer">Source guide</a></details>}
               {link.kind === 'story' && <p className="link-note">{link.note}</p>}
+              {link.kind !== 'story' && <SocialLinkDialogue link={link} state={state} commit={commit} />}
               {link.kind !== 'story' && rank === 0 && <label className="introduction-check"><input type="checkbox" checked={state.unlockedLinks.includes(link.id)} onChange={() => commit({ ...state, unlockedLinks: state.unlockedLinks.includes(link.id) ? state.unlockedLinks.filter(id => id !== link.id) : [...state.unlockedLinks, link.id] }, 'introduction_confirmed')} /> I completed this introduction in-game</label>}
             </article>;
           })}</div>
@@ -206,8 +230,14 @@ export default function ReloadTracker() {
         </section>}
 
         {tab === 'more' && <section><div className="section-heading"><div><h2>More</h2><p>Reference guides, backups and tracker information.</p></div></div>
+          <div className="more-grid">{REFERENCE_TABS.map(([id, title]) => <button className="panel" key={id} onClick={() => selectTab(id)}><h3>{title}</h3><p>{{ campaign: 'Story choices, boss mechanics, episode branches and Theurgy.', party: 'Track both activity chains for every companion.', personas: 'Search the compendium, check unlocks and find fusion recipes.', equipment: 'Find shop stock, crafting recipes and materials.', 'daily-life': 'Choose gifts, raise affinity, grow crops and use computer upgrades.', collections: 'Twilight Fragments, film invitations, walks and TV shopping.' }[id]}</p></button>)}</div>
           <div className="more-grid"><a className="panel" href={`${BASE}guides/persona-3-reload-school-answers/`} onClick={() => track('p3_guide_opened', { guide: 'school-answers' })}><h3>School & exam answers</h3><p>All dated answers, exam requirements and social-stat activities.</p></a><a className="panel" href={`${BASE}guides/persona-3-reload-social-links/`} onClick={() => track('p3_guide_opened', { guide: 'social-links' })}><h3>Social Link guide</h3><p>Opening requirements and weekly schedules.</p></a><a className="panel" href={`${BASE}guides/persona-3-reload-deadlines/`} onClick={() => track('p3_guide_opened', { guide: 'deadlines' })}><h3>Deadlines guide</h3><p>Missing people, requests and episode windows.</p></a><button className="panel" onClick={() => selectTab('backup')}><h3>Sync & backup</h3><p>Move your progress to another browser or device.</p></button><button className="panel" onClick={share}><h3>Share the tracker</h3><p>Send a link to another Reload player.</p></button></div>
-          <div className="panel scope-panel"><h3>About this beta</h3><p>A flexible monthly guide for the main campaign, April through January. It is not a guaranteed 100% route. Episode Aigis is not covered. Source links and future months can reveal spoilers.</p><p>Your progress stays in this browser. Every feature is free.</p></div>
+          <div className="more-grid">{[
+            ['social-link-answers', 'Social Link answers', 'Rank-by-rank choices, friendship and romance.'],
+            ['elizabeth-requests', 'All 101 Elizabeth requests', 'Numbered solutions, rewards and requirements.'],
+            ['fusion-guide', 'Fusion guide', 'Request recipes, special fusions and DLC settings.'],
+          ].map(([slug, title, description]) => <a className="panel" key={slug} href={`${BASE}guides/persona-3-reload-${slug}/`} onClick={() => track('p3_guide_opened', { guide: slug })}><h3>{title}</h3><p>{description}</p></a>)}</div>
+          <div className="panel scope-panel"><h3>About this beta</h3><p>A companion for the whole Reload main campaign, with monthly planning, rank dialogue, requests, combat, fusion and optional activities. Beta means individual details may need corrections. Episode Aigis is a separate campaign and is not included.</p><p>Your progress stays in this browser. Every feature is free.</p></div>
         </section>}
 
         {tab === 'backup' && <section className="backup-panel" aria-labelledby="backup-title"><h2 id="backup-title">Sync & backup</h2><p>Your progress lives in this browser. It does not sync automatically. Download a backup, move the file to your other device, and import it there.</p><button className="primary" onClick={download}><Download size={18} /> Download Reload save</button>
@@ -216,7 +246,7 @@ export default function ReloadTracker() {
 
         <section className="support-panel"><div><Heart size={23} /><h2>Useful on your second screen?</h2><p>This tracker is free. Optional tips support fixes, content checks and updates.</p></div><div className="support-actions"><a className="primary" href="https://ko-fi.com/K3K11RWTSL" target="_blank" rel="noopener noreferrer" onClick={() => track('p3_support_click')}>Support on Ko-fi <ArrowRight size={17} /></a><button onClick={share}>Share the tracker</button></div></section>
         {shareFallback && <input aria-label="Public Reload tracker link" className="share-fallback" readOnly value={shareUrl} onFocus={event => event.target.select()} />}
-        <footer><a href={BASE}><ArrowLeft size={15} /> All games</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. No full in-game playthrough was performed to validate this beta. Episode Aigis and Social Link dialogue walkthroughs are not covered.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
+        <footer><a href={BASE}><ArrowLeft size={15} /> All games</a><p>Unofficial Persona 3 Reload fan tool. Not affiliated with ATLUS or SEGA. Character names and source guides can contain spoilers.</p><details><summary>Sources and scope</summary><p>Dates and requirements were compared across published player guides. The planner handles reviewed closures and usual weekdays, but story choices, rank-specific meetings and affinity can change what is possible. Episode windows are reminders to check invitations, not appointments. The companion includes every manual Social Link rank, all 101 Elizabeth requests and the main-campaign reference systems. Choices and dialogue cues are original summaries with sources. Automated and browser checks do not replace a full in-game validation run. Episode Aigis is not included.</p><ul>{SOURCES.map(source => <li key={source.id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a></li>)}</ul></details><p>Umami measures visits and feature use. Save contents, goal text and character ranks are not sent in events. <a href="https://github.com/zucram/P5Tracker/issues">Report a correction or request a feature</a>.</p></footer>
       </main>
     </div>
   );

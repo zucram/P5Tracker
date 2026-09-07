@@ -1,0 +1,3431 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "notes": "Original compact player instructions. Factual IDs, dates, dependencies and rewards follow the cited game tables; item locations and actions are cross-checked against player guides. Dates are earliest eligibility, including prerequisite and story gates. Completion means reported to Elizabeth, not item collected.",
+  "entries": [
+    {
+      "id": "request-1",
+      "number": 1,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Soul Drop ×5"
+      ],
+      "title": "Muscle Drink",
+      "steps": [
+        "Buy a Muscle Drink for ¥1,000 at Aohige Pharmacy in Paulownia Mall and give it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 1 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-2",
+      "number": 2,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "¥10,000"
+      ],
+      "title": "Old Document 1",
+      "steps": [
+        "Open the document chest on Tartarus floor 22, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 2 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 22,
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-3",
+      "number": 3,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Cure Water ×3"
+      ],
+      "title": "Defeat 100 Shadows",
+      "steps": [
+        "Reach 100 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 3 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-4",
+      "number": 4,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Snuff Soul ×2"
+      ],
+      "title": "Open 50 chests",
+      "steps": [
+        "Open 50 treasure chests across your playthrough, then report the milestone."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 4 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-5",
+      "number": 5,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Bufula Gem ×3"
+      ],
+      "title": "Persona level 13+",
+      "steps": [
+        "Keep any Persona at level 13 or higher in your active stock when speaking to Elizabeth. Leveling an existing Persona works; its base fusion level need not meet the target."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 5 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-6",
+      "number": 6,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Fierce Sutra ×2"
+      ],
+      "title": "Persona with Kouha",
+      "steps": [
+        "Archangel starts with Kouha. Fuse one through the Persona reference, retain the skill and show it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 6 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Archangel",
+      "skill": "Kouha",
+      "requirements": [
+        "Complete request 5."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-7",
+      "number": 7,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        2
+      ],
+      "rewards": [
+        "Makouha ×1"
+      ],
+      "title": "Juzumaru",
+      "steps": [
+        "Open the chest requiring 3 Twilight Fragments on Tartarus floor 36. Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 7 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 36,
+      "requirements": [
+        "Complete request 2."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-8",
+      "number": 8,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Speed Incense I ×3"
+      ],
+      "title": "Rarity Fortune",
+      "steps": [
+        "Enter Club Escapade with Courage rank 2 or higher. Buy a Rarity Fortune for ¥3,000.",
+        "Visit Tartarus that same evening and hunt a rare golden Shadow, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 8 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-9",
+      "number": 9,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        1
+      ],
+      "rewards": [
+        "Media ×1"
+      ],
+      "title": "12 vending-machine drinks",
+      "steps": [
+        "Buy each distinct drink from the dorm 2F and 3F, Port Island Station and Iwatodai Strip Mall 3F vending machines. Keep all 12 until you report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 9 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 1."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-10",
+      "number": 10,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        1
+      ],
+      "rewards": [
+        "Winter Uniform (M) ×1"
+      ],
+      "title": "Umiushi Beef Bowl",
+      "steps": [
+        "Buy the Umiushi Fan Book at the Iwatodai net cafe and use it on the dorm shared computer.",
+        "Order the takeaway beef bowl at Umiushi on Iwatodai 3F and bring it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 10 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 1."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-11",
+      "number": 11,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        9
+      ],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "title": "Big Eater Challenge",
+      "steps": [
+        "Accept the request and enter the challenge at Wilduck Burger. Choose responses 2, 1, 2: look away, keep eating, then picture a sour taste. Budget ¥1,800 and one time slot."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 11 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 9."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-12",
+      "number": 12,
+      "start": "05-10",
+      "deadline": "06-06",
+      "prerequisites": [],
+      "rewards": [
+        "Toy Bow ×1"
+      ],
+      "title": "Pine Resin",
+      "steps": [
+        "Accept request 12, then speak to Yukari at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 12 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-13",
+      "number": 13,
+      "start": "05-10",
+      "deadline": "06-06",
+      "prerequisites": [
+        12
+      ],
+      "rewards": [
+        "Pixel Vest ×1"
+      ],
+      "title": "Handheld Game Console",
+      "steps": [
+        "Accept request 13, then speak to Junpei at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 13 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 12."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-14",
+      "number": 14,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        2
+      ],
+      "rewards": [
+        "¥20,000"
+      ],
+      "title": "Old Document 2",
+      "steps": [
+        "Open the document chest on Tartarus floor 43, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 14 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 43,
+      "requirements": [
+        "Complete request 2."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-15",
+      "number": 15,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        3
+      ],
+      "rewards": [
+        "Umugi Water ×3"
+      ],
+      "title": "Defeat 200 Shadows",
+      "steps": [
+        "Reach 200 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 15 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 3."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-16",
+      "number": 16,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        4
+      ],
+      "rewards": [
+        "Chewing Soul ×2"
+      ],
+      "title": "Open 100 chests",
+      "steps": [
+        "Open 100 treasure chests across your playthrough, then report the milestone."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 16 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 4."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-17",
+      "number": 17,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Winter Uniform (F) ×1"
+      ],
+      "title": "Oberon with Mazio",
+      "steps": [
+        "Fuse Oberon from Archangel and Silky. Level Oberon to 17 to learn Mazio, keep the skill, and show him to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 17 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Oberon",
+      "skill": "Mazio",
+      "requirements": [
+        "Complete request 5."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-18",
+      "number": 18,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Winter Garb (F) ×1"
+      ],
+      "title": "Rose Bouquet",
+      "steps": [
+        "Buy a Rose Bouquet for ¥2,000 from Rafflesia at Port Island Station, then deliver it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 18 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-19",
+      "number": 19,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        18
+      ],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "title": "Three Jack Frost dolls",
+      "steps": [
+        "Win 3 Jack Frost Dolls at the Game Parade crane machine in Paulownia Mall. Keep playing until you have all three; the cost varies with luck."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 19 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 18."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-20",
+      "number": 20,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Steel Pipe ×1"
+      ],
+      "title": "Potent Medicine",
+      "steps": [
+        "Accept the request and visit the school nurse. Visiting on a school day after Tartarus gives access to his medicine conversation; ask about the request and take the item to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 20 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-21",
+      "number": 21,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        14
+      ],
+      "rewards": [
+        "¥30,000"
+      ],
+      "title": "Old Document 3",
+      "steps": [
+        "Open the document chest on Tartarus floor 69, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 21 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 69,
+      "requirements": [
+        "Complete request 14."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-22",
+      "number": 22,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        15
+      ],
+      "rewards": [
+        "Bead ×3"
+      ],
+      "title": "Defeat 300 Shadows",
+      "steps": [
+        "Reach 300 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 22 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 15."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-23",
+      "number": 23,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "title": "Perform 20 fusions",
+      "steps": [
+        "Perform 20 Persona fusions in total, then report the milestone. Register useful Personas before fusing them away."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 23 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-24",
+      "number": 24,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Sugar Key ×1"
+      ],
+      "title": "Persona level 23+",
+      "steps": [
+        "Keep any Persona at level 23 or higher in your active stock when speaking to Elizabeth. Leveling an existing Persona works; its base fusion level need not meet the target."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 24 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 5."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-25",
+      "number": 25,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        17
+      ],
+      "rewards": [
+        "Winter Garb (M) ×1"
+      ],
+      "title": "Mithras level 26+",
+      "steps": [
+        "Fuse Oberon and Leanan Sidhe into Mithras, then level him to at least 26 before reporting. Arcana bonus experience can help, but no particular Social Link rank is required."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 25 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Mithras",
+      "requirements": [
+        "Complete request 17."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-26",
+      "number": 26,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        7
+      ],
+      "rewards": [
+        "Crit Rate Boost ×1"
+      ],
+      "title": "Onimaru Kunitsuna",
+      "steps": [
+        "Open the chest requiring 3 Twilight Fragments on Tartarus floor 54. Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 26 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 54,
+      "requirements": [
+        "Complete request 7."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-27",
+      "number": 27,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [],
+      "rewards": [
+        "Gallant Sneakers ×1"
+      ],
+      "title": "Triangular Sword",
+      "steps": [
+        "Accept request 27, then speak to Mitsuru at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 27 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-28",
+      "number": 28,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [
+        27
+      ],
+      "rewards": [
+        "Spiked Bat ×1"
+      ],
+      "title": "Protein",
+      "steps": [
+        "Accept request 28, then speak to Akihiko at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 28 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 27."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-29",
+      "number": 29,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [],
+      "rewards": [
+        "Power Incense I ×5"
+      ],
+      "title": "Fashionable Glasses",
+      "steps": [
+        "Speak to the accessory vendor inside Club Escapade. Bring a Black Quartz to negotiate the ¥10,000 price.",
+        "Black Quartz is available from Lustful Snake drops in upper Arqa or the floor 64 rescue reward. Keep the glasses for Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 29 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-30",
+      "number": 30,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        21
+      ],
+      "rewards": [
+        "¥40,000"
+      ],
+      "title": "Old Document 4",
+      "steps": [
+        "Open the document chest on Tartarus floor 92, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 30 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 92,
+      "requirements": [
+        "Complete request 21."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-31",
+      "number": 31,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        22
+      ],
+      "rewards": [
+        "Kamimusubi Water ×2"
+      ],
+      "title": "Defeat 450 Shadows",
+      "steps": [
+        "Reach 450 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 31 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 22."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-32",
+      "number": 32,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        16
+      ],
+      "rewards": [
+        "Snuff Soul ×6"
+      ],
+      "title": "Open 150 chests",
+      "steps": [
+        "Open 150 treasure chests across your playthrough, then report the milestone."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 32 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 16."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-33",
+      "number": 33,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        23
+      ],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "title": "Perform 35 fusions",
+      "steps": [
+        "Perform 35 Persona fusions in total, then report the milestone. Register useful Personas before fusing them away."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 33 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 23."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-34",
+      "number": 34,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        24,
+        6
+      ],
+      "rewards": [
+        "Attack Mirror ×3"
+      ],
+      "title": "Persona with Torrent Shot",
+      "steps": [
+        "Eligor starts with Torrent Shot. Obtain one through fusion and retain the skill when reporting."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 34 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Eligor",
+      "skill": "Torrent Shot",
+      "requirements": [
+        "Complete request 24.",
+        "Complete request 6."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-35",
+      "number": 35,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        25
+      ],
+      "rewards": [
+        "Mitsuru's Maid Outfit ×1"
+      ],
+      "title": "Mothman with Agilao",
+      "steps": [
+        "Defeat the gatekeeper on Tartarus floor 82 to unlock Mothman.",
+        "Fuse Sati with Agilao and Shiisaa into Mothman, inheriting Agilao. Show the result to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 35 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Mothman",
+      "skill": "Agilao",
+      "floor": 82,
+      "requirements": [
+        "Complete request 25."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-36",
+      "number": 36,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        8
+      ],
+      "rewards": [
+        "Onyx ×7"
+      ],
+      "title": "Rustic Coin",
+      "steps": [
+        "Defeat a rare golden Shadow in Yabbashah and keep its Rustic Coin. A Rarity Fortune before Tartarus increases rare encounters."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 36 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 8."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-37",
+      "number": 37,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Black Sword ×1"
+      ],
+      "title": "First Monad Passage",
+      "steps": [
+        "After the floor 80 Monad tutorial, clear all encounters in the fixed Monad Passage on floor 91. Open its end chests and report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 37 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 91,
+      "requirements": [],
+      "date": "06-13"
+    },
+    {
+      "id": "request-38",
+      "number": 38,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        10
+      ],
+      "rewards": [
+        "Nihil Cloth ×1"
+      ],
+      "title": "Chilled Taiyaki",
+      "steps": [
+        "Buy the School X Site Note from the URL seller in Club Escapade, then read it on the dorm computer. Buy Lukewarm Taiyaki at the school store.",
+        "Put one in the dorm refrigerator when there is space, then collect it the next day. Later refrigerator opportunities include July 29, August 27, September 26 and November 11. Bring one Chilled Taiyaki to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 38 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 10."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-39",
+      "number": 39,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        20
+      ],
+      "rewards": [
+        "Summer Uniform (F) ×1"
+      ],
+      "title": "Gekkoukan music CD",
+      "steps": [
+        "With the request accepted, examine the PA Room on school 2F beside your classroom. Collect the CD and report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 39 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 20."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-40",
+      "number": 40,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "title": "Max Safety Shoes",
+      "steps": [
+        "Buy the ¥9,800 TV offer on July 12 and wait for delivery. Keep the shoes for Elizabeth.",
+        "If you missed the offer, check the Port Island Station seller. The July 12 date is a purchase opportunity, not a confirmed turn-in deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 40 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "opportunity": "07-12",
+      "requirements": [],
+      "date": "07-09"
+    },
+    {
+      "id": "request-41",
+      "number": 41,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        40
+      ],
+      "rewards": [
+        "Nihil Blade ×1"
+      ],
+      "title": "Tanaka's autograph",
+      "steps": [
+        "Start the Devil Social Link with Tanaka to receive the relevant autograph/business card, then show it to Elizabeth. See Devil introduction requirements in Social Links."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 41 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 40."
+      ],
+      "date": "07-09"
+    },
+    {
+      "id": "request-42",
+      "number": 42,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Summer Garb (M) ×1"
+      ],
+      "title": "Feed the station cat",
+      "steps": [
+        "Buy 4 Super Cat Foods from Aohige Pharmacy, then feed the cat at Port Island Station Outskirts on four different days. Report once the sequence finishes."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 42 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "07-09"
+    },
+    {
+      "id": "request-43",
+      "number": 43,
+      "start": "07-09",
+      "deadline": "08-04",
+      "prerequisites": [],
+      "rewards": [
+        "Jack's Gloves ×1"
+      ],
+      "title": "Christmas Star",
+      "steps": [
+        "Accept request 43, then speak to Fuuka at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 43 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "07-09"
+    },
+    {
+      "id": "request-44",
+      "number": 44,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Amethyst ×5"
+      ],
+      "title": "Yakushima beach souvenir",
+      "steps": [
+        "Accept request 44 before leaving for Yakushima.",
+        "During free exploration on July 20, inspect the beach for a seashell or another souvenir. Take it to Elizabeth after returning."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 44 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "opportunity": "07-20",
+      "requirements": [],
+      "date": "07-09"
+    },
+    {
+      "id": "request-45",
+      "number": 45,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        30
+      ],
+      "rewards": [
+        "¥50,000"
+      ],
+      "title": "Old Document 5",
+      "steps": [
+        "Open the document chest on Tartarus floor 118, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 45 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 118,
+      "requirements": [
+        "Complete request 30."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-46",
+      "number": 46,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        31
+      ],
+      "rewards": [
+        "Bead Chain ×2"
+      ],
+      "title": "Defeat 600 Shadows",
+      "steps": [
+        "Reach 600 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 46 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 31."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-47",
+      "number": 47,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        32
+      ],
+      "rewards": [
+        "Precious Egg ×2"
+      ],
+      "title": "Open 200 chests",
+      "steps": [
+        "Open 200 treasure chests across your playthrough, then report the milestone."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 47 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 32."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-48",
+      "number": 48,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        33
+      ],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "title": "Perform 50 fusions",
+      "steps": [
+        "Perform 50 Persona fusions in total, then report the milestone. Register useful Personas before fusing them away."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 48 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 33."
+      ],
+      "date": "06-13"
+    },
+    {
+      "id": "request-49",
+      "number": 49,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        24
+      ],
+      "rewards": [
+        "Marionette ×1"
+      ],
+      "title": "Persona level 38+",
+      "steps": [
+        "Keep any Persona at level 38 or higher in your active stock when speaking to Elizabeth. Leveling an existing Persona works; its base fusion level need not meet the target."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 49 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 24."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-50",
+      "number": 50,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        24
+      ],
+      "rewards": [
+        "Guard Incense II ×3"
+      ],
+      "title": "King and I Theurgy",
+      "steps": [
+        "Register both King Frost and Black Frost. Request 24 unlocks King Frost; Black Frost uses Jack Frost, Jack-o'-Lantern and King Frost in special fusion.",
+        "Speak to Elizabeth to unlock King and I, then report the request."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 50 reference"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-elizabeth-request-guide/",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Black Frost",
+      "requirements": [
+        "Complete request 24."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-51",
+      "number": 51,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Multi-Target Boost ×1"
+      ],
+      "title": "Outenta Mitsuyo",
+      "steps": [
+        "Craft at Mayoido Antiques using Nihil Blade ×1, Black Quartz ×5.",
+        "Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 51 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "equipment": "Outenta Mitsuyo",
+      "requirements": [],
+      "date": "08-08"
+    },
+    {
+      "id": "request-52",
+      "number": 52,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        38
+      ],
+      "rewards": [
+        "Legendary Cleaver ×1"
+      ],
+      "title": "Home-cooked food",
+      "steps": [
+        "Spend an evening cooking with Yukari or Akihiko at the dorm. Save the resulting food and bring it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 52 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 38."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-53",
+      "number": 53,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        52,
+        78
+      ],
+      "rewards": [
+        "Ergotite Shard ×1"
+      ],
+      "title": "Home-grown potato",
+      "steps": [
+        "Buy a Buff Potato Sprout at Rafflesia, plant it on the dorm roof and harvest it after 12 days. Keep a Tarukaja Potato for Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 53 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 52.",
+        "Complete request 78."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-54",
+      "number": 54,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        42
+      ],
+      "rewards": [
+        "Lime Swimwear ×1"
+      ],
+      "title": "Shrine visits",
+      "steps": [
+        "Accept the request and examine the Naganaki Shrine altar on three different days. Collect the ¥500 bill from the sequence and bring it to Elizabeth; 100 time-consuming visits are unnecessary."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 54 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 42."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-55",
+      "number": 55,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Space Badge ×1"
+      ],
+      "title": "Proof of a maxed bond",
+      "steps": [
+        "Reach rank 10 with a Social Link and bring the keepsake from the final meeting to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 55 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "08-08"
+    },
+    {
+      "id": "request-56",
+      "number": 56,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        11
+      ],
+      "rewards": [
+        "AS Generic Material ×1"
+      ],
+      "title": "Queen Elizabeth drink",
+      "steps": [
+        "With Charm rank 5 or higher, ask at Que Sera Sera in Port Island Station Outskirts for the drink. Bring it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 56 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 11."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-57",
+      "number": 57,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        10
+      ],
+      "rewards": [
+        "Twilight Fragment ×8"
+      ],
+      "title": "Aojiru",
+      "steps": [
+        "Ask Aohige Pharmacy about the drink. Exchange 2 Topaz and 1 Turquoise for a Vintage Yagen at Mayoido Antiques.",
+        "Bring the Yagen back to the pharmacy, then give the resulting True Aohige Aojiru to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 57 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 10."
+      ],
+      "date": "08-08"
+    },
+    {
+      "id": "request-58",
+      "number": 58,
+      "start": "08-08",
+      "deadline": "08-31",
+      "prerequisites": [],
+      "rewards": [
+        "Turquoise ×20"
+      ],
+      "title": "Barter chain",
+      "steps": [
+        "Take Elizabeth's bandage to the man in Port Island Station Outskirts.",
+        "Trade the resulting student handbook at Port Island Station, then take the catnip to the cat-loving boy on Iwatodai 1F.",
+        "Return the Cat Ear Headband to Elizabeth before August 31."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 58 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "08-08"
+    },
+    {
+      "id": "request-59",
+      "number": 59,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        45
+      ],
+      "rewards": [
+        "¥70,000"
+      ],
+      "title": "Old Document 6",
+      "steps": [
+        "Open the document chest on Tartarus floor 144, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 59 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 144,
+      "requirements": [
+        "Complete request 45."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-60",
+      "number": 60,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        46
+      ],
+      "rewards": [
+        "Soma ×1"
+      ],
+      "title": "Defeat 800 Shadows",
+      "steps": [
+        "Reach 800 total Shadow defeats. Progress is cumulative; report each unlocked milestone to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 60 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 46."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-61",
+      "number": 61,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        49
+      ],
+      "rewards": [
+        "Atrophying Sutra ×2"
+      ],
+      "title": "Persona level 46+",
+      "steps": [
+        "Keep any Persona at level 46 or higher in your active stock when speaking to Elizabeth. Leveling an existing Persona works; its base fusion level need not meet the target."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 61 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 49."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-62",
+      "number": 62,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        35
+      ],
+      "rewards": [
+        "Summer Uniform (M) ×1"
+      ],
+      "title": "Titania with Matarukaja",
+      "steps": [
+        "Level Shiki-Ouji to 47 for Matarukaja, then fuse it with Kurama Tengu into Titania and inherit the skill."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 62 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Titania",
+      "skill": "Matarukaja",
+      "requirements": [
+        "Complete request 35."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-63",
+      "number": 63,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        50
+      ],
+      "rewards": [
+        "Summer Garb (F) ×1"
+      ],
+      "title": "Rangda level 54+",
+      "steps": [
+        "Fuse Titania and Thoth into Rangda, then level her to at least 54. Keep Rangda in your active stock when reporting."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 63 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Rangda",
+      "requirements": [
+        "Complete request 50."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-64",
+      "number": 64,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        36
+      ],
+      "rewards": [
+        "Topaz ×7"
+      ],
+      "title": "Sumptuous Coin",
+      "steps": [
+        "Defeat a rare golden Shadow in Tziah and bring its Sumptuous Coin to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 64 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 36."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-65",
+      "number": 65,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        26
+      ],
+      "rewards": [
+        "Quality Nihil Ore ×1"
+      ],
+      "title": "Ote-gine",
+      "steps": [
+        "Open the chest requiring 3 Twilight Fragments on Tartarus floor 143. Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 65 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 143,
+      "requirements": [
+        "Complete request 26."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-66",
+      "number": 66,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        39
+      ],
+      "rewards": [
+        "Quality Nihil Blade ×1"
+      ],
+      "title": "Anatomical doll",
+      "steps": [
+        "Visit the science laboratory on school 1F with the request accepted. Take the anatomical model to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 66 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 39."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-67",
+      "number": 67,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        54
+      ],
+      "rewards": [
+        "Scrub Brush ×1"
+      ],
+      "title": "Peacock Mahjong Tile",
+      "steps": [
+        "With Courage rank 6, visit Red Hawk Mahjong in Port Island Station Outskirts and ask about the request. Take the tile to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 67 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 54."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-68",
+      "number": 68,
+      "start": "09-10",
+      "deadline": "10-02",
+      "prerequisites": [],
+      "rewards": [
+        "Bus Stop Sign ×1"
+      ],
+      "title": "Fruit Knife",
+      "steps": [
+        "Accept request 68, then speak to Shinjiro at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 68 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "09-10"
+    },
+    {
+      "id": "request-69",
+      "number": 69,
+      "start": "09-10",
+      "deadline": "10-02",
+      "prerequisites": [
+        68
+      ],
+      "rewards": [
+        "Rocket Punch ×1"
+      ],
+      "title": "Machine Oil",
+      "steps": [
+        "Accept request 69, then speak to Aigis at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 69 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 68."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-70",
+      "number": 70,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        59
+      ],
+      "rewards": [
+        "¥90,000"
+      ],
+      "title": "Old Document 7",
+      "steps": [
+        "Open the document chest on Tartarus floor 172, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 70 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 172,
+      "requirements": [
+        "Complete request 59."
+      ],
+      "date": "10-06"
+    },
+    {
+      "id": "request-71",
+      "number": 71,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        62
+      ],
+      "rewards": [
+        "Sky Sundress ×1"
+      ],
+      "title": "Siegfried with Endure",
+      "steps": [
+        "Level Hecatoncheires to 48 for Endure, then fuse it with Shiki-Ouji into Siegfried and inherit Endure. The Endure card from request 73 is another option."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 71 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Siegfried",
+      "skill": "Endure",
+      "requirements": [
+        "Complete request 62."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-72",
+      "number": 72,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        63
+      ],
+      "rewards": [
+        "Blue Shorts ×1"
+      ],
+      "title": "Daisoujou with Regenerate 3",
+      "steps": [
+        "Level Suzaku to 56 for Regenerate 3, then fuse it with Hecatoncheires into Daisoujou and inherit the skill."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 72 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Daisoujou",
+      "skill": "Regenerate 3",
+      "requirements": [
+        "Complete request 63."
+      ],
+      "date": "09-10"
+    },
+    {
+      "id": "request-73",
+      "number": 73,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        51
+      ],
+      "rewards": [
+        "Endure ×1"
+      ],
+      "title": "Mikazuki Munechika",
+      "steps": [
+        "Craft at Mayoido Antiques using Quality Nihil Blade ×1, Emerald ×3, Silver Quartz ×2.",
+        "Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 73 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "equipment": "Mikazuki Munechika",
+      "requirements": [
+        "Complete request 51."
+      ],
+      "date": "10-06"
+    },
+    {
+      "id": "request-74",
+      "number": 74,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        53
+      ],
+      "rewards": [
+        "Ergotite Chunk ×1"
+      ],
+      "title": "Inari Sushi",
+      "steps": [
+        "With Academics rank 4, examine the small Inari shrine at Naganaki Shrine after accepting the request. Bring the sushi to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 74 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 53."
+      ],
+      "date": "10-06"
+    },
+    {
+      "id": "request-75",
+      "number": 75,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        66
+      ],
+      "rewards": [
+        "Twilight Fragment ×7"
+      ],
+      "title": "Sengoku-era helmet",
+      "steps": [
+        "Visit the Faculty Office at school on eight separate school days after accepting the request. Continue the teacher's conversations until he gives you the helmet, then report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 75 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 66."
+      ],
+      "date": "10-06"
+    },
+    {
+      "id": "request-76",
+      "number": 76,
+      "start": "10-06",
+      "deadline": "11-01",
+      "prerequisites": [],
+      "rewards": [
+        "Garnet ×5"
+      ],
+      "title": "Glasses Wipe",
+      "steps": [
+        "Accept request 76, then speak to Ikutsuki at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 76 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "10-06"
+    },
+    {
+      "id": "request-77",
+      "number": 77,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Small Cheongsam ×1"
+      ],
+      "title": "Elizabeth visit: Paulownia Mall",
+      "steps": [
+        "Complete other requests and the preceding outing until this invitation appears. The listed target is about 15 completed requests; some guides count eligible requests differently.",
+        "Accept the request, then speak to Elizabeth outside the Velvet Room during the daytime and choose the outing."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 77 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "completionTarget": 15,
+      "requirements": [],
+      "date": "05-10"
+    },
+    {
+      "id": "request-78",
+      "number": 78,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        77
+      ],
+      "rewards": [
+        "Book of the Ancients ×1"
+      ],
+      "title": "Elizabeth visit: Iwatodai Station",
+      "steps": [
+        "Complete other requests and the preceding outing until this invitation appears. The listed target is about 30 completed requests; some guides count eligible requests differently.",
+        "Accept the request, then speak to Elizabeth outside the Velvet Room during the daytime and choose the outing."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 78 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "completionTarget": 30,
+      "requirements": [
+        "Complete request 77."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-79",
+      "number": 79,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        78
+      ],
+      "rewards": [
+        "Vitality Sash ×1"
+      ],
+      "title": "Elizabeth visit: Naganaki Shrine",
+      "steps": [
+        "Complete other requests and the preceding outing until this invitation appears. The listed target is about 45 completed requests; some guides count eligible requests differently.",
+        "Accept the request, then speak to Elizabeth outside the Velvet Room during the daytime and choose the outing."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 79 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "completionTarget": 45,
+      "requirements": [
+        "Complete request 78."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-80",
+      "number": 80,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        79
+      ],
+      "rewards": [
+        "Sorcerer's Mark ×1"
+      ],
+      "title": "Elizabeth visit: Gekkoukan High",
+      "steps": [
+        "Complete other requests and the preceding outing until this invitation appears. The listed target is about 60 completed requests; some guides count eligible requests differently.",
+        "Accept the request, then speak to Elizabeth outside the Velvet Room during the daytime and choose the outing."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 80 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "completionTarget": 60,
+      "requirements": [
+        "Complete request 79."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-81",
+      "number": 81,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        80
+      ],
+      "rewards": [
+        "Tyrant's Horn ×1"
+      ],
+      "title": "Elizabeth visit: your room",
+      "steps": [
+        "Complete other requests and the preceding outing until this invitation appears. The listed target is about 80 completed requests; some guides count eligible requests differently.",
+        "Accept the request, then speak to Elizabeth outside the Velvet Room during the daytime and choose the outing."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 81 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "completionTarget": 80,
+      "requirements": [
+        "Complete request 80."
+      ],
+      "date": "05-10"
+    },
+    {
+      "id": "request-82",
+      "number": 82,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        70
+      ],
+      "rewards": [
+        "¥120,000"
+      ],
+      "title": "Old Document 8",
+      "steps": [
+        "Open the document chest on Tartarus floor 198, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 82 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 198,
+      "requirements": [
+        "Complete request 70."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-83",
+      "number": 83,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        82
+      ],
+      "rewards": [
+        "¥150,000"
+      ],
+      "title": "Progress Report",
+      "steps": [
+        "Open the document chest on Tartarus floor 226, then report to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 83 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 226,
+      "requirements": [
+        "Complete request 82.",
+        "Harabah upper floors open December 10; the earlier request listing does not grant Tartarus access."
+      ],
+      "date": "12-04"
+    },
+    {
+      "id": "request-84",
+      "number": 84,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        61
+      ],
+      "rewards": [
+        "Empowering Sutra ×3"
+      ],
+      "title": "Persona with Tempest Slash",
+      "steps": [
+        "Chernobog starts with Tempest Slash. Fuse Mishaguji and Ganesha, retain the skill and report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 84 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Chernobog",
+      "skill": "Tempest Slash",
+      "requirements": [
+        "Complete request 61."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-85",
+      "number": 85,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        84
+      ],
+      "rewards": [
+        "Debilitator Sutra ×3"
+      ],
+      "title": "Persona with Auto Maraku",
+      "steps": [
+        "Fuse Koumokuten and Kurama Tengu into Raphael. Level Raphael to 61 for Auto Maraku and retain it when reporting."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 85 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Raphael",
+      "skill": "Auto Maraku",
+      "requirements": [
+        "Complete request 84."
+      ],
+      "date": "12-04"
+    },
+    {
+      "id": "request-86",
+      "number": 86,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        71
+      ],
+      "rewards": [
+        "Aigis's Maid Outfit ×1"
+      ],
+      "title": "Alice",
+      "steps": [
+        "Use special fusion with Pixie, Lilim, Narcissus and Titania. Keep Alice in your active stock when reporting."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 86 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Alice",
+      "requirements": [
+        "Complete request 71."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-87",
+      "number": 87,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        72
+      ],
+      "rewards": [
+        "Masakados ×1"
+      ],
+      "title": "Loki level 75+",
+      "steps": [
+        "Max the Fool Social Link through story progress to unlock Loki. Fuse Suzaku and Pazuzu, then raise Loki to at least level 75."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 87 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Loki",
+      "requirements": [
+        "Complete request 72."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-88",
+      "number": 88,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        64
+      ],
+      "rewards": [
+        "Life Aid ×1"
+      ],
+      "title": "Greedy Shadow Gold Medal",
+      "steps": [
+        "Chase and defeat a Greedy Shadow in Harabah. Keep the Gold Medal for Elizabeth. These encounters are random, so revisit eligible floors if none appears."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 88 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 64."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-89",
+      "number": 89,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        65
+      ],
+      "rewards": [
+        "Prime Nihil Ore ×1"
+      ],
+      "title": "Rai Kunimitsu",
+      "steps": [
+        "Open the chest requiring 3 Twilight Fragments on Tartarus floor 184. Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 89 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 184,
+      "requirements": [
+        "Complete request 65."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-90",
+      "number": 90,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        89
+      ],
+      "rewards": [
+        "AS Refined Material ×1"
+      ],
+      "title": "Dojigiri Yasutsuna",
+      "steps": [
+        "Open the chest requiring 3 Twilight Fragments on Tartarus floor 212. Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 90 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 212,
+      "requirements": [
+        "Complete request 89.",
+        "This floor opens December 10."
+      ],
+      "date": "12-04"
+    },
+    {
+      "id": "request-91",
+      "number": 91,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        73
+      ],
+      "rewards": [
+        "Nihil Black Model ×2"
+      ],
+      "title": "Tonbo-kiri",
+      "steps": [
+        "Craft at Mayoido Antiques using Prime Nihil Blade ×1, Diamond ×5, Gold Quartz ×2.",
+        "Keep the weapon until Elizabeth has seen it."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 91 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "equipment": "Tonbo-kiri",
+      "requirements": [
+        "Complete request 73."
+      ],
+      "date": "01-01"
+    },
+    {
+      "id": "request-92",
+      "number": 92,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        67
+      ],
+      "rewards": [
+        "Yukari's Maid Outfit ×1"
+      ],
+      "title": "Clean the station restroom",
+      "steps": [
+        "Take Elizabeth's cleaning supplies to the Port Island Station restroom. Choose to scrub harder twice, then report."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 92 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 67."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-93",
+      "number": 93,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        75,
+        80
+      ],
+      "rewards": [
+        "Fuuka's Maid Outfit ×1"
+      ],
+      "title": "Water the school flowers",
+      "steps": [
+        "Take Elizabeth's watering can to the school roof. Water the planter second from the right and return to her."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 93 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 75.",
+        "Complete request 80."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-94",
+      "number": 94,
+      "start": "11-06",
+      "deadline": "11-30",
+      "prerequisites": [],
+      "rewards": [
+        "Bone ×1"
+      ],
+      "title": "Gourmet Dog Food",
+      "steps": [
+        "Accept request 94, then speak to Koromaru at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 94 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "11-06"
+    },
+    {
+      "id": "request-95",
+      "number": 95,
+      "start": "11-06",
+      "deadline": "11-30",
+      "prerequisites": [
+        94
+      ],
+      "rewards": [
+        "Sacrificial Idol ×1"
+      ],
+      "title": "Featherman R Figure",
+      "steps": [
+        "Accept request 95, then speak to Ken at the dorm in the evening. Take the item to Elizabeth before the deadline."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 95 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 94."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-96",
+      "number": 96,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Aigis's Winter Uniform ×1"
+      ],
+      "title": "Oden Juice",
+      "steps": [
+        "Talk to the drink-loving student near the school persimmon tree.",
+        "During the November Kyoto trip, buy all 3 distinct regional drinks from the hotel vending machine and keep them.",
+        "After the trip, trade with the student and pay ¥5,000 for Oden Juice, then deliver it to Elizabeth."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 96 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "opportunity": "11-17",
+      "requirements": [],
+      "date": "11-06"
+    },
+    {
+      "id": "request-97",
+      "number": 97,
+      "start": "12-04",
+      "deadline": "12-25",
+      "prerequisites": [],
+      "rewards": [
+        "Ruby ×3"
+      ],
+      "title": "Christmas present",
+      "steps": [
+        "Accept the request and speak to the Eccentric Man on Iwatodai Strip Mall 2F at night. He asks for proof of a good deed.",
+        "Bring the thank-you letter associated with rescuing missing people. Sources disagree whether Ayako specifically is required, so rescue everyone and collect police-station rewards as they appear.",
+        "Give the resulting present to Elizabeth by December 25."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 97 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [],
+      "date": "12-04"
+    },
+    {
+      "id": "request-98",
+      "number": 98,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        86,
+        87
+      ],
+      "rewards": [
+        "Nihil White Model ×2"
+      ],
+      "title": "Masakado with Charge",
+      "steps": [
+        "Complete the fusion requests that unlock Masakado. Level Setanta to 31 for Charge, then fuse it with Jack-o'-Lantern into Jikokuten and inherit Charge.",
+        "Special-fuse Zouchouten, Jikokuten, Koumokuten and Bishamonten into Masakado, passing Charge into the result."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 98 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "persona": "Masakado",
+      "skill": "Charge",
+      "requirements": [
+        "Complete request 86.",
+        "Complete request 87."
+      ],
+      "date": "11-06"
+    },
+    {
+      "id": "request-99",
+      "number": 99,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        37
+      ],
+      "rewards": [
+        "Dead Moon's Husk ×1"
+      ],
+      "title": "Shadow of the Void",
+      "steps": [
+        "Clear the earlier fixed Monad Passages, then defeat Shadow of the Void in the passage on floor 255. Bring healing, status cures and charged Theurgies; see the boss reference for its skills."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 99 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 255,
+      "requirements": [
+        "Complete request 37."
+      ],
+      "date": "01-01"
+    },
+    {
+      "id": "request-100",
+      "number": 100,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        83
+      ],
+      "rewards": [
+        "Divine Pillar ×1"
+      ],
+      "title": "Bloody Button",
+      "steps": [
+        "Wait on a normal Tartarus floor until the Reaper appears, defeat it, and keep its Bloody Button. Prepare for strong multi-element attacks, ailments and instant kills; see Combat for the full skill list."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 100 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "requirements": [
+        "Complete request 83."
+      ],
+      "date": "01-01"
+    },
+    {
+      "id": "request-101",
+      "number": 101,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        99,
+        100,
+        81
+      ],
+      "rewards": [
+        "Omnipotent Orb ×1"
+      ],
+      "title": "Ultimate adversary",
+      "steps": [
+        "Finish requests 81, 99 and 100, accept request 101, and enter the final Monad challenge from floor 255 alone. Fuuka remains your navigator.",
+        "Read the optional boss preparation in Campaign before attempting this fight. Ordinary boss tactics can break its special rules."
+      ],
+      "sources": [
+        {
+          "url": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+          "label": "Game request table"
+        },
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/elizabeth-requests",
+          "label": "Request 101 reference"
+        },
+        {
+          "url": "https://www.rpgsite.net/guide/15324-persona-3-reload-elizabeth-requests-guide-solutions-rewards-for-every-quest",
+          "label": "Player guide"
+        }
+      ],
+      "floor": 255,
+      "spoiler": true,
+      "requirements": [
+        "Complete request 99.",
+        "Complete request 100.",
+        "Complete request 81."
+      ],
+      "date": "01-01"
+    }
+  ]
+}

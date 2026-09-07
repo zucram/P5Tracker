@@ -1,0 +1,1477 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "source": "https://github.com/aqiu384/megaten-database/blob/1f23e7bf87982b190aab7d653ed4095a49471e84/src/p3r/Content/Xrd777/UI/Tables/VelvetRoomQuestDataAsset.tsv",
+  "notes": "Factual dates, request IDs, prerequisites and rewards transcribed from extracted game tables. Start dates are earliest table eligibility, not a guarantee that story flags or the requested area are available. April 1 defaults are normalized to the May 10 request-system opening. Unused requests 102+ excluded.",
+  "entries": [
+    {
+      "id": "request-1",
+      "number": 1,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Soul Drop ×5"
+      ],
+      "requestType": 1,
+      "targetId": 16389,
+      "targetValue": 1
+    },
+    {
+      "id": "request-2",
+      "number": 2,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "¥10,000"
+      ],
+      "requestType": 1,
+      "targetId": 20533,
+      "targetValue": 1
+    },
+    {
+      "id": "request-3",
+      "number": 3,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Cure Water ×3"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 100
+    },
+    {
+      "id": "request-4",
+      "number": 4,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Snuff Soul ×2"
+      ],
+      "requestType": 5,
+      "targetId": 234,
+      "targetValue": 50
+    },
+    {
+      "id": "request-5",
+      "number": 5,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Bufula Gem ×3"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 13
+    },
+    {
+      "id": "request-6",
+      "number": 6,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Fierce Sutra ×2"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 56
+    },
+    {
+      "id": "request-7",
+      "number": 7,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        2
+      ],
+      "rewards": [
+        "Makouha ×1"
+      ],
+      "requestType": 1,
+      "targetId": 99,
+      "targetValue": 1
+    },
+    {
+      "id": "request-8",
+      "number": 8,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Speed Incense I ×3"
+      ],
+      "requestType": 2,
+      "targetId": 536874378,
+      "targetValue": 0
+    },
+    {
+      "id": "request-9",
+      "number": 9,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        1
+      ],
+      "rewards": [
+        "Media ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874374,
+      "targetValue": 0
+    },
+    {
+      "id": "request-10",
+      "number": 10,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        1
+      ],
+      "rewards": [
+        "Winter Uniform (M) ×1"
+      ],
+      "requestType": 1,
+      "targetId": 16684,
+      "targetValue": 1
+    },
+    {
+      "id": "request-11",
+      "number": 11,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        9
+      ],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "requestType": 2,
+      "targetId": 536874377,
+      "targetValue": 0
+    },
+    {
+      "id": "request-12",
+      "number": 12,
+      "start": "05-10",
+      "deadline": "06-06",
+      "prerequisites": [],
+      "rewards": [
+        "Toy Bow ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20548,
+      "targetValue": 1
+    },
+    {
+      "id": "request-13",
+      "number": 13,
+      "start": "05-10",
+      "deadline": "06-06",
+      "prerequisites": [
+        12
+      ],
+      "rewards": [
+        "Pixel Vest ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20552,
+      "targetValue": 1
+    },
+    {
+      "id": "request-14",
+      "number": 14,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        2
+      ],
+      "rewards": [
+        "¥20,000"
+      ],
+      "requestType": 1,
+      "targetId": 20534,
+      "targetValue": 1
+    },
+    {
+      "id": "request-15",
+      "number": 15,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        3
+      ],
+      "rewards": [
+        "Umugi Water ×3"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 200
+    },
+    {
+      "id": "request-16",
+      "number": 16,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        4
+      ],
+      "rewards": [
+        "Chewing Soul ×2"
+      ],
+      "requestType": 5,
+      "targetId": 234,
+      "targetValue": 100
+    },
+    {
+      "id": "request-17",
+      "number": 17,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Winter Uniform (F) ×1"
+      ],
+      "requestType": 4,
+      "targetId": 61,
+      "targetValue": 43
+    },
+    {
+      "id": "request-18",
+      "number": 18,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Winter Garb (F) ×1"
+      ],
+      "requestType": 1,
+      "targetId": 16499,
+      "targetValue": 1
+    },
+    {
+      "id": "request-19",
+      "number": 19,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        18
+      ],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "requestType": 1,
+      "targetId": 16512,
+      "targetValue": 3
+    },
+    {
+      "id": "request-20",
+      "number": 20,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Steel Pipe ×1"
+      ],
+      "requestType": 1,
+      "targetId": 16470,
+      "targetValue": 1
+    },
+    {
+      "id": "request-21",
+      "number": 21,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        14
+      ],
+      "rewards": [
+        "¥30,000"
+      ],
+      "requestType": 1,
+      "targetId": 20535,
+      "targetValue": 1
+    },
+    {
+      "id": "request-22",
+      "number": 22,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        15
+      ],
+      "rewards": [
+        "Bead ×3"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 300
+    },
+    {
+      "id": "request-23",
+      "number": 23,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "requestType": 5,
+      "targetId": 352,
+      "targetValue": 20
+    },
+    {
+      "id": "request-24",
+      "number": 24,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        5
+      ],
+      "rewards": [
+        "Sugar Key ×1"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 23
+    },
+    {
+      "id": "request-25",
+      "number": 25,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        17
+      ],
+      "rewards": [
+        "Winter Garb (M) ×1"
+      ],
+      "requestType": 4,
+      "targetId": 182,
+      "targetValue": 26
+    },
+    {
+      "id": "request-26",
+      "number": 26,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        7
+      ],
+      "rewards": [
+        "Crit Rate Boost ×1"
+      ],
+      "requestType": 1,
+      "targetId": 35,
+      "targetValue": 1
+    },
+    {
+      "id": "request-27",
+      "number": 27,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [],
+      "rewards": [
+        "Gallant Sneakers ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20549,
+      "targetValue": 1
+    },
+    {
+      "id": "request-28",
+      "number": 28,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [
+        27
+      ],
+      "rewards": [
+        "Spiked Bat ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20555,
+      "targetValue": 1
+    },
+    {
+      "id": "request-29",
+      "number": 29,
+      "start": "06-13",
+      "deadline": "07-05",
+      "prerequisites": [],
+      "rewards": [
+        "Power Incense I ×5"
+      ],
+      "requestType": 1,
+      "targetId": 20640,
+      "targetValue": 1
+    },
+    {
+      "id": "request-30",
+      "number": 30,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        21
+      ],
+      "rewards": [
+        "¥40,000"
+      ],
+      "requestType": 1,
+      "targetId": 20536,
+      "targetValue": 1
+    },
+    {
+      "id": "request-31",
+      "number": 31,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        22
+      ],
+      "rewards": [
+        "Kamimusubi Water ×2"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 450
+    },
+    {
+      "id": "request-32",
+      "number": 32,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        16
+      ],
+      "rewards": [
+        "Snuff Soul ×6"
+      ],
+      "requestType": 5,
+      "targetId": 234,
+      "targetValue": 150
+    },
+    {
+      "id": "request-33",
+      "number": 33,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        23
+      ],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "requestType": 5,
+      "targetId": 352,
+      "targetValue": 35
+    },
+    {
+      "id": "request-34",
+      "number": 34,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        24,
+        6
+      ],
+      "rewards": [
+        "Attack Mirror ×3"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 141
+    },
+    {
+      "id": "request-35",
+      "number": 35,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        25
+      ],
+      "rewards": [
+        "Mitsuru's Maid Outfit ×1"
+      ],
+      "requestType": 4,
+      "targetId": 187,
+      "targetValue": 11
+    },
+    {
+      "id": "request-36",
+      "number": 36,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        8
+      ],
+      "rewards": [
+        "Onyx ×7"
+      ],
+      "requestType": 1,
+      "targetId": 24620,
+      "targetValue": 1
+    },
+    {
+      "id": "request-37",
+      "number": 37,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Black Sword ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536872457,
+      "targetValue": 0
+    },
+    {
+      "id": "request-38",
+      "number": 38,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        10
+      ],
+      "rewards": [
+        "Nihil Cloth ×1"
+      ],
+      "requestType": 1,
+      "targetId": 16699,
+      "targetValue": 1
+    },
+    {
+      "id": "request-39",
+      "number": 39,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        20
+      ],
+      "rewards": [
+        "Summer Uniform (F) ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20564,
+      "targetValue": 1
+    },
+    {
+      "id": "request-40",
+      "number": 40,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Twilight Fragment ×3"
+      ],
+      "requestType": 1,
+      "targetId": 8213,
+      "targetValue": 1
+    },
+    {
+      "id": "request-41",
+      "number": 41,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [
+        40
+      ],
+      "rewards": [
+        "Nihil Blade ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20565,
+      "targetValue": 1
+    },
+    {
+      "id": "request-42",
+      "number": 42,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Summer Garb (M) ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536871147,
+      "targetValue": 0
+    },
+    {
+      "id": "request-43",
+      "number": 43,
+      "start": "07-09",
+      "deadline": "08-04",
+      "prerequisites": [],
+      "rewards": [
+        "Jack's Gloves ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20551,
+      "targetValue": 1
+    },
+    {
+      "id": "request-44",
+      "number": 44,
+      "start": "07-09",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Amethyst ×5"
+      ],
+      "requestType": 2,
+      "targetId": 536874389,
+      "targetValue": 0
+    },
+    {
+      "id": "request-45",
+      "number": 45,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        30
+      ],
+      "rewards": [
+        "¥50,000"
+      ],
+      "requestType": 1,
+      "targetId": 20537,
+      "targetValue": 1
+    },
+    {
+      "id": "request-46",
+      "number": 46,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        31
+      ],
+      "rewards": [
+        "Bead Chain ×2"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 600
+    },
+    {
+      "id": "request-47",
+      "number": 47,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        32
+      ],
+      "rewards": [
+        "Precious Egg ×2"
+      ],
+      "requestType": 5,
+      "targetId": 234,
+      "targetValue": 200
+    },
+    {
+      "id": "request-48",
+      "number": 48,
+      "start": "06-13",
+      "deadline": null,
+      "prerequisites": [
+        33
+      ],
+      "rewards": [
+        "Twilight Fragment ×5"
+      ],
+      "requestType": 5,
+      "targetId": 352,
+      "targetValue": 50
+    },
+    {
+      "id": "request-49",
+      "number": 49,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        24
+      ],
+      "rewards": [
+        "Marionette ×1"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 38
+    },
+    {
+      "id": "request-50",
+      "number": 50,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        24
+      ],
+      "rewards": [
+        "Guard Incense II ×3"
+      ],
+      "requestType": 2,
+      "targetId": 805306429,
+      "targetValue": 0
+    },
+    {
+      "id": "request-51",
+      "number": 51,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Multi-Target Boost ×1"
+      ],
+      "requestType": 1,
+      "targetId": 292,
+      "targetValue": 1
+    },
+    {
+      "id": "request-52",
+      "number": 52,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        38
+      ],
+      "rewards": [
+        "Legendary Cleaver ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874382,
+      "targetValue": 0
+    },
+    {
+      "id": "request-53",
+      "number": 53,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        52,
+        78
+      ],
+      "rewards": [
+        "Ergotite Shard ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874383,
+      "targetValue": 0
+    },
+    {
+      "id": "request-54",
+      "number": 54,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        42
+      ],
+      "rewards": [
+        "Lime Swimwear ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20566,
+      "targetValue": 1
+    },
+    {
+      "id": "request-55",
+      "number": 55,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Space Badge ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874385,
+      "targetValue": 0
+    },
+    {
+      "id": "request-56",
+      "number": 56,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        11
+      ],
+      "rewards": [
+        "AS Generic Material ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20560,
+      "targetValue": 1
+    },
+    {
+      "id": "request-57",
+      "number": 57,
+      "start": "08-08",
+      "deadline": null,
+      "prerequisites": [
+        10
+      ],
+      "rewards": [
+        "Twilight Fragment ×8"
+      ],
+      "requestType": 1,
+      "targetId": 20576,
+      "targetValue": 1
+    },
+    {
+      "id": "request-58",
+      "number": 58,
+      "start": "08-08",
+      "deadline": "08-31",
+      "prerequisites": [],
+      "rewards": [
+        "Turquoise ×20"
+      ],
+      "requestType": 1,
+      "targetId": 20641,
+      "targetValue": 1
+    },
+    {
+      "id": "request-59",
+      "number": 59,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        45
+      ],
+      "rewards": [
+        "¥70,000"
+      ],
+      "requestType": 1,
+      "targetId": 20538,
+      "targetValue": 1
+    },
+    {
+      "id": "request-60",
+      "number": 60,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        46
+      ],
+      "rewards": [
+        "Soma ×1"
+      ],
+      "requestType": 5,
+      "targetId": 273,
+      "targetValue": 800
+    },
+    {
+      "id": "request-61",
+      "number": 61,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        49
+      ],
+      "rewards": [
+        "Atrophying Sutra ×2"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 46
+    },
+    {
+      "id": "request-62",
+      "number": 62,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        35
+      ],
+      "rewards": [
+        "Summer Uniform (M) ×1"
+      ],
+      "requestType": 4,
+      "targetId": 132,
+      "targetValue": 185
+    },
+    {
+      "id": "request-63",
+      "number": 63,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        50
+      ],
+      "rewards": [
+        "Summer Garb (F) ×1"
+      ],
+      "requestType": 4,
+      "targetId": 200,
+      "targetValue": 54
+    },
+    {
+      "id": "request-64",
+      "number": 64,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        36
+      ],
+      "rewards": [
+        "Topaz ×7"
+      ],
+      "requestType": 1,
+      "targetId": 24621,
+      "targetValue": 1
+    },
+    {
+      "id": "request-65",
+      "number": 65,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        26
+      ],
+      "rewards": [
+        "Quality Nihil Ore ×1"
+      ],
+      "requestType": 1,
+      "targetId": 235,
+      "targetValue": 1
+    },
+    {
+      "id": "request-66",
+      "number": 66,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        39
+      ],
+      "rewards": [
+        "Quality Nihil Blade ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20559,
+      "targetValue": 1
+    },
+    {
+      "id": "request-67",
+      "number": 67,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        54
+      ],
+      "rewards": [
+        "Scrub Brush ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20561,
+      "targetValue": 1
+    },
+    {
+      "id": "request-68",
+      "number": 68,
+      "start": "09-10",
+      "deadline": "10-02",
+      "prerequisites": [],
+      "rewards": [
+        "Bus Stop Sign ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20553,
+      "targetValue": 1
+    },
+    {
+      "id": "request-69",
+      "number": 69,
+      "start": "09-10",
+      "deadline": "10-02",
+      "prerequisites": [
+        68
+      ],
+      "rewards": [
+        "Rocket Punch ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20557,
+      "targetValue": 1
+    },
+    {
+      "id": "request-70",
+      "number": 70,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        59
+      ],
+      "rewards": [
+        "¥90,000"
+      ],
+      "requestType": 1,
+      "targetId": 20539,
+      "targetValue": 1
+    },
+    {
+      "id": "request-71",
+      "number": 71,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        62
+      ],
+      "rewards": [
+        "Sky Sundress ×1"
+      ],
+      "requestType": 4,
+      "targetId": 101,
+      "targetValue": 835
+    },
+    {
+      "id": "request-72",
+      "number": 72,
+      "start": "09-10",
+      "deadline": null,
+      "prerequisites": [
+        63
+      ],
+      "rewards": [
+        "Blue Shorts ×1"
+      ],
+      "requestType": 4,
+      "targetId": 125,
+      "targetValue": 786
+    },
+    {
+      "id": "request-73",
+      "number": 73,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        51
+      ],
+      "rewards": [
+        "Endure ×1"
+      ],
+      "requestType": 1,
+      "targetId": 85,
+      "targetValue": 1
+    },
+    {
+      "id": "request-74",
+      "number": 74,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        53
+      ],
+      "rewards": [
+        "Ergotite Chunk ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20562,
+      "targetValue": 1
+    },
+    {
+      "id": "request-75",
+      "number": 75,
+      "start": "10-06",
+      "deadline": null,
+      "prerequisites": [
+        66
+      ],
+      "rewards": [
+        "Twilight Fragment ×7"
+      ],
+      "requestType": 1,
+      "targetId": 20563,
+      "targetValue": 1
+    },
+    {
+      "id": "request-76",
+      "number": 76,
+      "start": "10-06",
+      "deadline": "11-01",
+      "prerequisites": [],
+      "rewards": [
+        "Garnet ×5"
+      ],
+      "requestType": 1,
+      "targetId": 20550,
+      "targetValue": 1
+    },
+    {
+      "id": "request-77",
+      "number": 77,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Small Cheongsam ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874240,
+      "targetValue": 0
+    },
+    {
+      "id": "request-78",
+      "number": 78,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        77
+      ],
+      "rewards": [
+        "Book of the Ancients ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874241,
+      "targetValue": 0
+    },
+    {
+      "id": "request-79",
+      "number": 79,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        78
+      ],
+      "rewards": [
+        "Vitality Sash ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874242,
+      "targetValue": 0
+    },
+    {
+      "id": "request-80",
+      "number": 80,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        79
+      ],
+      "rewards": [
+        "Sorcerer's Mark ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874243,
+      "targetValue": 0
+    },
+    {
+      "id": "request-81",
+      "number": 81,
+      "start": "05-10",
+      "deadline": null,
+      "prerequisites": [
+        80
+      ],
+      "rewards": [
+        "Tyrant's Horn ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536874244,
+      "targetValue": 0
+    },
+    {
+      "id": "request-82",
+      "number": 82,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        70
+      ],
+      "rewards": [
+        "¥120,000"
+      ],
+      "requestType": 1,
+      "targetId": 20540,
+      "targetValue": 1
+    },
+    {
+      "id": "request-83",
+      "number": 83,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        82
+      ],
+      "rewards": [
+        "¥150,000"
+      ],
+      "requestType": 1,
+      "targetId": 20541,
+      "targetValue": 1
+    },
+    {
+      "id": "request-84",
+      "number": 84,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        61
+      ],
+      "rewards": [
+        "Empowering Sutra ×3"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 112
+    },
+    {
+      "id": "request-85",
+      "number": 85,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        84
+      ],
+      "rewards": [
+        "Debilitator Sutra ×3"
+      ],
+      "requestType": 4,
+      "targetId": 0,
+      "targetValue": 829
+    },
+    {
+      "id": "request-86",
+      "number": 86,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        71
+      ],
+      "rewards": [
+        "Aigis's Maid Outfit ×1"
+      ],
+      "requestType": 4,
+      "targetId": 46,
+      "targetValue": 0
+    },
+    {
+      "id": "request-87",
+      "number": 87,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        72
+      ],
+      "rewards": [
+        "Masakados ×1"
+      ],
+      "requestType": 4,
+      "targetId": 208,
+      "targetValue": 75
+    },
+    {
+      "id": "request-88",
+      "number": 88,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        64
+      ],
+      "rewards": [
+        "Life Aid ×1"
+      ],
+      "requestType": 1,
+      "targetId": 24597,
+      "targetValue": 1
+    },
+    {
+      "id": "request-89",
+      "number": 89,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        65
+      ],
+      "rewards": [
+        "Prime Nihil Ore ×1"
+      ],
+      "requestType": 1,
+      "targetId": 221,
+      "targetValue": 1
+    },
+    {
+      "id": "request-90",
+      "number": 90,
+      "start": "12-04",
+      "deadline": null,
+      "prerequisites": [
+        89
+      ],
+      "rewards": [
+        "AS Refined Material ×1"
+      ],
+      "requestType": 1,
+      "targetId": 100,
+      "targetValue": 1
+    },
+    {
+      "id": "request-91",
+      "number": 91,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        73
+      ],
+      "rewards": [
+        "Nihil Black Model ×2"
+      ],
+      "requestType": 1,
+      "targetId": 240,
+      "targetValue": 1
+    },
+    {
+      "id": "request-92",
+      "number": 92,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        67
+      ],
+      "rewards": [
+        "Yukari's Maid Outfit ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536871164,
+      "targetValue": 0
+    },
+    {
+      "id": "request-93",
+      "number": 93,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        75,
+        80
+      ],
+      "rewards": [
+        "Fuuka's Maid Outfit ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536871163,
+      "targetValue": 0
+    },
+    {
+      "id": "request-94",
+      "number": 94,
+      "start": "11-06",
+      "deadline": "11-30",
+      "prerequisites": [],
+      "rewards": [
+        "Bone ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20556,
+      "targetValue": 1
+    },
+    {
+      "id": "request-95",
+      "number": 95,
+      "start": "11-06",
+      "deadline": "11-30",
+      "prerequisites": [
+        94
+      ],
+      "rewards": [
+        "Sacrificial Idol ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20554,
+      "targetValue": 1
+    },
+    {
+      "id": "request-96",
+      "number": 96,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [],
+      "rewards": [
+        "Aigis's Winter Uniform ×1"
+      ],
+      "requestType": 1,
+      "targetId": 20558,
+      "targetValue": 1
+    },
+    {
+      "id": "request-97",
+      "number": 97,
+      "start": "12-04",
+      "deadline": "12-25",
+      "prerequisites": [],
+      "rewards": [
+        "Ruby ×3"
+      ],
+      "requestType": 1,
+      "targetId": 20575,
+      "targetValue": 1
+    },
+    {
+      "id": "request-98",
+      "number": 98,
+      "start": "11-06",
+      "deadline": null,
+      "prerequisites": [
+        86,
+        87
+      ],
+      "rewards": [
+        "Nihil White Model ×2"
+      ],
+      "requestType": 4,
+      "targetId": 176,
+      "targetValue": 205
+    },
+    {
+      "id": "request-99",
+      "number": 99,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        37
+      ],
+      "rewards": [
+        "Dead Moon's Husk ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536872463,
+      "targetValue": 0
+    },
+    {
+      "id": "request-100",
+      "number": 100,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        83
+      ],
+      "rewards": [
+        "Divine Pillar ×1"
+      ],
+      "requestType": 1,
+      "targetId": 24599,
+      "targetValue": 1
+    },
+    {
+      "id": "request-101",
+      "number": 101,
+      "start": "01-01",
+      "deadline": null,
+      "prerequisites": [
+        99,
+        100,
+        81
+      ],
+      "rewards": [
+        "Omnipotent Orb ×1"
+      ],
+      "requestType": 2,
+      "targetId": 536873559,
+      "targetValue": 0
+    }
+  ]
+}

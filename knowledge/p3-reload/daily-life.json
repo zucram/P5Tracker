@@ -1,0 +1,1002 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "sections": [
+    {
+      "id": "daily-life",
+      "title": "Daily life & affinity",
+      "entries": [
+        {
+          "id": "life-affinity",
+          "title": "When a Social Link will not rank up",
+          "summary": "A rank is not automatic after every meeting.",
+          "steps": [
+            "Carry a matching Arcana Persona before starting a hangout. Check whether the game says your bond will grow.",
+            "Use a non-ranking hangout, a day-off invitation or a shrine relationship fortune to gain missing affinity. These use daytime.",
+            "From November 11, buy a Dating Site Note at Club Escapade and use it on the dorm computer at night. Choose the link that needs affinity, then revisit it on an available day."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ]
+        },
+        {
+          "id": "life-stat-ranks",
+          "title": "Social stat thresholds",
+          "summary": "Academics / Charm / Courage",
+          "steps": [
+            "These are cumulative hidden points, not the musical notes shown after activities. Track the rank shown in your game."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+              "label": "Stat point thresholds"
+            }
+          ],
+          "rewards": [
+            "Academics ranks 2–6: 20, 55, 100, 155, 230",
+            "Charm ranks 2–6: 15, 30, 45, 70, 100",
+            "Courage ranks 2–6: 15, 30, 45, 60, 80"
+          ]
+        },
+        {
+          "id": "life-library",
+          "title": "Library study",
+          "summary": "Free Academics activity",
+          "steps": [
+            "Visit the school library after class on a school day to study for free. Story closures and exams affect access."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/social-stat-activities-breakdown",
+              "label": "Study activities"
+            },
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events",
+              "label": "Library schedule"
+            }
+          ]
+        },
+        {
+          "id": "life-shops",
+          "title": "Shopping and material preparation",
+          "summary": "",
+          "steps": [
+            "Police-station sales are on Monday; pharmacy sales are on Saturday. Buy supplies before committing to the evening activity.",
+            "Use the Equipment reference to search a requested item or material. Persona heart items require leveling their owner; register the Persona before claiming a heart item if you plan to produce more.",
+            "Talk to Elizabeth periodically to collect Twilight Fragments from Social Link progress. Save some for fixed Tartarus chests and useful gear."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computer",
+      "title": "Computer software & URLs",
+      "description": "Buy software or notes first, then spend an evening using the shared dorm computer. Dates are stock openings; ordinary software is consumed after use. Check the current shop for replacement Dating Site Notes.",
+      "entries": [
+        {
+          "id": "computer-1",
+          "title": "Lessons in Etiquette",
+          "summary": "Charm +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥1,200"
+          ],
+          "rewards": [
+            "Charm +4"
+          ]
+        },
+        {
+          "id": "computer-2",
+          "title": "Virtual Diet",
+          "summary": "Charm +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥1,200"
+          ],
+          "rewards": [
+            "Charm +4"
+          ]
+        },
+        {
+          "id": "computer-3",
+          "title": "Pickup Line Master",
+          "summary": "Charm +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-01",
+          "requirements": [
+            "¥4,000"
+          ],
+          "rewards": [
+            "Charm +4"
+          ]
+        },
+        {
+          "id": "computer-4",
+          "title": "Language Made Easy",
+          "summary": "Academics +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥1,200"
+          ],
+          "rewards": [
+            "Academics +4"
+          ]
+        },
+        {
+          "id": "computer-5",
+          "title": "Sage Brain Training",
+          "summary": "Academics +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-01",
+          "requirements": [
+            "¥4,000"
+          ],
+          "rewards": [
+            "Academics +4"
+          ]
+        },
+        {
+          "id": "computer-6",
+          "title": "Animal Othello",
+          "summary": "Courage +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥1,200"
+          ],
+          "rewards": [
+            "Courage +4"
+          ]
+        },
+        {
+          "id": "computer-7",
+          "title": "TypinGhoul",
+          "summary": "Courage +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥1,200"
+          ],
+          "rewards": [
+            "Courage +4"
+          ]
+        },
+        {
+          "id": "computer-8",
+          "title": "Sengoku Chronicles",
+          "summary": "Courage +4",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-01",
+          "requirements": [
+            "¥4,000"
+          ],
+          "rewards": [
+            "Courage +4"
+          ]
+        },
+        {
+          "id": "computer-9",
+          "title": "Part-Time Master",
+          "summary": "Higher pay from part-time jobs",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "10-05",
+          "requirements": [
+            "¥8,000"
+          ],
+          "rewards": [
+            "Higher pay from part-time jobs"
+          ]
+        },
+        {
+          "id": "computer-10",
+          "title": "Veggie Farmer Sim",
+          "summary": "Increased harvest yield",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-01",
+          "requirements": [
+            "¥4,500"
+          ],
+          "rewards": [
+            "Increased harvest yield"
+          ]
+        },
+        {
+          "id": "computer-11",
+          "title": "Muscle Boot Camp",
+          "summary": "Maximum HP +7",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥2,000"
+          ],
+          "rewards": [
+            "Maximum HP +7"
+          ]
+        },
+        {
+          "id": "computer-12",
+          "title": "Image Muscle Trainer",
+          "summary": "Maximum HP +9",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "10-05",
+          "requirements": [
+            "¥4,000"
+          ],
+          "rewards": [
+            "Maximum HP +9"
+          ]
+        },
+        {
+          "id": "computer-13",
+          "title": "Mindful Boot Camp",
+          "summary": "Maximum SP +5",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥2,000"
+          ],
+          "rewards": [
+            "Maximum SP +5"
+          ]
+        },
+        {
+          "id": "computer-14",
+          "title": "Mental Instructor",
+          "summary": "Maximum SP +7",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "10-05",
+          "requirements": [
+            "¥4,000"
+          ],
+          "rewards": [
+            "Maximum SP +7"
+          ]
+        },
+        {
+          "id": "computer-15",
+          "title": "Umiushi Fan Book",
+          "summary": "Access to Umiushi takeaway orders",
+          "steps": [
+            "Buy from the Iwatodai 3F net cafe.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "04-29",
+          "requirements": [
+            "¥450"
+          ],
+          "rewards": [
+            "Access to Umiushi takeaway orders"
+          ]
+        },
+        {
+          "id": "computer-16",
+          "title": "Security Site Note",
+          "summary": "Unlocks sprinting ambushes in Tartarus",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "07-09",
+          "requirements": [
+            "¥5,000"
+          ],
+          "rewards": [
+            "Unlocks sprinting ambushes in Tartarus"
+          ]
+        },
+        {
+          "id": "computer-17",
+          "title": "Assassin Site Note",
+          "summary": "Ambush causes Distress",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-10",
+          "requirements": [
+            "¥8,000",
+            "Use the Security Site Note first."
+          ],
+          "rewards": [
+            "Ambush causes Distress"
+          ]
+        },
+        {
+          "id": "computer-18",
+          "title": "History Website Note",
+          "summary": "Improves Theurgy gain from ambushes",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "09-10",
+          "requirements": [
+            "¥8,000",
+            "Use the Security Site Note first."
+          ],
+          "rewards": [
+            "Improves Theurgy gain from ambushes"
+          ]
+        },
+        {
+          "id": "computer-19",
+          "title": "Ninja Fansite Note",
+          "summary": "Shorter sprint needed for an ambush",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "11-04",
+          "requirements": [
+            "¥12,000",
+            "Use the Security Site Note first."
+          ],
+          "rewards": [
+            "Shorter sprint needed for an ambush"
+          ]
+        },
+        {
+          "id": "computer-20",
+          "title": "Iwatodai Forum Note",
+          "summary": "Additional Iwatodai Station vending drinks",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "07-09",
+          "requirements": [
+            "¥500"
+          ],
+          "rewards": [
+            "Additional Iwatodai Station vending drinks"
+          ]
+        },
+        {
+          "id": "computer-21",
+          "title": "School X Site Note",
+          "summary": "Unlocks Lukewarm Taiyaki at school",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "07-09",
+          "requirements": [
+            "¥500"
+          ],
+          "rewards": [
+            "Unlocks Lukewarm Taiyaki at school"
+          ]
+        },
+        {
+          "id": "computer-22",
+          "title": "Veggie Blog Note",
+          "summary": "Unlocks Golden Tomato Sprout at Rafflesia",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "10-06",
+          "requirements": [
+            "¥500"
+          ],
+          "rewards": [
+            "Unlocks Golden Tomato Sprout at Rafflesia"
+          ]
+        },
+        {
+          "id": "computer-23",
+          "title": "Dating Site Note",
+          "summary": "Affinity with a Social Link you choose",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "11-11",
+          "requirements": [
+            "¥3,000"
+          ],
+          "rewards": [
+            "Affinity with a Social Link you choose"
+          ]
+        },
+        {
+          "id": "computer-24",
+          "title": "Revenge Site Note",
+          "summary": "Courage +4",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "06-23",
+          "requirements": [
+            "¥500"
+          ],
+          "rewards": [
+            "Courage +4"
+          ],
+          "deadline": "11-02"
+        },
+        {
+          "id": "computer-25",
+          "title": "Believer's Blog Note",
+          "summary": "Maximum SP +5",
+          "steps": [
+            "Buy from the URL seller inside Club Escapade.",
+            "Use it on the shared dorm computer in the evening. This uses a time slot."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/overworld",
+              "label": "Mechanics reference"
+            }
+          ],
+          "date": "01-01",
+          "requirements": [
+            "¥500"
+          ],
+          "rewards": [
+            "Maximum SP +5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gardening",
+      "title": "Gardening",
+      "description": "Planting and harvesting do not use a time slot. Evening gardening with a companion is a separate dorm activity.",
+      "entries": [
+        {
+          "id": "garden-0",
+          "title": "Healthy Tomato Sprout",
+          "summary": "Harvest after 10 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 10 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Healthy Tomato",
+            "Junpei: Tiny Healthy Tomato",
+            "Fuuka: Big Healthy Tomato",
+            "Aigis: Healthy Tomato EX",
+            "Shinjiro: Healthiest Tomato"
+          ],
+          "requirements": []
+        },
+        {
+          "id": "garden-1",
+          "title": "Buff Potato Sprout",
+          "summary": "Harvest after 12 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 12 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Tarukaja Potato",
+            "Junpei: Rakukaja Potato",
+            "Fuuka: Sukukaja Potato",
+            "Aigis: Matarukaja Potato",
+            "Shinjiro: Heat Riser Potato"
+          ],
+          "requirements": []
+        },
+        {
+          "id": "garden-2",
+          "title": "Amronion Sprout",
+          "summary": "Harvest after 10 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 10 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Nutritious Amronion",
+            "Junpei: Refreshing Amronion",
+            "Fuuka: Medicinal Amronion",
+            "Aigis: Nourishing Amronion",
+            "Shinjiro: True Amronion"
+          ],
+          "requirements": []
+        },
+        {
+          "id": "garden-3",
+          "title": "Soul Spinach Sprout",
+          "summary": "Harvest after 12 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 12 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Soul Spinach",
+            "Junpei: Mini Soul Spinach",
+            "Fuuka: Large Soul Spinach",
+            "Aigis: Leafy Soul Spinach",
+            "Shinjiro: Meaty Soul Spinach"
+          ],
+          "requirements": []
+        },
+        {
+          "id": "garden-4",
+          "title": "Golden Tomato Sprout",
+          "summary": "Harvest after 15 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 15 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Golden Tomato",
+            "Junpei: Tiny Golden Tomato",
+            "Fuuka: Big Golden Tomato",
+            "Aigis: Golden Tomato EX",
+            "Shinjiro: Platinum Tomato"
+          ],
+          "requirements": [
+            "Use the Veggie Blog Note to unlock this sprout."
+          ]
+        },
+        {
+          "id": "garden-5",
+          "title": "Simple Herb Sprout",
+          "summary": "Harvest after 13 days",
+          "steps": [
+            "Buy sprouts at Rafflesia, plant on the dorm roof, and return after 13 days to harvest.",
+            "Tending with companions uses an evening and adds their crop variants. Multiple companions can contribute to the same crop."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Crop data"
+            }
+          ],
+          "rewards": [
+            "Planted alone: Charged Herb",
+            "Junpei: Deflecting Herb",
+            "Fuuka: Concentrated Herb",
+            "Aigis: Mirror Herb",
+            "Shinjiro: Comeback Herb"
+          ],
+          "requirements": []
+        }
+      ]
+    },
+    {
+      "id": "gifts",
+      "title": "Gifts for day-off invitations",
+      "description": "Preferred gifts for every link with gift preferences. These are optional ways to gain affinity; other links do not need a gift catalogue.",
+      "entries": [
+        {
+          "id": "gift-magician",
+          "title": "Magician gifts",
+          "summary": "Brand Wallet, Brand Watch, Lucky Charm, Hyper-Metal Robot",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Brand Wallet, Brand Watch, Lucky Charm, Hyper-Metal Robot"
+          ]
+        },
+        {
+          "id": "gift-priestess",
+          "title": "Priestess gifts",
+          "summary": "Glass Vase, Brand Purse",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Glass Vase, Brand Purse"
+          ]
+        },
+        {
+          "id": "gift-empress",
+          "title": "Empress gifts",
+          "summary": "Japanese Doll, Goggle-Eyed Idol",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Japanese Doll, Goggle-Eyed Idol"
+          ]
+        },
+        {
+          "id": "gift-lovers",
+          "title": "Lovers gifts",
+          "summary": "Perfume, Brand Wallet, Brand Watch, Brand Purse",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Perfume, Brand Wallet, Brand Watch, Brand Purse"
+          ]
+        },
+        {
+          "id": "gift-chariot",
+          "title": "Chariot gifts",
+          "summary": "Mini Cactus, Lucky Charm, Hyper-Metal Robot",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Mini Cactus, Lucky Charm, Hyper-Metal Robot"
+          ]
+        },
+        {
+          "id": "gift-justice",
+          "title": "Justice gifts",
+          "summary": "Brand Watch, Brand Purse, Book Cover",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Brand Watch, Brand Purse, Book Cover"
+          ]
+        },
+        {
+          "id": "gift-fortune",
+          "title": "Fortune gifts",
+          "summary": "Glass Vase, Kaleidoscope, Book Cover, Lucky Charm, Hyper-Metal Robot, Vintage Yagen",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Glass Vase, Kaleidoscope, Book Cover, Lucky Charm, Hyper-Metal Robot, Vintage Yagen"
+          ]
+        },
+        {
+          "id": "gift-strength",
+          "title": "Strength gifts",
+          "summary": "Brand Wallet, Brand Watch, Brand Purse",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Brand Wallet, Brand Watch, Brand Purse"
+          ]
+        },
+        {
+          "id": "gift-temperance",
+          "title": "Temperance gifts",
+          "summary": "Japanese Doll, Goggle-Eyed Idol, Ganesha Bank, Lucky Charm, Hyper-Metal Robot",
+          "steps": [
+            "Carry a preferred gift when accepting a suitable day-off invitation. Give it when the game offers the gift prompt.",
+            "Find item sources in Equipment & shops. Ordinary rank meetings do not always offer gifts."
+          ],
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+              "label": "Gift affinity table"
+            }
+          ],
+          "rewards": [
+            "High-affinity gifts: Japanese Doll, Goggle-Eyed Idol, Ganesha Bank, Lucky Charm, Hyper-Metal Robot"
+          ]
+        }
+      ]
+    }
+  ]
+}

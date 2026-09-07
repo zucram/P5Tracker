@@ -3,6 +3,9 @@ import tartarus from '../../knowledge/p3-reload/tartarus.json' with { type: 'jso
 import { ALL_GUIDE_TASK_IDS } from './monthGuide.js';
 import school from '../../knowledge/p3-reload/school-answers.json' with { type: 'json' };
 import { SOCIAL_LINKS, SOCIAL_STATS, MONTHS } from './data.js';
+import requests from '../../knowledge/p3-reload/requests.json' with { type: 'json' };
+import { PERSONA_IDS, DLC_PERSONAS } from './fusion.js';
+import { COLLECTION_IDS, DORM_ACTIVITY_IDS, ROMANCE_LINK_IDS } from './campaignData.js';
 
 export const STORAGE_KEY = 'p3reload_state_v1';
 export const BACKUP_KEY = 'p3reload_previous_v1';
@@ -11,7 +14,7 @@ const forbiddenKeys = new Set(['__proto__', 'prototype', 'constructor']);
 const hasControls = value => [...value].some(char => char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127);
 const linkIds = SOCIAL_LINKS.map(link => link.id);
 const manualLinkIds = SOCIAL_LINKS.filter(link => link.kind !== 'story').map(link => link.id);
-const eventIds = new Set(knowledge.facts.map(fact => fact.id));
+const eventIds = new Set([...knowledge.facts.map(fact => fact.id), ...requests.entries.map(request => request.id)]);
 const taskIds = new Set([...ALL_GUIDE_TASK_IDS, ...tartarus.blocks.map(block => `tartarus-${block.id}`), ...school.entries.map(entry => entry.id)]);
 const monthNumbers = [4, 5, 6, 7, 8, 9, 10, 11, 12, 1];
 const monthIds = MONTHS.map(month => month.id);
@@ -33,6 +36,11 @@ export function initialState() {
     goals: [],
     showNames: false,
     favorites: [],
+    registeredPersonas: [],
+    enabledDlcPersonas: [],
+    collectionChecks: [],
+    dormActivities: Object.fromEntries(DORM_ACTIVITY_IDS.map(id => [id, 0])),
+    relationshipRoutes: Object.fromEntries(ROMANCE_LINK_IDS.map(id => [id, 'undecided'])),
   };
 }
 
@@ -75,6 +83,16 @@ export function parseState(text) {
   validateIds(unlockedLinks, new Set(manualLinkIds), manualLinkIds.length, 'Confirmed introductions');
   const showEventNames = legacy ? false : state.showEventNames;
   if (typeof showEventNames !== 'boolean') throw new Error('The event name display setting is invalid.');
+  const registeredPersonas = state.registeredPersonas === undefined ? [] : state.registeredPersonas;
+  validateIds(registeredPersonas, new Set(PERSONA_IDS), PERSONA_IDS.length, 'Registered Personas');
+  const enabledDlcPersonas = state.enabledDlcPersonas === undefined ? [] : state.enabledDlcPersonas;
+  validateIds(enabledDlcPersonas, new Set(DLC_PERSONAS.map(persona => persona.id)), DLC_PERSONAS.length, 'DLC Personas');
+  const collectionChecks = state.collectionChecks === undefined ? [] : state.collectionChecks;
+  validateIds(collectionChecks, new Set(COLLECTION_IDS), COLLECTION_IDS.length, 'Collections');
+  const dormActivities = state.dormActivities === undefined ? Object.fromEntries(DORM_ACTIVITY_IDS.map(id => [id, 0])) : state.dormActivities;
+  validateRanks(dormActivities, DORM_ACTIVITY_IDS, 0, 3, 'Dorm activities');
+  const relationshipRoutes = state.relationshipRoutes === undefined ? Object.fromEntries(ROMANCE_LINK_IDS.map(id => [id, 'undecided'])) : state.relationshipRoutes;
+  if (!record(relationshipRoutes) || Object.keys(relationshipRoutes).length !== ROMANCE_LINK_IDS.length || Object.entries(relationshipRoutes).some(([id, route]) => !ROMANCE_LINK_IDS.includes(id) || !['undecided', 'friendship', 'romance'].includes(route))) throw new Error('Relationship routes contain an invalid link or choice.');
   validateRanks(state.ranks, linkIds, 0, 10, 'Social Link ranks');
   validateRanks(state.stats, SOCIAL_STATS, 1, 6, 'Social stats');
   if (typeof state.showNames !== 'boolean') throw new Error('The name display setting is invalid.');
@@ -104,6 +122,11 @@ export function parseState(text) {
     goals,
     showNames: state.showNames,
     favorites: [...state.favorites],
+    registeredPersonas: [...registeredPersonas],
+    enabledDlcPersonas: [...enabledDlcPersonas],
+    collectionChecks: [...collectionChecks],
+    dormActivities: { ...dormActivities },
+    relationshipRoutes: { ...relationshipRoutes },
   };
 }
 

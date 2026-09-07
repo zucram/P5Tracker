@@ -1,0 +1,919 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "notes": "48 main-campaign achievements; excludes the eight Episode Aigis additions. PlayStation also awards a platinum trophy for the main-game set. Original compact instructions; achievement names and unlock conditions are factual game references.",
+  "entries": [
+    {
+      "id": "achievement-awakened-power",
+      "title": "Awakened Power",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Obtain Orpheus during the opening story."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-sees-the-day",
+      "title": "SEES the Day",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Join SEES during the opening story."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-there-s-no-i-in-team",
+      "title": "There's No \"I\" in \"Team\"",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "After a knockdown, Shift the extra action to a teammate."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-thrill-of-the-hunt",
+      "title": "The Thrill of the Hunt",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Defeat one rare golden Shadow. Check enemy affinities before it escapes."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-first-of-many",
+      "title": "The First of Many",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Fuse two Personas in the Velvet Room."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-back-on-track",
+      "title": "Back on Track",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the May 9 Priestess operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-briefcase-burglar",
+      "title": "Briefcase Burglar",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Open 50 Tartarus treasure chests."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-power-of-choice",
+      "title": "The Power of Choice",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Collect 10 Persona cards from Shuffle Time. Choose Personas not already in your active stock."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-making-the-dream-work",
+      "title": "Making the Dream Work",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Perform 50 All-Out Attacks after knocking down every opponent."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-shrouded-assassin",
+      "title": "Shrouded Assassin",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Begin 50 battles with the advantage from striking Shadows before they notice you."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-empowered-protector",
+      "title": "Empowered Protector",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the June 8 Empress and Emperor operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-birthday-present",
+      "title": "Birthday Present",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Level a Persona with a heart item until you receive the item. The Persona registry lists heart levels."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-fool-s-journey",
+      "title": "The Fool's Journey",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Choose Major Arcana cards in Shuffle Time 10 times."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-tempting-fate",
+      "title": "Tempting Fate",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Accept a skill-change opportunity when it appears during fusion."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-dorm-life",
+      "title": "Dorm Life",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Spend an evening doing a companion's dorm activity."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-extracurricular-excellence",
+      "title": "Extracurricular Excellence",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Rescue one missing person from Tartarus."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-shattered-plumes",
+      "title": "Shattered Plumes",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Spend 50 Twilight Fragments in total."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-fusion-artisan",
+      "title": "Fusion Artisan",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Perform a special fusion using at least three Personas."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-never-toy-with-matters-of-the-heart",
+      "title": "Never Toy with Matters of the Heart",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win both July 7 hotel boss battles."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-in-high-demand",
+      "title": "In High Demand",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Accept five hangout invitations from your phone."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-eat-your-veggies-peas",
+      "title": "Eat Your Veggies, Peas!",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Plant a crop, tend it with a companion, then harvest it."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-gourmand",
+      "title": "Gourmand",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Order an unlocked special restaurant menu at night. Briefing lists the requirements."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-unbreakable-link",
+      "title": "Unbreakable Link",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Reach rank 10 with any Social Link."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-through-thick-and-thin",
+      "title": "Through Thick and Thin",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Complete one companion activity three times to unlock a Characteristic."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-top-of-the-class",
+      "title": "Top of the Class",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Answer an exam correctly and meet its Academics requirement for the top result."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-armor-disarmed",
+      "title": "Armor Disarmed",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the August 6 Chariot and Justice operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-get-a-load-of-those-numbers",
+      "title": "Get a Load of Those Numbers!",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Deal at least 1,000 damage with one attack. All-Out Attacks do not qualify; charged Theurgies can."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-specialist",
+      "title": "Specialist",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Reach rank 6 in one social stat."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-beyond-the-darkness",
+      "title": "Beyond the Darkness",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Clear the floor 91 Monad Passage and take the end treasure."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-benevolent-purr-tector",
+      "title": "Benevolent Purr-tector",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Complete the four cat-feeding days for Elizabeth request 42."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-dodging-lightning",
+      "title": "Dodging Lightning",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the September 5 Hermit operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-twist-of-fate",
+      "title": "Twist of Fate",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the October 4 Fortune and Strength operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-that-special-someone",
+      "title": "That Special Someone",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Choose a romance in one eligible Social Link. Earlier dialogue can affect eligibility."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-glimpse-of-the-depths",
+      "title": "Glimpse of the Depths",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Enter and clear 10 Monad Doors."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-horror-of-the-shade",
+      "title": "The Horror of the Shade",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Enter a randomly occurring Dark Zone in Tartarus."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-peak-performance",
+      "title": "Peak Performance",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Reach rank 6 in Academics, Charm and Courage."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-a-sense-of-finality",
+      "title": "A Sense of Finality",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Win the November 3 Hanged Man operation."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-a-newfound-strength",
+      "title": "A Newfound Strength",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Continue the story through December 30 for the party's Persona awakenings."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-great-seal",
+      "title": "The Great Seal",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Complete the final January 31 confrontation on the full ending path."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-from-shadows-into-light",
+      "title": "From Shadows into Light",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Finish the full ending, including the March conclusion."
+      ],
+      "spoiler": true,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-grindset-mindset",
+      "title": "The Grindset Mindset",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Earn more than ¥50,000 total across part-time jobs."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-the-strength-of-our-hearts",
+      "title": "The Strength of Our Hearts",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Use a Theurgy with every teammate, including Fuuka. Use Shinjiro's before October 4; one Theurgy per member is enough."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-distinguished-visitor",
+      "title": "Distinguished Visitor",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Complete Elizabeth's outing chain through request 81, the room visit."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-people-person",
+      "title": "People Person",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Start all 22 Social Links."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-reaper-reaped",
+      "title": "Reaper Reaped",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Defeat the Reaper in Tartarus."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-path-to-salvation",
+      "title": "Path to Salvation",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Max Judgement through Tartarus story progress, then special-fuse Orpheus and Thanatos into Messiah."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-eagle-eye",
+      "title": "Eagle Eye",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Collect all 17 fixed Twilight Fragments in town. Use the fragment checklist."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    },
+    {
+      "id": "achievement-a-legacy-of-friendships",
+      "title": "A Legacy of Friendships",
+      "summary": "Main-campaign achievement",
+      "steps": [
+        "Reach rank 10 with all 22 Social Links in the same playthrough. Keep school days for school links, protect rescue-dependent links, and check the calendar before optional daytime activities."
+      ],
+      "spoiler": false,
+      "sources": [
+        {
+          "url": "https://steamcommunity.com/stats/2161700/achievements/",
+          "label": "Official Steam achievement list"
+        },
+        {
+          "url": "https://www.powerpyx.com/persona-3-reload-trophy-guide-roadmap/",
+          "label": "Achievement guidance"
+        }
+      ]
+    }
+  ]
+}

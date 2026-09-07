@@ -1,6 +1,6 @@
 # Persona 3 Reload tracker data
 
-`src/p3/data.js` describes the main campaign of Persona 3 Reload. It does not cover Persona 3, FES, Portable, or Episode Aigis. Initial roster review took place on 7 September 2026. The roster is used by the released beta semi-guide; see [release behavior and limits](p3-reload-release.md). See [the knowledge review](p3-reload-knowledge-review.md) for the broader research and release gaps.
+`src/p3/data.js` describes the main campaign of Persona 3 Reload. It does not cover Persona 3, FES, Portable, or Episode Aigis. Initial roster review took place on 7 September 2026. The roster is used by the released beta semi-guide; see [release behavior and limits](p3-reload-release.md). See [companion coverage](p3-reload-completion-audit.md) for the current release inventory and [the knowledge review](p3-reload-knowledge-review.md) for the original planner research.
 
 The module exports 22 Social Links, three social stats, ten month labels from April through January, and the source list. Each link has `sourceIds` for its factual basis. Notes are original summaries, not dialogue or copied guide passages.
 
@@ -45,3 +45,7 @@ Version 2.5.1 adds `knowledge/p3-reload/school-answers.json`, `activities.json` 
 The school dataset separates classroom questions, manual exam answers and automatic checks. May 18 is an automatic exam day, with the manual answers starting May 19. Stat rewards use internal points rather than displayed musical notes. Tartarus ranges distinguish a currently reachable barrier floor from the full block boundary. The January border is floor 256; floor 255 contains the preceding encounters.
 
 `src/p3/monthGuide.js` turns canonical facts into original player instructions. It does not display internal research notes or claim a complete daily route. Source disagreements and conditional events are separate from single-source evidence coverage.
+
+## Main-campaign companion data
+
+Version 2.6.0 adds rank dialogue, all Elizabeth requests, campaign and combat guidance, fusion, equipment, dorm activities and collections. These datasets retain their own provenance and do not change the older facts count. See the [knowledge file inventory](../knowledge/p3-reload/README.md) and [release behavior](p3-reload-release.md) for their data ownership, saved progress and reference navigation.

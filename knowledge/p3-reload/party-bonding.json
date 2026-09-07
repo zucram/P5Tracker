@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "game": "persona-3-reload",
+  "rule": "Complete the same activity three times for the first Characteristic. Complete the other activity three times to upgrade it. These evening hangouts are separate from Social Link ranks and Linked Episodes. Check the smile icon at the dorm; story events override usual weekdays.",
+  "members": [
+    {
+      "id": "yukari",
+      "name": "Yukari",
+      "after": "06-16",
+      "activities": [
+        {
+          "id": "yukari-dvd",
+          "title": "Watch DVDs",
+          "schedule": "Tuesday",
+          "reward": "Charm +2"
+        },
+        {
+          "id": "yukari-cooking",
+          "title": "Cook",
+          "schedule": "Friday",
+          "reward": "Chicken Sauté / Cabbage Cream Stew"
+        }
+      ],
+      "characteristics": [
+        "Healing Master",
+        "Healing Apex"
+      ],
+      "effect": "Healing skills cost 50%, then 25%, of their normal SP.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "junpei",
+      "name": "Junpei",
+      "after": "06-16",
+      "activities": [
+        {
+          "id": "junpei-reading",
+          "title": "Read",
+          "schedule": "Monday",
+          "reward": "Courage +2"
+        },
+        {
+          "id": "junpei-gardening",
+          "title": "Garden",
+          "schedule": "Saturday",
+          "reward": "Additional crop variants"
+        }
+      ],
+      "characteristics": [
+        "Critical Boost",
+        "Critical Amp"
+      ],
+      "effect": "Improves critical-hit chance and damage.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "akihiko",
+      "name": "Akihiko",
+      "after": "06-16",
+      "activities": [
+        {
+          "id": "akihiko-dvd",
+          "title": "Watch DVDs",
+          "schedule": "Saturday",
+          "reward": "Courage +2"
+        },
+        {
+          "id": "akihiko-cooking",
+          "title": "Cook",
+          "schedule": "Wednesday",
+          "reward": "Iron-Athlete Meal / Super-Athlete Meal"
+        }
+      ],
+      "characteristics": [
+        "Buff Boost",
+        "Buff Amp"
+      ],
+      "effect": "Strengthens buffs applied to Akihiko.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "mitsuru",
+      "name": "Mitsuru",
+      "after": "06-16",
+      "activities": [
+        {
+          "id": "mitsuru-reading",
+          "title": "Read",
+          "schedule": "Sunday",
+          "reward": "Academics +2"
+        },
+        {
+          "id": "mitsuru-tea",
+          "title": "Make tea",
+          "schedule": "Monday",
+          "reward": "Luxe Night Tea / Karume-yaki"
+        }
+      ],
+      "characteristics": [
+        "Ailment Burst",
+        "Ailment Surge"
+      ],
+      "effect": "Improves critical-hit chance against enemies with ailments while Mitsuru is in battle.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "fuuka",
+      "name": "Fuuka",
+      "after": "06-16",
+      "activities": [
+        {
+          "id": "fuuka-reading",
+          "title": "Read",
+          "schedule": "Thursday",
+          "reward": "Academics +2"
+        },
+        {
+          "id": "fuuka-gardening",
+          "title": "Garden",
+          "schedule": "Tuesday",
+          "reward": "Additional crop variants"
+        }
+      ],
+      "characteristics": [
+        "Weakness Buffer",
+        "Weakness Mitigator"
+      ],
+      "effect": "Reduces damage when an enemy hits a party member's weakness.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "aigis",
+      "name": "Aigis",
+      "after": "07-24",
+      "activities": [
+        {
+          "id": "aigis-reading",
+          "title": "Read",
+          "schedule": "Wednesday, from September 2",
+          "reward": "Charm +2"
+        },
+        {
+          "id": "aigis-gardening",
+          "title": "Garden",
+          "schedule": "Sunday",
+          "reward": "Additional crop variants"
+        }
+      ],
+      "characteristics": [
+        "Phys Boost",
+        "Phys Amp"
+      ],
+      "effect": "Improves physical skill damage.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "koromaru",
+      "name": "Koromaru",
+      "after": "08-09",
+      "activities": [
+        {
+          "id": "koromaru-dvd",
+          "title": "Watch DVDs",
+          "schedule": "Monday",
+          "reward": "Academics +2"
+        },
+        {
+          "id": "koromaru-brushing",
+          "title": "Brush",
+          "schedule": "Thursday",
+          "reward": "A consumable item"
+        }
+      ],
+      "characteristics": [
+        "Auto Sukunda",
+        "Auto Masukunda"
+      ],
+      "effect": "Lowers one enemy's accuracy/evasion at battle start, then all enemies.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "ken",
+      "name": "Ken",
+      "after": "08-29",
+      "activities": [
+        {
+          "id": "ken-dvd",
+          "title": "Watch DVDs",
+          "schedule": "Friday",
+          "reward": "Courage +2"
+        },
+        {
+          "id": "ken-coffee",
+          "title": "Make coffee",
+          "schedule": "Sunday",
+          "reward": "Okay Coffee / Excellent Coffee"
+        }
+      ],
+      "characteristics": [
+        "Spirit Refresh",
+        "Spirit Restore"
+      ],
+      "effect": "Restores SP each turn.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    },
+    {
+      "id": "shinjiro",
+      "name": "Shinjiro",
+      "after": "09-02",
+      "activities": [
+        {
+          "id": "shinjiro-cooking",
+          "title": "Cook",
+          "schedule": "Check the dorm during September",
+          "reward": "Exquisite Katsudon / Ultimate Tempura"
+        },
+        {
+          "id": "shinjiro-gardening",
+          "title": "Garden",
+          "schedule": "Check the dorm during September",
+          "reward": "Additional crop variants"
+        }
+      ],
+      "characteristics": [
+        "Auto Bolster",
+        "Auto Heat Riser"
+      ],
+      "effect": "Starts battle with attack/defense buffs, then attack/defense/accuracy-evasion buffs.",
+      "sources": [
+        {
+          "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/hangouts",
+          "label": "Dorm activities and rewards"
+        },
+        {
+          "url": "https://samurai-gamers.com/persona-3-reload/p3re-characteristics-guide/",
+          "label": "Characteristic effects"
+        }
+      ]
+    }
+  ]
+}

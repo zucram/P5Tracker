@@ -1,0 +1,1562 @@
+{
+  "schemaVersion": 1,
+  "game": "Persona 3 Reload",
+  "scope": "Main campaign; excludes Episode Aigis",
+  "sections": [
+    {
+      "id": "operations",
+      "title": "Story battles",
+      "description": "Operation mechanics and preparation, in campaign order. Enemy affinities and skill details are in the combat reference.",
+      "entries": [
+        {
+          "id": "awakening",
+          "title": "Awakening tutorial",
+          "summary": "Follow the scripted first battle on the dorm roof.",
+          "steps": [
+            "Follow the roof objective and combat prompts. Ordinary party preparation begins with the later Tartarus tutorial."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/April",
+              "label": "April 9: awakening"
+            }
+          ],
+          "date": "04-09"
+        },
+        {
+          "id": "priestess",
+          "title": "Priestess — train",
+          "summary": "The train timer is part of the fight; scripted reductions make the initial allowance misleading.",
+          "steps": [
+            "Reach the front car promptly. Keep decisions focused as the timer drops during the battle.",
+            "Use the summoned Tiaras’ weaknesses to gain extra actions, then return damage to Priestess.",
+            "Keep Yukari available to heal; avoid Ice attacks against Priestess."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/441827",
+              "label": "Priestess: timer and summoned enemies"
+            }
+          ],
+          "date": "05-09"
+        },
+        {
+          "id": "emperor-empress",
+          "title": "Emperor and Empress",
+          "summary": "Paradigm Shift changes their vulnerabilities.",
+          "steps": [
+            "Ask Fuuka to analyze both bosses and check again after each shift.",
+            "Bring physical and several elemental damage options; attack the current weakness rather than repeating the previous element.",
+            "Knock down both for All-Out Attacks. Use support or healing when a character cannot hit either weakness."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/441889",
+              "label": "Emperor and Empress: Paradigm Shift"
+            }
+          ],
+          "date": "06-08"
+        },
+        {
+          "id": "hierophant",
+          "title": "Hierophant — hotel",
+          "summary": "Yukari is mandatory, and the hotel contains two consecutive bosses.",
+          "steps": [
+            "Prepare Fear and Charm recovery before departure.",
+            "Clear Fear from Doomsday Doctrine promptly and maintain healing.",
+            "After the fight, investigate the room’s mirror to continue the hotel sequence."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/July",
+              "label": "July 7: Hierophant and hotel sequence"
+            }
+          ],
+          "date": "07-07"
+        },
+        {
+          "id": "lovers",
+          "title": "Lovers — mirrors and Charm",
+          "summary": "Break the mirrors that do not show your reflection to reach the second boss.",
+          "steps": [
+            "Regroup, then break the mirrors in rooms 205 and 304. Return to the large room where Hierophant was fought.",
+            "Cure Charm immediately: Heartbreaker punishes charmed targets, who can also help the boss.",
+            "Use Yukari’s available Theurgy and attacks that avoid the boss’s blocked elements; keep a second character ready with recovery items."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.eliteguias.com/guias/p/p3r/persona-3-reload-p82.php",
+              "label": "July hotel: rooms 205 and 304"
+            },
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/July",
+              "label": "July 7: Lovers and Charm"
+            }
+          ],
+          "date": "07-07"
+        },
+        {
+          "id": "chariot-justice",
+          "title": "Chariot and Justice",
+          "summary": "After the tank separates, neither half may remain alive long enough to revive the other.",
+          "steps": [
+            "Guard the tank’s announced charged attack; Theurgy and Almighty damage help against its broad resistance.",
+            "Lower both separate bosses together. Plan enough remaining actions to finish the survivor before its next Restore.",
+            "A single simultaneous hit is useful but not mandatory: two kills before the survivor acts also work."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/443111",
+              "label": "Chariot and Justice: separation and revival"
+            }
+          ],
+          "date": "08-06"
+        },
+        {
+          "id": "hermit",
+          "title": "Hermit",
+          "summary": "Its charging sequence is the main danger.",
+          "steps": [
+            "Save a burst of damage or Theurgy for Initiate Charging; sufficient damage can interrupt it.",
+            "Guard if a charged discharge is about to resolve, and restore HP afterward.",
+            "Avoid exposed Electric weaknesses. Debuff its attack and maintain party defense."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/443772",
+              "label": "Hermit: charging and Electric attacks"
+            }
+          ],
+          "date": "09-05"
+        },
+        {
+          "id": "fortune-strength",
+          "title": "Fortune and Strength",
+          "summary": "Strength shields Fortune; the wheel runs automatically in Reload.",
+          "steps": [
+            "Focus on Strength first, using magic or Theurgy against its physical resistance.",
+            "Keep the protagonist and other essential party members above 300 HP before the damage wheel. Its scripted 300-damage result is not a timing minigame.",
+            "After Strength falls, exploit Fortune’s Strike or Electric weakness. The late death-symbol wheel is a scripted fake-out."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/445016",
+              "label": "Fortune and Strength: protection and survival"
+            },
+            {
+              "url": "https://jusgameguide.wordpress.com/2025/03/30/persona-3-reload-full-moon-operation/",
+              "label": "October 4: original recorded battle"
+            },
+            {
+              "url": "https://megamitensei.fandom.com/wiki/Arcana_Fortune",
+              "label": "Reload-specific scripted wheel details (secondary cross-check)"
+            }
+          ],
+          "date": "10-04"
+        },
+        {
+          "id": "strega-november",
+          "title": "Takaya and Jin — Moonlight Bridge",
+          "summary": "Their knockdowns and Shifts can chain into a lethal follow-up.",
+          "steps": [
+            "Focus Jin to remove his grenades and support skills.",
+            "Clear Confuse and defense debuffs; remove their Heat Riser with Dekaja.",
+            "Protect the protagonist from instant kills and keep recovery available for Hanged Man immediately afterward."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Takaya_Jin_Boss_Fight",
+              "label": "Takaya and Jin: grenade / Vile Assault combination"
+            }
+          ],
+          "date": "11-03"
+        },
+        {
+          "id": "hanged-man",
+          "title": "Hanged Man",
+          "summary": "Destroy its statues to bring the main body into reach.",
+          "steps": [
+            "Cover Strike, Slash and Pierce: the initial left, middle and right statues are weak to those types respectively.",
+            "Exploit statue weaknesses and use All-Out Attacks, then concentrate damage on the grounded boss.",
+            "Prepare for later statue waves, including the large statue. Remove Heat Riser and guard dangerous charged attacks after Grim Transcendence."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/470931",
+              "label": "Hanged Man: statue weaknesses and Grim Transcendence"
+            },
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Hanged_Man_Boss_Fight",
+              "label": "Hanged Man: three statue phases"
+            }
+          ],
+          "date": "11-03"
+        },
+        {
+          "id": "chidori-battle",
+          "title": "Chidori",
+          "summary": "This encounter ends through its scripted battle sequence.",
+          "steps": [
+            "Keep dealing damage while healing through Maragidyne and clearing Confuse.",
+            "Avoid Fire damage. Continue after Spring of Life restores her HP; survival and continued attacks advance the encounter."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Chidori_Boss_Fight",
+              "label": "Chidori: Spring of Life and scripted conclusion"
+            }
+          ],
+          "date": "11-22"
+        },
+        {
+          "id": "jin-final",
+          "title": "Jin — final ascent",
+          "summary": "Weakness Scan lets Jin target the party’s vulnerabilities.",
+          "steps": [
+            "Cover weaknesses and carry Confuse recovery for Flash Grenade EX.",
+            "When Potent Stim Injection restores his HP and strengthens him, heal and guard through the burst. His self-inflicted Poison drains his health.",
+            "Expect scripted HP stops: do not spend every resource trying to skip the required phase actions."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Jin_Boss_Fight",
+              "label": "Jin: scan and injection"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/guide",
+              "label": "January 31: Jin phase stops and Poison"
+            }
+          ],
+          "date": "01-31"
+        },
+        {
+          "id": "takaya-final",
+          "title": "Takaya — final ascent",
+          "summary": "His late Theurgy leaves the party afraid and almost without SP.",
+          "steps": [
+            "Bring party-wide Fear recovery such as Amrita Shower and reserve SP items.",
+            "Cure Fear immediately after Paradise of Quietus, before Ghastly Wail.",
+            "Continue with physical skills or restore SP, while healing and maintaining debuffs."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Takaya_Boss_Fight",
+              "label": "Takaya: Soul Drain, Theurgy and Ghastly Wail"
+            }
+          ],
+          "date": "01-31"
+        },
+        {
+          "id": "nyx-avatar",
+          "title": "Nyx Avatar",
+          "summary": "Fourteen Arcana forms change the fight as it progresses.",
+          "steps": [
+            "Check affinities after every Arcana Shift. Renew useful debuffs rather than assuming they persist.",
+            "Keep recovery reserves for the final Death form; guard charged attacks during the preceding phases.",
+            "Heal immediately after Apocalypse removes almost all current HP, then recover from Night Queen’s damage and ailments.",
+            "After the boss, follow the final scripted confrontation through Great Seal."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Nyx_Avatar",
+              "label": "Nyx Avatar: Arcana phases and Death"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/guide",
+              "label": "January 31: Arcana shifts and final sequence"
+            }
+          ],
+          "date": "01-31"
+        }
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "Ending route",
+      "description": "The December decision determines whether the playable campaign continues into January.",
+      "entries": [
+        {
+          "id": "spare-ryoji",
+          "title": "December 31 — preserve the January route",
+          "summary": "Spare Ryoji at both decision prompts.",
+          "steps": [
+            "Make a separate save before the evening decision.",
+            "Choose to spare Ryoji, then reaffirm sparing him when he asks again.",
+            "Killing him selects the shortened ending and skips January. Sparing him opens the final month; no Social Link rank is required."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://samurai-gamers.com/persona-3-reload/p3re-all-endings-guide/",
+              "label": "Both December 31 decisions"
+            },
+            {
+              "url": "https://www.siliconera.com/what-are-the-persona-3-reload-true-ending-and-normal-ending-requirements/",
+              "label": "Ending requirements"
+            }
+          ],
+          "date": "12-31",
+          "deadline": "12-31"
+        },
+        {
+          "id": "epilogue",
+          "title": "January finale and March epilogue",
+          "summary": "Complete the January 31 ascent to reach the concluding school days.",
+          "steps": [
+            "Finish remaining optional daytime plans by January 30. Prepare and ascend on January 31.",
+            "After the final battle, continue the March farewell sequence through the March 5 rooftop ending.",
+            "Save Clear Data after the credits if you want New Game Plus."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/walkthrough/March",
+              "label": "March farewell days and ending"
+            },
+            {
+              "url": "https://medium.com/anitay-official/persona-3-reload-death-sacrifice-and-resurrection-at-easter-time-b73938a1373f",
+              "label": "Original completed-playthrough essay: March 5 graduation ending"
+            }
+          ],
+          "date": "03-05"
+        }
+      ]
+    },
+    {
+      "id": "episodes",
+      "title": "Linked Episodes and missable branches",
+      "description": "Complete each character’s events in sequence. Use the calendar for individual available days inside these windows.",
+      "entries": [
+        {
+          "id": "shinjiro-form",
+          "title": "Shinjiro — retain and return the extension form",
+          "summary": "Finish the September chain before October 4, then collect the final item from his room.",
+          "steps": [
+            "Start with Mitsuru in the faculty hallway, then meet Shinjiro at the station outskirts. Complete his first three episodes.",
+            "When Mitsuru discusses the form, choose “Wait a minute.” at the final prompt to keep it.",
+            "Return the form to Shinjiro and complete his next event by October 2.",
+            "From October 5, inspect the desk drawer in his dorm room. This branch does not prevent the October story event."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Hell Biker fusion unlock from the final room item."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+              "label": "Linked Episodes: ordered chains"
+            },
+            {
+              "url": "https://www.siliconera.com/heres-the-persona-3-reload-handles-shinjiro-aragaki/",
+              "label": "Keeping and returning Shinjiro’s form"
+            }
+          ],
+          "date": "09-04",
+          "deadline": "10-02"
+        },
+        {
+          "id": "ryoji-chain",
+          "title": "Ryoji — Kyoto invitation",
+          "summary": "The automatic first meeting alone does not complete his chain.",
+          "steps": [
+            "Continue after November 9 with his second event during November 12–16.",
+            "Speak to him at the Kyoto hotel on November 18 and accept his invitation.",
+            "Meet him on December 1, then spare him on December 31 to complete the chain."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Saturnus fusion unlock."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events#linked-episodes",
+              "label": "Linked Episode dates and unlocks"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+              "label": "Linked Episodes: ordered chains"
+            }
+          ],
+          "date": "11-09",
+          "deadline": "12-31"
+        },
+        {
+          "id": "junpei-chain",
+          "title": "Junpei — five episodes",
+          "summary": "The flower branch is optional for his Persona unlock.",
+          "steps": [
+            "Complete episodes in order: May 12–July 3; August 9–28; early November; December 19–26; January 15–29.",
+            "Prioritize the November event during November 7–11 so there is time for the optional flower branch."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Surt fusion unlock after episode 5; the optional flower is not required."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events#linked-episodes",
+              "label": "Linked Episode dates and unlocks"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+              "label": "Linked Episodes: ordered chains"
+            }
+          ],
+          "date": "05-12",
+          "deadline": "01-29"
+        },
+        {
+          "id": "chidori-flower",
+          "title": "Junpei — white flower branch",
+          "summary": "An optional November action adds a January 21 scene.",
+          "steps": [
+            "After Junpei’s third episode, buy the White Flower at Rafflesia in Port Island Station and give it to him at the dorm. Do this promptly; the gift costs no time slot.",
+            "Complete the gift by November 20. A November 30 late-night scene confirms the branch.",
+            "Reserve January 21 after school for the resulting revival scene."
+          ],
+          "requirements": [
+            "Junpei episodes 1–3 complete.",
+            "¥250 for the White Flower."
+          ],
+          "rewards": [
+            "Optional Chidori revival scene on January 21."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.jp/p3re/717656",
+              "label": "Chidori revival: third episode, flower deadline and confirmation"
+            },
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events#linked-episodes",
+              "label": "Linked Episode dates and unlocks"
+            }
+          ],
+          "date": "11-07",
+          "deadline": "11-20"
+        },
+        {
+          "id": "akihiko-chain",
+          "title": "Akihiko — five episodes",
+          "summary": "Keep each event in order rather than saving the whole chain for January.",
+          "steps": [
+            "Windows: May 29–July 10; July 24–August 31; October 9–November 2; December 12–22; January 4–29.",
+            "Check the calendar for the actual invitation days in each window."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Horus fusion unlock."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events#linked-episodes",
+              "label": "Linked Episode dates and unlocks"
+            }
+          ],
+          "date": "05-29",
+          "deadline": "01-29"
+        },
+        {
+          "id": "koromaru-chain",
+          "title": "Koromaru — five episodes",
+          "summary": "Several middle episodes share a long window, but still require the preceding event.",
+          "steps": [
+            "Start from August 22. Continue the three middle episodes from September 4.",
+            "Complete the final episode from January 5, finishing by January 30."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Byakko fusion unlock."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://aqiu384.github.io/megaten-database/p3r/social-events#linked-episodes",
+              "label": "Linked Episode dates and unlocks"
+            }
+          ],
+          "date": "08-22",
+          "deadline": "01-30"
+        },
+        {
+          "id": "ken-chain",
+          "title": "Ken — five episodes",
+          "summary": "His first two episodes must both be completed during September.",
+          "steps": [
+            "Complete the first from September 8 and the second from September 15, both by September 30.",
+            "Continue November 10–December 2, December 22–30 and January 19–27."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Michael fusion unlock."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+              "label": "Linked Episodes: ordered chains"
+            }
+          ],
+          "date": "09-08",
+          "deadline": "01-27"
+        },
+        {
+          "id": "takaya-epilogue",
+          "title": "Takaya — final follow-up",
+          "summary": "The summer encounters have a January follow-up.",
+          "steps": [
+            "After the automatic August 14, August 20 and September 18 events, visit Club Escapade during January 13–29.",
+            "Speak to the suspicious man and agree to hear him out."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Final story follow-up to the Folded Paper encounters."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/linked-episodes",
+              "label": "Linked Episodes: ordered chains"
+            }
+          ],
+          "date": "01-13",
+          "deadline": "01-29"
+        }
+      ]
+    },
+    {
+      "id": "optional-bosses",
+      "title": "Optional late-game bosses",
+      "description": "Preparation rules for the Reaper, Monad’s final guardian and Elizabeth.",
+      "entries": [
+        {
+          "id": "reaper",
+          "title": "Reaper",
+          "summary": "Lingering on a hostile Tartarus floor eventually brings a much stronger enemy.",
+          "steps": [
+            "Prepare buffs, debuffs, weakness protection and reliable healing before deliberately waiting.",
+            "Respect its extra actions and guard charged Almighty attacks; reflection cannot stop Megidolaon.",
+            "Armageddon offers a late-game one-hit route when unlocked. Ordinary damage builds can also win."
+          ],
+          "requirements": [],
+          "rewards": [
+            "Bloody Button for the related request."
+          ],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Reaper_Fight",
+              "label": "Reaper: action pattern and strategy"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/440401",
+              "label": "Reaper: appearance and Almighty response"
+            }
+          ]
+        },
+        {
+          "id": "shadow-of-void",
+          "title": "Shadow of the Void",
+          "summary": "The guardian at the end of the 255F Monad Passage regenerates 300 HP per turn.",
+          "steps": [
+            "Maintain buffs and defense debuffs, then concentrate damage so healing does not erase your progress.",
+            "There is no elemental weakness to exploit. Theurgy provides reliable burst damage; Armageddon can end the encounter immediately."
+          ],
+          "requirements": [
+            "Reach the end of the 255F Monad Passage."
+          ],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/472225",
+              "label": "Shadow of the Void: 255F and regeneration"
+            }
+          ]
+        },
+        {
+          "id": "elizabeth-rules",
+          "title": "Elizabeth — entry and prohibitions",
+          "summary": "A solo fight with strict retaliation rules; New Game Plus is not required.",
+          "steps": [
+            "Complete requests 81, 99 and 100, then accept request 101 when eligible from January 1. Enter alone; Fuuka may support you.",
+            "Do not let an attack actually hit Null, Drain or Repel. Remove Counter effects and the Omnipotent Orb. Ordinary resistance and ailment protection are usable.",
+            "Reserve Armageddon for a killing blow. Prepare Endure and Enduring Soul as separate once-per-battle survival effects.",
+            "As a conservative target, finish before turn 50. Track damage so you can manage the phase thresholds deliberately."
+          ],
+          "requirements": [
+            "Request 101 accepted.",
+            "A prepared solo build and two separate survival effects."
+          ],
+          "rewards": [],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81170/ultimate-adversary",
+              "label": "Request access and Elizabeth preparation"
+            },
+            {
+              "url": "https://primagames.com/tips/how-to-defeat-elizabeth-in-persona-3-reload-p3r",
+              "label": "Retaliation rules"
+            },
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3206753509",
+              "label": "Solo restrictions, phases and survival skills"
+            }
+          ],
+          "date": "01-01"
+        },
+        {
+          "id": "elizabeth-phases",
+          "title": "Elizabeth — HP thresholds",
+          "summary": "She begins at 20,000 HP and fully heals once during the intended sequence.",
+          "steps": [
+            "Above 13,000 HP, learn the eight-Persona rotation and bank your burst.",
+            "Crossing 13,000 starts the timed damage phase: get below 10,000 before its turn-5 repeated 9,999 attacks. Survive its earlier scripted 9,999 with one survival effect.",
+            "The first crossing below 10,000 triggers a full heal. Work her below 10,000 a second time.",
+            "Survive the next scripted 9,999 attack with your remaining survival effect, then use Armageddon before she heals again."
+          ],
+          "requirements": [
+            "Helel and Satan registered for Armageddon."
+          ],
+          "rewards": [
+            "Omnipotent Orb from completing the ultimate-adversary request."
+          ],
+          "spoiler": true,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3206753509",
+              "label": "Phase tables: 20,000 / 13,000 / 10,000 thresholds"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/guide-for-the-secret-boss-main-game",
+              "label": "Secret boss phase strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protagonist-theurgy",
+      "title": "Protagonist Theurgy",
+      "description": "Register both listed Personas, then speak with Elizabeth. The pair need not remain in your stock after the ability unlocks.",
+      "entries": [
+        {
+          "id": "cadenza",
+          "title": "Cadenza",
+          "summary": "Restore half the party’s HP and raise accuracy/evasion.",
+          "steps": [
+            "Register Orpheus + Apsaras in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "jack-brothers",
+          "title": "Jack Brothers",
+          "summary": "Medium Almighty damage to all enemies, with a high chance of knockdown.",
+          "steps": [
+            "Register Jack Frost + Jack-o’-Lantern in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "king-and-i",
+          "title": "King and I",
+          "summary": "Heavy Ice damage to all enemies, bypassing affinities, with a chance to Freeze.",
+          "steps": [
+            "Register King Frost + Black Frost in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "best-friends",
+          "title": "Best Friends",
+          "summary": "Apply Charge and Concentrate to one ally.",
+          "steps": [
+            "Register Forneus + Decarabia in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "scarlet-havoc",
+          "title": "Scarlet Havoc",
+          "summary": "Severe Slash damage to all enemies, bypassing affinities.",
+          "steps": [
+            "Register Mithras + Siegfried in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "trickster",
+          "title": "Trickster",
+          "summary": "Massive Almighty damage to all enemies, with a chance of a random ailment.",
+          "steps": [
+            "Register Loki + Susano-o in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        },
+        {
+          "id": "armageddon",
+          "title": "Armageddon",
+          "summary": "Deal 9,999 Almighty damage to every enemy; the protagonist is left at 1 HP and 1 SP.",
+          "steps": [
+            "Register Helel + Satan in the Compendium, then visit Elizabeth."
+          ],
+          "requirements": [
+            "Theurgy system unlocked through the June story."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://dotesports.com/persona/news/all-theurgy-powers-in-persona-3-reload",
+              "label": "Protagonist pairs and effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps4/410282-persona-3-reload/cheats",
+              "label": "Unlockables: protagonist Theurgy pairs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "party-theurgy",
+      "title": "Party Theurgy",
+      "description": "Use each character’s charging condition. Later abilities unlock through story Persona awakenings; damaging Theurgies bypass affinities.",
+      "entries": [
+        {
+          "id": "charge-protagonist",
+          "title": "Protagonist",
+          "summary": "Use Persona skills.",
+          "steps": [
+            "Choose among the seven fusion abilities listed above."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-yukari",
+          "title": "Yukari",
+          "summary": "Heal allies.",
+          "steps": [
+            "Cyclone Arrow: severe Wind damage to one enemy.",
+            "Tranquility: Concentrate for the whole party."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Isis."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-junpei",
+          "title": "Junpei",
+          "summary": "Land critical hits.",
+          "steps": [
+            "Hack n’ Blast: severe Slash damage to one enemy.",
+            "Blaze of Life: massive Fire damage to one enemy and a full self-heal."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Trismegistus."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-akihiko",
+          "title": "Akihiko",
+          "summary": "Begin his turn with a stat buff active; another ally can supply it.",
+          "steps": [
+            "Lightning Spike: heavy Electric damage to all enemies.",
+            "Electric Onslaught: severe Electric damage to one enemy, with a high Shock chance."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Caesar."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-mitsuru",
+          "title": "Mitsuru",
+          "summary": "Begin her turn with an enemy debuffed or afflicted by an ailment.",
+          "steps": [
+            "Blizzard Edge: severe Ice damage to one enemy, with a high Freeze chance.",
+            "Blade of Execution: massive Almighty damage to one enemy and lower its attack, defense and accuracy/evasion."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Artemisia."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-aigis",
+          "title": "Aigis",
+          "summary": "Use physical skills.",
+          "steps": [
+            "Orgia Mode: heavy Pierce damage to all enemies, then three turns of boosted automatic action and one turn of overheating.",
+            "Maximum Firepower: severe Pierce damage to one enemy."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Athena."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-koromaru",
+          "title": "Koromaru",
+          "summary": "Hit enemy weaknesses.",
+          "steps": [
+            "Hound of Hades: severe Dark damage to one enemy.",
+            "Power Howling: Charge for the whole party. Both abilities are available without a later awakening."
+          ],
+          "requirements": [
+            "Both Theurgies available when Koromaru joins; no second awakening required."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-ken",
+          "title": "Ken",
+          "summary": "Begin his turn below half SP.",
+          "steps": [
+            "Divine Retribution: severe Light damage to one enemy.",
+            "Divine Intervention: revive and fully heal the party, with physical and magical reflection barriers."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Kala-Nemi."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-shinjiro",
+          "title": "Shinjiro",
+          "summary": "Begin his turn below half HP.",
+          "steps": [
+            "Bleeding Fury: severe Strike damage to one enemy. Keep him alive rather than forcing low HP during unsafe turns."
+          ],
+          "requirements": [
+            "Bleeding Fury is his only Theurgy; there is no second story unlock."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        },
+        {
+          "id": "charge-fuuka",
+          "title": "Fuuka",
+          "summary": "Use Full Analysis.",
+          "steps": [
+            "Oracle: a random party recovery or buff effect.",
+            "Revelation: an enhanced random support effect, potentially including full recovery or Charge and Concentrate."
+          ],
+          "requirements": [
+            "First Theurgy: available after the system unlocks and the character joins.",
+            "Second Theurgy: unlocked automatically with the story awakening to Juno."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3230774091",
+              "label": "Original mechanics tables: Theurgy gauge calculations"
+            },
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/474425",
+              "label": "Theurgy charging conditions and translation corrections"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/ps5/410283-persona-3-reload/faqs/81261/gameplay-mechanics",
+              "label": "Party Theurgy effect table"
+            },
+            {
+              "url": "https://github.com/aqiu384/megaten-fusion-tool/blob/e93dd1c87ca453de8fae8165bdbef220732feabc/src/app/p3r/data/party-data.json",
+              "label": "Game-derived party table: initial and awakened Theurgy skills"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-game-plus",
+      "title": "New Game Plus",
+      "description": "Create Clear Data after the ending, then load that save to begin another campaign.",
+      "entries": [
+        {
+          "id": "ngplus-standard",
+          "title": "Standard carryover",
+          "summary": "Outside Merciless, much of your accumulated strength and inventory carries forward.",
+          "steps": [
+            "Keep a separate pre-finale save, and register custom Personas before finishing.",
+            "Carryover includes protagonist level and social stats, money, Compendium registrations, equipment, most inventory, Twilight Fragments, scan information and permanent stat-item gains.",
+            "Fusion-unlock key items from completed Social Links and Linked Episodes remain useful. Story progress, Social Link ranks and episode chains restart."
+          ],
+          "requirements": [
+            "A completed-game Clear Data save."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.rpgsite.net/guide/15449-persona-3-reload-new-game-plus-what-carries-over-to-ng-how-it-works",
+              "label": "Clear Data, carryover and Merciless exceptions"
+            }
+          ]
+        },
+        {
+          "id": "ngplus-merciless",
+          "title": "Merciless carryover restriction",
+          "summary": "Starting the new campaign on Merciless discards almost all gameplay carryover.",
+          "steps": [
+            "Expect to rebuild levels, social stats, money, equipment and the Compendium.",
+            "Costumes, souvenirs and playtime are the notable retained categories. Choose a different difficulty for a run that uses your previous combat and social progress."
+          ],
+          "requirements": [
+            "A completed-game Clear Data save."
+          ],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.rpgsite.net/guide/15449-persona-3-reload-new-game-plus-what-carries-over-to-ng-how-it-works",
+              "label": "Clear Data, carryover and Merciless exceptions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tartarus-mechanics",
+      "title": "Tartarus exploration",
+      "description": "Run preparation, battle rewards and the systems that extend an expedition.",
+      "entries": [
+        {
+          "id": "shuffle-time",
+          "title": "Shuffle Time and Arcana Burst",
+          "summary": "Finish a battle with an All-Out Attack to guarantee Shuffle Time.",
+          "steps": [
+            "Coins give money; Wands give experience; Cups give recovery or buffs; Swords give skill cards. Read the displayed card reward before choosing.",
+            "Fill the displayed Major Arcana slots to trigger Arcana Burst: subsequent Minor Arcana ranks rise by one for that expedition.",
+            "Story bosses and Monad rewards expand the available Major Arcana pool. Decide which bonuses you want before filling your slots. Leaving Tartarus ends the expedition bonuses; permanent stat gains remain."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://primagames.com/gaming/persona-3-reload-all-shuffle-time-cards-and-what-they-do",
+              "label": "Shuffle Time: rewards and persistence"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/guide",
+              "label": "Shuffle Time: displayed capacity and one-rank Arcana Burst"
+            }
+          ]
+        },
+        {
+          "id": "major-arcana-growth",
+          "title": "Major Arcana — growth",
+          "summary": "Permanent stat rewards apply when selected.",
+          "steps": [
+            "Emperor: stock Personas +2 Strength/Magic. Empress: stock Personas +2 Endurance/Agility/Luck. Tower: stock Personas +1 all stats.",
+            "Hierophant: equipped Persona +1 level. Chariot: protagonist +10 maximum HP. Hermit: protagonist +7 maximum SP.",
+            "Fortune: current party +8 maximum HP. Strength: current party +5 maximum SP. Judgement: extra experience for the lowest-level party member."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://primagames.com/tips/persona-3-reload-all-shuffle-time-cards-explained-p3r",
+              "label": "Major Arcana: growth effects"
+            }
+          ]
+        },
+        {
+          "id": "major-arcana-expedition",
+          "title": "Major Arcana — expedition bonuses",
+          "summary": "Choose cards that support the purpose of this visit.",
+          "steps": [
+            "Fool: more battle experience. Priestess: stronger All-Out Attacks. Lovers: stronger Social Link fusion experience.",
+            "Justice and Star: each adds one Shuffle Time selection. Sun: fuse up to five levels above the protagonist.",
+            "Devil: double battle and breakable-object item drops. Moon: fully restore current party HP/SP."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://primagames.com/tips/persona-3-reload-all-shuffle-time-cards-explained-p3r",
+              "label": "Major Arcana: expedition effects"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/september",
+              "label": "Devil: doubled drops"
+            }
+          ]
+        },
+        {
+          "id": "major-arcana-items",
+          "title": "Major Arcana — items and the next day",
+          "summary": "Some rewards serve plans outside the current battle.",
+          "steps": [
+            "Magician: a rare item. Hanged Man: a random incense.",
+            "Temperance: improved social-stat gains on the following day. Plan the next day’s activity around it."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://primagames.com/tips/persona-3-reload-all-shuffle-time-cards-explained-p3r",
+              "label": "Major Arcana: item rewards and Temperance"
+            }
+          ]
+        },
+        {
+          "id": "monad-doors",
+          "title": "Monad Doors — temporary encounters",
+          "summary": "The first door is introduced on 80F; later doors appear during exploration.",
+          "steps": [
+            "Enter a door before leaving its floor if you want that encounter; an ignored door closes when you move on.",
+            "Prepare for a stronger enemy and collect the treasure after winning. These optional fights offer materials and useful Shuffle Time rewards.",
+            "Check the enemy reference for the current block’s encounter rather than assuming every door contains the same enemy."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Yabbashah",
+              "label": "80F: Monad Door tutorial"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/august",
+              "label": "Monad Doors versus persistent Passages"
+            }
+          ]
+        },
+        {
+          "id": "monad-passages",
+          "title": "Monad Passages — persistent challenges",
+          "summary": "The first Passage is on 91F. These fixed challenges can be revisited.",
+          "steps": [
+            "Clear every encounter and collect the final key item: it unlocks the next Passage in the sequence.",
+            "Return later if underprepared. Unlike a random Door, the Passage does not vanish when you leave the floor.",
+            "Collect the Major Arcana rewards to expand future Shuffle Time choices. The last optional challenges are covered in the late-game boss section."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Yabbashah",
+              "label": "91F: first Monad Passage and rewards"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/august",
+              "label": "Passage persistence and Temperance reward"
+            }
+          ]
+        },
+        {
+          "id": "fragment-economy",
+          "title": "Twilight Fragments and healing clocks",
+          "summary": "Locked chests and full recovery compete for the same fragments.",
+          "steps": [
+            "Collect the fixed town pickups, break blue-glowing objects in Tartarus and claim Elizabeth’s Social Link/request rewards. Rescued cats can also provide fragments.",
+            "Locked chests show their fragment cost. Keep a reserve for the fixed chests whose equipment you want.",
+            "The entrance healing clock costs seven fragments to restore party HP and SP. Returning to the entrance alone does not provide free recovery."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/How_To_Farm_Twilight_Fragments",
+              "label": "Fragment acquisition"
+            },
+            {
+              "url": "https://twinfinite.net/guides/how-to-get-use-twilight-fragments-persona-3-reload/",
+              "label": "Locked chests and seven-fragment restoration"
+            }
+          ]
+        },
+        {
+          "id": "great-clock",
+          "title": "Great Clock — reserve-member catch-up",
+          "summary": "Introduced in Yabbashah, this is separate from the seven-fragment healing clock.",
+          "steps": [
+            "Opening fragment-locked chests can reveal its entrance. Go through when it appears.",
+            "Select two lower-level companions, then put them into battle to receive the displayed catch-up levels.",
+            "Use the selected companions before searching for another Clock; an unclaimed battle level-up can prevent the next one appearing. Check the Clock’s preview rather than assuming an unlimited jump to your level."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://game8.co/games/Persona-3-Reload/archives/443679",
+              "label": "Great Clock: access and selecting companions"
+            },
+            {
+              "url": "https://gamefaqs.gamespot.com/pc/409941-persona-3-reload/faqs/81177/guide",
+              "label": "Great Clock: pending level-ups prevent another appearance"
+            }
+          ]
+        },
+        {
+          "id": "reaper-avoidance",
+          "title": "Avoiding the Reaper",
+          "summary": "Lingering on one hostile floor attracts it after its introduction.",
+          "steps": [
+            "Move to the stairs or a teleporter when Fuuka warns you. Do not wait beside an approaching Reaper while planning your route.",
+            "Treat dark floors cautiously: it can arrive sooner there. Continue exploration on another floor instead of trying to outwait it."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://primagames.com/tips/how-to-find-and-defeat-the-reaper-in-persona-3-reload-p3r",
+              "label": "Appearance conditions and dark floors"
+            }
+          ]
+        },
+        {
+          "id": "expedition-preparation",
+          "title": "Prepare and recover during an expedition",
+          "summary": "Plan around SP, checkpoints and the month’s rescue deadlines.",
+          "steps": [
+            "Bring elemental coverage, healing, revival and ailment-recovery items. Use the calendar to check missing-person deadlines before departing.",
+            "Activate return points as you climb. Return to the entrance to save, change the party or fuse Personas before a difficult encounter.",
+            "Use low-cost weakness hits and All-Out Attacks to conserve SP. Take recovery cards when needed, or use the healing clock if extending the visit is worth seven fragments.",
+            "Stop at the current story barrier; the floor progression reference shows when the next section opens."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://www.neoseeker.com/persona-3-reload/guides/Thebel",
+              "label": "Exploration tutorials: return points, SP and recovery"
+            }
+          ]
+        },
+        {
+          "id": "skill-card-copy",
+          "title": "Duplicate skill cards at Inari",
+          "summary": "The small shrine at Naganaki can copy one card per day without consuming a time slot.",
+          "steps": [
+            "Bring a skill card you already own and choose it at the Inari shrine during the day. The copy is immediate and free.",
+            "Keep a spare copy of a valuable card before teaching it to a Persona, so you can duplicate it again later."
+          ],
+          "requirements": [],
+          "rewards": [],
+          "spoiler": false,
+          "checkable": false,
+          "sources": [
+            {
+              "url": "https://gamefaqs.gamespot.com/xbox-series-x/409940-persona-3-reload/faqs/81159/may",
+              "label": "Inari: free, immediate, once-daily duplication"
+            },
+            {
+              "url": "https://www.youtube.com/watch?v=qJzUgUKMj28",
+              "label": "BuffMaister: original skill-card duplication demonstration"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "evidenceNotes": [
+    {
+      "id": "elizabeth-timeout",
+      "note": "Original Steam guide 3206753509 reports a 100-turn limit; several English guides report 50. The player entry recommends finishing before 50 and does not claim that either exact hard limit is verified."
+    },
+    {
+      "id": "junpei-november",
+      "note": "Aqiu lists episode 3 through November 11; Game8 Japan lists through November 13 and the flower through November 20. The advice uses the earlier episode window and the explicitly sourced November 20 gift deadline."
+    },
+    {
+      "id": "theurgy-pairs",
+      "note": "Some guides incorrectly name Lucifer for Armageddon or a single target for Scarlet Havoc. This dataset uses Helel + Satan and all-enemy Scarlet Havoc."
+    },
+    {
+      "id": "reload-bosses",
+      "note": "No Moonless Gown instruction is included: that Nyx mechanic belongs to earlier Persona 3 versions. Exact Takaya phase percentages are omitted because original guides disagree."
+    },
+    {
+      "id": "fortune-wheel",
+      "note": "The original Sharbit battle guide documents automatic wheel damage up to 300 and links its recorded fight. Exact scripted wheel behavior is corroborated by the Reload-specific wiki section; the embedded video was not independently watched during this pass."
+    },
+    {
+      "id": "great-clock-rate",
+      "note": "Guides disagree on a guaranteed fragment-spend threshold and often omit the catch-up cap. The reference uses the observed chest trigger and in-game level preview without asserting a universal 19-fragment guarantee or unlimited leveling."
+    }
+  ]
+}

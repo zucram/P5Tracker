@@ -1,5 +1,17 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.0",
+    date: "2026-09-07",
+    title: "Reload covers the whole playthrough",
+    description: "Find the answers and references you need from the first month through the final campaign battles.",
+    sections: [{ title: "Reload companion", items: [
+      "Read dialogue guidance for all 190 manual Social Link ranks, including friendship and romance choices.",
+      "Track all 101 Elizabeth requests and each companion's dorm activities.",
+      "Look up Personas, fusion recipes, boss mechanics, equipment and material sources.",
+      "Plan optional outings and use Twilight Fragment and achievement checklists. Existing saves remain compatible."
+    ] }]
+  },
+  {
     version: "2.5.2",
     date: "2026-09-07",
     title: "One start page for both trackers",

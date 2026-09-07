@@ -1,47 +1,67 @@
-# Persona 3 Reload beta release
+# Persona 3 Reload companion release
 
-The Reload companion at `/P5Tracker/p3/` follows the Royal tracker layout. Briefing, Calendar, Social Links, Tartarus and More use desktop tabs and fixed mobile navigation. Calendar is the default view, with monthly checklists, opening requirements and personal goals. The optional daily planner still uses the active date and time slot. Its date controls are also available above Tartarus and deadline entries. The beta covers April through January in the main campaign.
+Version 2.6.0 expands Reload from a calendar planner into a companion for the whole main campaign. Beta means individual details may need correction. Entire gameplay systems are part of the release scope. Episode Aigis, FES and Portable are separate campaigns or editions and are excluded.
 
-## Behavior
+The shared start page is `/P5Tracker/`. Royal lives at `/P5Tracker/p5/` and Reload at `/P5Tracker/p3/`. Existing `/games/persona-3-reload/` links preserve query strings and fragments when redirecting. Both trackers link back to the chooser.
 
-`src/p3/planner.js` combines the roster, canonical research facts and `knowledge/p3-reload/calendar-rules.json`. UTC 2009/2010 dates match the game weekday anchors. January follows December. Date browsing never marks an activity complete or consumes a game time slot.
+## Player navigation
 
-Ordinary link suggestions respect reviewed school holidays, exam preparation, known link absences, fixed story slots, starting dates, stat requirements and recorded introductions. Rank above zero establishes that the introduction was completed; a separate confirmation supports an introduction completed before rank1. Blocked or unconfirmed links are not presented as ready meetings. Rescues associated with Social Links suppress their suggestions until rescue confirmation.
+Reload follows Royal's layout with Briefing, Calendar, Social Links, Tartarus and More. Calendar opens by default. Its April through January checklists include school answers, openings, missables, Tartarus access, personal goals, relevant boss and story guidance, and optional outings and shopping. The campaign reference also explains the March conclusion and New Game Plus.
 
-Deadline checklists cover the canonical missing people, dated requests and Linked Episodes. Prerequisite checkmarks affect later episode reminders. Past dates without checkmarks mean that the record needs checking, not proof of failure in the actual game. Disputed windows never generate definitive expired warnings or lock successors permanently. Route choices remain suggestions. Ordinary options are hidden during fixed story slots while relevant trip tasks and invitations remain accessible.
+Social Links contains all 22 links. Each of the 19 manual links has guidance for ranks 1 through 10, next-rank selection, friendship and romance alternatives where applicable, and an explicit rank-completion action. Browsing a rank never changes progress. The saved relationship choice describes the player's game; previewing another dialogue branch leaves that choice unchanged. Automatic links remain identified as story-driven.
 
-All 22 Social Links and three six-rank stats remain editable. Calendar browsing has separate transient state, so looking ahead does not advance the active month. Setting a browsed month active selects its first day. Source-based monthly tasks replace the old research briefs; personal goals remain available within each month. Names are hidden by default; arcana, dates and source links can still reveal information. Explicitly opening all future windows or the static reference tables can reveal spoilers.
+Tartarus has three sections: progress and rescues, all 101 Elizabeth requests, and enemies and bosses. Requests include numbered solutions, prerequisites, rewards, timed item opportunities and links to fusion or equipment help. Collecting an item and reporting its request are separate actions.
 
-## Release scope
+More provides campaign guidance, dorm activities, Personas and fusion, equipment and shops, daily life, and collections and outings. These references include the following:
 
-This release uses a reviewed subset of the larger knowledge base. Its global `releaseReady:false` means the complete research collection is not a fully validated route. The beta does not claim exhaustive daily availability, affinity calculations, guaranteed rank-ups, a complete dialogue guide, optimal Tartarus routing or 100% completion. Episode Aigis, FES and Portable are excluded. Source review and automated scenario tests are not an in-game playthrough. See [calendar evidence](p3-reload-calendar-evidence.md) for resolved rules and remaining gaps.
+- Story and optional boss tactics, ending choices, Linked Episode branches, seven protagonist Theurgies, party charge conditions and New Game Plus.
+- A searchable registry of 173 base-game Personas and 21 optional DLC Personas, fusion recipes, affinities, skills and unlock conditions. Players save their DLC selection because it changes fusion results.
+- Tartarus exploration, Shuffle Time and all 20 available Major Arcana effects, Monad Doors and Passages, Twilight Fragment spending, the Great Clock and free skill-card duplication.
+- Enemy affinities and skill data, including gatekeepers and encounter variants. Unknown source locations and effects are labelled.
+- Two tracked dorm activities per companion, with initial and upgraded characteristics based on three completions of either or both activities.
+- Antique crafting recipes, shop stock, equipment effects and material acquisition. Alternative exchanges remain separate recipes.
+- Stat thresholds and activities, affinity recovery, computer software, gardening and gifts.
+- All 17 fixed town Twilight Fragments, 48 main-campaign Steam achievements, TV offers, film invitations, walks and social outings. PlayStation's additional platinum is explained separately.
 
-The release gate is a working conservative planner: use only supported rules, show uncertainty accurately, avoid unsupported missed-deadline claims, preserve saves, provide useful full-calendar reminders, and pass scenario and browser checks. Wider calendar or perfect-run claims require additional evidence and in-game validation.
+Names and story details are hidden by default where marked. Players can reveal individual entries or enable reference names. Source links and explicitly opened entries can reveal spoilers. This is a flexible companion, without a guaranteed optimal daily route or an exact affinity simulator.
+
+## Calendar rules
+
+`src/p3/planner.js` combines the roster, canonical facts and `calendar-rules.json`. UTC 2009/2010 dates match the game's weekday anchors. Date browsing never completes an activity or consumes a slot.
+
+Ordinary link suggestions respect reviewed school holidays, exam preparation, absences, fixed story slots, opening dates, stat requirements and recorded introductions. A rank above zero establishes an introduction; manual confirmation supports an introduction completed before rank 1. Endangered Social Links stay unavailable until the associated rescue is confirmed.
+
+Episode windows are outer bounds, not promises of availability every day. Earlier checkmarks affect successor reminders. An unchecked past entry means the player should check their record. It does not prove failure in the game. Disputed windows do not create definitive expiry warnings. See [calendar evidence](p3-reload-calendar-evidence.md).
 
 ## Saves and analytics
 
-Reload uses its own `p3reload_state_v1` key, separately from Royal. Schema 2 includes date, slot, completed event IDs, manual introduction confirmations and event-name visibility. Version 2.5.1 adds optional `checkedTasks` for school answers, opening tasks and Tartarus sections. Previously released schema-2 saves default this field to an empty list; imports validate IDs against the current datasets. Existing event checkmarks still use their original IDs. Old schema1 saves migrate in memory. An unreadable existing save remains untouched until the user explicitly replaces it and can be downloaded for recovery. Imports validate before applying and retain the preceding state; storage failure keeps an in-memory state available to download.
+Reload uses `p3reload_state_v1`, separately from Royal. Schema 2 remains compatible with released saves. New optional fields are `registeredPersonas`, `enabledDlcPersonas`, `collectionChecks`, `dormActivities` and `relationshipRoutes`. Missing fields receive defaults; malformed present values fail validation. All 101 request IDs join the existing event allowlist without replacing timed request or pickup IDs.
 
-`p3_progress_changed` contains a fixed action category only. `p3_tracker_used` fires after the first manual progress action per app mount. Date navigation and imports do not emit manual-use events. Guide clicks use `p3_guide_opened`; imports and failures use fixed method labels. Support/share/backup events do not contain user text, dates, event IDs, ranks or save contents. Download and sharing events confirm a browser action, not a file on disk, a referral or a donation.
+Imports validate before changing state and retain one previous save. Schema 1 migrates in memory. Unreadable stored data stays untouched until the player explicitly replaces it and can be downloaded for recovery. Storage failure leaves the current in-memory state available to download. Progress does not sync automatically between browsers.
+
+`p3_progress_changed` sends a fixed action category. New actions cover request reporting, relationship choices, dorm activity counts, Persona registration, DLC settings and collection checkmarks. `p3_tracker_used` fires after the first manual progress action per mount. Guide, backup, share and import events use fixed labels. Save contents, dates, ranks, IDs and goal text are not sent. A download or share event confirms a browser action, not a donation or successful referral.
 
 ## Search and discovery
 
-The main planner has a crawlable HTML description, canonical URL, metadata and WebApplication structured data. Three reference pages answer distinct searches: school and exam answers with social-stat activities, Social Link schedules/stat requirements, and missing-person/request/episode deadlines. They share the canonical data and link to the planner and each other. The game directory, Royal’s More/footer and next-game section link directly to Reload. The sitemap includes the tracker and all three reference URLs. Guide CTAs open the monthly calendar.
+The tracker has crawlable fallback HTML, a canonical URL, social metadata and WebApplication structured data. Six generated reference pages answer distinct searches:
 
-`npm run build:guides` regenerates the reference pages, including `build-p3-study-guide.mjs` for the school-answer page. `--check` detects stale output; prebuild runs the knowledge validator and all guide freshness checks. Do not publish keyword variants with substantially duplicate content or infer indexing/ranking from a successful deployment.
+- School and exam answers with social-stat activities.
+- Social Link opening requirements and schedules.
+- Missing-person, request and Linked Episode deadlines.
+- Social Link rank answers with relationship branches.
+- All 101 Elizabeth request solutions.
+- Fusion rules, request recipes, special fusions and the Persona catalog.
 
-## Verification
+The shared start page and Reload's More view link to these pages. The pages link to each other and to the relevant tracker section. All six URLs are in the sitemap. Their reference content is available without JavaScript.
 
-`npm test` includes Royal regression tests, Reload save migration/import cases, planner scenarios across all306 dates in both slots, rescue and episode boundaries, calendar exceptions and knowledge-structure checks. `npm run build` builds both entries for `/P5Tracker/`. Lint the new/changed Reload modules and generators separately from the documented legacy Royal lint baseline.
+`npm run build:guides` regenerates these pages. Prebuild checks their freshness and validates the original knowledge collection. Deployment success does not establish Google indexing or rankings.
 
-Browser review checks desktop/mobile layout, date changes, link introductions and ranks, deadline checkmarks, goal persistence, restore, base-path links and fixed analytics payloads using a local recorder. Verify the deployed HTML/assets and guide URLs after Pages completes. Keep test events out of production analytics. Private Reddit draft, acquisition plans, dashboard observations and financial targets remain in `.local/growth/`.
+## Evidence and verification
 
-## Supplemental game data
+The [completion audit](p3-reload-completion-audit.md) records system coverage. The old `facts.json` and `coverage.json` describe the original planner research collection; their `releaseReady: false` flags do not measure the newer companion datasets. They remain false because the collection is not a verified perfect-run route.
 
-`school-answers.json` contains 36 classroom dates, 17 manual exam dates and five automatic exam dates. `activities.json` contains 15 sourced social-stat options with venues, weekday/time-slot schedules, costs, point rewards and conditions. Their coverage excludes unresolved movie schedules and some jobs. `tartarus.json` contains 11 sections with first normal exploration dates, reachable floor caps and whole-block boundaries. It distinguishes the June tutorial from normal exploration and records the December 3–9 closure.
+References contain source URLs and short original instructions. The fusion and combat dataset is vendored under the Unlicense, with a pinned revision and checksums. Equipment and request provenance identifies the extracted game-data revision. Source disagreements remain attached to the affected records. Examples include a late-November episode window and an optional boss's disputed timeout; the instructions avoid treating those disputed values as hard rules.
 
-The month adapter derives existing rescue, request, episode and opening rows from canonical facts and calendar rules. School answers and Tartarus goals join those rows in the Calendar. Introduction requirements remain visible in Social Links. Factual prerequisite ranks are not prescribed end-of-month targets. Disputed episode cutoffs remain explicitly uncertain.
+Automated checks cover Royal regressions, every campaign calendar day, save migration and import, all new progress fields, dialogue coverage, request prerequisites, fusion behavior and dataset completeness. Browser review covers mobile and desktop navigation, disclosures, rank and relationship actions, requests, DLC settings, dorm progress, materials, collections and an export/import/reload round trip. Local analytics recording checks fixed payloads without adding test events to production.
 
-## Shared start page
-
-The main `/P5Tracker/` address opens a game chooser, with Royal at `/p5/` and Reload at `/p3/` beneath that base. Existing `/games/persona-3-reload/` links redirect to Reload with their query strings and fragments preserved. The origin and Reload storage keys are unchanged. New internal, guide and share links use the short routes.
+These checks do not replace a full in-game validation run. Individual source omissions and errors may remain, and should be reported against the affected entry. A new missing gameplay system is a scope defect and must be fixed.
