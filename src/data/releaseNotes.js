@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.15",
+    date: "2026-09-07",
+    title: "Treasure Demon quick reference",
+    description: "Find the Royal weakness and keep track of your captures.",
+    sections: [{ title: "Weaknesses and registry", items: [
+      "Look up all nine Treasure Demon weaknesses in a searchable guide.",
+      "Filter the registry to Treasure Demons and see their weaknesses beside your saved checkmarks.",
+      "The guide opens that filtered registry directly. Name searches also accept Queens Necklace and Kohinoor."
+    ] }]
+  },
+  {
     version: "2.6.14",
     date: "2026-09-07",
     title: "Keyboard-friendly Royal checklists",

@@ -1,10 +1,11 @@
 {
-  "recipe": "96511aa84cc05268d2575b043ea77fabda6b2b435f09c29a84691a92b2b06dbd",
+  "recipe": "70129a9fab4cb4701d4a7e3a82c23103d6290ad399dddfc9b33de5abdb388530",
   "images": {
     "home": "6096a21becc9c613230397811dcd0cad486dee317f4c158f90130284db45649f",
     "royal": "97e8f30cfe0b67b51eeeda165bd579bbb2d475a74b5d309fc550e70edcafc2ee",
     "reload": "2e1910d59093ca31feddcaf181de40135e2ad5f41bc22933f7abefc1f6d8bc3d",
     "guides": "e7fabb404da0195e53846eef2329e8fbd351868e8e7d25619f7b30d6b4d89f66",
+    "persona-5-royal-treasure-demon-weaknesses": "904fb474394ed0f8a40f07d7a9afebb4bcd056f6abe43a95893f70e0de19e186",
     "persona-5-royal-strength-confidant": "c8763af7cb32f8859ac37c8b48d1ee5e74946cd1da08b8e13dcb2d5189f21b08",
     "school-answers": "ad1bd6cf6fc7f12c112e29ad972f389df5cb34ba8954e5210d5c00216c7e14c8",
     "persona-5-royal-crossword-answers": "9d12dd0100b998adca76ab3bdc0ab4d9206b12d81fdcd0acfb089d3936921486",

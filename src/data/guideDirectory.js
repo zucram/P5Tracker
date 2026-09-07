@@ -1,4 +1,5 @@
 export const GUIDE_DIRECTORY = [
+  { slug: 'persona-5-royal-treasure-demon-weaknesses', game: 'royal', title: 'Treasure Demon weaknesses', description: 'Look up all nine Royal weaknesses, then track captured Treasure Demons.', terms: 'regent queens necklace stone scone kohinoor orlov emperors amulet hope diamond crystal skull orichalcum rare persona' },
   { slug: 'persona-5-royal-strength-confidant', game: 'royal', title: 'Strength requests and skill cards', description: 'Find all ten requested Personas, card sources and fixed group fusions.', terms: 'twins caroline justine velvet room rank fusion seth high counter neko shogun dekaja' },
   { slug: 'school-answers', game: 'royal', title: 'Classroom and exam answers', description: 'Find Royal answer choices by date, month or exam.', terms: 'school quiz test questions knowledge' },
   { slug: 'persona-5-royal-crossword-answers', game: 'royal', title: 'All 38 crossword answers', description: 'Search Leblanc puzzles by clue, answer or puzzle number.', terms: 'crosswords knowledge semesters pollenosis' },

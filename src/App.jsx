@@ -201,6 +201,7 @@ export default function App() {
         const [searchTerm, setSearchTerm] = useState('');
         const [registrySearch, setRegistrySearch] = useState('');
         const [registryFilter, setRegistryFilter] = useState('All');
+        const [treasuresOnly, setTreasuresOnly] = useState(() => new URLSearchParams(window.location.search).get('collection') === 'treasure');
         
         // Data State
         const [checkedItems, setCheckedItems] = useState(loadedSave.save.checkedItems);
@@ -551,11 +552,11 @@ export default function App() {
 
   const filteredPersonas = useMemo(() => {
     return PERSONA_DATA.registry.filter(p => {
-      const matchesSearch = matchesLookup(`${p.name} ${p.arcana}`, registrySearch);
+      const matchesSearch = matchesLookup(`${p.name} ${p.name.replace(/[’'-]/g, '')} ${p.arcana}`, registrySearch);
       const matchesFilter = registryFilter === 'All' || p.arcana === registryFilter;
-      return matchesSearch && matchesFilter;
+      return matchesSearch && matchesFilter && (!treasuresOnly || p.rare);
     });
-  }, [registrySearch, registryFilter]);
+  }, [registrySearch, registryFilter, treasuresOnly]);
 
   const personasByArcana = useMemo(() => {
     const groups = {};
@@ -1766,6 +1767,13 @@ export default function App() {
                         </div>
                       </div>
 
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <label className="flex min-h-11 cursor-pointer items-center gap-2 text-sm text-neutral-200">
+                          <input type="checkbox" checked={treasuresOnly} onChange={event => setTreasuresOnly(event.target.checked)} className="h-5 w-5 accent-purple-500" />
+                          Treasure Demons only
+                        </label>
+                        <p role="status" className="text-xs text-neutral-400">{filteredPersonas.length} of {PERSONA_DATA.registry.length} Personas shown</p>
+                      </div>
                       {/* Legend */}
                       <div className="flex flex-wrap gap-2 justify-start">
                         <div className="flex items-center gap-1.5 opacity-80">
@@ -1790,9 +1798,11 @@ export default function App() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                           {personas.map(p => {
                             const isChecked = checkedItems[`p_${p.name}`];
+                            const treasure = PERSONA_DATA.treasureDemons.find(entry => entry.name === p.name);
                             return (
                               <CheckableCard
                                 key={p.name}
+                                aria-description={treasure ? `Weak to ${treasure.weakness} in Royal` : undefined}
                                 label={`${p.name}, level ${p.level}, ${p.arcana}`} checked={checkedItems[`p_${p.name}`]} onChange={() => toggleItem(`p_${p.name}`)}
                                 className={`flex items-center justify-between p-3 md:p-3 rounded-xl border transition-all cursor-pointer group active:scale-[0.98] ${
                                   isChecked 
@@ -1811,6 +1821,7 @@ export default function App() {
                                       {p.dlc && <span className="text-[8px] font-black uppercase text-blue-500 tracking-tighter">DLC</span>}
                                       {p.rare && <span className="text-[8px] font-black uppercase text-purple-500 tracking-tighter">Rare</span>}
                                     </div>
+                                    {treasure && <p className="mt-1 text-xs text-purple-300">Weak to {treasure.weakness}</p>}
                                   </div>
                                 </div>
                                 {isChecked ? <CheckSquare className="w-5 h-5 text-green-500 shrink-0" /> : <Square className="w-5 h-5 text-neutral-700 group-hover:text-neutral-500 shrink-0" />}

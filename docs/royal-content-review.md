@@ -67,3 +67,12 @@ The [Royal activities reference](https://aqiu384.github.io/megaten-database/p5r/
 Four fixed group ingredient lists come from [Data5Royal.js](https://github.com/chinhodado/persona5_calculator/blob/802422dad1f5b9eee441e594e738aceaeb9e5a85/data/Data5Royal.js). Jack Frost's Mabufu at 12, Eligor's native Tarukaja, Anzu's Dekaja at 28 and Hariti's Samarecarm at 41 come from the pinned Persona data. Bugs' request unlock and Strength rank-8 group-fusion expansion are also described by [RPG Site's Strength guide](https://www.rpgsite.net/feature/5486-persona-5-royal-strength-confidant-fusion-solutions-guide). The page deliberately links to a configured Royal calculator for ordinary recipes rather than asserting DLC-independent two-Persona results.
 
 Card methods require the Electric Chair, a Blank Card and the donor; alarm methods can be affected by accidents. These requirements appear before the list. The guide is a searchable reference, not a complete early-game completion route or fresh in-game verification. Its tests guard card mode, registry identity, fixed ingredients and the shared app request sequence.
+
+
+## Treasure Demon weaknesses in 2.6.15
+
+The nine existing affinity entries match the Royal calculator's `wk` positions: Regent Nuclear, Queen's Necklace Psy, Stone of Scone Fire, Koh-i-Noor Gun, Orlov Curse, Emperor's Amulet Elec, Hope Diamond Ice, Crystal Skull Wind and Orichalcum Bless. The [Samurai Gamers comparison table](https://samurai-gamers.com/persona-5/treasure-persona-get-mechanics/) corroborates these Royal-specific weaknesses and base levels. Arcana are checked against the pinned calculator data. The internal label `Psi` becomes `Psy` for the damage type; no saved Persona names or IDs change.
+
+The new public guide intentionally does not publish spawn locations. Legacy notes and community reports disagree about some late-game areas, and a table entry is not evidence of a guaranteed encounter. The separate legacy location/tip fields remain outside this guide and the registry UI. Recruitment notes distinguish Hold Up conversation from ordinary personality-answer negotiation. Calculator guidance identifies current level and enabled DLC as inputs rather than promising a fixed result from the base-level list.
+
+The guide and registry both display weaknesses from `PERSONA_DATA.treasureDemons`. A regression check protects all nine reviewed values, and browser checks confirm the public table and saved registry handoff. This remains a source comparison, not a fresh in-game verification.

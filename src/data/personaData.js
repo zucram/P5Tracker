@@ -1,7 +1,7 @@
 export const PERSONA_DATA = {
   treasureDemons: [
     { name: "Regent", arcana: "Emperor", lvl: 10, location: "Madarame's Palace", weakness: "Nuclear", tips: "Use Mafrei or Items." },
-    { name: "Queen's Necklace", arcana: "Empress", lvl: 15, location: "Kaneshiro's Palace", weakness: "Psi", tips: "Use Mapsi." },
+    { name: "Queen's Necklace", arcana: "Empress", lvl: 15, location: "Kaneshiro's Palace", weakness: "Psy", tips: "Use Mapsi." },
     { name: "Stone of Scone", arcana: "Fortune", lvl: 20, location: "Futaba's Palace", weakness: "Fire", tips: "Use Maragion." },
     { name: "Koh-i-Noor", arcana: "Priestess", lvl: 25, location: "Okumura's Palace", weakness: "Gun", tips: "Use Triple Down." },
     { name: "Orlov", arcana: "Strength", lvl: 30, location: "Sae's Palace", weakness: "Curse", tips: "Use Maeiga." },

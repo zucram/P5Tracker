@@ -1,6 +1,7 @@
 import { trackEvent } from '../lib/analytics';
 
 const GUIDES = [
+  { id: 'persona-5-royal-treasure-demon-weaknesses', path: 'guides/persona-5-royal-treasure-demon-weaknesses/', title: 'Treasure Demon weaknesses', description: 'Check the nine Royal weaknesses and track your collection.' },
   { id: 'persona-5-royal-strength-confidant', path: 'guides/persona-5-royal-strength-confidant/', title: 'Strength requests and skill cards', description: 'Check all ten requests, card sources and group fusions.' },
   { id: 'directory', path: 'guides/', title: 'All guides and answer tools', description: 'Find a Royal or Reload guide by game or topic.' },
   { id: 'persona-3-reload', path: 'p3/', title: 'Persona 3 Reload tracker', description: 'Plan your month with Social Links and missable deadlines.' },
@@ -13,6 +14,8 @@ const GUIDES = [
 ];
 
 const CONTEXT_GUIDES = {
+  registry_view: ['persona-5-royal-treasure-demon-weaknesses', 'persona-5-royal-strength-confidant'],
+  metaverse: ['persona-5-royal-treasure-demon-weaknesses', 'monthly-checklist'],
   cheatsheet: ['monthly-checklist', 'school-answers', 'third-semester'],
   months: ['school-answers', 'persona-5-royal-crossword-answers', 'monthly-checklist'],
   confidants: ['third-semester', 'confidant-tracker', 'persona-5-royal-strength-confidant'],

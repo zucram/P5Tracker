@@ -25,3 +25,12 @@ test('the Treasure Demon reference covers every rare Persona in the Royal regist
   const calculator = RESOURCE_DATA.flatMap(group => group.items).find(item => item.title === 'Chinhodado Fusion Calculator');
   assert.equal(new URL(calculator.url).pathname, '/persona5_calculator/indexRoyal.html');
 });
+
+
+test('all nine Treasure Demon affinities use the reviewed Royal weaknesses', () => {
+  assert.deepEqual(PERSONA_DATA.treasureDemons.map(p => [p.name, p.weakness]), [
+    ['Regent', 'Nuclear'], ["Queen's Necklace", 'Psy'], ['Stone of Scone', 'Fire'],
+    ['Koh-i-Noor', 'Gun'], ['Orlov', 'Curse'], ["Emperor's Amulet", 'Elec'],
+    ['Hope Diamond', 'Ice'], ['Crystal Skull', 'Wind'], ['Orichalcum', 'Bless'],
+  ]);
+});

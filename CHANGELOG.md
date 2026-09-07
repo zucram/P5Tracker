@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.15 — 2026-09-07
+
+- Add a searchable Royal Treasure Demon weakness table with all nine entries, recruitment notes and a share card.
+- Open the registry with a Treasure Demon filter from the guide and show each weakness beside saved progress.
+- Accept common name spellings without apostrophes or hyphens in Persona search.
+
+
 ## 2.6.14 — 2026-09-07
 
 - Make Royal checklist rows and Palace/Mementos panels keyboard accessible with checked/expanded semantics and visible focus.
