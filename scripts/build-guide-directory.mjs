@@ -1,3 +1,4 @@
+import { shareImageMeta } from './share-cards.mjs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { GUIDE_DIRECTORY } from '../src/data/guideDirectory.js';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
@@ -10,7 +11,8 @@ const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | P5 Tracker</title><meta name="description" content="${description}"><link rel="canonical" href="${canonical}"><link rel="icon" href="../favicon.svg"><link rel="stylesheet" href="guide.css"><link rel="stylesheet" href="lookup.css"><link rel="stylesheet" href="directory.css">
-<meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">
+${shareImageMeta(canonical)}
+<meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script><script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script type="module" src="lookup-ui.js"></script></head>
 <body><a class="skip" href="#content">Skip to guides</a><main id="content"><nav aria-label="Main"><a href="../">All games</a> · <a href="../p5/">Royal tracker</a> · <a href="../p3/">Reload tracker</a></nav>
 <p class="eyebrow">FREE PERSONA REFERENCES</p><h1>Persona guides.<br>Find your next answer.</h1><p class="intro">Look up answers and deadlines for Royal or Reload, then keep playing at your own pace.</p>

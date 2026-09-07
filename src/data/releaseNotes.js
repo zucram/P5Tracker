@@ -1,5 +1,15 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.9",
+    date: "2026-09-07",
+    title: "Recognizable shared links",
+    description: "Game and guide links include a preview image for the page you share.",
+    sections: [{ title: "Sharing", items: [
+      "Each tracker and guide has its own readable preview card.",
+      "Cards identify the game and topic without including your progress or plot details."
+    ] }]
+  },
+  {
     version: "2.6.8",
     date: "2026-09-07",
     title: "Clearer Royal requirements",

@@ -1,5 +1,6 @@
 import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
+import { shareImageMeta } from './share-cards.mjs';
 
 const root = path.resolve('dist');
 const base = new URL('https://zucram.github.io/P5Tracker/');
@@ -25,6 +26,15 @@ for (const href of urls) {
   requireCheck(description && !descriptions.has(description), `Missing or duplicate description: ${href}`);
   titles.add(title); descriptions.add(description);
   requireCheck(html.includes(`<link rel="canonical" href="${href}"`), `Canonical mismatch: ${href}`);
+  requireCheck(html.includes(shareImageMeta(href)), `Missing or stale share preview metadata: ${href}`);
+  for (const property of ['og:title', 'og:description', 'og:url', 'og:image']) {
+    requireCheck((html.match(new RegExp(`property="${property}"`, 'g')) || []).length === 1, `Expected one ${property}: ${href}`);
+  }
+  requireCheck((html.match(/name="twitter:card"/g) || []).length === 1, `Expected one Twitter card: ${href}`);
+  const preview = new URL(html.match(/property="og:image" content="([^"]+)"/)?.[1] || href);
+  requireCheck(preview.origin === base.origin && preview.pathname.startsWith(`${base.pathname}social/`), `Preview must be a public site image: ${href}`);
+  const bytes = await readFile(fileFor(preview));
+  requireCheck(bytes.readUInt32BE(16) === 1200 && bytes.readUInt32BE(20) === 630, `Wrong preview dimensions: ${href}`);
   requireCheck((html.match(/<h1(?:\s|>)/g) || []).length === 1, `Expected one HTML H1: ${href}`);
   requireCheck(!/<meta name="robots" content="[^"]*noindex/.test(html), `Noindex on sitemap page: ${href}`);
   for (const [, json] of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
@@ -54,4 +64,4 @@ for (const [href, html] of pages) {
 for (const [url, count] of incoming) requireCheck(count > 0, `Orphan sitemap page: ${url}`);
 requireCheck(new Set(urls).size === urls.length, 'Duplicate sitemap URLs');
 if (errors.length) throw new Error(errors.join('\n'));
-console.log(`Site checks passed: ${urls.length} sitemap pages, ${links} internal links/assets, unique metadata, canonicals, H1s, structured data and guide fragments.`);
+console.log(`Site checks passed: ${urls.length} sitemap pages, ${links} internal links/assets, unique metadata, share images, canonicals, H1s, structured data and guide fragments.`);

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.9 — 2026-09-07
+
+- Add original share-preview cards and complete image metadata to all 15 public pages.
+- Check card sources, image hashes, dimensions and metadata during builds.
+- Keep rendering dependencies outside the browser and deployment build.
+
+
 ## [2.6.8] - 2026-09-07
 
 - Separate Maruki's third-semester requirement from Akechi and Kasumi's extra character content in Briefing and confidant notes.

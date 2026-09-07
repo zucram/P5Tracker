@@ -124,3 +124,11 @@ Browser tests covered fully blocked storage, malformed checklist JSON, retained 
 Briefing now separates the required Councillor milestone from optional Justice and Faith character goals. It reads ranks, targets, dates and notes from the existing app data and links to the deadline checker. The old shared mandatory label was incorrect. Faith's displayed deadline now matches the existing December 22 calendar cutoff, while its December 18 task remains an early reminder. The Faith rank-10 note now describes a manual meeting. Existing saved task IDs remain unchanged.
 
 The source review is recorded in [Royal content review](royal-content-review.md). Browser checks verified the required/optional grouping and layouts at 320, 390 and 1280px. The Royal school guide also uses the shared whole-number search matcher, with its existing event name preserved. Browser tests covered July 1, 07/14, no results, reset and month navigation.
+
+## Shared-link previews in 2.6.9
+
+Every sitemap page now has a distinct 1200 × 630 PNG card, including the two trackers, start page, guide directory and eleven guides. Cards use original typography and checklist shapes. They include no player data or plot details. Open Graph image URLs are absolute public HTTPS URLs, with MIME type, dimensions and alt text. Twitter metadata requests a large-image card. Existing canonical URLs, descriptions and referral parameters remain in place.
+
+`share-cards.mjs` defines cards from the guide directory and supplies metadata to guide generators. The six hand-maintained HTML pages include the same metadata. `npm run build:share-cards` uses Python 3, Pillow and DejaVu Sans to regenerate committed images. `SHARE_CARD_FONT_DIR` can point to the DejaVu font directory on another machine. These rendering dependencies are not needed in CI or the browser. The prebuild checks the renderer/data recipe and PNG hashes against the committed manifest; postbuild checks each page's metadata and image dimensions.
+
+The metadata follows the [Open Graph protocol](https://ogp.me/). Local checks establish that a crawler can read metadata and fetch the corresponding image without JavaScript. Social platforms control whether, when and how they display or cache cards; no social post or platform-cache refresh was submitted. This release does not establish a change in click-through rate.

@@ -1,3 +1,4 @@
+import { shareImageMeta } from './share-cards.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { CROSSWORD_DATA } from '../src/data/crosswordData.js';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
@@ -13,7 +14,8 @@ const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: tit
 const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} | P5 Tracker</title><meta name="description" content="${description}"><link rel="canonical" href="${canonical}"><link rel="icon" href="../../favicon.svg"><link rel="stylesheet" href="../guide.css"><link rel="stylesheet" href="../lookup.css">
-<meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary">
+${shareImageMeta(canonical)}
+<meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}">
 <script type="application/ld+json">${JSON.stringify(schema)}</script><script defer src="https://cloud.umami.is/script.js" data-website-id="7fae2edd-7137-49ac-8ec6-714a18a48e3f" data-domains="zucram.github.io"></script><script type="module" src="../lookup-ui.js"></script>
 <style>main{max-width:880px}.crossword-list{list-style:none;padding:0}.crossword-list li{display:grid;grid-template-columns:42px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid #444}.puzzle-number{font-size:.9rem;color:#bbb}.crossword-list h3{font-size:1rem;font-weight:500;margin:0 0 6px;line-height:1.5}.crossword-list p{margin:0;font-size:1.3rem;font-weight:750;letter-spacing:.035em}.crossword-list small{font-size:.8rem;letter-spacing:0;font-weight:400;color:#bbb}.related{display:flex;flex-wrap:wrap;gap:12px 24px}.skip{position:absolute;top:-100px}.skip:focus{top:0;background:#111;padding:12px}.notice{padding:16px 20px;border-left:3px solid #ff8d8d;background:#ffffff06}li:target{outline:2px solid #ff8d8d;outline-offset:6px}@media(max-width:480px){main{padding:24px 16px}.crossword-list li{grid-template-columns:32px 1fr;gap:8px}}</style></head>
 <body><a class="skip" href="#content">Skip to answers</a><main id="content"><nav aria-label="Main"><a href="../../">All games</a> · <a href="../../p5/">Royal tracker</a> · <a href="../school-answers/">School answers</a> · <a href="../">All guides</a></nav>
