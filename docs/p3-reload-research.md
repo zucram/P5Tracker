@@ -1,6 +1,6 @@
 # Persona 3 Reload source research
 
-This catalog records published main-campaign calendars and supporting references inspected on 7 September 2026. It supports a factual knowledge base for a flexible companion. It does not establish a tested 100% route or a released Persona 3 Reload app.
+This catalog records published main-campaign calendars and supporting references inspected on 7 September 2026. It supports the original planner knowledge collection, not a tested 100% route. Reload is now released. Use the [release notes](p3-reload-release.md) and [completion audit](p3-reload-completion-audit.md) for the broader companion datasets and current scope.
 
 The machine-readable [source catalog](../knowledge/p3-reload/sources.json) contains exact URLs, observed metadata, route lineage, chapter links, and inspection limits. Dates describe the page inspected. An updated hub does not establish that every chapter received the same update.
 

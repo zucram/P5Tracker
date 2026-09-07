@@ -25,7 +25,7 @@ Each fact has a unique `id`, `category`, `kind`, `status`, `subject`, `value`, `
 - `value` holds category-specific facts such as `start`, `end`, `floor`, `rank`, `days`, `timeSlot` and `dateMeaning`. Dates use `MM-DD` in game-calendar order, April through January. January follows December. No real-world weekday is inferred from the current year.
 - A window gives outer bounds. It does not promise an activity on every date in the interval. Start dates still require prerequisites. Null means unknown, never unrestricted.
 - `dependsOn` contains fact IDs for required earlier events. It is not an exhaustive dependency list unless the record explicitly says so.
-- Spoiler levels are `none`, `mechanic`, `character` and `story`. Names and consequences need separate display control in the eventual app.
+- Spoiler levels are `none`, `mechanic`, `character` and `story`. Names and consequences need separate display control in the app.
 - Disputed facts must not drive definitive availability or missed-deadline warnings. An explicitly labelled early reminder can use a conservative target while a dispute remains open.
 
 ## How the semi-guide should use it

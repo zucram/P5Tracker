@@ -1,6 +1,6 @@
 # Persona 3 Reload companion release
 
-Version 2.6.0 expands Reload from a calendar planner into a companion for the whole main campaign. Beta means individual details may need correction. Entire gameplay systems are part of the release scope. Episode Aigis, FES and Portable are separate campaigns or editions and are excluded.
+Current release: 2.6.2, deployed on 7 September 2026. Version 2.6.0 expanded Reload from a calendar planner into a companion for the whole main campaign. Beta means individual details may need correction. Entire gameplay systems are part of the release scope. Episode Aigis, FES and Portable are separate campaigns or editions and are excluded.
 
 The shared start page is `/P5Tracker/`. Royal lives at `/P5Tracker/p5/` and Reload at `/P5Tracker/p3/`. Existing `/games/persona-3-reload/` links preserve query strings and fragments when redirecting. Both trackers link back to the chooser.
 
@@ -67,3 +67,7 @@ References contain source URLs and short original instructions. The fusion and c
 Automated checks cover Royal regressions, every campaign calendar day, save migration and import, all new progress fields, dialogue coverage, request prerequisites, fusion behavior and dataset completeness. Browser review covers mobile and desktop navigation, disclosures, rank and relationship actions, requests, DLC settings, dorm progress, materials, collections and an export/import/reload round trip. Local analytics recording checks fixed payloads without adding test events to production.
 
 These checks do not replace a full in-game validation run. Individual source omissions and errors may remain, and should be reported against the affected entry. A new missing gameplay system is a scope defect and must be fixed.
+
+Version 2.6.2 passed 87 automated tests, production build checks, and browser review at 1280, 820, 390, and 320 pixels. GitHub Pages workflow `34119639694` deployed commit `9104442`. Live Royal and Reload JavaScript and CSS matched the reviewed build by SHA-256. See the [browser evidence](p3-reload-ui-review.md).
+
+The [Reload community launch](https://www.reddit.com/r/persona3reload/comments/1w9qhy2/i_made_a_free_reload_tracker_for_playing_without/) was published on 7 September 2026 with app screenshots and links. Publication establishes distribution, not traffic growth, moderator endorsement, or data accuracy. Follow the [agent guide](post-launch-agent-guide.md) for subsequent checks.

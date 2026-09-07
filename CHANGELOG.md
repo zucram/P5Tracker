@@ -2,6 +2,52 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.2] - 2026-09-07
+
+- Matched Reload Social Links to Royal's row layout, with full-width desktop details and compact mobile rows.
+- Replaced nested guide disclosures with Answers, Relationship & affinity, and Sources views. Simplified calendar instructions and reference sources.
+- Added labelled Royal Guide and Close controls and fixed narrow-screen header/footer overflow.
+
+## [2.6.1] - 2026-09-07
+
+- Kept expanded Reload dialogue cards within their grid columns. The row layout in 2.6.2 supersedes this intermediate fix.
+
+## [2.6.0] - 2026-09-07
+
+- Expanded Reload to cover the main campaign: all manual Social Link rank answers, Elizabeth requests, fusion, combat, equipment, dorm activities, and collections.
+- Added saved relationship choices, Persona and DLC settings, activity progress, and request reporting with backward-compatible saves.
+- Added static Social Link answer, Elizabeth request, and fusion guides. Individual factual corrections remain possible during beta.
+
+## [2.5.2] - 2026-09-07
+
+- Added the shared start page and short `/p5/` and `/p3/` routes, with compatibility redirects that preserve queries and fragments.
+
+## [2.5.1] - 2026-09-07
+
+- Aligned Reload navigation and monthly planning with Royal. Added school-answer and activity references and retained date controls in Tartarus.
+
+## [2.5.0] - 2026-09-07
+
+- Released the Reload calendar planner beta with sourced Social Link and deadline guides, separate saves, and prerequisite-aware planning.
+
+## [2.4.3] - 2026-09-07
+
+- Added guide discovery, manual-use, save-transfer outcome, and support-exposure events with fixed, limited analytics payloads.
+
+## [2.4.2] - 2026-09-07
+
+- Added contextual navigation to published guides from the tracker.
+
+## [2.4.1] - 2026-09-07
+
+- Published searchable Royal school answers with reviewed shared data and search metadata. Added school-answer corrections and missing dates.
+
+## [2.4.0] - 2026-09-07
+
+- Added static discovery guides, the game directory, referral sharing, and next-game interest measurement.
+- Improved save validation, downloadable backups, and recovery of the previous save.
+- Added the source-cited Maruki and third-semester requirement checker.
+
 ## [2.2.0] - 2026-01-10
 ### Added
 - **Priority Roadmap:** Redesigned the monthly checklist into "Mission Critical" and "Timeline" sections.

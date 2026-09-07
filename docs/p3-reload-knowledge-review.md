@@ -2,6 +2,8 @@
 
 Reviewed 2026-09-07. This research supports the Reload beta semi-daily companion. The complete knowledge base is not a verified perfect-run route; see p3-reload-release.md for the shipped subset and limits.
 
+This generated report covers the original planner collection. Its research checklist and false release-readiness flag do not describe current companion feature coverage. Reload is released; use the [completion audit](p3-reload-completion-audit.md) and [release notes](p3-reload-release.md) for shipped systems and validation.
+
 The catalog contains 21 source records. The knowledge base contains 137 factual and planning records, with original briefs for all ten months from April through January. The catalog includes mirrors and partial guides; these are labelled and are not counted as independent confirmation.
 
 ## What is collected
@@ -52,7 +54,7 @@ These are editorial briefs, not a validated schedule. Their record links include
 - Bring matching Arcana when affinity matters. Keep room in the budget for Persona summoning and stat activities.
 - Plan Tartarus around what the party can finish. The source routes differ in visit frequency; the companion should support more than one visit.
 
-Before release: Confirm the first free evening and any forced Tartarus visit if the player delays exploration. Audit early introductions and rank-specific exceptions before generating a daily availability list. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Confirm the first free evening and any forced Tartarus visit if the player delays exploration. Audit early introductions and rank-specific exceptions before generating a daily availability list. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### May
 
@@ -60,7 +62,7 @@ Before release: Confirm the first free evening and any forced Tartarus visit if 
 - Junpei and Akihiko open their first Linked Episode windows this month. A message date is an opportunity, not necessarily the only chance.
 - Accept requests 12 and 13 and obtain their items before the June 6 deadline. Plan around the May story operation and exams.
 
-Before release: Check the pre-exam school-link blackout separately from the exam dates. Confirm exact available weekdays for Junpei and Akihiko episodes. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Check the pre-exam school-link blackout separately from the exam dates. Confirm exact available weekdays for Junpei and Akihiko episodes. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### June
 
@@ -68,7 +70,7 @@ Before release: Check the pre-exam school-link blackout separately from the exam
 - Look for the first missing person from June 18 and two more from June 26. A combined rescue before July 6 can save evenings if the party is ready.
 - If Fuuka is a priority, work toward Courage 6 and the required introduction. Treat that as a personal target rather than a June deadline.
 
-Before release: Reconcile the June 13 tutorial against June 14 free Tartarus exploration. Confirm the full Priestess introduction chain and earliest eligible meeting. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Reconcile the June 13 tutorial against June 14 free Tartarus exploration. Confirm the full Priestess introduction chain and earliest eligible meeting. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### July
 
@@ -77,7 +79,7 @@ Before release: Reconcile the June 13 tutorial against June 14 free Tartarus exp
 - Accept the beach request before the trip and collect a souvenir on July 20.
 - Prepare Charm 6 if starting Yukari soon matters to you. School closures make late July a poor place to assume spare school-link days.
 
-Before release: Map sports training, trip return slots, summer-break start and school-link exceptions. Resolve the later Max Safety Shoes purchase without converting the TV date into a false deadline. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Map sports training, trip return slots, summer-break start and school-link exceptions. Resolve the later Max Safety Shoes purchase without converting the TV date into a false deadline. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### August
 
@@ -86,7 +88,7 @@ Before release: Map sports training, trip return slots, summer-break start and s
 - Junpei episode 2 has a reported window ending August 28 and Akihiko episode 2 has a reported window ending August 31. Koromaru begins this month, with a much longer outer window.
 - Plan around summer school through August 15. Use other summer opportunities for town links and stat growth; holiday invitations may differ from normal availability.
 
-Before release: Validate holiday invitations and rank-up eligibility during school closure. Resolve Sun and Star introduction dates before suggesting an exact first meeting. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Validate holiday invitations and rank-up eligibility during school closure. Resolve Sun and Star introduction dates before suggesting an exact first meeting. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### September
 
@@ -95,7 +97,7 @@ Before release: Validate holiday invitations and rank-up eligibility during scho
 - Bunkichi goes missing September 12. Rescue him by October 3 to preserve the Hierophant link.
 - Finish the fruit-knife and oil requests by October 2. Spread school-link work around these dated commitments.
 
-Before release: Check exact meeting days inside the overlapping Shinjiro and Ken windows. Do not infer that meeting once on a window’s last date can recover earlier missed episodes. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Check exact meeting days inside the overlapping Shinjiro and Ken windows. Do not infer that meeting once on a window’s last date can recover earlier missed episodes. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### October
 
@@ -104,7 +106,7 @@ Before release: Check exact meeting days inside the overlapping Shinjiro and Ken
 - Maiko goes missing October 21 and must be rescued by November 2. Two other people share that deadline.
 - Keep October exams and the November 1 glasses-wipe deadline visible while allocating remaining days to school links.
 
-Before release: Independently confirm the final Shinjiro follow-up closing date. Check all pre-exam school-link closures and rank-specific absences. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Independently confirm the final Shinjiro follow-up closing date. Check all pre-exam school-link closures and rank-specific absences. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### November
 
@@ -113,7 +115,7 @@ Before release: Independently confirm the final Shinjiro follow-up closing date.
 - Collect the Kyoto supplies while travelling. The late November link opening makes Academics 6 a useful personal preparation target.
 - Complete requests 94 and 95 by November 30 and rescue the two November arrivals by December 1. The story guest also has fixed-date invitations this month.
 
-Before release: Resolve the Empress exam prerequisite and the optional flower handover window. Validate the Kyoto shopping cutoff and story-guest invitation conditions. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Resolve the Empress exam prerequisite and the optional flower handover window. Validate the Kyoto shopping cutoff and story-guest invitation conditions. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### December
 
@@ -122,7 +124,7 @@ Before release: Resolve the Empress exam prerequisite and the optional flower ha
 - Finish the Christmas request by December 25 if you have the required Letter of Thanks; its rescue acquisition rule is still disputed.
 - Rescue the December arrivals by December 30. Keep the December 31 story decision separate from optional romance plans, with a spoiler-controlled explanation.
 
-Before release: Model winter break and optional Christmas time costs at slot level. Verify the ending-choice wording in game before offering a definitive ending checker. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Model winter break and optional Christmas time costs at slot level. Verify the ending-choice wording in game before offering a definitive ending checker. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
 ### January
 
@@ -131,9 +133,9 @@ Before release: Model winter break and optional Christmas time costs at slot lev
 - The final two missing people arrive January 15 and must be rescued by January 30.
 - Account for any optional January 21 event already triggered. Plan dungeon preparation before the final operation; do not claim that every unfinished link still fits.
 
-Before release: Validate the January 25 Aeon exception and remaining rank-up days for each link. Playtest remaining-day feasibility before any all-links-completable indicator. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
+Original research checklist: Validate the January 25 Aeon exception and remaining rank-up days for each link. Playtest remaining-day feasibility before any all-links-completable indicator. Episode windows do not guarantee a meeting on the final date; suggest completing them early and checking actual availability.
 
-## Release gaps
+## Original full-route verification checklist
 
 - Complete school closures, pre-exam exceptions, holidays, sports training and per-slot story blocks. April–January event calendar reconciled against two distinct routes; free slots never inferred from an omitted entry.
 - Resolve introductions, required ranks, items, exam conditions and rank-specific availability. Every suggested Social Link opening has a complete, cited eligibility rule and explicit unknown handling.

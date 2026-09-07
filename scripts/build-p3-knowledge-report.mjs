@@ -43,6 +43,7 @@ const coverage = {
 const lines = [
   '# Persona 3 Reload knowledge review', '',
   `Reviewed ${coverage.reviewedAt}. This research supports the Reload beta semi-daily companion. The complete knowledge base is not a verified perfect-run route; see p3-reload-release.md for the shipped subset and limits.`, '',
+  'This generated report covers the original planner collection. Its research checklist and false release-readiness flag do not describe current companion feature coverage. Reload is released; use the [completion audit](p3-reload-completion-audit.md) and [release notes](p3-reload-release.md) for shipped systems and validation.', '',
   `The catalog contains ${sources.length} source records. The knowledge base contains ${facts.length} factual and planning records, with original briefs for all ten months from April through January. The catalog includes mirrors and partial guides; these are labelled and are not counted as independent confirmation.`, '',
   '## What is collected', '',
   '| Category | Records |', '| --- | ---: |',
@@ -56,9 +57,9 @@ const lines = [
   'These are editorial briefs, not a validated schedule. Their record links include relevant open windows and continuing opportunities, not a promise that every activity can be done each day. The player should see dated risks first, then choose among available priorities.', '',
   ...data.months.months.flatMap(month => [
     `### ${month.name}`, '', ...month.priorities.map(text => `- ${text}`), '',
-    `Before release: ${month.gaps.join(' ')}`, '',
+    `Original research checklist: ${month.gaps.join(' ')}`, '',
   ]),
-  '## Release gaps', '',
+  '## Original full-route verification checklist', '',
   ...coverage.releaseGaps.map(gap => `- ${gap.required} ${gap.acceptance}`), '',
   'The initial tests check dates, references, dependencies and disputed-rule handling. They cannot establish game accuracy or that an altered playthrough can still complete every link.', '',
   '## Updating the dataset', '',

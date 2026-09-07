@@ -1,14 +1,16 @@
 # Growth and save-transfer release
 
-P5 Tracker remains a free Persona 5 Royal browser companion. The game directory at `/P5Tracker/games/` presents Royal as available and other Persona editions and Metaphor as candidates. Suggestions do not imply a release commitment.
+P5 Tracker provides free Royal and Reload browser companions. The shared chooser is `/P5Tracker/`, with Royal at `/p5/` and Reload at `/p3/` beneath that base. `/games/` is a compatibility redirect. Additional games remain candidates without release commitments. See the [Reload release](p3-reload-release.md) for current scope and the [agent follow-up guide](post-launch-agent-guide.md) for measurement and feedback.
 
 ## Search pages
 
-Vite copies `public/guides/` and `public/games/` into the production build. Each page has its own title, description, canonical URL and links to the app. `public/sitemap.xml` lists the five public entry pages. Keep that list aligned when adding or removing pages. The root HTML includes a brief description before React loads, plus metadata and WebApplication structured data without ratings or paid offers.
+Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, four Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
-## Analytics
+## Initial growth-release events
+
+This table records the original 2.4.0 additions. Use [current event definitions](analytics.md) for both games and reporting limits.
 
 The existing Umami property measures production traffic. The script allows only `zucram.github.io`. New measurements use the existing integration and contain no save contents.
 
@@ -18,7 +20,7 @@ The existing Umami property measures production traffic. The script allows only 
 | `guide_check_used` | The third-semester checker is submitted | `guide` |
 | `guide_open_tracker` | A guide's app link is clicked | `guide` |
 | `guide_support_click` | A guide's Ko-fi link is clicked | `guide` |
-| `game_open_tracker` | The game directory's Royal link is clicked | `game` |
+| `game_open_tracker` | A game chooser tracker link is clicked | `game` |
 | `hub_support_click` | The game directory's Ko-fi link is clicked | None |
 | `share_complete` | The share API resolves or the link is copied | `method` |
 | `next_game_interest` | A user submits a game suggestion | `game` |
@@ -29,7 +31,7 @@ The next-game prompt remembers a submitted suggestion in the browser when storag
 
 ## Release checks
 
-Build with `npm run build`. Verify the app, all three guide URLs and the game directory under the GitHub Pages base path. Check that the guides' app links select the intended tab. Test sharing with native sharing, clipboard-only support, and unavailable browser APIs. Keep production analytics stubbed during browser tests.
+Build with `npm run build`. Verify both trackers, the shared chooser, compatibility redirects, and every guide listed in the sitemap under the GitHub Pages base path. Check that guide links select the intended game and tab. Test sharing with native sharing, clipboard-only support, and unavailable browser APIs. Keep production analytics stubbed during browser tests.
 
 Validate save round trips and rejected imports with the save-data tests. A successful import must preserve a recoverable previous save. Verify downloaded backups separately from browser-local recovery.
 
