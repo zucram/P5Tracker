@@ -4,6 +4,10 @@ P5 Tracker uses Umami page views and feature events to measure discovery, use an
 
 Use the [post-launch agent guide](post-launch-agent-guide.md) for the review procedure. This document defines instrumentation. Actual account results and saved-report configuration stay in the private ledger.
 
+## Optional Royal welcome in 2.6.6
+
+Royal no longer opens onboarding or changelog dialogs automatically. The optional Briefing card emits `welcome_calendar_opened` when its calendar action is chosen, or `welcome_dismissed` when dismissed. Neither event carries properties or proves manual tracker use. Explicit help openings retain `help-open`; closing help retains the historical `onboarding-complete` acknowledgment event. It does not establish that a player read every instruction. Compare onboarding counts across this change with care.
+
 ## Discovery and support in 2.6.5
 
 The guide directory uses `guide_lookup_used` with `guide: directory` and `directory_guide_opened` with the destination `guide` slug and `game: royal` or `reload`. Its tracker links use `guide_open_tracker` with `guide: directory-royal` or `directory-reload`. These events show navigation choices; they do not establish an ordered conversion funnel.

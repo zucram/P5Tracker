@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.6] - 2026-09-07
+
+- Replace Royal's automatic welcome and changelog dialogs with optional notices. Direct guide-to-tracker visits open the requested section.
+- Correct help instructions to use Briefing, Calendar, Confidants, Metaverse and Sync.
+- Label Royal dialogs, contain keyboard focus, restore focus on close and preserve body scrolling state. Mark the active navigation item for assistive technology.
+
 ## [2.6.5] - 2026-09-07
 
 - Add a searchable directory for all eleven guides, linked from the chooser, trackers and individual guides.

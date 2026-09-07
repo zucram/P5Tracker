@@ -1,3 +1,5 @@
+import { WelcomeNotice } from './components/WelcomeNotice';
+import { isVersionNewer, readPreference, writePreference } from './lib/releaseNotices';
 import { useSupportImpression } from './hooks/useSupportImpression';
 import { trackEvent } from './lib/analytics';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
@@ -301,47 +303,23 @@ export default function App() {
   const [changelogFullHistory, setChangelogFullHistory] = useState(false);
   const [showRoadmap, setShowRoadmap] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(false);
-  const lastSeenVersion = useRef(localStorage.getItem('p5r_lastSeenVersion'));
+  const lastSeenVersion = useRef(readPreference('p5r_lastSeenVersion'));
+  const [showWelcome, setShowWelcome] = useState(() => !readPreference('p5r_onboardingComplete'));
+  const [hasNewRelease, setHasNewRelease] = useState(() => Boolean(lastSeenVersion.current) && isVersionNewer(RELEASE_NOTES[0]?.version, lastSeenVersion.current));
 
-  // Version Comparison Helper
-  const isVersionNewer = (current, last) => {
-    if (!last) return true;
-    const c = current.split('.').map(Number);
-    const l = last.split('.').map(Number);
-    for (let i = 0; i < 3; i++) {
-      if (c[i] > l[i]) return true;
-      if (c[i] < l[i]) return false;
-    }
-    return false;
+  useEffect(() => {
+    writePreference('p5r_lastSeenVersion', RELEASE_NOTES[0]?.version || APP_VERSION);
+  }, []);
+
+  const dismissWelcome = () => {
+    setShowWelcome(false);
+    writePreference('p5r_onboardingComplete', 'true');
   };
-
-  // Check version for changelog
-  useEffect(() => {
-    const lastSeen = lastSeenVersion.current;
-    const latestNotesVersion = RELEASE_NOTES[0]?.version;
-    
-    if (!lastSeen) {
-      localStorage.setItem('p5r_lastSeenVersion', latestNotesVersion);
-      return;
-    }
-
-    if (isVersionNewer(latestNotesVersion, lastSeen)) {
-      setChangelogFullHistory(false);
-      setShowChangelog(true);
-      localStorage.setItem('p5r_lastSeenVersion', latestNotesVersion);
-    }
-  }, []);
-
-  // Show onboarding for new users
-  useEffect(() => {
-    if (!localStorage.getItem('p5r_onboardingComplete')) {
-      setShowOnboarding(true);
-    }
-  }, []);
 
   const completeOnboarding = () => {
     setShowOnboarding(false);
-    localStorage.setItem('p5r_onboardingComplete', 'true');
+    setShowWelcome(false);
+    writePreference('p5r_onboardingComplete', 'true');
     trackEvent('onboarding-complete');
   };
 
@@ -736,7 +714,7 @@ export default function App() {
         </div>
       </header>
 
-      <nav className="fixed bottom-0 left-0 right-0 z-50 md:relative md:bottom-auto md:left-auto md:right-auto md:mb-8 flex justify-between gap-1 bg-neutral-900/90 backdrop-blur-xl p-1 pb-[calc(0.25rem+env(safe-area-inset-bottom))] border-t border-neutral-800 md:bg-neutral-900 md:p-1 md:border md:rounded-2xl md:shadow-2xl">
+      <nav aria-label="Tracker sections" className="fixed bottom-0 left-0 right-0 z-50 md:relative md:bottom-auto md:left-auto md:right-auto md:mb-8 flex justify-between gap-1 bg-neutral-900/90 backdrop-blur-xl p-1 pb-[calc(0.25rem+env(safe-area-inset-bottom))] border-t border-neutral-800 md:bg-neutral-900 md:p-1 md:border md:rounded-2xl md:shadow-2xl">
         <TabButton active={activeTab === 'cheatsheet'} onClick={() => setActiveTab('cheatsheet')} label="Briefing" icon={BookOpen} />
         <TabButton active={activeTab === 'months'} onClick={() => setActiveTab('months')} label="Calendar" icon={Calendar} />
         <TabButton active={activeTab === 'confidants'} onClick={() => setActiveTab('confidants')} label="Confidants" icon={Users} />
@@ -744,7 +722,17 @@ export default function App() {
         <TabButton active={activeTab === 'more' || activeTab === 'registry_view' || activeTab === 'library_view'} onClick={() => setActiveTab('more')} label="More" icon={Menu} />
       </nav>
 
-      <main className="max-w-6xl mx-auto pb-48 md:pb-24">
+      <main tabIndex={-1} className="max-w-6xl mx-auto pb-48 md:pb-24">
+        {showWelcome && activeTab === 'cheatsheet' && <WelcomeNotice
+          onCalendar={() => { dismissWelcome(); setActiveTab('months'); trackEvent('welcome_calendar_opened'); }}
+          onHelp={() => { setShowOnboarding(true); trackEvent('help-open'); }}
+          onDismiss={() => { dismissWelcome(); trackEvent('welcome_dismissed'); }}
+        />}
+        {hasNewRelease && <section aria-label="Latest update" className="mb-4 flex flex-wrap items-center gap-3 rounded-xl border border-neutral-700 px-4 py-3 text-sm text-neutral-300">
+          <p className="flex-1">Updated: {RELEASE_NOTES[0]?.title}</p>
+          <button onClick={() => { setHasNewRelease(false); setChangelogFullHistory(false); setShowChangelog(true); trackEvent('changelog-open'); }} className="min-h-11 px-2 text-white underline">What's new</button>
+          <button onClick={() => setHasNewRelease(false)} aria-label="Dismiss update notice" className="min-h-11 px-2 underline">Dismiss</button>
+        </section>}
         <GuideLinks view={activeTab} />
         
         {/* CHEATSHEET VIEW */}
@@ -2032,7 +2020,7 @@ export default function App() {
       </main>
 
       {/* SAVE/LOAD MODAL */}
-      <Modal isOpen={saveModal} onClose={() => setSaveModal(false)} className="max-w-2xl border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] rounded-[3rem]">
+      <Modal label="Sync and backup" isOpen={saveModal} onClose={() => setSaveModal(false)} className="max-w-2xl border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] rounded-[3rem]">
            <div className="p-10">
               <h2 className="text-4xl font-black text-red-600 italic uppercase mb-2 tracking-tighter">Sync Terminal</h2>
               <p className="text-neutral-400 text-sm mb-8 font-mono">Progress is saved in this browser. Download or copy a save to move it to another device. Importing replaces your progress and keeps one previous save here.</p>
@@ -2061,7 +2049,7 @@ export default function App() {
            </div>
       </Modal>
       {/* CHANGELOG MODAL */}
-      <Modal isOpen={showChangelog} onClose={() => setShowChangelog(false)} className="max-w-lg border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] max-h-[80vh]">
+      <Modal label="What's new" isOpen={showChangelog} onClose={() => setShowChangelog(false)} className="max-w-lg border-red-600 shadow-[0_0_50px_rgba(220,38,38,0.2)] max-h-[80vh]">
            <div className="p-6 md:p-10 overflow-y-auto custom-scrollbar max-h-[80vh]">
               <div className="flex justify-between items-start mb-8 border-b-2 border-red-600 pb-4">
                 <div>
@@ -2111,7 +2099,7 @@ export default function App() {
            </div>
       </Modal>
       {/* ROADMAP MODAL */}
-      <Modal isOpen={showRoadmap} onClose={() => setShowRoadmap(false)} className="max-w-lg border-blue-600 shadow-[0_0_50px_rgba(37,99,235,0.2)] max-h-[80vh]">
+      <Modal label="Roadmap" isOpen={showRoadmap} onClose={() => setShowRoadmap(false)} className="max-w-lg border-blue-600 shadow-[0_0_50px_rgba(37,99,235,0.2)] max-h-[80vh]">
            <div className="p-6 md:p-10 overflow-y-auto custom-scrollbar max-h-[80vh]">
               <div className="flex justify-between items-start mb-6">
                 <div>
@@ -2149,23 +2137,23 @@ export default function App() {
       </Modal>
 
       {/* ONBOARDING MODAL */}
-      <Modal isOpen={showOnboarding} onClose={completeOnboarding} className="max-w-md border-red-600 shadow-[0_0_60px_rgba(220,38,38,0.3)] max-h-[85vh]">
+      <Modal label="How to use P5 Tracker" isOpen={showOnboarding} onClose={completeOnboarding} className="max-w-md border-red-600 shadow-[0_0_60px_rgba(220,38,38,0.3)] max-h-[85vh]">
            <div className="p-4 md:p-8 overflow-y-auto custom-scrollbar">
               <div className="flex flex-col items-center text-center mb-6 md:mb-8">
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-4 rotate-3 shadow-xl shadow-red-900/40">
                   <Zap className="w-6 h-6 md:w-8 md:h-8 text-white fill-current" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tighter">Mission Briefing</h2>
-                <p className="text-[10px] md:text-xs text-neutral-500 uppercase font-bold tracking-widest mt-1">Tactical Guide v{APP_VERSION}</p>
+                <h2 className="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tighter">How to use P5 Tracker</h2>
+                <p className="text-[10px] md:text-xs text-neutral-500 uppercase font-bold tracking-widest mt-1">Royal tracker help</p>
               </div>
 
               <div className="space-y-3 md:space-y-4">
-                <OnboardingItem icon={Calendar} color="text-blue-500" title="Anchor Your Timeline" text="Go to Calendar, select your month, and tap 'Set as Active' to focus the tracker." />
-                <OnboardingItem icon={CheckSquare} color="text-red-500" title="Check Your Tasks" text="Tap tasks to complete them. Important ones follow you to next month if missed." />
-                <OnboardingItem icon={Users} color="text-red-500" title="Level Bonds" text="Go to the Bonds tab to see the best dialogue choices and gifts for your next rank up." />
-                <OnboardingItem icon={Zap} color="text-yellow-500" title="Manage Stats" text="Update your Social Stats in the Intel tab to see if a Confidant is 'Blocked'." />
-                <OnboardingItem icon={MapPin} color="text-red-500" title="Metaverse Intel" text="Find Will Seeds and boss strategies. Past Palaces are hidden automatically." />
-                <OnboardingItem icon={Save} color="text-white" title="Sync Your Progress" text="Use the Sync Terminal to backup or import your data (it lives on your device)." />
+                <OnboardingItem icon={Calendar} color="text-blue-500" title="Choose your month" text="Open Calendar, select your in-game month, and use Set as Active to update the tracker." />
+                <OnboardingItem icon={CheckSquare} color="text-red-500" title="Record completed tasks" text="Check tasks after you finish them in your game. The checklist records your progress; it does not complete in-game actions." />
+                <OnboardingItem icon={Users} color="text-red-500" title="Track confidants" text="Open Confidants to update ranks, read dialogue answers and look up gifts. Browsing a guide does not change your rank." />
+                <OnboardingItem icon={Zap} color="text-yellow-500" title="Update social stats" text="Set your social stats in Briefing to check confidant requirements." />
+                <OnboardingItem icon={MapPin} color="text-red-500" title="Plan Palace visits" text="Open Metaverse for Palace deadlines, Will Seeds, boss help and Mementos requests." />
+                <OnboardingItem icon={Save} color="text-white" title="Back up your progress" text="Use Sync to download a backup or import it on another device. Saves stay in this browser until you transfer them." />
               </div>
 
               <button 
@@ -2190,7 +2178,7 @@ export default function App() {
 function TabButton({ active, onClick, label, icon: Icon }) {
   const isSpecial = label.includes('✨');
   return (
-    <button onClick={onClick} className={`flex-1 py-2 md:py-4 px-1 md:px-2 rounded-xl font-black uppercase italic text-[8px] md:text-xs tracking-tighter transition-all duration-300 flex flex-col md:flex-row items-center justify-center gap-0.5 md:gap-2 ${
+    <button onClick={onClick} aria-current={active ? 'page' : undefined} className={`flex-1 py-2 md:py-4 px-1 md:px-2 rounded-xl font-black uppercase italic text-[8px] md:text-xs tracking-tighter transition-all duration-300 flex flex-col md:flex-row items-center justify-center gap-0.5 md:gap-2 ${
       active 
         ? (isSpecial ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/40' : 'bg-red-600 text-black shadow-lg shadow-red-900/40') 
         : (isSpecial ? 'text-blue-500 hover:text-blue-400' : 'text-neutral-500 hover:text-white')
@@ -2210,26 +2198,46 @@ function OnboardingItem({ icon: Icon, color, title, text }) {
       </div>
       <div className="text-left">
         <div className="font-black text-white uppercase text-xs tracking-widest">{title}</div>
-        <div className="text-sm text-neutral-500 leading-tight mt-1">{text}</div>
+        <div className="text-sm text-neutral-300 leading-relaxed mt-1">{text}</div>
       </div>
     </div>
   );
 }
 
-function Modal({ isOpen, onClose, children, className = "max-w-lg" }) {
+function Modal({ isOpen, onClose, children, label = "P5 Tracker dialog", className = "max-w-lg" }) {
+  const panelRef = useRef(null);
+  const closeRef = useRef(onClose);
+  useEffect(() => { closeRef.current = onClose; }, [onClose]);
   useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === 'Escape') onClose();
+    if (!isOpen) return;
+    const previousFocus = document.activeElement;
+    const previousOverflow = document.body.style.overflow;
+    const panel = panelRef.current;
+    const focusable = () => [...panel.querySelectorAll('button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')]
+      .filter(element => element.getClientRects().length && element.tabIndex >= 0);
+    const handleKey = event => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); }
+      if (event.key !== 'Tab') return;
+      const elements = focusable();
+      if (!elements.length) { event.preventDefault(); panel.focus(); return; }
+      const first = elements[0];
+      const last = elements.at(-1);
+      if (!panel.contains(document.activeElement) || (event.shiftKey && document.activeElement === first)) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
     };
-    if (isOpen) {
-      window.addEventListener('keydown', handleEsc);
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
-    }
+    document.body.style.overflow = 'hidden';
+    (focusable()[0] || panel).focus();
+    window.addEventListener('keydown', handleKey);
     return () => {
-      window.removeEventListener('keydown', handleEsc);
-      document.body.style.overflow = 'unset';
+      window.removeEventListener('keydown', handleKey);
+      document.body.style.overflow = previousOverflow;
+      if (document.contains(previousFocus)) previousFocus?.focus?.();
+      else document.querySelector('main')?.focus();
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -2240,7 +2248,7 @@ function Modal({ isOpen, onClose, children, className = "max-w-lg" }) {
         onClick={onClose} 
         aria-label="Close modal"
       />
-      <div className={`relative bg-neutral-900 border-2 border-neutral-800 rounded-[2.5rem] md:rounded-[3rem] w-full ${className} shadow-2xl z-10 flex flex-col max-h-[95vh] md:max-h-[90vh] overflow-hidden`}>
+      <div ref={panelRef} role="dialog" aria-modal="true" aria-label={label} tabIndex={-1} className={`relative bg-neutral-900 border-2 border-neutral-800 rounded-[2.5rem] md:rounded-[3rem] w-full ${className} shadow-2xl z-10 flex flex-col max-h-[95vh] md:max-h-[90vh] overflow-hidden`}>
         <div className="overflow-y-auto custom-scrollbar flex-1">
           {children}
         </div>

@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.6",
+    date: "2026-09-07",
+    title: "Start playing without extra dialogs",
+    description: "Royal's welcome and update notices no longer cover the tracker.",
+    sections: [{ title: "Getting started", items: [
+      "Use the optional welcome card in Briefing, or go straight to any tracker section.",
+      "Open help or release notes when you need them. Help uses the current tab names.",
+      "Navigate dialogs with the keyboard. Escape closes them and restores focus."
+    ] }]
+  },
+  {
     version: "2.6.5",
     date: "2026-09-07",
     title: "One place for every guide",

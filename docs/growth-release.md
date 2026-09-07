@@ -97,3 +97,12 @@ Isolated Chromium network inspection confirmed that the calendar does not reques
 All three share controls use fixed public URLs with the existing player-referral campaign. This repairs a documentation-versus-source mismatch: the pre-2.6.5 controls used bare links. Support measurement now includes Reload panel visibility and header/footer click location. The existing support placement is unchanged. Browser checks used stubbed analytics, simulated clipboard writes and prevented Ko-fi navigation; no payments or production test events were sent.
 
 The directory and filters fit 320, 390 and 1280px. Browser checks confirmed all eleven links without JavaScript, game/topic filtering, all three share destinations, background-tab impression suppression and one support impression per page load. See `docs/analytics.md` for event definitions and comparison limits.
+
+
+## Royal first visits in 2.6.6
+
+New Royal players can use the tracker immediately. An optional welcome card appears only in Briefing and links to Calendar or help. Direct Calendar and Confidant arrivals keep their selected section. Returning players see an inline update notice instead of an automatic release-notes dialog. Help and What's New remain available in the footer. Dismissing welcome or closing help uses the existing onboarding preference; no game progress changes.
+
+Royal dialogs now have accessible labels, keep Tab focus inside the panel and close with Escape. Closing restores focus to the opener if it remains present, otherwise to the main content. Opening one dialog no longer lets the other inactive dialog effects undo the page's scroll lock.
+
+Isolated Chromium covered fresh visits, direct Calendar entry, returning users with an older version, notice dismissal and optional help. Tests verified current tab names, 320px layout, keyboard focus containment and restoration, existing Royal ranks and an untouched Reload save. The changed modules pass targeted lint; the Royal file retains its existing seven-error/one-warning lint baseline. Source helpers tolerate unavailable preference storage, but this does not establish that all legacy Royal save paths tolerate blocked storage.
