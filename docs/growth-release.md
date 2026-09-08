@@ -4,7 +4,7 @@ P5 Tracker provides free Royal and Reload browser companions. The shared chooser
 
 ## Search pages
 
-Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, the guide directory, five Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
+Vite builds the shared and per-game entry points and copies `public/guides/` into the production build. Static guides have distinct titles, descriptions, canonical URLs, and links to relevant tracker sections. `public/sitemap.xml` lists the shared chooser, both trackers, the guide directory, seven Royal guides, and six Reload guides. Keep it aligned when adding or removing pages. Tracker fallback HTML and metadata describe the correct game without invented ratings or paid offers.
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
@@ -202,3 +202,12 @@ All 114 automated tests passed. Browser checks at 320, 390 and 1280px verified t
 The Palace checklist now displays each seed’s color and name above its location hint. All 24 hints were reviewed, and each Palace links directly to its section in an illustrated walkthrough. This gives players a short cue in the tracker and a full route when needed. The source review is recorded in [Royal content review](royal-content-review.md).
 
 All 114 automated tests and the 17-page build checks passed. Isolated browser checks at 320, 390 and 1280px verified all 24 visible names, the eight source anchors, retained early/final-Palace checkmarks, keyboard toggles, focus and save reload. Reload’s stored state was unchanged. No new progress fields were introduced.
+
+
+## Resource review in 2.6.18
+
+The closing review checked resource destinations using page content and YouTube’s public video metadata. The GameFAQs entry now names its author instead of calling it the Ace guide. The Thieves Den entry describes a community guide, not a spreadsheet. The decoration link no longer forces Swedish. Character-analysis descriptions credit the creators and identify spoiler content without disclosing plot roles.
+
+The review did not establish that Hardcore Gamer or Fandom were unavailable to visitors: connection/challenge responses prevented those checks, so their links remain unchanged. Steam’s automated responses differed between fetches; a content-preference screen was not treated as proof of removal. This was a destination review, not a verification of every fact in external guides.
+
+All 114 tests and build checks passed. Closing browser checks verified all 17 pages and share images, the 24 seed labels and source links, saved checkmarks, and corrected resource cards at 320, 390 and 1280px. Production analytics were blocked.

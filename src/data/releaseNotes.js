@@ -1,5 +1,16 @@
 export const RELEASE_NOTES = [
   {
+    version: "2.6.18",
+    date: "2026-09-08",
+    title: "Clearer reference links",
+    description: "Resource descriptions match their linked guides.",
+    sections: [{ title: "Reference Hub", items: [
+      "The GameFAQs walkthrough and Thieves Den guide have corrected descriptions.",
+      "The decoration guide no longer forces a Swedish interface.",
+      "Character-analysis links identify their creators and flag story spoilers."
+    ] }]
+  },
+  {
     version: "2.6.17",
     date: "2026-09-07",
     title: "Clearer Will Seed directions",

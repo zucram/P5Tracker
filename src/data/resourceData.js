@@ -34,8 +34,8 @@ export const RESOURCE_DATA = [
     description: 'The "Bibles" of P5R completion. Use these for detailed day-by-day scripts.',
     items: [
       {
-        title: 'The Ace Guide (Perfect Schedule)',
-        desc: 'The definitive 100% schedule. Covers every single book, game, and award.',
+        title: 'Royal 100% Walkthrough',
+        desc: 'A day-by-day Royal walkthrough by marendarade on GameFAQs.',
         format: 'guide',
         url: 'https://gamefaqs.gamespot.com/ps4/260936-persona-5-royal/faqs/78212',
         isGold: true
@@ -112,8 +112,8 @@ export const RESOURCE_DATA = [
         url: 'https://www.youtube.com/watch?v=GafS4qA8m-c'
       },
       {
-        title: 'Thieves Den Awards Checklist',
-        desc: 'Spreadsheet for tracking progress across multiple save files.',
+        title: 'Thieves Den Awards Guide',
+        desc: 'A community guide to the requirements for Thieves Den awards.',
         format: 'guide',
         url: 'https://www.reddit.com/r/Persona5/comments/i9ycw0/a_guide_on_acquiring_every_thieves_den_award/'
       },
@@ -121,7 +121,7 @@ export const RESOURCE_DATA = [
         title: 'Room Decoration Guide',
         desc: 'How to unlock every cosmetic item for Joker\'s room at LeBlanc.',
         format: 'guide',
-        url: 'https://steamcommunity.com/sharedfiles/filedetails/?l=swedish&id=3357898762'
+        url: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3357898762'
       }
     ]
   },
@@ -134,13 +134,13 @@ export const RESOURCE_DATA = [
     items: [
       {
         title: 'The Psychology of Dr. Maruki',
-        desc: 'Professional analysis of the Third Semester antagonist\'s messiah complex.',
+        desc: 'ThoughtBubble’s character analysis of Maruki. Contains major story spoilers.',
         format: 'video',
         url: 'https://www.youtube.com/watch?v=8D7euqMTk-k'
       },
       {
         title: 'Goro Akechi in Sociocultural Context',
-        desc: 'Analysis of Akechi\'s rage through the lens of the Japanese family registry.',
+        desc: 'LadyVirgilia’s analysis of Akechi in Japanese cultural context. Contains story spoilers.',
         format: 'video',
         url: 'https://www.youtube.com/watch?v=Ia8D664sof8'
       }

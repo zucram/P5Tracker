@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.18 — 2026-09-08
+
+- Correct resource descriptions for the GameFAQs walkthrough and Thieves Den guide.
+- Remove a forced Swedish locale from the decoration guide link.
+- Identify character-analysis creators and mark story spoilers without revealing the plot in the link description.
+
 ## 2.6.17 — 2026-09-07
 
 - Show each Will Seed’s color and name beside its checklist hint.
