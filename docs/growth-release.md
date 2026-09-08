@@ -8,6 +8,8 @@ Vite builds the shared and per-game entry points and copies `public/guides/` int
 
 The deployment base remains `/P5Tracker/`. Moving to another origin requires a save migration plan because browser storage does not follow users across origins.
 
+The root `index.html` contains the public Google Search Console verification tag for the URL-prefix property `https://zucram.github.io/P5Tracker/`. Vite preserves this tag in `dist/index.html`. Keep it in the deployed homepage so Google can recheck ownership. The tag is a public ownership marker, not a login credential. The existing sitemap is `https://zucram.github.io/P5Tracker/sitemap.xml`. Account verification, sitemap processing, and search results are separate checks recorded in the private growth ledger. See [Google's ownership-verification documentation](https://support.google.com/webmasters/answer/9008080).
+
 ## Initial growth-release events
 
 This table records the original 2.4.0 additions. Use [current event definitions](analytics.md) for both games and reporting limits.
