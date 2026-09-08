@@ -47,7 +47,7 @@ const coverageNotes = [
 const coverageDetails = coverageNotes.length ? `<details><summary>Coverage and review notes</summary><ul>${coverageNotes.map(note => `<li>${escape(note)}</li>`).join('')}</ul></details>` : '';
 const canonical = 'https://zucram.github.io/P5Tracker/guides/school-answers/';
 const title = 'Persona 5 Royal classroom and exam answers | P5 Tracker';
-const description = 'Look up Persona 5 Royal school answers by date. Browse classroom questions and exam answer choices, with optional month, type, and text filters.';
+const description = 'Look up every Persona 5 Royal classroom and exam answer by date. Search by month, question type or text, then continue your monthly plan.';
 const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: canonical, inLanguage: 'en' };
 const html = `<!doctype html>
 <html lang="en">

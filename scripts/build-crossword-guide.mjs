@@ -6,8 +6,8 @@ import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
 if (CROSSWORD_DATA.length !== 38 || CROSSWORD_DATA.some((entry, index) => entry.id !== `cw_ans_${index + 1}` || !entry.q || !entry.a)) throw new Error('Review crossword coverage and stable save IDs before publishing.');
 
 const slug = 'persona-5-royal-crossword-answers';
-const title = 'Persona 5 Royal crossword answers: all 38 puzzles';
-const description = 'Find all 38 Persona 5 Royal crossword answers by clue, answer or puzzle number. Search the Leblanc puzzles in order, including the final four answers.';
+const title = 'Persona 5 Royal crossword answers | All 38 puzzles';
+const description = 'Find all 38 Persona 5 Royal crossword answers by clue, answer or puzzle number. Search Leblanc puzzles in order, including the final four.';
 const canonical = `https://zucram.github.io/P5Tracker/guides/${slug}/`;
 const tracker = `<a class="cta" href="../../p5/#briefing" data-umami-event="guide_open_tracker" data-umami-event-guide="${slug}">Track your completed crosswords</a>`;
 const schema = { '@context': 'https://schema.org', '@type': 'WebPage', name: title, description, url: canonical, inLanguage: 'en', about: { '@type': 'VideoGame', name: 'Persona 5 Royal' } };

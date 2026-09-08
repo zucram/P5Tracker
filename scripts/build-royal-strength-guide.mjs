@@ -5,8 +5,8 @@ import { shareImageMeta } from './share-cards.mjs';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
 
 const slug = 'persona-5-royal-strength-confidant';
-const title = 'Persona 5 Royal Strength confidant: requests and skill cards';
-const description = 'Find all 10 Royal Strength requests, the exact required skills, normal and alarm skill-card sources, and fixed group fusion ingredients for the twins.';
+const title = 'Persona 5 Royal Strength requests | Skills and fusions';
+const description = 'Find all 10 Caroline and Justine requests, the required skills, skill-card sources and fixed group-fusion recipes for Persona 5 Royal.';
 const canonical = `https://zucram.github.io/P5Tracker/guides/${slug}/`;
 const calculator = 'https://chinhodado.github.io/persona5_calculator/indexRoyal.html';
 const registry = new Map(PERSONA_DATA.registry.map(persona => [persona.name, persona]));

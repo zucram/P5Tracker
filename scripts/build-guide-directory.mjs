@@ -4,8 +4,8 @@ import { GUIDE_DIRECTORY } from '../src/data/guideDirectory.js';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
 
 const canonical = 'https://zucram.github.io/P5Tracker/guides/';
-const title = 'Persona 5 Royal and Persona 3 Reload guides and answers';
-const description = 'Find free Persona 5 Royal and Persona 3 Reload guides for school answers, crosswords, Social Links, Elizabeth requests, fusion and missable deadlines.';
+const title = 'Persona 5 Royal and Persona 3 Reload guides';
+const description = 'Search free guides for Persona 5 Royal and Persona 3 Reload, including school answers, deadlines, Social Links, confidants, requests and fusion.';
 const games = [['royal', 'Persona 5 Royal', 'p5'], ['reload', 'Persona 3 Reload', 'p3']];
 const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description, url: canonical, inLanguage: 'en', hasPart: GUIDE_DIRECTORY.map(guide => ({ '@type': 'WebPage', name: guide.title, url: `${canonical}${guide.slug}/` })) };
 const html = `<!doctype html>

@@ -9,8 +9,8 @@ const [school, activities] = await Promise.all(['school-answers', 'activities'].
   JSON.parse(await readFile(path.join(root, `knowledge/p3-reload/${name}.json`), 'utf8'))));
 const slug = 'persona-3-reload-school-answers';
 const canonical = `https://zucram.github.io/P5Tracker/guides/${slug}/`;
-const title = 'Persona 3 Reload school answers and exam requirements';
-const description = 'Persona 3 Reload classroom and exam answers by month, final-day Academics requirements, and activities for Academics, Charm and Courage, with sources.';
+const title = 'Persona 3 Reload school answers | Exams and stats';
+const description = 'Look up Persona 3 Reload classroom and exam answers by date, plus final-day Academics requirements and stat-raising activities.';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const capitalize = value => String(value).replace(/^./, c => c.toUpperCase());
 const months = [[4, 'April'], [5, 'May'], [6, 'June'], [7, 'July'], [8, 'August'], [9, 'September'], [10, 'October'], [11, 'November'], [12, 'December'], [1, 'January']];

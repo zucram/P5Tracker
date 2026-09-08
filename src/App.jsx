@@ -225,7 +225,7 @@ export default function App() {
           if (import.meta.env.DEV) {
             document.title = 'P5Tracker - DEV';
           } else {
-            document.title = 'Persona 5 Royal tracker | Monthly goals and confidants';
+            document.title = 'Persona 5 Royal tracker | Confidants, calendar and answers';
           }
         }, []);
       

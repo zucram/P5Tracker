@@ -4,8 +4,8 @@ import { shareImageMeta } from './share-cards.mjs';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
 
 const canonical = 'https://zucram.github.io/P5Tracker/guides/monthly-checklist/';
-const title = 'Persona 5 Royal Palace deadlines and monthly checklist';
-const description = 'Check Royal Palace route, calling-card and boss deadlines from Kamoshida to the third semester. Plan your month with a free progress checklist.';
+const title = 'Persona 5 Royal Palace deadlines | Monthly checklist';
+const description = 'Check Palace route, calling-card and boss deadlines in Persona 5 Royal. Compare dates from Kamoshida through the third semester, then plan each month.';
 const longDate = date => {
   const [month, day] = date.split('/').map(Number);
   return `${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][month - 1]} ${day}`;

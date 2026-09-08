@@ -4,8 +4,8 @@ import { shareImageMeta } from './share-cards.mjs';
 import { escapeHtml as esc, lookupForm } from './guide-helpers.mjs';
 
 const slug = 'persona-5-royal-treasure-demon-weaknesses';
-const title = 'Persona 5 Royal Treasure Demon weaknesses: all 9';
-const description = 'Check the Royal weakness for Regent, Queen’s Necklace, Koh-i-Noor, Hope Diamond, Crystal Skull and all nine Treasure Demons. Track the ones you recruit.';
+const title = 'Persona 5 Royal Treasure Demon weaknesses | All 9';
+const description = 'Look up every Treasure Demon weakness in Persona 5 Royal by name, element or level. Track the nine demons you recruit in the registry.';
 const canonical = `https://zucram.github.io/P5Tracker/guides/${slug}/`;
 const entries = PERSONA_DATA.treasureDemons;
 const aliases = { Nuclear: 'Nuke', Psy: 'Psi Psychokinesis', Elec: 'Electric Electricity' };
