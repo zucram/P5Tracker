@@ -1,4 +1,4 @@
-import { readFile, stat } from 'node:fs/promises';
+import { readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { shareImageMeta } from './share-cards.mjs';
 
@@ -64,4 +64,5 @@ for (const [href, html] of pages) {
 for (const [url, count] of incoming) requireCheck(count > 0, `Orphan sitemap page: ${url}`);
 requireCheck(new Set(urls).size === urls.length, 'Duplicate sitemap URLs');
 if (errors.length) throw new Error(errors.join('\n'));
+await writeFile(path.join(root, 'sitemap.txt'), `${urls.join('\n')}\n`, 'utf8');
 console.log(`Site checks passed: ${urls.length} sitemap pages, ${links} internal links/assets, unique metadata, share images, canonicals, H1s, structured data and guide fragments.`);

@@ -10,6 +10,9 @@ The deployment base remains `/P5Tracker/`. Moving to another origin requires a s
 
 The root `index.html` contains the public Google Search Console verification tag for the URL-prefix property `https://zucram.github.io/P5Tracker/`. Vite preserves this tag in `dist/index.html`. Keep it in the deployed homepage so Google can recheck ownership. The tag is a public ownership marker, not a login credential. The existing sitemap is `https://zucram.github.io/P5Tracker/sitemap.xml`. Account verification, sitemap processing, and search results are separate checks recorded in the private growth ledger. See [Google's ownership-verification documentation](https://support.google.com/webmasters/answer/9008080).
 
+After validation, `scripts/check-site.mjs` generates `dist/sitemap.txt` from the XML sitemap URLs, one absolute URL per line. GitHub Pages publishes it at `https://zucram.github.io/P5Tracker/sitemap.txt`. This alternative format supports a separate Search Console submission to investigate the XML sitemap fetch failure. Keep `public/sitemap.xml` as the source of truth. Build validation must pass before the text file is generated. Successful HTTP retrieval and successful Google sitemap processing are separate outcomes; account results remain in the private growth ledger.
+
+
 ## Initial growth-release events
 
 This table records the original 2.4.0 additions. Use [current event definitions](analytics.md) for both games and reporting limits.
